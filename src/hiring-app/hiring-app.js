@@ -85,7 +85,7 @@ class HiringApp extends PolymerElement {
     return {
       login: {
         type: Boolean,
-        value: true
+        value: false
       },
       loading: {
         type: Boolean,
