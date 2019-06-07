@@ -15,7 +15,7 @@
 */
 
 // DO NOT EDIT THIS GENERATED OUTPUT DIRECTLY!
-// This file should be overwritten as part of your build process.
+// This file should be overwritten as part of your docs process.
 // If you need to extend the behavior of the generated service worker, the best approach is to write
 // additional code and include it using the importScripts option:
 //   https://github.com/GoogleChrome/sw-precache#importscripts-arraystring
