@@ -1,6 +1,7 @@
 branches:
   only:
     -master
+if: type = pull_request
 language: node_js
 node_js:
   - "7"
