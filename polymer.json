@@ -1,4 +1,21 @@
 {
+  "entrypoint": "index.html",
+  "shell": "src/hiring-app/hiring-app.js",
+  "sources": [
+    "src/**.js",
+    "manifest/**",
+    "package.json"
+  ],
+  "extraDependencies": [
+    "manifest.json",
+    "node_modules/@webcomponents/webcomponentsjs/bundles/**"
+  ],
+  "builds": [{
+    "name": "hiring-app",
+    "preset": "es6-bundled",
+    "html": { "minify": true},
+    "addServiceWorker": true
+  }],
   "npm": true,
   "lint": {
     "rules": [
