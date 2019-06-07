@@ -1,0 +1,7 @@
+{
+  "name": "hiring-app",
+  "short_name": "hiring-app",
+  "description": "Create hire app for developers",
+  "start_url": "/",
+  "display": "standalone"
+}
