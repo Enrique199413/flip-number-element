@@ -4,6 +4,7 @@ baseStyle.innerHTML = `
     <style>
       :root {
         --base-color: #449dd1;
+        --white: #FFFFFF;
         --base-color-light: rgba(133,226,255,0.25);
       }
     </style>

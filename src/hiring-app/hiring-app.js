@@ -13,18 +13,21 @@ import '@polymer/app-layout/app-header-layout/app-header-layout.js';
 import '@polymer/app-layout/app-toolbar/app-toolbar.js';
 import '@polymer/paper-icon-button/paper-icon-button.js';
 import '@polymer/paper-listbox/paper-listbox.js';
+import '@polymer/paper-toast/paper-toast.js';
 import '@polymer/paper-item/paper-item.js';
 import '@polymer/paper-button/paper-button.js';
 import '@polymer/iron-flex-layout/iron-flex-layout-classes.js';
 
 import '../component-pages/login-page.js';
+import '../component-pages/exam-page.js';
 import '../local-components/app-components/loading-component.js';
+import {UtilitiesMixin} from '../local-components/mixins/mixin-utilities';
 
 /**
  * @customElement
  * @polymer
  */
-class HiringApp extends PolymerElement {
+class HiringApp extends UtilitiesMixin(PolymerElement) {
   static get template() {
     return html`
       <style include="base-style iron-flex iron-flex-alignment">
@@ -59,7 +62,14 @@ class HiringApp extends PolymerElement {
         .main-center {
           height: 100vh;
         }
+        
+        #main {
+          margin-top: 1rem;
+          margin-right: 1rem;
+          margin-left: 1rem;
+        }
       </style>
+      <paper-toast id="hiringAppToast"></paper-toast>
       <template is="dom-if" if="[[loading]]">
         <loading-component is-still-loading="{{loading}}" class="layout horizontal center-center main-center"></loading-component>
       </template>
@@ -98,7 +108,6 @@ class HiringApp extends PolymerElement {
                   </app-toolbar>
                 </app-header>
                 <div id="main" class="layout horizontal center-center">
-                                 
                 </div>
               </app-header-layout>
             </app-drawer-layout>
@@ -157,7 +166,7 @@ class HiringApp extends PolymerElement {
       setTimeout(() => {
         this.innerLoading = false;
         resolve([
-          {name: 'Examenes', path: '/exams', component: 'login-page'},
+          {name: 'Examenes', path: '/exams', component: 'exam-page'},
           {name: 'Candidatos', path: '/candidates', component: 'login-page'},
           {name: 'Configuracion', path: '/config', component: 'login-page'},
         ]);
