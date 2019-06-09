@@ -3,10 +3,10 @@ baseStyle.innerHTML = `
   <template>
     <style>
       :root {
-        --base-color: #449DD1;  
+        --base-color: #449dd1;
+        --base-color-light: rgba(133,226,255,0.25);
       }
     </style>
   </template>
 `;
-console.log('camsads');
 baseStyle.register('base-style');
