@@ -5,5 +5,7 @@ script:
   - echo "Try to deplay hiring app"
 install:
   - npm install -g firebase-tools
+  - npm install -g polymer-cli
 after_success:
+  - polymer build
   - firebase deploy --project hiring-app-enriquelc --token $FIREBASE_TOKEN
