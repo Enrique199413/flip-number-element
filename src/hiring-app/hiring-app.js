@@ -1,7 +1,9 @@
 import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
-import '../local-components/shared-styles/base-style.js'
+import '../local-components/shared-styles/base-style.js';
 
+import {Router} from '@vaadin/router';
 import '@polymer/iron-icons/iron-icons.js';
+import '@polymer/paper-progress/paper-progress.js';
 import '@polymer/app-layout/app-layout.js';
 import '@polymer/app-layout/app-drawer-layout/app-drawer-layout.js';
 import '@polymer/app-layout/app-drawer/app-drawer.js';
@@ -44,13 +46,22 @@ class HiringApp extends PolymerElement {
         app-drawer-layout:not([narrow]) [drawer-toggle] {
           display: none;
         }
-        
-        #animate-container {
-          opacity: 0;
+        paper-progress {
+          --paper-progress-active-color: var(--base-color);
+          --paper-progress-secondary-color: var(--base-color-light);
+          width: 100%;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+          outline: none;
+        }
+        .main-center {
+          height: 100vh;
         }
       </style>
       <template is="dom-if" if="[[loading]]">
-        <loading-component is-still-loading="{{loading}}" class="layout horizontal center-center"></loading-component>
+        <loading-component is-still-loading="{{loading}}" class="layout horizontal center-center main-center"></loading-component>
       </template>
       <template is="dom-if" if="[[!loading]]">
         <div id="animate-container">
@@ -60,20 +71,35 @@ class HiringApp extends PolymerElement {
           <template is="dom-if" if="[[login]]" restamp>
             <app-drawer-layout>
               <app-drawer slot="drawer" swipe-open>
-                <app-toolbar>Options</app-toolbar>
-                <paper-listbox>
-                  <paper-item>Inbox</paper-item>
-                  <paper-item>Starred</paper-item>
-                  <paper-item>Sent mail</paper-item>
-                </paper-listbox>
+                <template is="dom-if" if="[[innerLoading]]">
+                  <div class="layout horizontal center-center main-center">
+                    <paper-spinner active></paper-spinner>
+                  </div>
+                </template>
+                <template is="dom-if" if="[[!innerLoading]]">
+                  <app-toolbar>Menu</app-toolbar>
+                  <paper-listbox selected="{{selectedItem}}" attr-for-selected="data-name">
+                    <template is="dom-repeat" items="[[urls]]" as="url">
+                      <a href="[[url.path]]" data-name="[[url.name]]" class="paper-item" tabindex="-1">
+                        <paper-item>[[url.name]]</paper-item>
+                      </a>
+                    </template>
+                  </paper-listbox>
+                </template>
               </app-drawer>
               <app-header-layout>
                 <app-header slot="header" reveals effects="waterfall">
                   <app-toolbar>
                     <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
-                    <div main-title>Hiring App</div>
+                    <div main-title>{{selectedItem}}</div>
+                    <template is="dom-if" if="[[innerLoading]]">
+                      <paper-progress indeterminate$="[[innerLoading]]" bottom-item></paper-progress>         
+                    </template>
                   </app-toolbar>
                 </app-header>
+                <div id="main" class="layout horizontal center-center">
+                                 
+                </div>
               </app-header-layout>
             </app-drawer-layout>
           </template>
@@ -81,23 +107,28 @@ class HiringApp extends PolymerElement {
       </template>
     `;
   }
+
   static get properties() {
     return {
       login: {
         type: Boolean,
-        value: false
+        value: true,
       },
       loading: {
         type: Boolean,
         value: true,
-        observer: '_loadingChange'
+        observer: '_loadingChange',
+      },
+      selectedItem: {
+        type: String
       }
     };
   }
 
   _loadingChange(newlValue, oldValue) {
     if (!newlValue) {
-      setTimeout(() => {
+      // TODO solve animations
+      /*setTimeout(() => {
         const animation = this.shadowRoot.querySelector('#animate-container').
             animate([
                   {transform: 'translateY(100%)', opacity: 1, easing: 'ease-out'},
@@ -108,8 +139,30 @@ class HiringApp extends PolymerElement {
                   duration: 200,
                 });
         this.shadowRoot.querySelector('#animate-container').style.opacity = '1';
-      }, 0);
+      }, 0);*/
+      this._getValuesFromSecurity().then(urls => {
+        this.set('urls', urls);
+        this.set('selectedItem', this.urls[0].name);
+        window.href = this.urls[0].path;
+        const main = this.shadowRoot.querySelector('#main');
+        const router = new Router(main);
+        router.setRoutes(urls);
+      });
     }
+  }
+
+  _getValuesFromSecurity() {
+    this.innerLoading = true;
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        this.innerLoading = false;
+        resolve([
+          {name: 'Examenes', path: '/exams', component: 'login-page'},
+          {name: 'Candidatos', path: '/candidates', component: 'login-page'},
+          {name: 'Configuracion', path: '/config', component: 'login-page'},
+        ]);
+      }, 1000);
+    });
   }
 }
 

@@ -16,9 +16,9 @@ class LoadingComponent extends PolymerElement {
         
         paper-spinner {
           --paper-spinner-layer-1-color: var(--base-color);
-          --paper-spinner-layer-2-color: var(--base-color);
+          --paper-spinner-layer-2-color: var(--base-color-light);
           --paper-spinner-layer-3-color: var(--base-color);
-          --paper-spinner-layer-4-color: var(--base-color);
+          --paper-spinner-layer-4-color: var(--base-color-light);
         }
       </style>
       <paper-spinner active></paper-spinner>
@@ -38,7 +38,7 @@ class LoadingComponent extends PolymerElement {
     afterNextRender(this, () => {
       setTimeout(() => {
         this.set('isStillLoading', false);
-      }, 3000);
+      }, 1000);
     });
   }
 

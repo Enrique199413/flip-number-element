@@ -12,8 +12,10 @@
     "@polymer/paper-input": "^3.0.2",
     "@polymer/paper-item": "^3.0.1",
     "@polymer/paper-listbox": "^3.0.1",
+    "@polymer/paper-progress": "^3.0.1",
     "@polymer/paper-spinner": "^3.0.2",
     "@polymer/polymer": "^3.0.0",
+    "@vaadin/router": "^1.2.0",
     "web-animations-js": "^2.3.1"
   },
   "devDependencies": {
@@ -21,6 +23,13 @@
     "@webcomponents/webcomponentsjs": "^2.0.0",
     "chai": "^4.2.0",
     "mocha": "^6.1.4",
-    "wct-mocha": "^1.0.1"
+    "wct-mocha": "^1.0.1",
+    "browser-sync": "^2.18.13"
+  },
+  "scripts": {
+    "start": "npm run serve | npm run watch",
+    "serve": "polymer serve --port 8081",
+    "test": "polymer test",
+    "watch": "browser-sync start --proxy localhost:8081 --open --files \"**/*.html, **/*.js\""
   }
 }
