@@ -36,12 +36,73 @@ let firestoreMixin = (superClass) => class extends FirebaseMixin(superClass) {
     });
   }
 
+  getBasicReferenceData(collectionResult, collectionReference, idReference, newProperty) {
+    return collectionResult.map(doc => {
+        return new Promise((resolve, reject) => {
+          this.getDoc(collectionReference, doc.data[idReference].id)
+          .then(results => {
+            doc[newProperty] = results;
+            resolve(doc);
+          }).catch(error => {
+            reject(error);
+          });
+      })
+    })
+  }
+
+  getAllDataFromCollectionWithReference(searchParams) {
+    return new Promise((resolve, reject) => {
+      this.simpleQueryWithReference(searchParams.collection, searchParams.queryParamOne, searchParams.queryParamConditional, searchParams.queryReference)
+        .then(collectionResults => {
+          resolve(this._deferedMultiplePromiseCollection(collectionResults, searchParams.collectionReference, searchParams.referenceOnDoc));
+        }).catch(error => {
+          reject(error);
+      });
+    });
+  }
+
+  _deferedMultiplePromiseCollection(collectionResult, collectionReference, idReference, newProperty = `${collectionReference}Data`) {
+    return new Promise((resolve, reject) => {
+      Promise.all(this.getBasicReferenceData(collectionResult, collectionReference, idReference, newProperty)).then(results => {
+        resolve(results);
+      }).catch(error => {
+        reject(error);
+      });
+    });
+  }
+
   deleteDoc(collection, id) {
     return this._getStore().collection(collection).doc(id).delete();
   }
 
   getReference(collection, reference) {
     return this._getStore().collection(collection).doc(reference);
+  }
+
+  getDoc(collection, idDoc) {
+    let referenceDoc = this._getStore().collection(collection).doc(idDoc);
+    return new Promise((resolve, reject) => {
+      referenceDoc.get().then(doc => {
+        if (doc.exists) {
+          resolve(doc.data());
+        } else {
+          reject('no existe el documento');
+        }
+      }).catch(error => reject(error));
+    });
+  }
+
+  getDocExist(collection, idDoc) {
+    let referenceDoc = this._getStore().collection(collection).doc(idDoc);
+    return new Promise((resolve, reject) => {
+      referenceDoc.get().then(doc => {
+        if (doc.exists) {
+          resolve(doc.exists);
+        } else {
+          reject('Verifica el código de referencia');
+        }
+      }).catch(error => reject(error));
+    });
   }
 
   simpleQueryWithReference(collection, whereOne, whereTwo, reference) {

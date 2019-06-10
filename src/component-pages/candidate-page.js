@@ -3,6 +3,7 @@ import '@polymer/paper-input/paper-input.js';
 import '@polymer/paper-card/paper-card.js';
 import '@polymer/paper-dialog/paper-dialog.js';
 import '@polymer/paper-dialog-scrollable/paper-dialog-scrollable.js';
+import 'paper-collapse-item/paper-collapse-item.js'
 
 import {FireStoreMixin} from '../local-components/mixins/mixin-firestore.js';
 import {UtilitiesMixin} from '../local-components/mixins/mixin-utilities';
@@ -21,6 +22,11 @@ class CandidatePage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
           display: flex;
           flex-direction: column;
         }
+        paper-collapse-item {
+          --paper-collapse-item-header: {
+            cursor: pointer;
+          }
+        }
         paper-card {
           width: 100%;
         }
@@ -35,20 +41,24 @@ class CandidatePage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
           color: var(--white);
         }
       </style>
-      <paper-dialog id="newExamModal" no-overlap>
+      <paper-dialog id="newAssingExamModal" no-overlap>
         <template is="dom-if" if="[[loadingRequest]]">
           <paper-spinner active></paper-spinner>
         </template>
-        <h2>Nuevo Candidato</h2>
+        <h2>Asignar Examen a [[currentCandidate.data.name]]</h2>
         <paper-dialog-scrollable>
-          <paper-input label="Nombre del candidato" value="{{name::input}}"></paper-input>
-          <paper-input label="Apellido Paterno" value="{{lastName::input}}"></paper-input>
-          <paper-input label="Apellido Materno" value="{{middleName::input}}"></paper-input>
-          <paper-input label="description" value="{{description::input}}"></paper-input>
+          <paper-dropdown-menu label="Selecciona Examen" horizontal-align="left">
+            <paper-listbox slot="dropdown-content" class="dropdown-content" selected="{{referenceExam}}" attr-for-selected="data-exam">
+              <template is="dom-repeat" items="[[exams]]" as="exam">
+                <paper-item data-exam="[[exam.id]]">[[exam.data.name]]</paper-item>
+              </template>
+            </paper-listbox>
+          </paper-dropdown-menu>
+          {{referenceExam}}
         </paper-dialog-scrollable>
         <div class="buttons">
           <paper-button dialog-dismiss>Cancelar</paper-button>
-          <paper-button autofocus on-click="addNewCandidate">Agregar Candidato</paper-button>
+          <paper-button autofocus on-click="assingExamToCandidate">Asignar Examen</paper-button>
         </div>
       </paper-dialog>
       <paper-card heading="Lista de candidatos">
@@ -57,7 +67,21 @@ class CandidatePage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
         </div>
         <div class="card-actions">
           <template is="dom-repeat" items="[[candidates]]" as="candidate">
-            <div>[[candidate.data.name]] [[candidate.data.lastName]] [[candidate.data.middleName]] [[candidate.data.description]]- [[candidate.id]] <paper-button on-click="eraseExam">Borrar</paper-button></div>
+            <paper-collapse-item header="[[candidate.data.name]] [[candidate.data.lastName]] [[candidate.data.middleName]]">
+              <div>
+                <paper-input disabled value="[[candidate.id]]"></paper-input>
+                <paper-input value="{{candidate.data.name::input}}" label="Nombre"></paper-input>
+                <paper-input value="{{candidate.data.lastName::input}}" label="Apellido Paterno"></paper-input>
+                <paper-input value="{{candidate.data.middleName::input}}" label="Apellido Materno"></paper-input>
+                <paper-input value="{{candidate.data.description::input}}" label="Descripción"></paper-input>
+                
+              </div>
+              <div class="layout horizontal end-justified">
+                <paper-button on-click="assingExam">Asignar Examen</paper-button>
+                <paper-button on-click="updateProfile">Actualizar</paper-button>
+                <paper-button on-click="eraseCandidate">Borrar</paper-button>
+              </div>
+            </paper-collapse-item>
           </template>
           <template is="dom-if" if="[[emptyCandidates]]">
             VACAIS
@@ -91,6 +115,15 @@ class CandidatePage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
   connectedCallback() {
     super.connectedCallback();
     this._getCandidates();
+    this._getExams();
+  }
+
+  _getExams() {
+    this.readCollection('exam').then(results => {
+      this.set('exams', results);
+    }).catch(error => {
+      console.log(error);
+    });
   }
 
   _getCandidates() {
@@ -127,10 +160,31 @@ class CandidatePage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
     });
   }
 
+  assingExam(e) {
+    this.currentCandidate = e.model.candidate;
+    this.$.newAssingExamModal.open();
+  }
+
+  assingExamToCandidate() {
+    let candidateExam = {
+      chances: 0,
+      evaluation: 0,
+      feedback: '',
+      tos: false,
+      referenceExam: this.getReference('exam', this.referenceExam),
+      referenceCandidate: this.getReference('candidate', this.currentCandidate.id)
+    };
+    this.addDocument('candidateExam', candidateExam).then(results => {
+      this.openToast(`Candidato asignado correctamente al examen seleccionado`);
+      this.currentCandidate = undefined;
+    }).catch(error => {
+      console.log(error);
+    });
+  }
+
   openNewExam() {
     this.$.newExamModal.open();
   }
-
 }
 
 window.customElements.define('candidate-page', CandidatePage);

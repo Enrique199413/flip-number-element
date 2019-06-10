@@ -192,12 +192,12 @@ class CreateTestPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
   sendQuestions() {
     this.questions.map(question => {
       question.referenceType = this.getReference('questionType', question.referenceType);
-          this.addDocument('questionExam', question).then(results => {
-        this.openToast(`Pregunta agregada con exito`);
-        this.set('questions', []);
-      }).catch(error => {
-        console.log(error);
-      });
+        this.addDocument('questionExam', question).then(results => {
+          this.openToast(`Pregunta agregada con exito`);
+          this.set('questions', []);
+        }).catch(error => {
+          console.log(error);
+        });
     });
   }
 

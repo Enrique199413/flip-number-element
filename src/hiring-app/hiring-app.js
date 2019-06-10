@@ -18,6 +18,8 @@ import '@polymer/paper-item/paper-item.js';
 import '@polymer/paper-button/paper-button.js';
 import '@polymer/iron-flex-layout/iron-flex-layout-classes.js';
 
+import '../component-pages/code-register-page.js';
+import '../component-pages/apply-exam-page.js';
 import '../component-pages/exam-page.js';
 import '../component-pages/candidate-page.js';
 import '../component-pages/create-test-page.js';
@@ -78,44 +80,50 @@ class HiringApp extends UtilitiesMixin(PolymerElement) {
       </template>
       <template is="dom-if" if="[[!loading]]">
         <div id="animate-container">
-          <template is="dom-if" if="[[!login]]">
-            <login-page class="layout horizontal center-center"></login-page>
+          <template is="dom-if" if="[[code]]">
+            <div id="code" class="layout horizontal center-center">
+            </div>
           </template>
-          <template is="dom-if" if="[[login]]" restamp>
-            <app-drawer-layout>
-              <app-drawer slot="drawer" swipe-open>
-                <template is="dom-if" if="[[innerLoading]]">
-                  <div class="layout horizontal center-center main-center">
-                    <paper-spinner active></paper-spinner>
-                  </div>
-                </template>
-                <template is="dom-if" if="[[!innerLoading]]">
-                  <app-toolbar>Menu</app-toolbar>
-                  <paper-listbox selected="{{selectedItem}}" attr-for-selected="data-name">
-                    <template is="dom-repeat" items="[[urls]]" as="url">
-                      <template is="dom-if" if="[[validName(url.name)]]">
-                        <a href="[[url.path]]" data-name="[[url.name]]" class="paper-item" tabindex="-1">
-                          <paper-item>[[url.name]]</paper-item>
-                        </a>
+          <template is="dom-if" if="[[!code]]">
+            <template is="dom-if" if="[[!login]]">
+              <login-page class="layout horizontal center-center"></login-page>
+            </template>
+            <template is="dom-if" if="[[login]]" restamp>
+              <app-drawer-layout>
+                <app-drawer slot="drawer" swipe-open>
+                  <template is="dom-if" if="[[innerLoading]]">
+                    <div class="layout horizontal center-center main-center">
+                      <paper-spinner active></paper-spinner>
+                    </div>
+                  </template>
+                  <template is="dom-if" if="[[!innerLoading]]">
+                    <app-toolbar>Menu</app-toolbar>
+                    <paper-listbox selected="{{selectedItem}}" attr-for-selected="data-name">
+                      <template is="dom-repeat" items="[[urls]]" as="url">
+                        <template is="dom-if" if="[[validName(url.name)]]">
+                          <a href="[[url.path]]" data-name="[[url.name]]" class="paper-item" tabindex="-1">
+                            <paper-item>[[url.name]]</paper-item>
+                          </a>
+                        </template>
                       </template>
-                    </template>
-                  </paper-listbox>
-                </template>
-              </app-drawer>
-              <app-header-layout>
-                <app-header slot="header" reveals effects="waterfall">
-                  <app-toolbar>
-                    <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
-                    <div main-title>{{selectedItem}}</div>
-                    <template is="dom-if" if="[[innerLoading]]">
-                      <paper-progress indeterminate$="[[innerLoading]]" bottom-item></paper-progress>         
-                    </template>
-                  </app-toolbar>
-                </app-header>
-                <div id="main" class="layout horizontal center-center">
-                </div>
-              </app-header-layout>
-            </app-drawer-layout>
+                    </paper-listbox>
+                  </template>
+                </app-drawer>
+                <app-header-layout>
+                  <app-header slot="header" reveals effects="waterfall">
+                    <app-toolbar>
+                      <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
+                      <div main-title>{{selectedItem}}</div>
+                      <template is="dom-if" if="[[innerLoading]]">
+                        <paper-progress indeterminate$="[[innerLoading]]" bottom-item></paper-progress>         
+                      </template>
+                    </app-toolbar>
+                  </app-header>
+                  <div id="main" class="layout horizontal center-center">
+                  </div>
+                </app-header-layout>
+              </app-drawer-layout>
+            </template>
           </template>
         </div>
       </template>
@@ -127,6 +135,10 @@ class HiringApp extends UtilitiesMixin(PolymerElement) {
       login: {
         type: Boolean,
         value: true,
+      },
+      code: {
+        type: Boolean,
+        value: true
       },
       loading: {
         type: Boolean,
@@ -162,7 +174,7 @@ class HiringApp extends UtilitiesMixin(PolymerElement) {
         this.set('urls', urls);
         this.set('selectedItem', this.urls[0].name);
         window.href = this.urls[0].path;
-        const main = this.shadowRoot.querySelector('#main');
+        const main = this.shadowRoot.querySelector('#code');
         const router = new Router(main);
         router.setRoutes(urls);
       });
@@ -181,6 +193,8 @@ class HiringApp extends UtilitiesMixin(PolymerElement) {
           {name: 'Configuracion', path: '/config', component: 'config-page'},
           {path: '/make-exam', component: 'create-test-page'},
           {path: '/preview-exam/:idExam', component: 'preview-exam-page'},
+          {path: '/gft-examen', component: 'code-register-page'},
+          {path: '/hacer-examen/:codeExam', component: 'apply-exam-page'},
         ]);
       }, 1000);
     });

@@ -7,6 +7,37 @@ baseStyle.innerHTML = `
         --white: #FFFFFF;
         --base-color-light: rgba(133,226,255,0.25);
       }
+      .info-message {
+        height: 150px;
+      }
+      .info-message > paper-button {
+        margin-top: 20px;
+      }
+      
+      paper-button.blue-button {
+        background: var(--base-color);
+        color: var(--white);
+      }
+      
+      .loading-container {
+        height: 100px;
+      }
+      
+      paper-spinner {
+        --paper-spinner-layer-1-color: var(--base-color);
+        --paper-spinner-layer-2-color: var(--base-color-light);
+        --paper-spinner-layer-3-color: var(--base-color);
+        --paper-spinner-layer-4-color: var(--base-color-light);
+      }
+      
+      paper-card {
+        width: 100%;
+      }
+      @media screen and (max-width: 992px) {
+        paper-card {
+          width: auto;
+        }
+      }
     </style>
   </template>
 `;
