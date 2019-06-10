@@ -3,6 +3,7 @@ import '@polymer/paper-input/paper-input.js';
 import '@polymer/paper-card/paper-card.js';
 import '@polymer/paper-dialog/paper-dialog.js';
 import '@polymer/paper-dialog-scrollable/paper-dialog-scrollable.js';
+import '@polymer/marked-element/marked-element.js';
 
 import {FireStoreMixin} from '../local-components/mixins/mixin-firestore.js';
 import {UtilitiesMixin} from '../local-components/mixins/mixin-utilities';
@@ -10,7 +11,7 @@ import {UtilitiesMixin} from '../local-components/mixins/mixin-utilities';
  * @customElement
  * @polymer
  */
-class ExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
+class PreviewExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
   static get template() {
     return html`
       <style include="base-style iron-flex iron-flex-alignment">
@@ -35,35 +36,19 @@ class ExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
           color: var(--white);
         }
       </style>
-      <paper-dialog id="newExamModal" no-overlap>
-        <template is="dom-if" if="[[loadingRequest]]">
-          <paper-spinner active></paper-spinner>
-        </template>
-        <h2>Nuevo Examen</h2>
-        
-        <div class="buttons">
-          <paper-button dialog-dismiss>Cancelar</paper-button>
-          <paper-button autofocus on-click="addNewExam">Crear Examen</paper-button>
-        </div>
-      </paper-dialog>
-      <paper-card heading="Lista de examenes">
-        <div class="card-actions horizontal flex-end-justified">
-        <a href="/make-exam" class="paper-item" tabindex="-1">
-          <paper-button class="color">Nuevo examen</paper-button>
-        </a>
-        </div>
+      
+      <paper-card heading="[[location.params.idExam]]">
         <div class="card-actions">
-          <template is="dom-repeat" items="[[exams]]" as="exam">
-            <div>
-              [[exam.data.name]] [[exam.data.description]]- [[exam.id]]
-              <a href="/preview-exam/[[exam.id]]" class="paper-item" tabindex="-1">
-                <paper-button on-click="seeExam">Ver Examen</paper-button>
-              </a>
-              <paper-button on-click="eraseExam">Borrar</paper-button>
+          <template is="dom-repeat" items="[[questionsExam]]" as="questionExam">
+            <div>Pregunta [[sumIndex(index)]] - [[questionExam.id]] <paper-button on-click="eraseQuestionData">Borrar</paper-button></div>
+            <div class="layout horizontal">
+              <marked-element markdown="[[questionExam.data.question]]">
+                <div slot="markdown-html"></div>
+              </marked-element>
             </div>
           </template>
-          <template is="dom-if" if="[[emptyExams]]">
-            VACAIS
+          <template is="dom-if" if="[[emptyQuestionExams]]">
+            No hay preguntas para este examen
           </template>
         </div>
       </paper-card>
@@ -71,14 +56,14 @@ class ExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
   }
   static get properties() {
     return {
-      exams: {
+      questionsExam: {
         type: Array,
         value: () => {
           return [];
         },
-        observer: '_examsObserver'
+        observer: '_questionsExamObserver'
       },
-      emptyExams: {
+      emptyQuestionExams: {
         type: Boolean,
         value: false
       },
@@ -87,21 +72,40 @@ class ExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
     };
   }
 
-  _examsObserver(newValue) {
-    this.set('emptyExams', !(newValue.length > 0));
+  sumIndex(index) {
+    return index + 1;
+  }
+
+  _questionsExamObserver(newValue) {
+    this.set('emptyQuestionExams', !(newValue.length > 0));
   }
 
   connectedCallback() {
     super.connectedCallback();
-    this._getExams();
+    this._getQuestionsForExam();
   }
 
-  _getExams() {
-    this.readCollection('exam').then(results => {
-      this.set('exams', results);
+  _getQuestionsForExam() {
+    let reference = this.getReference('exam', this.location.params.idExam);
+    this.simpleQueryWithReference('questionExam', 'referenceExam', '==', reference)
+      .then(results => {
+        this.set('questionsExam', results);
+      });
+  }
+
+  addNewExam() {
+    this.addDocument('exam', {
+      name: this.nameExam,
+      description: this.descriptionExam
+    }).then(results => {
+      this.nameExam = '';
+      this.descriptionExam = '';
+      this.openToast(`Nuevo examen agregado con exito`);
+      this._getExams();
     }).catch(error => {
       console.log(error);
     });
+    this.$.newExamModal.close();
   }
 
   eraseExam(e) {
@@ -116,4 +120,4 @@ class ExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
 
 }
 
-window.customElements.define('exam-page', ExamPage);
+window.customElements.define('preview-exam-page', PreviewExamPage);

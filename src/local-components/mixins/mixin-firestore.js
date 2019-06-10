@@ -1,3 +1,4 @@
+/* @polymerMixin */
 import { dedupingMixin } from '@polymer/polymer/lib/utils/mixin.js'
 import { FirebaseMixin } from './mixin-firebase.js';
 
@@ -37,6 +38,24 @@ let firestoreMixin = (superClass) => class extends FirebaseMixin(superClass) {
 
   deleteDoc(collection, id) {
     return this._getStore().collection(collection).doc(id).delete();
+  }
+
+  getReference(collection, reference) {
+    return this._getStore().collection(collection).doc(reference);
+  }
+
+  simpleQueryWithReference(collection, whereOne, whereTwo, reference) {
+    let collectionReference = this._getStore().collection(collection);
+    let results = [];
+    return new Promise((resolve, reject) => {
+      collectionReference.where(whereOne, whereTwo, reference).get().then(querySnapshot => {
+        querySnapshot.forEach(doc => results.push({
+          id: doc.id,
+          data: doc.data()
+        }));
+        resolve(results);
+      }).catch(error => reject(error));
+    });
   }
 
   readCollection(collection) {

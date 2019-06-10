@@ -1,3 +1,4 @@
+/* @polymerMixin */
 import { dedupingMixin } from '@polymer/polymer/lib/utils/mixin.js'
 import * as firebase from "@firebase/app";
 

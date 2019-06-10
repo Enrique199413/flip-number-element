@@ -2,7 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d455f4a-875f-440a-858d-679445ff2356" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/component-pages/candidate-page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component-pages/config-page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component-pages/create-test-page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component-pages/preview-exam-page.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/hiring-app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/hiring-app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/hiring-app/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/hiring-app/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/hiring-app/node_modules/@webcomponents/webcomponentsjs/bundles/webcomponents-ce.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/hiring-app/node_modules/@webcomponents/webcomponentsjs/bundles/webcomponents-ce.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/hiring-app/node_modules/@webcomponents/webcomponentsjs/bundles/webcomponents-sd-ce-pf.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/hiring-app/node_modules/@webcomponents/webcomponentsjs/bundles/webcomponents-sd-ce-pf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/hiring-app/node_modules/@webcomponents/webcomponentsjs/bundles/webcomponents-sd-ce.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/hiring-app/node_modules/@webcomponents/webcomponentsjs/bundles/webcomponents-sd-ce.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/hiring-app/node_modules/@webcomponents/webcomponentsjs/bundles/webcomponents-sd.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/hiring-app/node_modules/@webcomponents/webcomponentsjs/bundles/webcomponents-sd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/hiring-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/hiring-app/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/hiring-app/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/hiring-app/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/hiring-app/src/hiring-app/hiring-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/hiring-app/src/hiring-app/hiring-app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/polymer.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/polymer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/polymer.json" beforeDir="false" afterPath="$PROJECT_DIR$/polymer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component-pages/exam-page.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component-pages/exam-page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hiring-app/hiring-app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hiring-app/hiring-app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/local-components/mixins/mixin-firebase.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/local-components/mixins/mixin-firebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/local-components/mixins/mixin-firestore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/local-components/mixins/mixin-firestore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/local-components/mixins/mixin-utilities.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/local-components/mixins/mixin-utilities.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,10 +39,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/local-components/mixins/mixin-utilities.js">
+        <entry file="file://$PROJECT_DIR$/polymer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="272">
+              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -27,10 +50,64 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hiring-app/hiring-app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="896">
-              <caret line="56" column="11" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
+            <state relative-caret-position="89">
+              <caret line="177" column="42" selection-start-line="177" selection-start-column="42" selection-end-line="177" selection-end-column="42" />
               <folding>
                 <element signature="e#0#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/local-components/mixins/mixin-firebase.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="19" selection-start-column="19" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#67#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/hiring-app/hiring-app_test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="90" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/component-pages/preview-exam-page.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="92" column="9" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/local-components/mixins/mixin-firestore.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="19" selection-start-column="19" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#67#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -39,29 +116,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/component-pages/exam-page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#73#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/local-components/shared-styles/base-style.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/local-components/app-components/loading-component.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="44" />
+            <state relative-caret-position="447">
+              <caret line="100" column="6" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="33" />
               <folding>
                 <element signature="e#0#73#0" expanded="true" />
               </folding>
@@ -70,22 +126,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/component-pages/login-page.js">
+        <entry file="file://$PROJECT_DIR$/src/local-components/mixins/mixin-utilities.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#73#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="19" selection-start-column="19" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.travis.yml">
+        <entry file="file://$PROJECT_DIR$/src/component-pages/create-test-page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+            <state relative-caret-position="336">
+              <caret line="100" column="18" selection-start-line="96" selection-start-column="12" selection-end-line="100" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#73#0" expanded="true" />
+                <element signature="n#paper-dialog#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,9 +158,14 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>neon</find>
       <find>__ensureOutlet</find>
       <find>setOutlet</find>
+      <find>addNewExam</find>
+      <find>neon</find>
+      <find>openNewExam</find>
+      <find>setRouter</find>
+      <find>monaco</find>
+      <find>webComponents-load</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -118,18 +180,24 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/component-pages/login-page.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/local-components/app-components/loading-component.js" />
+        <option value="$PROJECT_DIR$/src/local-components/shared-styles/base-style.js" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/src/component-pages/create-test.js" />
+        <option value="$PROJECT_DIR$/src/component-pages/candidate-page.js" />
+        <option value="$PROJECT_DIR$/src/component-pages/config-page.js" />
+        <option value="$PROJECT_DIR$/package-lock.json" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/component-pages/exam-page.js" />
+        <option value="$PROJECT_DIR$/src/component-pages/create-test-page.js" />
+        <option value="$PROJECT_DIR$/src/component-pages/preview-exam-page.js" />
         <option value="$PROJECT_DIR$/polymer.json" />
+        <option value="$PROJECT_DIR$/src/hiring-app/hiring-app.js" />
         <option value="$PROJECT_DIR$/src/local-components/mixins/mixin-firebase.js" />
         <option value="$PROJECT_DIR$/src/local-components/mixins/mixin-firestore.js" />
         <option value="$PROJECT_DIR$/src/local-components/mixins/mixin-utilities.js" />
-        <option value="$PROJECT_DIR$/src/local-components/shared-styles/base-style.js" />
-        <option value="$PROJECT_DIR$/src/component-pages/exam-page.js" />
-        <option value="$PROJECT_DIR$/src/hiring-app/hiring-app.js" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -161,26 +229,7 @@
               <item name="hiring-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="hiring-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="component-pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hiring-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hiring-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="hiring-app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hiring-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hiring-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="local-components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hiring-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hiring-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="local-components" type="462c0819:PsiDirectoryNode" />
-              <item name="app-components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hiring-app" type="b2602c69:ProjectViewProjectNode" />
@@ -188,13 +237,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="local-components" type="462c0819:PsiDirectoryNode" />
               <item name="mixins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hiring-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hiring-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="local-components" type="462c0819:PsiDirectoryNode" />
-              <item name="shared-styles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -205,7 +247,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/local-components/mixins" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/component-pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -215,14 +257,15 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2018.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\sande\Documents\hiring-app\src\local-components\mixins" />
-      <recent name="C:\Users\sande\Documents\hiring-app\src\component-pages" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sande\Documents\hiring-app\docs" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sande\Documents\hiring-app\src\component-pages" />
+      <recent name="C:\Users\sande\Documents\hiring-app\src\local-components\mixins" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -352,15 +395,16 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28687000" />
+    <option name="totallyTimeSpent" value="41289000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21414408" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21414408" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
@@ -370,7 +414,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.9107649" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.5495751" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -420,13 +464,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/docs/service-worker.js" />
     <entry file="file://$PROJECT_DIR$/docs/index.html" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build/hiring-app/404.html" />
     <entry file="file://$PROJECT_DIR$/build/hiring-app/index.html" />
     <entry file="file://$PROJECT_DIR$/firebase.json">
@@ -439,20 +476,6 @@
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@vaadin/router/dist/vaadin-router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -460,53 +483,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/polymer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@polymer/iron-flex-layout/iron-flex-layout-classes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-624" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/local-components/mixins/mixin-firestore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="37" column="26" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/local-components/mixins/mixin-firebase.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="46" selection-end-line="30" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#67#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/local-components/mixins/mixin-utilities.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hiring-app/hiring-app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="896">
-          <caret line="56" column="11" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/local-components/shared-styles/base-style.js">
@@ -526,25 +505,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/report.20190609.141632.5804.0.001.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1152" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/report.20190609.141632.5804.0.001.json" />
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/component-pages/exam-page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -555,6 +520,130 @@
           <folding>
             <element signature="e#0#73#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component-pages/config-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="80" selection-start-line="13" selection-start-column="80" selection-end-line="13" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component-pages/candidate-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="76" column="8" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/firebase/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="6990" column="4" selection-start-line="6990" selection-start-column="4" selection-end-line="6990" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component-pages/exam-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="100" column="6" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component-pages/create-test-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="100" column="18" selection-start-line="96" selection-start-column="12" selection-end-line="100" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+            <element signature="n#paper-dialog#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/component-pages/preview-exam-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="92" column="9" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/hiring-app/hiring-app_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polymer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hiring-app/hiring-app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="177" column="42" selection-start-line="177" selection-start-column="42" selection-end-line="177" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/local-components/mixins/mixin-firebase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/local-components/mixins/mixin-firestore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/local-components/mixins/mixin-utilities.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
