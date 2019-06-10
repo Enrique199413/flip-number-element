@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["index.html","cd67261e9ab280ee5e7f2c522b3a1faf"],["src/hiring-app/hiring-app.js","e6f8cf7ee67fa4918cc6d41db2150e37"]];
+var precacheConfig = [["index.html","6fceb9c045cea5ffc3edb314965163e2"],["src/hiring-app/hiring-app.js","2fc82f906498b97b80c3ca152cd6f238"]];
 var cacheName = 'sw-precache-v3--' + (self.registration ? self.registration.scope : '');
 
 

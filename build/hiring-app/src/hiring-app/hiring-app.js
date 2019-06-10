@@ -1,4 +1,4 @@
-define(["exports","meta"],function(_exports,meta){"use strict";Object.defineProperty(_exports,"__esModule",{value:/*upperOpen=*/ /*upperOpen=*/ /*upperOpen=*/ /*upperOpen=*/ /* hasCommittedMutations= */ /* excludesMetadataChanges= */ /*updateLimboDocuments=*/ /*keepPersistedQueryData=*/ /*keepPersistedQueryData=*/ /*keepPersistedQueryData=*/ /*arrayElement=*/ /*fromCache=*/ /*before=*/ /*before=*/!0});_exports.$documentWaitDefault=documentWait;_exports.__asyncDelegator=__asyncDelegator;_exports.__asyncGenerator=__asyncGenerator;_exports.__asyncValues=__asyncValues;_exports.__await=__await;_exports.__awaiter=__awaiter;_exports.__decorate=__decorate;_exports.__exportStar=__exportStar;_exports.__extends=__extends;_exports.__generator=__generator;_exports.__importDefault=__importDefault;_exports.__importStar=__importStar;_exports.__makeTemplateObject=__makeTemplateObject;_exports.__metadata=__metadata;_exports.__param=__param;_exports.__read=__read;_exports.__rest=__rest;_exports.__spread=__spread;_exports.__values=__values;_exports._composedTreeContains=_composedTreeContains;_exports._getScrollInfo=_getScrollInfo;_exports._getScrollableNodes=_getScrollableNodes;_exports._getScrollingNode=_getScrollingNode;_exports._hasCachedLockedElement=_hasCachedLockedElement;_exports._hasCachedUnlockedElement=_hasCachedUnlockedElement;_exports._lockScrollInteractions=_lockScrollInteractions;_exports._scrollInteractionHandler=_scrollInteractionHandler;_exports._shouldPreventScrolling=_shouldPreventScrolling;_exports._unlockScrollInteractions=_unlockScrollInteractions;_exports.addListener=addListener;_exports.afterNextRender=afterNextRender;_exports.applyCss=applyCss;_exports.applyStyle=applyStyle;_exports.applyStylePlaceHolder=applyStylePlaceHolder;_exports.async=async;_exports.beforeNextRender=beforeNextRender;_exports.calculateSplices=calculateSplices;_exports.camelToDashCase=camelToDashCase;_exports.createScopeStyle=createScopeStyle;_exports.createSubscribe=createSubscribe;_exports.cssFromModule=cssFromModule;_exports.cssFromModuleImports=cssFromModuleImports;_exports.cssFromModules=cssFromModules;_exports.cssFromTemplate=cssFromTemplate;_exports.dashToCamelCase=dashToCamelCase;_exports.deepCopy=deepCopy;_exports.deepExtend=deepExtend;_exports.deepTargetFind=deepTargetFind;_exports.detectMixin=detectMixin;_exports.dumpRegistrations=dumpRegistrations;_exports.elementHasBuiltCss=elementHasBuiltCss;_exports.elementIsScrollLocked=elementIsScrollLocked;_exports.elementsAreInvalid=elementsAreInvalid;_exports.errorPrefix=errorPrefix;_exports.findMatchingParen=findMatchingParen;_exports.flush$2=flush;_exports.forEachRule=forEachRule;_exports.gatherStyleText=gatherStyleText;_exports.get=get;_exports.getBuildComment=getBuildComment;_exports.getComputedStyleValue=getComputedStyleValue;_exports.getCssBuild=getCssBuild;_exports.getIsExtends=getIsExtends;_exports.getUA=getUA;_exports.incrementInstanceCount=incrementInstanceCount;_exports.invalidate=invalidate;_exports.invalidateTemplate=invalidateTemplate;_exports.isAncestor=isAncestor;_exports.isBrowser=isBrowser;_exports.isDescendant=isDescendant;_exports.isKeyframesSelector=isKeyframesSelector;_exports.isMobileCordova=isMobileCordova;_exports.isNode=isNode;_exports.isNodeSdk=isNodeSdk;_exports.isOptimalCssBuild=isOptimalCssBuild;_exports.isPath=isPath;_exports.isReactNative=isReactNative;_exports.isTargetedBuild=isTargetedBuild;_exports.isUnscopedStyle=isUnscopedStyle;_exports.isValid=isValid;_exports.isValidating=isValidating;_exports.jsonEval=jsonEval;_exports.matches=matches;_exports.mixinBehaviors=mixinBehaviors;_exports.modelForElement=modelForElement;_exports.normalize=normalize;_exports.parse=parse;_exports.patchProperty=patchProperty;_exports.pathFromUrl=pathFromUrl;_exports.prevent=prevent;_exports.processUnscopedStyle=processUnscopedStyle;_exports.processVariableAndFallback=processVariableAndFallback;_exports.pushScrollLock=pushScrollLock;_exports.register=register$1;_exports.register$1=register;_exports.registerFirestore=registerFirestore;_exports.removeCustomPropAssignment=removeCustomPropAssignment;_exports.removeListener=removeListener;_exports.removeScrollLock=removeScrollLock;_exports.resetMouseCanceller=resetMouseCanceller;_exports.resolveCss=resolveCss;_exports.resolveUrl=resolveUrl;_exports.root=root;_exports.rulesForStyle=rulesForStyle;_exports.set=set;_exports.setElementClassRaw=setElementClassRaw;_exports.setLogLevel=setLogLevel;_exports.setTouchAction=setTouchAction;_exports.split=split;_exports.splitSelectorList=splitSelectorList;_exports.startValidating=startValidating;_exports.startValidatingTemplate=startValidatingTemplate;_exports.stringify=stringify;_exports.stringify$1=stringify$1;_exports.stylesFromModule=stylesFromModule;_exports.stylesFromModuleImports=stylesFromModuleImports;_exports.stylesFromModules=stylesFromModules;_exports.stylesFromTemplate=stylesFromTemplate;_exports.templateIsValid=templateIsValid;_exports.templateIsValidating=templateIsValidating;_exports.templatize=templatize;_exports.toCssText=toCssText;_exports.translate=translate;_exports.updateNativeProperties=updateNativeProperties;_exports.validateCallback=validateCallback;_exports.validateContextObject=validateContextObject;_exports.validateNamespace=validateNamespace;_exports.ANIMATION_MATCH=_exports.$wrap=_exports.$vaadinRouter=_exports.$unscopedStyleHandler=_exports.$tslibEs6=_exports.$templatizerBehavior=_exports.$templatize=_exports.$templateStamp=_exports.$templateMapDefault=_exports.$templateMap=_exports.$telemetry=_exports.$styleUtil=_exports.$styleSettings=_exports.$styleGather=_exports.$settings=_exports.$resolveUrl=_exports.$renderStatus=_exports.$propertyEffects=_exports.$propertyAccessors=_exports.$propertiesMixin=_exports.$propertiesChanged=_exports.$polymerLegacy=_exports.$polymerFn=_exports.$polymerElement=_exports.$polymerDom=_exports.$path=_exports.$paperSpinnerBehavior=_exports.$paperRippleBehavior=_exports.$paperItemBehavior=_exports.$paperInputBehavior=_exports.$paperInputAddonBehavior=_exports.$paperInkyFocusBehavior=_exports.$paperDialogBehavior=_exports.$paperButtonBehavior=_exports.$neonAnimationRunnerBehavior=_exports.$neonAnimatableBehavior=_exports.$mutableDataBehavior=_exports.$mutableData=_exports.$mixinUtilities=_exports.$mixinFirestore=_exports.$mixinFirebase=_exports.$mixin=_exports.$legacyElementMixin=_exports.$ironValidatableBehavior=_exports.$ironSelection=_exports.$ironSelectable=_exports.$ironScrollTargetBehavior=_exports.$ironScrollManager=_exports.$ironResizableBehavior=_exports.$ironRangeBehavior=_exports.$ironOverlayManager=_exports.$ironOverlayBehavior=_exports.$ironMultiSelectable=_exports.$ironMeta=_exports.$ironMenuBehavior=_exports.$ironFormElementBehavior=_exports.$ironFocusablesHelper=_exports.$ironFitBehavior=_exports.$ironControlState=_exports.$ironButtonState=_exports.$ironA11yKeysBehavior=_exports.$ironA11yAnnouncer=_exports.$indexEsmDefault$1=_exports.firebase=_exports.$indexEsmDefault=_exports.$indexEsm$4=_exports.$indexEsm$3=_exports.$indexEsm$2=_exports.$indexEsm$1=_exports.$indexEsm=_exports.$htmlTag=_exports.$helpers=_exports.$gestures=_exports.$gestureEventListeners=_exports.$flush=_exports.$flattenedNodesObserver=_exports.$elementMixin=_exports.$domRepeat=_exports.$domModule=_exports.$domIf=_exports.$domBind=_exports.$documentWait=_exports.$dirMixin=_exports.$debounce=_exports.$customStyleInterfaceDefault=_exports.$customStyleInterface$1=_exports.$customStyle=_exports.$cssParse=_exports.$commonUtils=_exports.$commonRegex=_exports.$class=_exports.$caseMap=_exports.$async=_exports.$arraySplice=_exports.$arraySelector=_exports.$applyShimUtils=_exports.$applyShimDefault=_exports.$applyShim$1=_exports.$appScrollEffectsBehavior=_exports.$appLayoutBehavior=void 0;_exports.WebChannel=_exports.VAR_CONSUMED=_exports.VAR_ASSIGN=_exports.UtilitiesMixin=_exports.Templatizer=_exports.TemplateStamp=_exports.TemplateInstanceBase=_exports.StyleNode=_exports.Sha1=_exports.Router=_exports.Resolver=_exports.PropertyEffects=_exports.PropertyAccessors=_exports.PropertiesMixin=_exports.PropertiesChanged=_exports.PolymerElement=_exports.Polymer$1=_exports.Polymer=_exports.PaperSpinnerBehavior=_exports.PaperRippleBehavior=_exports.PaperItemBehaviorImpl=_exports.PaperItemBehavior=_exports.PaperInputHelper=_exports.PaperInputBehaviorImpl=_exports.PaperInputBehavior=_exports.PaperInputAddonBehavior=_exports.PaperInkyFocusBehaviorImpl=_exports.PaperInkyFocusBehavior=_exports.PaperDialogBehaviorImpl=_exports.PaperDialogBehavior=_exports.PaperButtonBehaviorImpl=_exports.PaperButtonBehavior=_exports.OptionalMutableDataBehavior=_exports.OptionalMutableData=_exports.NeonAnimationRunnerBehaviorImpl=_exports.NeonAnimationRunnerBehavior=_exports.NeonAnimatableBehavior=_exports.MutableDataBehavior=_exports.MutableData=_exports.MIXIN_MATCH=_exports.MEDIA_MATCH=_exports.Logger=_exports.LogLevel=_exports.LegacyElementMixin=_exports.IronValidatableBehaviorMeta=_exports.IronValidatableBehavior=_exports.IronSelection=_exports.IronSelectableBehavior=_exports.IronScrollTargetBehavior=_exports.IronResizableBehavior=_exports.IronRangeBehavior=_exports.IronOverlayManagerClass=_exports.IronOverlayManager=_exports.IronOverlayBehaviorImpl=_exports.IronOverlayBehavior=_exports.IronMultiSelectableBehaviorImpl=_exports.IronMultiSelectableBehavior=_exports.IronMeta=_exports.IronMenuBehaviorImpl=_exports.IronMenuBehavior=_exports.IronFormElementBehavior=_exports.IronFocusablesHelper=_exports.IronFitBehavior=_exports.IronControlState=_exports.IronButtonStateImpl=_exports.IronButtonState=_exports.IronA11yKeysBehavior=_exports.IronA11yAnnouncer=_exports.IS_VAR=_exports.HOST_SUFFIX=_exports.HOST_PREFIX=_exports.GestureEventListeners=_exports.FlattenedNodesObserver=_exports.FirebaseMixin=_exports.FirebaseError=_exports.FireStoreMixin=_exports.EventType=_exports.EventApi=_exports.ErrorFactory=_exports.ErrorCode=_exports.ElementMixin=_exports.DomRepeat=_exports.DomModule=_exports.DomIf=_exports.DomBind=_exports.DomApi=_exports.DirMixin=_exports.Deferred=_exports.Debouncer=_exports.CustomStyleProvider=_exports.CustomStyleInterfaceInterface=_exports.CustomStyle=_exports.Class=_exports.CONSTANTS=_exports.Base=_exports.BRACKETED=_exports.ArraySelectorMixin=_exports.ArraySelector=_exports.AppScrollEffectsBehavior=_exports.AppLayoutBehavior=void 0;_exports.wrap$1=_exports.wrap=_exports.version$1=_exports.version=_exports.validateArgCount=_exports.useShadow=_exports.useNativeCustomElements=_exports.useNativeCSSProperties=_exports.updateStyles=_exports.types=_exports.timeOut=_exports.syncInitialRender=_exports.stringToByteArray=_exports.stringLength=_exports.strictTemplatePolicy=_exports.setSyncInitialRender=_exports.setStrictTemplatePolicy=_exports.setSanitizeDOMValue=_exports.setRootPath=_exports.setPassiveTouchGestures=_exports.setLegacyOptimizations=_exports.setAllowTemplateFromDomModule=_exports.scrollTimingFunction=_exports.scroll=_exports.scopingAttribute=_exports.sanitizeDOMValue=_exports.safeGet=_exports.rootPath=_exports.remove=_exports.registrations=_exports.registerEffect=_exports.recognizers=_exports.querystringDecode=_exports.querystring=_exports.queryAllRoot=_exports.passiveTouchGestures=_exports.nativeShadow=_exports.nativeCssVariables=_exports.microTask=_exports.matchesSelector=_exports.map=_exports.legacyOptimizations=_exports.issuedAtTime=_exports.isValidTimestamp=_exports.isValidFormat=_exports.isNonNullObject=_exports.isEmpty=_exports.isDeep=_exports.isAdmin=_exports.instanceCount=_exports.idlePeriod=_exports.htmlLiteral=_exports.html$2=_exports.html$1=_exports.html=_exports.getValues=_exports.getCount=_exports.getAnyKey=_exports.gestures=_exports.forEach=_exports.flushDebouncers=_exports.flush$1=_exports.flush=_exports.findValue=_exports.findOriginalTarget=_exports.findKey=_exports.extend=_exports.every=_exports.dom=_exports.disableRuntime=_exports.dedupingMixin=_exports.decode=_exports.currentLockingElement=_exports.cssBuild=_exports.createWebChannelTransport=_exports.contains=_exports.clone=_exports.base64Encode=_exports.base64Decode=_exports.base64=_exports.assertionError=_exports.assert=_exports.animationFrame=_exports.allowTemplateFromDomModule=_exports.enqueueDebouncer$1=_exports.enqueueDebouncer=_exports.addDebouncer=_exports.add=_exports._unlockedElementCache=_exports._scrollTimer=_exports._scrollEffects=_exports._lockingElements=_exports._lockedElementCache=_exports._boundScrollHandler=_exports.__assign=_exports.XhrIo=void 0;meta=babelHelpers.interopRequireWildcard(meta);/*! *****************************************************************************
+define(["exports","meta"],function(_exports,meta){"use strict";Object.defineProperty(_exports,"__esModule",{value:/*upperOpen=*/ /*upperOpen=*/ /*upperOpen=*/ /*upperOpen=*/ /* hasCommittedMutations= */ /* excludesMetadataChanges= */ /*updateLimboDocuments=*/ /*keepPersistedQueryData=*/ /*keepPersistedQueryData=*/ /*keepPersistedQueryData=*/ /*arrayElement=*/ /*fromCache=*/ /*before=*/ /*before=*/!0});_exports.$documentWaitDefault=documentWait;_exports.__asyncDelegator=__asyncDelegator;_exports.__asyncGenerator=__asyncGenerator;_exports.__asyncValues=__asyncValues;_exports.__await=__await;_exports.__awaiter=__awaiter;_exports.__decorate=__decorate;_exports.__exportStar=__exportStar;_exports.__extends=__extends;_exports.__generator=__generator;_exports.__importDefault=__importDefault;_exports.__importStar=__importStar;_exports.__makeTemplateObject=__makeTemplateObject;_exports.__metadata=__metadata;_exports.__param=__param;_exports.__read=__read;_exports.__rest=__rest;_exports.__spread=__spread;_exports.__values=__values;_exports._composedTreeContains=_composedTreeContains;_exports._getScrollInfo=_getScrollInfo;_exports._getScrollableNodes=_getScrollableNodes;_exports._getScrollingNode=_getScrollingNode;_exports._hasCachedLockedElement=_hasCachedLockedElement;_exports._hasCachedUnlockedElement=_hasCachedUnlockedElement;_exports._lockScrollInteractions=_lockScrollInteractions;_exports._scrollInteractionHandler=_scrollInteractionHandler;_exports._shouldPreventScrolling=_shouldPreventScrolling;_exports._unlockScrollInteractions=_unlockScrollInteractions;_exports.addListener=addListener;_exports.afterNextRender=afterNextRender;_exports.applyCss=applyCss;_exports.applyStyle=applyStyle;_exports.applyStylePlaceHolder=applyStylePlaceHolder;_exports.async=async;_exports.beforeNextRender=beforeNextRender;_exports.calculateSplices=calculateSplices;_exports.camelToDashCase=camelToDashCase;_exports.createScopeStyle=createScopeStyle;_exports.createSubscribe=createSubscribe;_exports.cssFromModule=cssFromModule;_exports.cssFromModuleImports=cssFromModuleImports;_exports.cssFromModules=cssFromModules;_exports.cssFromTemplate=cssFromTemplate;_exports.dashToCamelCase=dashToCamelCase;_exports.deepCopy=deepCopy;_exports.deepExtend=deepExtend;_exports.deepTargetFind=deepTargetFind;_exports.detectMixin=detectMixin;_exports.dumpRegistrations=dumpRegistrations;_exports.elementHasBuiltCss=elementHasBuiltCss;_exports.elementIsScrollLocked=elementIsScrollLocked;_exports.elementsAreInvalid=elementsAreInvalid;_exports.errorPrefix=errorPrefix;_exports.findMatchingParen=findMatchingParen;_exports.flush$2=flush;_exports.forEachRule=forEachRule;_exports.gatherStyleText=gatherStyleText;_exports.get=get;_exports.getBuildComment=getBuildComment;_exports.getComputedStyleValue=getComputedStyleValue;_exports.getCssBuild=getCssBuild;_exports.getIsExtends=getIsExtends;_exports.getUA=getUA;_exports.incrementInstanceCount=incrementInstanceCount;_exports.invalidate=invalidate;_exports.invalidateTemplate=invalidateTemplate;_exports.isAncestor=isAncestor;_exports.isBrowser=isBrowser;_exports.isDescendant=isDescendant;_exports.isKeyframesSelector=isKeyframesSelector;_exports.isMobileCordova=isMobileCordova;_exports.isNode=isNode;_exports.isNodeSdk=isNodeSdk;_exports.isOptimalCssBuild=isOptimalCssBuild;_exports.isPath=isPath;_exports.isReactNative=isReactNative;_exports.isTargetedBuild=isTargetedBuild;_exports.isUnscopedStyle=isUnscopedStyle;_exports.isValid=isValid;_exports.isValidating=isValidating;_exports.jsonEval=jsonEval;_exports.matches=matches;_exports.mixinBehaviors=mixinBehaviors;_exports.modelForElement=modelForElement;_exports.normalize=normalize;_exports.parse=parse;_exports.patchProperty=patchProperty;_exports.pathFromUrl=pathFromUrl;_exports.prevent=prevent;_exports.processUnscopedStyle=processUnscopedStyle;_exports.processVariableAndFallback=processVariableAndFallback;_exports.pushScrollLock=pushScrollLock;_exports.register=register$1;_exports.register$1=register;_exports.registerFirestore=registerFirestore;_exports.removeCustomPropAssignment=removeCustomPropAssignment;_exports.removeListener=removeListener;_exports.removeScrollLock=removeScrollLock;_exports.resetMouseCanceller=resetMouseCanceller;_exports.resolveCss=resolveCss;_exports.resolveUrl=resolveUrl;_exports.root=root;_exports.rulesForStyle=rulesForStyle;_exports.set=set;_exports.setElementClassRaw=setElementClassRaw;_exports.setLogLevel=setLogLevel;_exports.setTouchAction=setTouchAction;_exports.split=split;_exports.splitSelectorList=splitSelectorList;_exports.startValidating=startValidating;_exports.startValidatingTemplate=startValidatingTemplate;_exports.stringify=stringify;_exports.stringify$1=stringify$1;_exports.stylesFromModule=stylesFromModule;_exports.stylesFromModuleImports=stylesFromModuleImports;_exports.stylesFromModules=stylesFromModules;_exports.stylesFromTemplate=stylesFromTemplate;_exports.templateIsValid=templateIsValid;_exports.templateIsValidating=templateIsValidating;_exports.templatize=templatize;_exports.toCssText=toCssText;_exports.translate=translate;_exports.updateNativeProperties=updateNativeProperties;_exports.validateCallback=validateCallback;_exports.validateContextObject=validateContextObject;_exports.validateNamespace=validateNamespace;_exports.$templatizerBehavior=_exports.$templatize=_exports.$templateStamp=_exports.$templateMapDefault=_exports.$templateMap=_exports.$telemetry=_exports.$styleUtil=_exports.$styleSettings=_exports.$styleGather=_exports.$settings=_exports.$resolveUrl=_exports.$renderStatus=_exports.$propertyEffects=_exports.$propertyAccessors=_exports.$propertiesMixin=_exports.$propertiesChanged=_exports.$polymerLegacy=_exports.$polymerFn=_exports.$polymerElement=_exports.$polymerDom=_exports.$path=_exports.$paperSpinnerBehavior=_exports.$paperRippleBehavior=_exports.$paperMenuButton=_exports.$paperItemBehavior=_exports.$paperInputBehavior=_exports.$paperInputAddonBehavior=_exports.$paperInkyFocusBehavior=_exports.$paperDialogBehavior=_exports.$paperCheckedElementBehavior=_exports.$paperButtonBehavior=_exports.$neonAnimationRunnerBehavior=_exports.$neonAnimationBehavior=_exports.$neonAnimatableBehavior=_exports.$mutableDataBehavior=_exports.$mutableData=_exports.$mixinUtilities=_exports.$mixinFirestore=_exports.$mixinFirebase=_exports.$mixin=_exports.$legacyElementMixin=_exports.$ironValidatableBehavior=_exports.$ironSelection=_exports.$ironSelectable=_exports.$ironScrollTargetBehavior=_exports.$ironScrollManager=_exports.$ironResizableBehavior=_exports.$ironRangeBehavior=_exports.$ironOverlayManager=_exports.$ironOverlayBehavior=_exports.$ironMultiSelectable=_exports.$ironMeta=_exports.$ironMenubarBehavior=_exports.$ironMenuBehavior=_exports.$ironFormElementBehavior=_exports.$ironFocusablesHelper=_exports.$ironFitBehavior=_exports.$ironControlState=_exports.$ironCheckedElementBehavior=_exports.$ironButtonState=_exports.$ironA11yKeysBehavior=_exports.$ironA11yAnnouncer=_exports.$indexEsmDefault$1=_exports.firebase=_exports.$indexEsmDefault=_exports.$indexEsm$4=_exports.$indexEsm$3=_exports.$indexEsm$2=_exports.$indexEsm$1=_exports.$indexEsm=_exports.$htmlTag=_exports.$helpers=_exports.$gestures=_exports.$gestureEventListeners=_exports.$flush=_exports.$flattenedNodesObserver=_exports.$elementMixin=_exports.$domRepeat=_exports.$domModule=_exports.$domIf=_exports.$domBind=_exports.$documentWait=_exports.$dirMixin=_exports.$debounce=_exports.$customStyleInterfaceDefault=_exports.$customStyleInterface$1=_exports.$customStyle=_exports.$cssParse=_exports.$commonUtils=_exports.$commonRegex=_exports.$class=_exports.$caseMap=_exports.$async=_exports.$arraySplice=_exports.$arraySelector=_exports.$applyShimUtils=_exports.$applyShimDefault=_exports.$applyShim$1=_exports.$appScrollEffectsBehavior=_exports.$appLayoutBehavior=void 0;_exports.PropertiesMixin=_exports.PropertiesChanged=_exports.PolymerElement=_exports.Polymer$1=_exports.Polymer=_exports.PaperSpinnerBehavior=_exports.PaperRippleBehavior=_exports.PaperMenuButton=_exports.PaperItemBehaviorImpl=_exports.PaperItemBehavior=_exports.PaperInputHelper=_exports.PaperInputBehaviorImpl=_exports.PaperInputBehavior=_exports.PaperInputAddonBehavior=_exports.PaperInkyFocusBehaviorImpl=_exports.PaperInkyFocusBehavior=_exports.PaperDialogBehaviorImpl=_exports.PaperDialogBehavior=_exports.PaperCheckedElementBehaviorImpl=_exports.PaperCheckedElementBehavior=_exports.PaperButtonBehaviorImpl=_exports.PaperButtonBehavior=_exports.OptionalMutableDataBehavior=_exports.OptionalMutableData=_exports.NeonAnimationRunnerBehaviorImpl=_exports.NeonAnimationRunnerBehavior=_exports.NeonAnimationBehavior=_exports.NeonAnimatableBehavior=_exports.MutableDataBehavior=_exports.MutableData=_exports.MIXIN_MATCH=_exports.MEDIA_MATCH=_exports.Logger=_exports.LogLevel=_exports.LegacyElementMixin=_exports.IronValidatableBehaviorMeta=_exports.IronValidatableBehavior=_exports.IronSelection=_exports.IronSelectableBehavior=_exports.IronScrollTargetBehavior=_exports.IronResizableBehavior=_exports.IronRangeBehavior=_exports.IronOverlayManagerClass=_exports.IronOverlayManager=_exports.IronOverlayBehaviorImpl=_exports.IronOverlayBehavior=_exports.IronMultiSelectableBehaviorImpl=_exports.IronMultiSelectableBehavior=_exports.IronMeta=_exports.IronMenubarBehaviorImpl=_exports.IronMenubarBehavior=_exports.IronMenuBehaviorImpl=_exports.IronMenuBehavior=_exports.IronFormElementBehavior=_exports.IronFocusablesHelper=_exports.IronFitBehavior=_exports.IronControlState=_exports.IronCheckedElementBehaviorImpl=_exports.IronCheckedElementBehavior=_exports.IronButtonStateImpl=_exports.IronButtonState=_exports.IronA11yKeysBehavior=_exports.IronA11yAnnouncer=_exports.IS_VAR=_exports.HOST_SUFFIX=_exports.HOST_PREFIX=_exports.GestureEventListeners=_exports.FlattenedNodesObserver=_exports.FirebaseMixin=_exports.FirebaseError=_exports.FireStoreMixin=_exports.EventType=_exports.EventApi=_exports.ErrorFactory=_exports.ErrorCode=_exports.ElementMixin=_exports.DomRepeat=_exports.DomModule=_exports.DomIf=_exports.DomBind=_exports.DomApi=_exports.DirMixin=_exports.Deferred=_exports.Debouncer=_exports.CustomStyleProvider=_exports.CustomStyleInterfaceInterface=_exports.CustomStyle=_exports.Class=_exports.CONSTANTS=_exports.Base=_exports.BRACKETED=_exports.ArraySelectorMixin=_exports.ArraySelector=_exports.AppScrollEffectsBehavior=_exports.AppLayoutBehavior=_exports.ANIMATION_MATCH=_exports.$wrap=_exports.$vaadinRouter=_exports.$unscopedStyleHandler=_exports.$tslibEs6=void 0;_exports.types=_exports.timeOut=_exports.syncInitialRender=_exports.stringToByteArray=_exports.stringLength=_exports.strictTemplatePolicy=_exports.setSyncInitialRender=_exports.setStrictTemplatePolicy=_exports.setSanitizeDOMValue=_exports.setRootPath=_exports.setPassiveTouchGestures=_exports.setLegacyOptimizations=_exports.setAllowTemplateFromDomModule=_exports.scrollTimingFunction=_exports.scroll=_exports.scopingAttribute=_exports.sanitizeDOMValue=_exports.safeGet=_exports.rootPath=_exports.remove=_exports.registrations=_exports.registerEffect=_exports.recognizers=_exports.querystringDecode=_exports.querystring=_exports.queryAllRoot=_exports.passiveTouchGestures=_exports.nativeShadow=_exports.nativeCssVariables=_exports.microTask=_exports.matchesSelector=_exports.map=_exports.legacyOptimizations=_exports.issuedAtTime=_exports.isValidTimestamp=_exports.isValidFormat=_exports.isNonNullObject=_exports.isEmpty=_exports.isDeep=_exports.isAdmin=_exports.instanceCount=_exports.idlePeriod=_exports.htmlLiteral=_exports.html$2=_exports.html$1=_exports.html=_exports.getValues=_exports.getCount=_exports.getAnyKey=_exports.gestures=_exports.forEach=_exports.flushDebouncers=_exports.flush$1=_exports.flush=_exports.findValue=_exports.findOriginalTarget=_exports.findKey=_exports.extend=_exports.every=_exports.dom=_exports.disableRuntime=_exports.dedupingMixin=_exports.decode=_exports.currentLockingElement=_exports.cssBuild=_exports.createWebChannelTransport=_exports.contains=_exports.clone=_exports.base64Encode=_exports.base64Decode=_exports.base64=_exports.assertionError=_exports.assert=_exports.animationFrame=_exports.allowTemplateFromDomModule=_exports.enqueueDebouncer$1=_exports.enqueueDebouncer=_exports.addDebouncer=_exports.add=_exports._unlockedElementCache=_exports._scrollTimer=_exports._scrollEffects=_exports._lockingElements=_exports._lockedElementCache=_exports._boundScrollHandler=_exports.__assign=_exports.XhrIo=_exports.WebChannel=_exports.VAR_CONSUMED=_exports.VAR_ASSIGN=_exports.UtilitiesMixin=_exports.Templatizer=_exports.TemplateStamp=_exports.TemplateInstanceBase=_exports.StyleNode=_exports.Sha1=_exports.Router=_exports.Resolver=_exports.PropertyEffects=_exports.PropertyAccessors=void 0;_exports.wrap$1=_exports.wrap=_exports.version$1=_exports.version=_exports.validateArgCount=_exports.useShadow=_exports.useNativeCustomElements=_exports.useNativeCSSProperties=_exports.updateStyles=void 0;meta=babelHelpers.interopRequireWildcard(meta);/*! *****************************************************************************
 Copyright (c) Microsoft Corporation. All rights reserved.
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use
 this file except in compliance with the License. You may obtain a copy of the
@@ -13127,7 +13127,265 @@ this._setFocused("focus"===event.type);return},_disabledChanged:function(disable
 // This distinction is important when restoring the value because
 // leaving `-1` hides shadow root children from the tab order.
 this._oldTabIndex=this.getAttribute("tabindex");this._setFocused(!1);this.tabIndex=-1;this.blur()}else if(this._oldTabIndex!==void 0){if(null===this._oldTabIndex){this.removeAttribute("tabindex")}else{this.setAttribute("tabindex",this._oldTabIndex)}}},_changedControlState:function(){// _controlStateChanged is abstract, follow-on behaviors may implement it
-if(this._controlStateChanged){this._controlStateChanged()}}};_exports.IronControlState=IronControlState;var ironControlState={IronControlState:IronControlState};_exports.$ironControlState=ironControlState;const IronButtonStateImpl={properties:{/**
+if(this._controlStateChanged){this._controlStateChanged()}}};_exports.IronControlState=IronControlState;var ironControlState={IronControlState:IronControlState};_exports.$ironControlState=ironControlState;class IronMeta{/**
+   * @param {{
+   *   type: (string|null|undefined),
+   *   key: (string|null|undefined),
+   *   value: *,
+   * }=} options
+   */constructor(options){IronMeta[" "](options);/** @type {string} */this.type=options&&options.type||"default";/** @type {string|null|undefined} */this.key=options&&options.key;if(options&&"value"in options){/** @type {*} */this.value=options.value}}/** @return {*} */get value(){var type=this.type,key=this.key;if(type&&key){return IronMeta.types[type]&&IronMeta.types[type][key]}}/** @param {*} value */set value(value){var type=this.type,key=this.key;if(type&&key){type=IronMeta.types[type]=IronMeta.types[type]||{};if(null==value){delete type[key]}else{type[key]=value}}}/** @return {!Array<*>} */get list(){var type=this.type;if(type){var items=IronMeta.types[this.type];if(!items){return[]}return Object.keys(items).map(function(key){return metaDatas[this.type][key]},this)}}/**
+     * @param {string} key
+     * @return {*}
+     */byKey(key){this.key=key;return this.value}}_exports.IronMeta=IronMeta;;// This function is used to convince Closure not to remove constructor calls
+// for instances that are not held anywhere. For example, when
+// `new IronMeta({...})` is used only for the side effect of adding a value.
+IronMeta[" "]=function(){};IronMeta.types={};var metaDatas=IronMeta.types;/**
+                                `iron-meta` is a generic element you can use for sharing information across the
+                                DOM tree. It uses [monostate pattern](http://c2.com/cgi/wiki?MonostatePattern)
+                                such that any instance of iron-meta has access to the shared information. You
+                                can use `iron-meta` to share whatever you want (or create an extension [like
+                                x-meta] for enhancements).
+                                
+                                The `iron-meta` instances containing your actual data can be loaded in an
+                                import, or constructed in any way you see fit. The only requirement is that you
+                                create them before you try to access them.
+                                
+                                Examples:
+                                
+                                If I create an instance like this:
+                                
+                                    <iron-meta key="info" value="foo/bar"></iron-meta>
+                                
+                                Note that value="foo/bar" is the metadata I've defined. I could define more
+                                attributes or use child nodes to define additional metadata.
+                                
+                                Now I can access that element (and it's metadata) from any iron-meta instance
+                                via the byKey method, e.g.
+                                
+                                    meta.byKey('info');
+                                
+                                Pure imperative form would be like:
+                                
+                                    document.createElement('iron-meta').byKey('info');
+                                
+                                Or, in a Polymer element, you can include a meta in your template:
+                                
+                                    <iron-meta id="meta"></iron-meta>
+                                    ...
+                                    this.$.meta.byKey('info');
+                                
+                                @group Iron Elements
+                                @demo demo/index.html
+                                @element iron-meta
+                                */Polymer({is:"iron-meta",properties:{/**
+     * The type of meta-data.  All meta-data of the same type is stored
+     * together.
+     * @type {string}
+     */type:{type:String,value:"default"},/**
+     * The key used to store `value` under the `type` namespace.
+     * @type {?string}
+     */key:{type:String},/**
+     * The meta-data to store or retrieve.
+     * @type {*}
+     */value:{type:String,notify:!0},/**
+     * If true, `value` is set to the iron-meta instance itself.
+     */self:{type:Boolean,observer:"_selfChanged"},__meta:{type:Boolean,computed:"__computeMeta(type, key, value)"}},hostAttributes:{hidden:!0},__computeMeta:function(type,key,value){var meta=new IronMeta({type:type,key:key});if(value!==void 0&&value!==meta.value){meta.value=value}else if(this.value!==meta.value){this.value=meta.value}return meta},get list(){return this.__meta&&this.__meta.list},_selfChanged:function(self){if(self){this.value=this}},/**
+   * Retrieves meta data value by key.
+   *
+   * @method byKey
+   * @param {string} key The key of the meta-data to be returned.
+   * @return {*}
+   */byKey:function(key){return new IronMeta({type:this.type,key:key}).value}});var ironMeta={IronMeta:IronMeta};_exports.$ironMeta=ironMeta;let IronValidatableBehaviorMeta=null;/**
+                                                * `Use IronValidatableBehavior` to implement an element that validates
+                                                * user input. Use the related `IronValidatorBehavior` to add custom
+                                                * validation logic to an iron-input.
+                                                *
+                                                * By default, an `<iron-form>` element validates its fields when the user
+                                                * presses the submit button. To validate a form imperatively, call the form's
+                                                * `validate()` method, which in turn will call `validate()` on all its
+                                                * children. By using `IronValidatableBehavior`, your custom element
+                                                * will get a public `validate()`, which will return the validity of the
+                                                * element, and a corresponding `invalid` attribute, which can be used for
+                                                * styling.
+                                                *
+                                                * To implement the custom validation logic of your element, you must override
+                                                * the protected `_getValidity()` method of this behaviour, rather than
+                                                * `validate()`. See
+                                                * [this](https://github.com/PolymerElements/iron-form/blob/master/demo/simple-element.html)
+                                                * for an example.
+                                                *
+                                                * ### Accessibility
+                                                *
+                                                * Changing the `invalid` property, either manually or by calling `validate()`
+                                                * will update the `aria-invalid` attribute.
+                                                *
+                                                * @demo demo/index.html
+                                                * @polymerBehavior
+                                                */_exports.IronValidatableBehaviorMeta=IronValidatableBehaviorMeta;const IronValidatableBehavior={properties:{/**
+     * Name of the validator to use.
+     */validator:{type:String},/**
+     * True if the last call to `validate` is invalid.
+     */invalid:{notify:!0,reflectToAttribute:!0,type:Boolean,value:!1,observer:"_invalidChanged"}},registered:function(){_exports.IronValidatableBehaviorMeta=IronValidatableBehaviorMeta=new IronMeta({type:"validator"})},_invalidChanged:function(){if(this.invalid){this.setAttribute("aria-invalid","true")}else{this.removeAttribute("aria-invalid")}},/* Recompute this every time it's needed, because we don't know if the
+   * underlying IronValidatableBehaviorMeta has changed. */get _validator(){return IronValidatableBehaviorMeta&&IronValidatableBehaviorMeta.byKey(this.validator)},/**
+   * @return {boolean} True if the validator `validator` exists.
+   */hasValidator:function(){return null!=this._validator},/**
+   * Returns true if the `value` is valid, and updates `invalid`. If you want
+   * your element to have custom validation logic, do not override this method;
+   * override `_getValidity(value)` instead.
+    * @param {Object} value Deprecated: The value to be validated. By default,
+   * it is passed to the validator's `validate()` function, if a validator is
+   set.
+   * If this argument is not specified, then the element's `value` property
+   * is used, if it exists.
+   * @return {boolean} True if `value` is valid.
+   */validate:function(value){// If this is an element that also has a value property, and there was
+// no explicit value argument passed, use the element's property instead.
+if(value===void 0&&this.value!==void 0)this.invalid=!this._getValidity(this.value);else this.invalid=!this._getValidity(value);return!this.invalid},/**
+   * Returns true if `value` is valid.  By default, it is passed
+   * to the validator's `validate()` function, if a validator is set. You
+   * should override this method if you want to implement custom validity
+   * logic for your element.
+   *
+   * @param {Object} value The value to be validated.
+   * @return {boolean} True if `value` is valid.
+   */_getValidity:function(value){if(this.hasValidator()){return this._validator.validate(value)}return!0}};_exports.IronValidatableBehavior=IronValidatableBehavior;var ironValidatableBehavior={get IronValidatableBehaviorMeta(){return IronValidatableBehaviorMeta},IronValidatableBehavior:IronValidatableBehavior};_exports.$ironValidatableBehavior=ironValidatableBehavior;Polymer({_template:html`
+    <style>
+      :host {
+        display: inline-block;
+        position: relative;
+        width: 400px;
+        border: 1px solid;
+        padding: 2px;
+        -moz-appearance: textarea;
+        -webkit-appearance: textarea;
+        overflow: hidden;
+      }
+
+      .mirror-text {
+        visibility: hidden;
+        word-wrap: break-word;
+        @apply --iron-autogrow-textarea;
+      }
+
+      .fit {
+        @apply --layout-fit;
+      }
+
+      textarea {
+        position: relative;
+        outline: none;
+        border: none;
+        resize: none;
+        background: inherit;
+        color: inherit;
+        /* see comments in template */
+        width: 100%;
+        height: 100%;
+        font-size: inherit;
+        font-family: inherit;
+        line-height: inherit;
+        text-align: inherit;
+        @apply --iron-autogrow-textarea;
+      }
+
+      textarea::-webkit-input-placeholder {
+        @apply --iron-autogrow-textarea-placeholder;
+      }
+
+      textarea:-moz-placeholder {
+        @apply --iron-autogrow-textarea-placeholder;
+      }
+
+      textarea::-moz-placeholder {
+        @apply --iron-autogrow-textarea-placeholder;
+      }
+
+      textarea:-ms-input-placeholder {
+        @apply --iron-autogrow-textarea-placeholder;
+      }
+    </style>
+
+    <!-- the mirror sizes the input/textarea so it grows with typing -->
+    <!-- use &#160; instead &nbsp; of to allow this element to be used in XHTML -->
+    <div id="mirror" class="mirror-text" aria-hidden="true">&nbsp;</div>
+
+    <!-- size the input/textarea with a div, because the textarea has intrinsic size in ff -->
+    <div class="textarea-container fit">
+      <textarea id="textarea" name\$="[[name]]" aria-label\$="[[label]]" autocomplete\$="[[autocomplete]]" autofocus\$="[[autofocus]]" inputmode\$="[[inputmode]]" placeholder\$="[[placeholder]]" readonly\$="[[readonly]]" required\$="[[required]]" disabled\$="[[disabled]]" rows\$="[[rows]]" minlength\$="[[minlength]]" maxlength\$="[[maxlength]]"></textarea>
+    </div>
+`,is:"iron-autogrow-textarea",behaviors:[IronValidatableBehavior,IronControlState],properties:{/**
+     * Use this property instead of `bind-value` for two-way data binding.
+     * @type {string|number}
+     */value:{observer:"_valueChanged",type:String,notify:!0},/**
+     * This property is deprecated, and just mirrors `value`. Use `value`
+     * instead.
+     * @type {string|number}
+     */bindValue:{observer:"_bindValueChanged",type:String,notify:!0},/**
+     * The initial number of rows.
+     *
+     * @attribute rows
+     * @type number
+     * @default 1
+     */rows:{type:Number,value:1,observer:"_updateCached"},/**
+     * The maximum number of rows this element can grow to until it
+     * scrolls. 0 means no maximum.
+     *
+     * @attribute maxRows
+     * @type number
+     * @default 0
+     */maxRows:{type:Number,value:0,observer:"_updateCached"},/**
+     * Bound to the textarea's `autocomplete` attribute.
+     */autocomplete:{type:String,value:"off"},/**
+     * Bound to the textarea's `autofocus` attribute.
+     */autofocus:{type:Boolean,value:!1},/**
+     * Bound to the textarea's `inputmode` attribute.
+     */inputmode:{type:String},/**
+     * Bound to the textarea's `placeholder` attribute.
+     */placeholder:{type:String},/**
+     * Bound to the textarea's `readonly` attribute.
+     */readonly:{type:String},/**
+     * Set to true to mark the textarea as required.
+     */required:{type:Boolean},/**
+     * The minimum length of the input value.
+     */minlength:{type:Number},/**
+     * The maximum length of the input value.
+     */maxlength:{type:Number},/**
+     * Bound to the textarea's `aria-label` attribute.
+     */label:{type:String}},listeners:{input:"_onInput"},/**
+   * Returns the underlying textarea.
+   * @return {!HTMLTextAreaElement}
+   */get textarea(){return this.$.textarea},/**
+   * Returns textarea's selection start.
+   * @return {number}
+   */get selectionStart(){return this.$.textarea.selectionStart},/**
+   * Returns textarea's selection end.
+   * @return {number}
+   */get selectionEnd(){return this.$.textarea.selectionEnd},/**
+   * Sets the textarea's selection start.
+   */set selectionStart(value){this.$.textarea.selectionStart=value},/**
+   * Sets the textarea's selection end.
+   */set selectionEnd(value){this.$.textarea.selectionEnd=value},attached:function(){/* iOS has an arbitrary left margin of 3px that isn't present
+     * in any other browser, and means that the paper-textarea's cursor
+     * overlaps the label.
+     * See https://github.com/PolymerElements/paper-input/issues/468.
+     */var IS_IOS=navigator.userAgent.match(/iP(?:[oa]d|hone)/);if(IS_IOS){this.$.textarea.style.marginLeft="-3px"}},/**
+   * Returns true if `value` is valid. The validator provided in `validator`
+   * will be used first, if it exists; otherwise, the `textarea`'s validity
+   * is used.
+   * @return {boolean} True if the value is valid.
+   */validate:function(){// Use the nested input's native validity.
+var valid=this.$.textarea.validity.valid;// Only do extra checking if the browser thought this was valid.
+if(valid){// Empty, required input is invalid
+if(this.required&&""===this.value){valid=!1}else if(this.hasValidator()){valid=IronValidatableBehavior.validate.call(this,this.value)}}this.invalid=!valid;this.fire("iron-input-validate");return valid},_bindValueChanged:function(bindValue){this.value=bindValue},_valueChanged:function(value){var textarea=this.textarea;if(!textarea){return}// If the bindValue changed manually, then we need to also update
+// the underlying textarea's value. Otherwise this change was probably
+// generated from the _onInput handler, and the two values are already
+// the same.
+if(textarea.value!==value){textarea.value=!(value||0===value)?"":value}this.bindValue=value;this.$.mirror.innerHTML=this._valueForMirror();// Manually notify because we don't want to notify until after setting
+// value.
+this.fire("bind-value-changed",{value:this.bindValue})},_onInput:function(event){var eventPath=dom(event).path;this.value=eventPath?eventPath[0].value:event.target.value},_constrain:function(tokens){var _tokens;tokens=tokens||[""];// Enforce the min and max heights for a multiline input to avoid
+// measurement
+if(0<this.maxRows&&tokens.length>this.maxRows){_tokens=tokens.slice(0,this.maxRows)}else{_tokens=tokens.slice(0)}while(0<this.rows&&_tokens.length<this.rows){_tokens.push("")}// Use &#160; instead &nbsp; of to allow this element to be used in XHTML.
+return _tokens.join("<br/>")+"&#160;"},_valueForMirror:function(){var input=this.textarea;if(!input){return}this.tokens=input&&input.value?input.value.replace(/&/gm,"&amp;").replace(/"/gm,"&quot;").replace(/'/gm,"&#39;").replace(/</gm,"&lt;").replace(/>/gm,"&gt;").split("\n"):[""];return this._constrain(this.tokens)},_updateCached:function(){this.$.mirror.innerHTML=this._constrain(this.tokens)}});const IronButtonStateImpl={properties:{/**
      * If true, the user is currently holding down the button.
      */pressed:{type:Boolean,readOnly:!0,value:!1,reflectToAttribute:!0,observer:"_pressedChanged"},/**
      * If true, the button toggles the active state with each tap or press
@@ -13162,7 +13420,43 @@ if(this.isLightDescendant(/** @type {Node} */target))return;if(this.pressed){thi
 _asyncClick:function(){this.async(function(){this.click()},1)},// any of these changes are considered a change to button state
 _pressedChanged:function(pressed){this._changedButtonState()},_ariaActiveAttributeChanged:function(value,oldValue){if(oldValue&&oldValue!=value&&this.hasAttribute(oldValue)){this.removeAttribute(oldValue)}},_activeChanged:function(active,ariaActiveAttribute){if(this.toggles){this.setAttribute(this.ariaActiveAttribute,active?"true":"false")}else{this.removeAttribute(this.ariaActiveAttribute)}this._changedButtonState()},_controlStateChanged:function(){if(this.disabled){this._setPressed(!1)}else{this._changedButtonState()}},// provide hook for follow-on behaviors to react to button-state
 _changedButtonState:function(){if(this._buttonStateChanged){this._buttonStateChanged();// abstract
-}}};/** @polymerBehavior */_exports.IronButtonStateImpl=IronButtonStateImpl;const IronButtonState=[IronA11yKeysBehavior,IronButtonStateImpl];_exports.IronButtonState=IronButtonState;var ironButtonState={IronButtonStateImpl:IronButtonStateImpl,IronButtonState:IronButtonState};_exports.$ironButtonState=ironButtonState;const IronFitBehavior={properties:{/**
+}}};/** @polymerBehavior */_exports.IronButtonStateImpl=IronButtonStateImpl;const IronButtonState=[IronA11yKeysBehavior,IronButtonStateImpl];_exports.IronButtonState=IronButtonState;var ironButtonState={IronButtonStateImpl:IronButtonStateImpl,IronButtonState:IronButtonState};_exports.$ironButtonState=ironButtonState;const IronFormElementBehavior={properties:{/**
+     * The name of this element.
+     */name:{type:String},/**
+     * The value for this element.
+     * @type {*}
+     */value:{notify:!0,type:String},/**
+     * Set to true to mark the input as required. If used in a form, a
+     * custom element that uses this behavior should also use
+     * IronValidatableBehavior and define a custom validation method.
+     * Otherwise, a `required` element will always be considered valid.
+     * It's also strongly recommended to provide a visual style for the element
+     * when its value is invalid.
+     */required:{type:Boolean,value:!1}},// Empty implementations for backcompatibility.
+attached:function(){},detached:function(){}};_exports.IronFormElementBehavior=IronFormElementBehavior;var ironFormElementBehavior={IronFormElementBehavior:IronFormElementBehavior};_exports.$ironFormElementBehavior=ironFormElementBehavior;const IronCheckedElementBehaviorImpl={properties:{/**
+     * Fired when the checked state changes.
+     *
+     * @event iron-change
+     */ /**
+         * Gets or sets the state, `true` is checked and `false` is unchecked.
+         */checked:{type:Boolean,value:!1,reflectToAttribute:!0,notify:!0,observer:"_checkedChanged"},/**
+     * If true, the button toggles the active state with each tap or press
+     * of the spacebar.
+     */toggles:{type:Boolean,value:!0,reflectToAttribute:!0},/* Overriden from IronFormElementBehavior */value:{type:String,value:"on",observer:"_valueChanged"}},observers:["_requiredChanged(required)"],created:function(){// Used by `iron-form` to handle the case that an element with this behavior
+// doesn't have a role of 'checkbox' or 'radio', but should still only be
+// included when the form is serialized if `this.checked === true`.
+this._hasIronCheckedElementBehavior=!0},/**
+   * Returns false if the element is required and not checked, and true
+   * otherwise.
+   * @param {*=} _value Ignored.
+   * @return {boolean} true if `required` is false or if `checked` is true.
+   */_getValidity:function(_value){return this.disabled||!this.required||this.checked},/**
+   * Update the aria-required label when `required` is changed.
+   */_requiredChanged:function(){if(this.required){this.setAttribute("aria-required","true")}else{this.removeAttribute("aria-required")}},/**
+   * Fire `iron-changed` when the checked state changes.
+   */_checkedChanged:function(){this.active=this.checked;this.fire("iron-change")},/**
+   * Reset value to 'on' if it is set to `undefined`.
+   */_valueChanged:function(){if(this.value===void 0||null===this.value){this.value="on"}}};/** @polymerBehavior */_exports.IronCheckedElementBehaviorImpl=IronCheckedElementBehaviorImpl;const IronCheckedElementBehavior=[IronFormElementBehavior,IronValidatableBehavior,IronCheckedElementBehaviorImpl];_exports.IronCheckedElementBehavior=IronCheckedElementBehavior;var ironCheckedElementBehavior={IronCheckedElementBehaviorImpl:IronCheckedElementBehaviorImpl,IronCheckedElementBehavior:IronCheckedElementBehavior};_exports.$ironCheckedElementBehavior=ironCheckedElementBehavior;const IronFitBehavior={properties:{/**
      * The element that will receive a `max-height`/`width`. By default it is
      * the same as `this`, but it can be set to a child element. This is useful,
      * for example, for implementing a scrolling region inside the element.
@@ -13293,1434 +13587,7 @@ if(!this.dynamicAlign&&!alignOk){continue}candidate.offscreenArea=this.__getOffs
 // ones overlapping vertically.
 if(0===candidate.offscreenArea&&alignOk){position=candidate;break}position=position||candidate;var diff=candidate.offscreenArea-position.offscreenArea;// Check which crops less. If it crops equally, check if at least one
 // align setting is ok.
-if(0>diff||0===diff&&(vAlignOk||hAlignOk)){position=candidate}}return position}};_exports.IronFitBehavior=IronFitBehavior;var ironFitBehavior={IronFitBehavior:IronFitBehavior};_exports.$ironFitBehavior=ironFitBehavior;const template$1=html`
-/* Most common used flex styles*/
-<dom-module id="iron-flex">
-  <template>
-    <style>
-      .layout.horizontal,
-      .layout.vertical {
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-      }
-
-      .layout.inline {
-        display: -ms-inline-flexbox;
-        display: -webkit-inline-flex;
-        display: inline-flex;
-      }
-
-      .layout.horizontal {
-        -ms-flex-direction: row;
-        -webkit-flex-direction: row;
-        flex-direction: row;
-      }
-
-      .layout.vertical {
-        -ms-flex-direction: column;
-        -webkit-flex-direction: column;
-        flex-direction: column;
-      }
-
-      .layout.wrap {
-        -ms-flex-wrap: wrap;
-        -webkit-flex-wrap: wrap;
-        flex-wrap: wrap;
-      }
-
-      .layout.no-wrap {
-        -ms-flex-wrap: nowrap;
-        -webkit-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-      }
-
-      .layout.center,
-      .layout.center-center {
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-
-      .layout.center-justified,
-      .layout.center-center {
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-      }
-
-      .flex {
-        -ms-flex: 1 1 0.000000001px;
-        -webkit-flex: 1;
-        flex: 1;
-        -webkit-flex-basis: 0.000000001px;
-        flex-basis: 0.000000001px;
-      }
-
-      .flex-auto {
-        -ms-flex: 1 1 auto;
-        -webkit-flex: 1 1 auto;
-        flex: 1 1 auto;
-      }
-
-      .flex-none {
-        -ms-flex: none;
-        -webkit-flex: none;
-        flex: none;
-      }
-    </style>
-  </template>
-</dom-module>
-/* Basic flexbox reverse styles */
-<dom-module id="iron-flex-reverse">
-  <template>
-    <style>
-      .layout.horizontal-reverse,
-      .layout.vertical-reverse {
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-      }
-
-      .layout.horizontal-reverse {
-        -ms-flex-direction: row-reverse;
-        -webkit-flex-direction: row-reverse;
-        flex-direction: row-reverse;
-      }
-
-      .layout.vertical-reverse {
-        -ms-flex-direction: column-reverse;
-        -webkit-flex-direction: column-reverse;
-        flex-direction: column-reverse;
-      }
-
-      .layout.wrap-reverse {
-        -ms-flex-wrap: wrap-reverse;
-        -webkit-flex-wrap: wrap-reverse;
-        flex-wrap: wrap-reverse;
-      }
-    </style>
-  </template>
-</dom-module>
-/* Flexbox alignment */
-<dom-module id="iron-flex-alignment">
-  <template>
-    <style>
-      /**
-       * Alignment in cross axis.
-       */
-      .layout.start {
-        -ms-flex-align: start;
-        -webkit-align-items: flex-start;
-        align-items: flex-start;
-      }
-
-      .layout.center,
-      .layout.center-center {
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-
-      .layout.end {
-        -ms-flex-align: end;
-        -webkit-align-items: flex-end;
-        align-items: flex-end;
-      }
-
-      .layout.baseline {
-        -ms-flex-align: baseline;
-        -webkit-align-items: baseline;
-        align-items: baseline;
-      }
-
-      /**
-       * Alignment in main axis.
-       */
-      .layout.start-justified {
-        -ms-flex-pack: start;
-        -webkit-justify-content: flex-start;
-        justify-content: flex-start;
-      }
-
-      .layout.center-justified,
-      .layout.center-center {
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-      }
-
-      .layout.end-justified {
-        -ms-flex-pack: end;
-        -webkit-justify-content: flex-end;
-        justify-content: flex-end;
-      }
-
-      .layout.around-justified {
-        -ms-flex-pack: distribute;
-        -webkit-justify-content: space-around;
-        justify-content: space-around;
-      }
-
-      .layout.justified {
-        -ms-flex-pack: justify;
-        -webkit-justify-content: space-between;
-        justify-content: space-between;
-      }
-
-      /**
-       * Self alignment.
-       */
-      .self-start {
-        -ms-align-self: flex-start;
-        -webkit-align-self: flex-start;
-        align-self: flex-start;
-      }
-
-      .self-center {
-        -ms-align-self: center;
-        -webkit-align-self: center;
-        align-self: center;
-      }
-
-      .self-end {
-        -ms-align-self: flex-end;
-        -webkit-align-self: flex-end;
-        align-self: flex-end;
-      }
-
-      .self-stretch {
-        -ms-align-self: stretch;
-        -webkit-align-self: stretch;
-        align-self: stretch;
-      }
-
-      .self-baseline {
-        -ms-align-self: baseline;
-        -webkit-align-self: baseline;
-        align-self: baseline;
-      }
-
-      /**
-       * multi-line alignment in main axis.
-       */
-      .layout.start-aligned {
-        -ms-flex-line-pack: start;  /* IE10 */
-        -ms-align-content: flex-start;
-        -webkit-align-content: flex-start;
-        align-content: flex-start;
-      }
-
-      .layout.end-aligned {
-        -ms-flex-line-pack: end;  /* IE10 */
-        -ms-align-content: flex-end;
-        -webkit-align-content: flex-end;
-        align-content: flex-end;
-      }
-
-      .layout.center-aligned {
-        -ms-flex-line-pack: center;  /* IE10 */
-        -ms-align-content: center;
-        -webkit-align-content: center;
-        align-content: center;
-      }
-
-      .layout.between-aligned {
-        -ms-flex-line-pack: justify;  /* IE10 */
-        -ms-align-content: space-between;
-        -webkit-align-content: space-between;
-        align-content: space-between;
-      }
-
-      .layout.around-aligned {
-        -ms-flex-line-pack: distribute;  /* IE10 */
-        -ms-align-content: space-around;
-        -webkit-align-content: space-around;
-        align-content: space-around;
-      }
-    </style>
-  </template>
-</dom-module>
-/* Non-flexbox positioning helper styles */
-<dom-module id="iron-flex-factors">
-  <template>
-    <style>
-      .flex,
-      .flex-1 {
-        -ms-flex: 1 1 0.000000001px;
-        -webkit-flex: 1;
-        flex: 1;
-        -webkit-flex-basis: 0.000000001px;
-        flex-basis: 0.000000001px;
-      }
-
-      .flex-2 {
-        -ms-flex: 2;
-        -webkit-flex: 2;
-        flex: 2;
-      }
-
-      .flex-3 {
-        -ms-flex: 3;
-        -webkit-flex: 3;
-        flex: 3;
-      }
-
-      .flex-4 {
-        -ms-flex: 4;
-        -webkit-flex: 4;
-        flex: 4;
-      }
-
-      .flex-5 {
-        -ms-flex: 5;
-        -webkit-flex: 5;
-        flex: 5;
-      }
-
-      .flex-6 {
-        -ms-flex: 6;
-        -webkit-flex: 6;
-        flex: 6;
-      }
-
-      .flex-7 {
-        -ms-flex: 7;
-        -webkit-flex: 7;
-        flex: 7;
-      }
-
-      .flex-8 {
-        -ms-flex: 8;
-        -webkit-flex: 8;
-        flex: 8;
-      }
-
-      .flex-9 {
-        -ms-flex: 9;
-        -webkit-flex: 9;
-        flex: 9;
-      }
-
-      .flex-10 {
-        -ms-flex: 10;
-        -webkit-flex: 10;
-        flex: 10;
-      }
-
-      .flex-11 {
-        -ms-flex: 11;
-        -webkit-flex: 11;
-        flex: 11;
-      }
-
-      .flex-12 {
-        -ms-flex: 12;
-        -webkit-flex: 12;
-        flex: 12;
-      }
-    </style>
-  </template>
-</dom-module>
-<dom-module id="iron-positioning">
-  <template>
-    <style>
-      .block {
-        display: block;
-      }
-
-      [hidden] {
-        display: none !important;
-      }
-
-      .invisible {
-        visibility: hidden !important;
-      }
-
-      .relative {
-        position: relative;
-      }
-
-      .fit {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-      }
-
-      body.fullbleed {
-        margin: 0;
-        height: 100vh;
-      }
-
-      .scroll {
-        -webkit-overflow-scrolling: touch;
-        overflow: auto;
-      }
-
-      /* fixed position */
-      .fixed-bottom,
-      .fixed-left,
-      .fixed-right,
-      .fixed-top {
-        position: fixed;
-      }
-
-      .fixed-top {
-        top: 0;
-        left: 0;
-        right: 0;
-      }
-
-      .fixed-right {
-        top: 0;
-        right: 0;
-        bottom: 0;
-      }
-
-      .fixed-bottom {
-        right: 0;
-        bottom: 0;
-        left: 0;
-      }
-
-      .fixed-left {
-        top: 0;
-        bottom: 0;
-        left: 0;
-      }
-    </style>
-  </template>
-</dom-module>
-`;template$1.setAttribute("style","display: none;");document.head.appendChild(template$1.content);const IronFormElementBehavior={properties:{/**
-     * The name of this element.
-     */name:{type:String},/**
-     * The value for this element.
-     * @type {*}
-     */value:{notify:!0,type:String},/**
-     * Set to true to mark the input as required. If used in a form, a
-     * custom element that uses this behavior should also use
-     * IronValidatableBehavior and define a custom validation method.
-     * Otherwise, a `required` element will always be considered valid.
-     * It's also strongly recommended to provide a visual style for the element
-     * when its value is invalid.
-     */required:{type:Boolean,value:!1}},// Empty implementations for backcompatibility.
-attached:function(){},detached:function(){}};_exports.IronFormElementBehavior=IronFormElementBehavior;var ironFormElementBehavior={IronFormElementBehavior:IronFormElementBehavior};_exports.$ironFormElementBehavior=ironFormElementBehavior;class IronMeta{/**
-   * @param {{
-   *   type: (string|null|undefined),
-   *   key: (string|null|undefined),
-   *   value: *,
-   * }=} options
-   */constructor(options){IronMeta[" "](options);/** @type {string} */this.type=options&&options.type||"default";/** @type {string|null|undefined} */this.key=options&&options.key;if(options&&"value"in options){/** @type {*} */this.value=options.value}}/** @return {*} */get value(){var type=this.type,key=this.key;if(type&&key){return IronMeta.types[type]&&IronMeta.types[type][key]}}/** @param {*} value */set value(value){var type=this.type,key=this.key;if(type&&key){type=IronMeta.types[type]=IronMeta.types[type]||{};if(null==value){delete type[key]}else{type[key]=value}}}/** @return {!Array<*>} */get list(){var type=this.type;if(type){var items=IronMeta.types[this.type];if(!items){return[]}return Object.keys(items).map(function(key){return metaDatas[this.type][key]},this)}}/**
-     * @param {string} key
-     * @return {*}
-     */byKey(key){this.key=key;return this.value}}_exports.IronMeta=IronMeta;;// This function is used to convince Closure not to remove constructor calls
-// for instances that are not held anywhere. For example, when
-// `new IronMeta({...})` is used only for the side effect of adding a value.
-IronMeta[" "]=function(){};IronMeta.types={};var metaDatas=IronMeta.types;/**
-                                `iron-meta` is a generic element you can use for sharing information across the
-                                DOM tree. It uses [monostate pattern](http://c2.com/cgi/wiki?MonostatePattern)
-                                such that any instance of iron-meta has access to the shared information. You
-                                can use `iron-meta` to share whatever you want (or create an extension [like
-                                x-meta] for enhancements).
-                                
-                                The `iron-meta` instances containing your actual data can be loaded in an
-                                import, or constructed in any way you see fit. The only requirement is that you
-                                create them before you try to access them.
-                                
-                                Examples:
-                                
-                                If I create an instance like this:
-                                
-                                    <iron-meta key="info" value="foo/bar"></iron-meta>
-                                
-                                Note that value="foo/bar" is the metadata I've defined. I could define more
-                                attributes or use child nodes to define additional metadata.
-                                
-                                Now I can access that element (and it's metadata) from any iron-meta instance
-                                via the byKey method, e.g.
-                                
-                                    meta.byKey('info');
-                                
-                                Pure imperative form would be like:
-                                
-                                    document.createElement('iron-meta').byKey('info');
-                                
-                                Or, in a Polymer element, you can include a meta in your template:
-                                
-                                    <iron-meta id="meta"></iron-meta>
-                                    ...
-                                    this.$.meta.byKey('info');
-                                
-                                @group Iron Elements
-                                @demo demo/index.html
-                                @element iron-meta
-                                */Polymer({is:"iron-meta",properties:{/**
-     * The type of meta-data.  All meta-data of the same type is stored
-     * together.
-     * @type {string}
-     */type:{type:String,value:"default"},/**
-     * The key used to store `value` under the `type` namespace.
-     * @type {?string}
-     */key:{type:String},/**
-     * The meta-data to store or retrieve.
-     * @type {*}
-     */value:{type:String,notify:!0},/**
-     * If true, `value` is set to the iron-meta instance itself.
-     */self:{type:Boolean,observer:"_selfChanged"},__meta:{type:Boolean,computed:"__computeMeta(type, key, value)"}},hostAttributes:{hidden:!0},__computeMeta:function(type,key,value){var meta=new IronMeta({type:type,key:key});if(value!==void 0&&value!==meta.value){meta.value=value}else if(this.value!==meta.value){this.value=meta.value}return meta},get list(){return this.__meta&&this.__meta.list},_selfChanged:function(self){if(self){this.value=this}},/**
-   * Retrieves meta data value by key.
-   *
-   * @method byKey
-   * @param {string} key The key of the meta-data to be returned.
-   * @return {*}
-   */byKey:function(key){return new IronMeta({type:this.type,key:key}).value}});var ironMeta={IronMeta:IronMeta};_exports.$ironMeta=ironMeta;Polymer({_template:html`
-    <style>
-      :host {
-        @apply --layout-inline;
-        @apply --layout-center-center;
-        position: relative;
-
-        vertical-align: middle;
-
-        fill: var(--iron-icon-fill-color, currentcolor);
-        stroke: var(--iron-icon-stroke-color, none);
-
-        width: var(--iron-icon-width, 24px);
-        height: var(--iron-icon-height, 24px);
-        @apply --iron-icon;
-      }
-
-      :host([hidden]) {
-        display: none;
-      }
-    </style>
-`,is:"iron-icon",properties:{/**
-     * The name of the icon to use. The name should be of the form:
-     * `iconset_name:icon_name`.
-     */icon:{type:String},/**
-     * The name of the theme to used, if one is specified by the
-     * iconset.
-     */theme:{type:String},/**
-     * If using iron-icon without an iconset, you can set the src to be
-     * the URL of an individual icon image file. Note that this will take
-     * precedence over a given icon attribute.
-     */src:{type:String},/**
-     * @type {!IronMeta}
-     */_meta:{value:Base.create("iron-meta",{type:"iconset"})}},observers:["_updateIcon(_meta, isAttached)","_updateIcon(theme, isAttached)","_srcChanged(src, isAttached)","_iconChanged(icon, isAttached)"],_DEFAULT_ICONSET:"icons",_iconChanged:function(icon){var parts=(icon||"").split(":");this._iconName=parts.pop();this._iconsetName=parts.pop()||this._DEFAULT_ICONSET;this._updateIcon()},_srcChanged:function(src){this._updateIcon()},_usesIconset:function(){return this.icon||!this.src},/** @suppress {visibility} */_updateIcon:function(){if(this._usesIconset()){if(this._img&&this._img.parentNode){dom(this.root).removeChild(this._img)}if(""===this._iconName){if(this._iconset){this._iconset.removeIcon(this)}}else if(this._iconsetName&&this._meta){this._iconset=/** @type {?Polymer.Iconset} */this._meta.byKey(this._iconsetName);if(this._iconset){this._iconset.applyIcon(this,this._iconName,this.theme);this.unlisten(window,"iron-iconset-added","_updateIcon")}else{this.listen(window,"iron-iconset-added","_updateIcon")}}}else{if(this._iconset){this._iconset.removeIcon(this)}if(!this._img){this._img=document.createElement("img");this._img.style.width="100%";this._img.style.height="100%";this._img.draggable=!1}this._img.src=this.src;dom(this.root).appendChild(this._img)}}});Polymer({is:"iron-iconset-svg",properties:{/**
-     * The name of the iconset.
-     */name:{type:String,observer:"_nameChanged"},/**
-     * The size of an individual icon. Note that icons must be square.
-     */size:{type:Number,value:24},/**
-     * Set to true to enable mirroring of icons where specified when they are
-     * stamped. Icons that should be mirrored should be decorated with a
-     * `mirror-in-rtl` attribute.
-     *
-     * NOTE: For performance reasons, direction will be resolved once per
-     * document per iconset, so moving icons in and out of RTL subtrees will
-     * not cause their mirrored state to change.
-     */rtlMirroring:{type:Boolean,value:!1},/**
-     * Set to true to measure RTL based on the dir attribute on the body or
-     * html elements (measured on document.body or document.documentElement as
-     * available).
-     */useGlobalRtlAttribute:{type:Boolean,value:!1}},created:function(){this._meta=new IronMeta({type:"iconset",key:null,value:null})},attached:function(){this.style.display="none"},/**
-   * Construct an array of all icon names in this iconset.
-   *
-   * @return {!Array} Array of icon names.
-   */getIconNames:function(){this._icons=this._createIconMap();return Object.keys(this._icons).map(function(n){return this.name+":"+n},this)},/**
-   * Applies an icon to the given element.
-   *
-   * An svg icon is prepended to the element's shadowRoot if it exists,
-   * otherwise to the element itself.
-   *
-   * If RTL mirroring is enabled, and the icon is marked to be mirrored in
-   * RTL, the element will be tested (once and only once ever for each
-   * iconset) to determine the direction of the subtree the element is in.
-   * This direction will apply to all future icon applications, although only
-   * icons marked to be mirrored will be affected.
-   *
-   * @method applyIcon
-   * @param {Element} element Element to which the icon is applied.
-   * @param {string} iconName Name of the icon to apply.
-   * @return {?Element} The svg element which renders the icon.
-   */applyIcon:function(element,iconName){// Remove old svg element
-this.removeIcon(element);// install new svg element
-var svg=this._cloneIcon(iconName,this.rtlMirroring&&this._targetIsRTL(element));if(svg){// insert svg element into shadow root, if it exists
-var pde=dom(element.root||element);pde.insertBefore(svg,pde.childNodes[0]);return element._svgIcon=svg}return null},/**
-   * Remove an icon from the given element by undoing the changes effected
-   * by `applyIcon`.
-   *
-   * @param {Element} element The element from which the icon is removed.
-   */removeIcon:function(element){// Remove old svg element
-if(element._svgIcon){dom(element.root||element).removeChild(element._svgIcon);element._svgIcon=null}},/**
-   * Measures and memoizes the direction of the element. Note that this
-   * measurement is only done once and the result is memoized for future
-   * invocations.
-   */_targetIsRTL:function(target){if(null==this.__targetIsRTL){if(this.useGlobalRtlAttribute){var globalElement=document.body&&document.body.hasAttribute("dir")?document.body:document.documentElement;this.__targetIsRTL="rtl"===globalElement.getAttribute("dir")}else{if(target&&target.nodeType!==Node.ELEMENT_NODE){target=target.host}this.__targetIsRTL=target&&"rtl"===window.getComputedStyle(target).direction}}return this.__targetIsRTL},/**
-   *
-   * When name is changed, register iconset metadata
-   *
-   */_nameChanged:function(){this._meta.value=null;this._meta.key=this.name;this._meta.value=this;this.async(function(){this.fire("iron-iconset-added",this,{node:window})})},/**
-   * Create a map of child SVG elements by id.
-   *
-   * @return {!Object} Map of id's to SVG elements.
-   */_createIconMap:function(){// Objects chained to Object.prototype (`{}`) have members. Specifically,
-// on FF there is a `watch` method that confuses the icon map, so we
-// need to use a null-based object here.
-var icons=Object.create(null);dom(this).querySelectorAll("[id]").forEach(function(icon){icons[icon.id]=icon});return icons},/**
-   * Produce installable clone of the SVG element matching `id` in this
-   * iconset, or `undefined` if there is no matching element.
-   *
-   * @return {Element} Returns an installable clone of the SVG element
-   * matching `id`.
-   */_cloneIcon:function(id,mirrorAllowed){// create the icon map on-demand, since the iconset itself has no discrete
-// signal to know when it's children are fully parsed
-this._icons=this._icons||this._createIconMap();return this._prepareSvgClone(this._icons[id],this.size,mirrorAllowed)},/**
-   * @param {Element} sourceSvg
-   * @param {number} size
-   * @param {Boolean} mirrorAllowed
-   * @return {Element}
-   */_prepareSvgClone:function(sourceSvg,size,mirrorAllowed){if(sourceSvg){var content=sourceSvg.cloneNode(!0),svg=document.createElementNS("http://www.w3.org/2000/svg","svg"),viewBox=content.getAttribute("viewBox")||"0 0 "+size+" "+size,cssText="pointer-events: none; display: block; width: 100%; height: 100%;";if(mirrorAllowed&&content.hasAttribute("mirror-in-rtl")){cssText+="-webkit-transform:scale(-1,1);transform:scale(-1,1);transform-origin:center;"}svg.setAttribute("viewBox",viewBox);svg.setAttribute("preserveAspectRatio","xMidYMid meet");svg.setAttribute("focusable","false");// TODO(dfreedm): `pointer-events: none` works around
-// https://crbug.com/370136
-// TODO(sjmiles): inline style may not be ideal, but avoids requiring a
-// shadow-root
-svg.style.cssText=cssText;svg.appendChild(content).removeAttribute("id");return svg}return null}});const template$2=html`<iron-iconset-svg name="icons" size="24">
-<svg><defs>
-<g id="3d-rotation"><path d="M7.52 21.48C4.25 19.94 1.91 16.76 1.55 13H.05C.56 19.16 5.71 24 12 24l.66-.03-3.81-3.81-1.33 1.32zm.89-6.52c-.19 0-.37-.03-.52-.08-.16-.06-.29-.13-.4-.24-.11-.1-.2-.22-.26-.37-.06-.14-.09-.3-.09-.47h-1.3c0 .36.07.68.21.95.14.27.33.5.56.69.24.18.51.32.82.41.3.1.62.15.96.15.37 0 .72-.05 1.03-.15.32-.1.6-.25.83-.44s.42-.43.55-.72c.13-.29.2-.61.2-.97 0-.19-.02-.38-.07-.56-.05-.18-.12-.35-.23-.51-.1-.16-.24-.3-.4-.43-.17-.13-.37-.23-.61-.31.2-.09.37-.2.52-.33.15-.13.27-.27.37-.42.1-.15.17-.3.22-.46.05-.16.07-.32.07-.48 0-.36-.06-.68-.18-.96-.12-.28-.29-.51-.51-.69-.2-.19-.47-.33-.77-.43C9.1 8.05 8.76 8 8.39 8c-.36 0-.69.05-1 .16-.3.11-.57.26-.79.45-.21.19-.38.41-.51.67-.12.26-.18.54-.18.85h1.3c0-.17.03-.32.09-.45s.14-.25.25-.34c.11-.09.23-.17.38-.22.15-.05.3-.08.48-.08.4 0 .7.1.89.31.19.2.29.49.29.86 0 .18-.03.34-.08.49-.05.15-.14.27-.25.37-.11.1-.25.18-.41.24-.16.06-.36.09-.58.09H7.5v1.03h.77c.22 0 .42.02.6.07s.33.13.45.23c.12.11.22.24.29.4.07.16.1.35.1.57 0 .41-.12.72-.35.93-.23.23-.55.33-.95.33zm8.55-5.92c-.32-.33-.7-.59-1.14-.77-.43-.18-.92-.27-1.46-.27H12v8h2.3c.55 0 1.06-.09 1.51-.27.45-.18.84-.43 1.16-.76.32-.33.57-.73.74-1.19.17-.47.26-.99.26-1.57v-.4c0-.58-.09-1.1-.26-1.57-.18-.47-.43-.87-.75-1.2zm-.39 3.16c0 .42-.05.79-.14 1.13-.1.33-.24.62-.43.85-.19.23-.43.41-.71.53-.29.12-.62.18-.99.18h-.91V9.12h.97c.72 0 1.27.23 1.64.69.38.46.57 1.12.57 1.99v.4zM12 0l-.66.03 3.81 3.81 1.33-1.33c3.27 1.55 5.61 4.72 5.96 8.48h1.5C23.44 4.84 18.29 0 12 0z"></path></g>
-<g id="accessibility"><path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"></path></g>
-<g id="accessible"><circle cx="12" cy="4" r="2"></circle><path d="M19 13v-2c-1.54.02-3.09-.75-4.07-1.83l-1.29-1.43c-.17-.19-.38-.34-.61-.45-.01 0-.01-.01-.02-.01H13c-.35-.2-.75-.3-1.19-.26C10.76 7.11 10 8.04 10 9.09V15c0 1.1.9 2 2 2h5v5h2v-5.5c0-1.1-.9-2-2-2h-3v-3.45c1.29 1.07 3.25 1.94 5 1.95zm-6.17 5c-.41 1.16-1.52 2-2.83 2-1.66 0-3-1.34-3-3 0-1.31.84-2.41 2-2.83V12.1c-2.28.46-4 2.48-4 4.9 0 2.76 2.24 5 5 5 2.42 0 4.44-1.72 4.9-4h-2.07z"></path></g>
-<g id="account-balance"><path d="M4 10v7h3v-7H4zm6 0v7h3v-7h-3zM2 22h19v-3H2v3zm14-12v7h3v-7h-3zm-4.5-9L2 6v2h19V6l-9.5-5z"></path></g>
-<g id="account-balance-wallet"><path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"></path></g>
-<g id="account-box"><path d="M3 5v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H5c-1.11 0-2 .9-2 2zm12 4c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3zm-9 8c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1H6v-1z"></path></g>
-<g id="account-circle"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"></path></g>
-<g id="add"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path></g>
-<g id="add-alert"><path d="M10.01 21.01c0 1.1.89 1.99 1.99 1.99s1.99-.89 1.99-1.99h-3.98zm8.87-4.19V11c0-3.25-2.25-5.97-5.29-6.69v-.72C13.59 2.71 12.88 2 12 2s-1.59.71-1.59 1.59v.72C7.37 5.03 5.12 7.75 5.12 11v5.82L3 18.94V20h18v-1.06l-2.12-2.12zM16 13.01h-3v3h-2v-3H8V11h3V8h2v3h3v2.01z"></path></g>
-<g id="add-box"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"></path></g>
-<g id="add-circle"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"></path></g>
-<g id="add-circle-outline"><path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></g>
-<g id="add-shopping-cart"><path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z"></path></g>
-<g id="alarm"><path d="M22 5.72l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM7.88 3.39L6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM12.5 8H11v6l4.75 2.85.75-1.23-4-2.37V8zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"></path></g>
-<g id="alarm-add"><path d="M7.88 3.39L6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM22 5.72l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7zm1-11h-2v3H8v2h3v3h2v-3h3v-2h-3V9z"></path></g>
-<g id="alarm-off"><path d="M12 6c3.87 0 7 3.13 7 7 0 .84-.16 1.65-.43 2.4l1.52 1.52c.58-1.19.91-2.51.91-3.92 0-4.97-4.03-9-9-9-1.41 0-2.73.33-3.92.91L9.6 6.43C10.35 6.16 11.16 6 12 6zm10-.28l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM2.92 2.29L1.65 3.57 2.98 4.9l-1.11.93 1.42 1.42 1.11-.94.8.8C3.83 8.69 3 10.75 3 13c0 4.97 4.02 9 9 9 2.25 0 4.31-.83 5.89-2.2l2.2 2.2 1.27-1.27L3.89 3.27l-.97-.98zm13.55 16.1C15.26 19.39 13.7 20 12 20c-3.87 0-7-3.13-7-7 0-1.7.61-3.26 1.61-4.47l9.86 9.86zM8.02 3.28L6.6 1.86l-.86.71 1.42 1.42.86-.71z"></path></g>
-<g id="alarm-on"><path d="M22 5.72l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM7.88 3.39L6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7zm-1.46-5.47L8.41 12.4l-1.06 1.06 3.18 3.18 6-6-1.06-1.06-4.93 4.95z"></path></g>
-<g id="all-out"><path d="M16.21 4.16l4 4v-4zm4 12l-4 4h4zm-12 4l-4-4v4zm-4-12l4-4h-4zm12.95-.95c-2.73-2.73-7.17-2.73-9.9 0s-2.73 7.17 0 9.9 7.17 2.73 9.9 0 2.73-7.16 0-9.9zm-1.1 8.8c-2.13 2.13-5.57 2.13-7.7 0s-2.13-5.57 0-7.7 5.57-2.13 7.7 0 2.13 5.57 0 7.7z"></path></g>
-<g id="android"><path d="M6 18c0 .55.45 1 1 1h1v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h2v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h1c.55 0 1-.45 1-1V8H6v10zM3.5 8C2.67 8 2 8.67 2 9.5v7c0 .83.67 1.5 1.5 1.5S5 17.33 5 16.5v-7C5 8.67 4.33 8 3.5 8zm17 0c-.83 0-1.5.67-1.5 1.5v7c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-7c0-.83-.67-1.5-1.5-1.5zm-4.97-5.84l1.3-1.3c.2-.2.2-.51 0-.71-.2-.2-.51-.2-.71 0l-1.48 1.48C13.85 1.23 12.95 1 12 1c-.96 0-1.86.23-2.66.63L7.85.15c-.2-.2-.51-.2-.71 0-.2.2-.2.51 0 .71l1.31 1.31C6.97 3.26 6 5.01 6 7h12c0-1.99-.97-3.75-2.47-4.84zM10 5H9V4h1v1zm5 0h-1V4h1v1z"></path></g>
-<g id="announcement"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 9h-2V5h2v6zm0 4h-2v-2h2v2z"></path></g>
-<g id="apps"><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"></path></g>
-<g id="archive"><path d="M20.54 5.23l-1.39-1.68C18.88 3.21 18.47 3 18 3H6c-.47 0-.88.21-1.16.55L3.46 5.23C3.17 5.57 3 6.02 3 6.5V19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6.5c0-.48-.17-.93-.46-1.27zM12 17.5L6.5 12H10v-2h4v2h3.5L12 17.5zM5.12 5l.81-1h12l.94 1H5.12z"></path></g>
-<g id="arrow-back"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path></g>
-<g id="arrow-downward"><path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"></path></g>
-<g id="arrow-drop-down"><path d="M7 10l5 5 5-5z"></path></g>
-<g id="arrow-drop-down-circle"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 12l-4-4h8l-4 4z"></path></g>
-<g id="arrow-drop-up"><path d="M7 14l5-5 5 5z"></path></g>
-<g id="arrow-forward"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></g>
-<g id="arrow-upward"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path></g>
-<g id="aspect-ratio"><path d="M19 12h-2v3h-3v2h5v-5zM7 9h3V7H5v5h2V9zm14-6H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16.01H3V4.99h18v14.02z"></path></g>
-<g id="assessment"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path></g>
-<g id="assignment"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"></path></g>
-<g id="assignment-ind"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm0 4c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm6 12H6v-1.4c0-2 4-3.1 6-3.1s6 1.1 6 3.1V19z"></path></g>
-<g id="assignment-late"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-6 15h-2v-2h2v2zm0-4h-2V8h2v6zm-1-9c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"></path></g>
-<g id="assignment-return"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm4 12h-4v3l-5-5 5-5v3h4v4z"></path></g>
-<g id="assignment-returned"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm0 15l-5-5h3V9h4v4h3l-5 5z"></path></g>
-<g id="assignment-turned-in"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm-2 14l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"></path></g>
-<g id="attachment"><path d="M2 12.5C2 9.46 4.46 7 7.5 7H18c2.21 0 4 1.79 4 4s-1.79 4-4 4H9.5C8.12 15 7 13.88 7 12.5S8.12 10 9.5 10H17v2H9.41c-.55 0-.55 1 0 1H18c1.1 0 2-.9 2-2s-.9-2-2-2H7.5C5.57 9 4 10.57 4 12.5S5.57 16 7.5 16H17v2H7.5C4.46 18 2 15.54 2 12.5z"></path></g>
-<g id="autorenew"><path d="M12 6v3l4-4-4-4v3c-4.42 0-8 3.58-8 8 0 1.57.46 3.03 1.24 4.26L6.7 14.8c-.45-.83-.7-1.79-.7-2.8 0-3.31 2.69-6 6-6zm6.76 1.74L17.3 9.2c.44.84.7 1.79.7 2.8 0 3.31-2.69 6-6 6v-3l-4 4 4 4v-3c4.42 0 8-3.58 8-8 0-1.57-.46-3.03-1.24-4.26z"></path></g>
-<g id="backspace"><path d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-3 12.59L17.59 17 14 13.41 10.41 17 9 15.59 12.59 12 9 8.41 10.41 7 14 10.59 17.59 7 19 8.41 15.41 12 19 15.59z"></path></g>
-<g id="backup"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"></path></g>
-<g id="block"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9C4.63 15.55 4 13.85 4 12zm8 8c-1.85 0-3.55-.63-4.9-1.69L18.31 7.1C19.37 8.45 20 10.15 20 12c0 4.42-3.58 8-8 8z"></path></g>
-<g id="book"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"></path></g>
-<g id="bookmark"><path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"></path></g>
-<g id="bookmark-border"><path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"></path></g>
-<g id="bug-report"><path d="M20 8h-2.81c-.45-.78-1.07-1.45-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5c-.49 0-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8zm-6 8h-4v-2h4v2zm0-4h-4v-2h4v2z"></path></g>
-<g id="build"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"></path></g>
-<g id="cached"><path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"></path></g>
-<g id="camera-enhance"><path d="M9 3L7.17 5H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2h-3.17L15 3H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-1l1.25-2.75L16 13l-2.75-1.25L12 9l-1.25 2.75L8 13l2.75 1.25z"></path></g>
-<g id="cancel"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"></path></g>
-<g id="card-giftcard"><path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"></path></g>
-<g id="card-membership"><path d="M20 2H4c-1.11 0-2 .89-2 2v11c0 1.11.89 2 2 2h4v5l4-2 4 2v-5h4c1.11 0 2-.89 2-2V4c0-1.11-.89-2-2-2zm0 13H4v-2h16v2zm0-5H4V4h16v6z"></path></g>
-<g id="card-travel"><path d="M20 6h-3V4c0-1.11-.89-2-2-2H9c-1.11 0-2 .89-2 2v2H4c-1.11 0-2 .89-2 2v11c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zM9 4h6v2H9V4zm11 15H4v-2h16v2zm0-5H4V8h3v2h2V8h6v2h2V8h3v6z"></path></g>
-<g id="change-history"><path d="M12 7.77L18.39 18H5.61L12 7.77M12 4L2 20h20L12 4z"></path></g>
-<g id="check"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></g>
-<g id="check-box"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></g>
-<g id="check-box-outline-blank"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></g>
-<g id="check-circle"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></g>
-<g id="chevron-left"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path></g>
-<g id="chevron-right"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></g>
-<g id="chrome-reader-mode"><path d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z"></path></g>
-<g id="class"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"></path></g>
-<g id="clear"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></g>
-<g id="close"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></g>
-<g id="cloud"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"></path></g>
-<g id="cloud-circle"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.5 14H8c-1.66 0-3-1.34-3-3s1.34-3 3-3l.14.01C8.58 8.28 10.13 7 12 7c2.21 0 4 1.79 4 4h.5c1.38 0 2.5 1.12 2.5 2.5S17.88 16 16.5 16z"></path></g>
-<g id="cloud-done"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM10 17l-3.5-3.5 1.41-1.41L10 14.17 15.18 9l1.41 1.41L10 17z"></path></g>
-<g id="cloud-download"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"></path></g>
-<g id="cloud-off"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4c-1.48 0-2.85.43-4.01 1.17l1.46 1.46C10.21 6.23 11.08 6 12 6c3.04 0 5.5 2.46 5.5 5.5v.5H19c1.66 0 3 1.34 3 3 0 1.13-.64 2.11-1.56 2.62l1.45 1.45C23.16 18.16 24 16.68 24 15c0-2.64-2.05-4.78-4.65-4.96zM3 5.27l2.75 2.74C2.56 8.15 0 10.77 0 14c0 3.31 2.69 6 6 6h11.73l2 2L21 20.73 4.27 4 3 5.27zM7.73 10l8 8H6c-2.21 0-4-1.79-4-4s1.79-4 4-4h1.73z"></path></g>
-<g id="cloud-queue"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4s1.79-4 4-4h.71C7.37 7.69 9.48 6 12 6c3.04 0 5.5 2.46 5.5 5.5v.5H19c1.66 0 3 1.34 3 3s-1.34 3-3 3z"></path></g>
-<g id="cloud-upload"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"></path></g>
-<g id="code"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"></path></g>
-<g id="compare-arrows"><path d="M9.01 14H2v2h7.01v3L13 15l-3.99-4v3zm5.98-1v-3H22V8h-7.01V5L11 9l3.99 4z"></path></g>
-<g id="content-copy"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"></path></g>
-<g id="content-cut"><path d="M9.64 7.64c.23-.5.36-1.05.36-1.64 0-2.21-1.79-4-4-4S2 3.79 2 6s1.79 4 4 4c.59 0 1.14-.13 1.64-.36L10 12l-2.36 2.36C7.14 14.13 6.59 14 6 14c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4c0-.59-.13-1.14-.36-1.64L12 14l7 7h3v-1L9.64 7.64zM6 8c-1.1 0-2-.89-2-2s.9-2 2-2 2 .89 2 2-.9 2-2 2zm0 12c-1.1 0-2-.89-2-2s.9-2 2-2 2 .89 2 2-.9 2-2 2zm6-7.5c-.28 0-.5-.22-.5-.5s.22-.5.5-.5.5.22.5.5-.22.5-.5.5zM19 3l-6 6 2 2 7-7V3z"></path></g>
-<g id="content-paste"><path d="M19 2h-4.18C14.4.84 13.3 0 12 0c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm7 18H5V4h2v3h10V4h2v16z"></path></g>
-<g id="copyright"><path d="M10.08 10.86c.05-.33.16-.62.3-.87s.34-.46.59-.62c.24-.15.54-.22.91-.23.23.01.44.05.63.13.2.09.38.21.52.36s.25.33.34.53.13.42.14.64h1.79c-.02-.47-.11-.9-.28-1.29s-.4-.73-.7-1.01-.66-.5-1.08-.66-.88-.23-1.39-.23c-.65 0-1.22.11-1.7.34s-.88.53-1.2.92-.56.84-.71 1.36S8 11.29 8 11.87v.27c0 .58.08 1.12.23 1.64s.39.97.71 1.35.72.69 1.2.91 1.05.34 1.7.34c.47 0 .91-.08 1.32-.23s.77-.36 1.08-.63.56-.58.74-.94.29-.74.3-1.15h-1.79c-.01.21-.06.4-.15.58s-.21.33-.36.46-.32.23-.52.3c-.19.07-.39.09-.6.1-.36-.01-.66-.08-.89-.23-.25-.16-.45-.37-.59-.62s-.25-.55-.3-.88-.08-.67-.08-1v-.27c0-.35.03-.68.08-1.01zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></g>
-<g id="create"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></g>
-<g id="create-new-folder"><path d="M20 6h-8l-2-2H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-1 8h-3v3h-2v-3h-3v-2h3V9h2v3h3v2z"></path></g>
-<g id="credit-card"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"></path></g>
-<g id="dashboard"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"></path></g>
-<g id="date-range"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"></path></g>
-<g id="delete"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path></g>
-<g id="delete-forever"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm2.46-7.12l1.41-1.41L12 12.59l2.12-2.12 1.41 1.41L13.41 14l2.12 2.12-1.41 1.41L12 15.41l-2.12 2.12-1.41-1.41L10.59 14l-2.13-2.12zM15.5 4l-1-1h-5l-1 1H5v2h14V4z"></path></g>
-<g id="delete-sweep"><path d="M15 16h4v2h-4zm0-8h7v2h-7zm0 4h6v2h-6zM3 18c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2V8H3v10zM14 5h-3l-1-1H6L5 5H2v2h12z"></path></g>
-<g id="description"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"></path></g>
-<g id="dns"><path d="M20 13H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1zM7 19c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM20 3H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zM7 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"></path></g>
-<g id="done"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"></path></g>
-<g id="done-all"><path d="M18 7l-1.41-1.41-6.34 6.34 1.41 1.41L18 7zm4.24-1.41L11.66 16.17 7.48 12l-1.41 1.41L11.66 19l12-12-1.42-1.41zM.41 13.41L6 19l1.41-1.41L1.83 12 .41 13.41z"></path></g>
-<g id="donut-large"><path d="M11 5.08V2c-5 .5-9 4.81-9 10s4 9.5 9 10v-3.08c-3-.48-6-3.4-6-6.92s3-6.44 6-6.92zM18.97 11H22c-.47-5-4-8.53-9-9v3.08C16 5.51 18.54 8 18.97 11zM13 18.92V22c5-.47 8.53-4 9-9h-3.03c-.43 3-2.97 5.49-5.97 5.92z"></path></g>
-<g id="donut-small"><path d="M11 9.16V2c-5 .5-9 4.79-9 10s4 9.5 9 10v-7.16c-1-.41-2-1.52-2-2.84s1-2.43 2-2.84zM14.86 11H22c-.48-4.75-4-8.53-9-9v7.16c1 .3 1.52.98 1.86 1.84zM13 14.84V22c5-.47 8.52-4.25 9-9h-7.14c-.34.86-.86 1.54-1.86 1.84z"></path></g>
-<g id="drafts"><path d="M21.99 8c0-.72-.37-1.35-.94-1.7L12 1 2.95 6.3C2.38 6.65 2 7.28 2 8v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2l-.01-10zM12 13L3.74 7.84 12 3l8.26 4.84L12 13z"></path></g>
-<g id="eject"><path d="M5 17h14v2H5zm7-12L5.33 15h13.34z"></path></g>
-<g id="error"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"></path></g>
-<g id="error-outline"><path d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></g>
-<g id="euro-symbol"><path d="M15 18.5c-2.51 0-4.68-1.42-5.76-3.5H15v-2H8.58c-.05-.33-.08-.66-.08-1s.03-.67.08-1H15V9H9.24C10.32 6.92 12.5 5.5 15 5.5c1.61 0 3.09.59 4.23 1.57L21 5.3C19.41 3.87 17.3 3 15 3c-3.92 0-7.24 2.51-8.48 6H3v2h3.06c-.04.33-.06.66-.06 1 0 .34.02.67.06 1H3v2h3.52c1.24 3.49 4.56 6 8.48 6 2.31 0 4.41-.87 6-2.3l-1.78-1.77c-1.13.98-2.6 1.57-4.22 1.57z"></path></g>
-<g id="event"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"></path></g>
-<g id="event-seat"><path d="M4 18v3h3v-3h10v3h3v-6H4zm15-8h3v3h-3zM2 10h3v3H2zm15 3H7V5c0-1.1.9-2 2-2h6c1.1 0 2 .9 2 2v8z"></path></g>
-<g id="exit-to-app"><path d="M10.09 15.59L11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59zM19 3H5c-1.11 0-2 .9-2 2v4h2V5h14v14H5v-4H3v4c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></g>
-<g id="expand-less"><path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"></path></g>
-<g id="expand-more"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></g>
-<g id="explore"><path d="M12 10.9c-.61 0-1.1.49-1.1 1.1s.49 1.1 1.1 1.1c.61 0 1.1-.49 1.1-1.1s-.49-1.1-1.1-1.1zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm2.19 12.19L6 18l3.81-8.19L18 6l-3.81 8.19z"></path></g>
-<g id="extension"><path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z"></path></g>
-<g id="face"><path d="M9 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm6 0c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 14.05 10 17.42 10c.78 0 1.53-.09 2.25-.26.21.71.33 1.47.33 2.26 0 4.41-3.59 8-8 8z"></path></g>
-<g id="favorite"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></g>
-<g id="favorite-border"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></g>
-<g id="feedback"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"></path></g>
-<g id="file-download"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></g>
-<g id="file-upload"><path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"></path></g>
-<g id="filter-list"><path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"></path></g>
-<g id="find-in-page"><path d="M20 19.59V8l-6-6H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c.45 0 .85-.15 1.19-.4l-4.43-4.43c-.8.52-1.74.83-2.76.83-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5c0 1.02-.31 1.96-.83 2.75L20 19.59zM9 13c0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3-3 1.34-3 3z"></path></g>
-<g id="find-replace"><path d="M11 6c1.38 0 2.63.56 3.54 1.46L12 10h6V4l-2.05 2.05C14.68 4.78 12.93 4 11 4c-3.53 0-6.43 2.61-6.92 6H6.1c.46-2.28 2.48-4 4.9-4zm5.64 9.14c.66-.9 1.12-1.97 1.28-3.14H15.9c-.46 2.28-2.48 4-4.9 4-1.38 0-2.63-.56-3.54-1.46L10 12H4v6l2.05-2.05C7.32 17.22 9.07 18 11 18c1.55 0 2.98-.51 4.14-1.36L20 21.49 21.49 20l-4.85-4.86z"></path></g>
-<g id="fingerprint"><path d="M17.81 4.47c-.08 0-.16-.02-.23-.06C15.66 3.42 14 3 12.01 3c-1.98 0-3.86.47-5.57 1.41-.24.13-.54.04-.68-.2-.13-.24-.04-.55.2-.68C7.82 2.52 9.86 2 12.01 2c2.13 0 3.99.47 6.03 1.52.25.13.34.43.21.67-.09.18-.26.28-.44.28zM3.5 9.72c-.1 0-.2-.03-.29-.09-.23-.16-.28-.47-.12-.7.99-1.4 2.25-2.5 3.75-3.27C9.98 4.04 14 4.03 17.15 5.65c1.5.77 2.76 1.86 3.75 3.25.16.22.11.54-.12.7-.23.16-.54.11-.7-.12-.9-1.26-2.04-2.25-3.39-2.94-2.87-1.47-6.54-1.47-9.4.01-1.36.7-2.5 1.7-3.4 2.96-.08.14-.23.21-.39.21zm6.25 12.07c-.13 0-.26-.05-.35-.15-.87-.87-1.34-1.43-2.01-2.64-.69-1.23-1.05-2.73-1.05-4.34 0-2.97 2.54-5.39 5.66-5.39s5.66 2.42 5.66 5.39c0 .28-.22.5-.5.5s-.5-.22-.5-.5c0-2.42-2.09-4.39-4.66-4.39-2.57 0-4.66 1.97-4.66 4.39 0 1.44.32 2.77.93 3.85.64 1.15 1.08 1.64 1.85 2.42.19.2.19.51 0 .71-.11.1-.24.15-.37.15zm7.17-1.85c-1.19 0-2.24-.3-3.1-.89-1.49-1.01-2.38-2.65-2.38-4.39 0-.28.22-.5.5-.5s.5.22.5.5c0 1.41.72 2.74 1.94 3.56.71.48 1.54.71 2.54.71.24 0 .64-.03 1.04-.1.27-.05.53.13.58.41.05.27-.13.53-.41.58-.57.11-1.07.12-1.21.12zM14.91 22c-.04 0-.09-.01-.13-.02-1.59-.44-2.63-1.03-3.72-2.1-1.4-1.39-2.17-3.24-2.17-5.22 0-1.62 1.38-2.94 3.08-2.94 1.7 0 3.08 1.32 3.08 2.94 0 1.07.93 1.94 2.08 1.94s2.08-.87 2.08-1.94c0-3.77-3.25-6.83-7.25-6.83-2.84 0-5.44 1.58-6.61 4.03-.39.81-.59 1.76-.59 2.8 0 .78.07 2.01.67 3.61.1.26-.03.55-.29.64-.26.1-.55-.04-.64-.29-.49-1.31-.73-2.61-.73-3.96 0-1.2.23-2.29.68-3.24 1.33-2.79 4.28-4.6 7.51-4.6 4.55 0 8.25 3.51 8.25 7.83 0 1.62-1.38 2.94-3.08 2.94s-3.08-1.32-3.08-2.94c0-1.07-.93-1.94-2.08-1.94s-2.08.87-2.08 1.94c0 1.71.66 3.31 1.87 4.51.95.94 1.86 1.46 3.27 1.85.27.07.42.35.35.61-.05.23-.26.38-.47.38z"></path></g>
-<g id="first-page"><path d="M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z"></path></g>
-<g id="flag"><path d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z"></path></g>
-<g id="flight-land"><path d="M2.5 19h19v2h-19zm7.18-5.73l4.35 1.16 5.31 1.42c.8.21 1.62-.26 1.84-1.06.21-.8-.26-1.62-1.06-1.84l-5.31-1.42-2.76-9.02L10.12 2v8.28L5.15 8.95l-.93-2.32-1.45-.39v5.17l1.6.43 5.31 1.43z"></path></g>
-<g id="flight-takeoff"><path d="M2.5 19h19v2h-19zm19.57-9.36c-.21-.8-1.04-1.28-1.84-1.06L14.92 10l-6.9-6.43-1.93.51 4.14 7.17-4.97 1.33-1.97-1.54-1.45.39 1.82 3.16.77 1.33 1.6-.43 5.31-1.42 4.35-1.16L21 11.49c.81-.23 1.28-1.05 1.07-1.85z"></path></g>
-<g id="flip-to-back"><path d="M9 7H7v2h2V7zm0 4H7v2h2v-2zm0-8c-1.11 0-2 .9-2 2h2V3zm4 12h-2v2h2v-2zm6-12v2h2c0-1.1-.9-2-2-2zm-6 0h-2v2h2V3zM9 17v-2H7c0 1.1.89 2 2 2zm10-4h2v-2h-2v2zm0-4h2V7h-2v2zm0 8c1.1 0 2-.9 2-2h-2v2zM5 7H3v12c0 1.1.89 2 2 2h12v-2H5V7zm10-2h2V3h-2v2zm0 12h2v-2h-2v2z"></path></g>
-<g id="flip-to-front"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm2 4v-2H3c0 1.1.89 2 2 2zM3 9h2V7H3v2zm12 12h2v-2h-2v2zm4-18H9c-1.11 0-2 .9-2 2v10c0 1.1.89 2 2 2h10c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 12H9V5h10v10zm-8 6h2v-2h-2v2zm-4 0h2v-2H7v2z"></path></g>
-<g id="folder"><path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path></g>
-<g id="folder-open"><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"></path></g>
-<g id="folder-shared"><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-5 3c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm4 8h-8v-1c0-1.33 2.67-2 4-2s4 .67 4 2v1z"></path></g>
-<g id="font-download"><path d="M9.93 13.5h4.14L12 7.98zM20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-4.05 16.5l-1.14-3H9.17l-1.12 3H5.96l5.11-13h1.86l5.11 13h-2.09z"></path></g>
-<g id="forward"><path d="M12 8V4l8 8-8 8v-4H4V8z"></path></g>
-<g id="fullscreen"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"></path></g>
-<g id="fullscreen-exit"><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"></path></g>
-<g id="g-translate"><path d="M20 5h-9.12L10 2H4c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h7l1 3h8c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zM7.17 14.59c-2.25 0-4.09-1.83-4.09-4.09s1.83-4.09 4.09-4.09c1.04 0 1.99.37 2.74 1.07l.07.06-1.23 1.18-.06-.05c-.29-.27-.78-.59-1.52-.59-1.31 0-2.38 1.09-2.38 2.42s1.07 2.42 2.38 2.42c1.37 0 1.96-.87 2.12-1.46H7.08V9.91h3.95l.01.07c.04.21.05.4.05.61 0 2.35-1.61 4-3.92 4zm6.03-1.71c.33.6.74 1.18 1.19 1.7l-.54.53-.65-2.23zm.77-.76h-.99l-.31-1.04h3.99s-.34 1.31-1.56 2.74c-.52-.62-.89-1.23-1.13-1.7zM21 20c0 .55-.45 1-1 1h-7l2-2-.81-2.77.92-.92L17.79 18l.73-.73-2.71-2.68c.9-1.03 1.6-2.25 1.92-3.51H19v-1.04h-3.64V9h-1.04v1.04h-1.96L11.18 6H20c.55 0 1 .45 1 1v13z"></path></g>
-<g id="gavel"><path d="M1 21h12v2H1zM5.245 8.07l2.83-2.827 14.14 14.142-2.828 2.828zM12.317 1l5.657 5.656-2.83 2.83-5.654-5.66zM3.825 9.485l5.657 5.657-2.828 2.828-5.657-5.657z"></path></g>
-<g id="gesture"><path d="M4.59 6.89c.7-.71 1.4-1.35 1.71-1.22.5.2 0 1.03-.3 1.52-.25.42-2.86 3.89-2.86 6.31 0 1.28.48 2.34 1.34 2.98.75.56 1.74.73 2.64.46 1.07-.31 1.95-1.4 3.06-2.77 1.21-1.49 2.83-3.44 4.08-3.44 1.63 0 1.65 1.01 1.76 1.79-3.78.64-5.38 3.67-5.38 5.37 0 1.7 1.44 3.09 3.21 3.09 1.63 0 4.29-1.33 4.69-6.1H21v-2.5h-2.47c-.15-1.65-1.09-4.2-4.03-4.2-2.25 0-4.18 1.91-4.94 2.84-.58.73-2.06 2.48-2.29 2.72-.25.3-.68.84-1.11.84-.45 0-.72-.83-.36-1.92.35-1.09 1.4-2.86 1.85-3.52.78-1.14 1.3-1.92 1.3-3.28C8.95 3.69 7.31 3 6.44 3 5.12 3 3.97 4 3.72 4.25c-.36.36-.66.66-.88.93l1.75 1.71zm9.29 11.66c-.31 0-.74-.26-.74-.72 0-.6.73-2.2 2.87-2.76-.3 2.69-1.43 3.48-2.13 3.48z"></path></g>
-<g id="get-app"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></g>
-<g id="gif"><path d="M11.5 9H13v6h-1.5zM9 9H6c-.6 0-1 .5-1 1v4c0 .5.4 1 1 1h3c.6 0 1-.5 1-1v-2H8.5v1.5h-2v-3H10V10c0-.5-.4-1-1-1zm10 1.5V9h-4.5v6H16v-2h2v-1.5h-2v-1z"></path></g>
-<g id="grade"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></g>
-<g id="group-work"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8 17.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM9.5 8c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5S9.5 9.38 9.5 8zm6.5 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></g>
-<g id="help"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path></g>
-<g id="help-outline"><path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"></path></g>
-<g id="highlight-off"><path d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></g>
-<g id="history"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"></path></g>
-<g id="home"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></g>
-<g id="hourglass-empty"><path d="M6 2v6h.01L6 8.01 10 12l-4 4 .01.01H6V22h12v-5.99h-.01L18 16l-4-4 4-3.99-.01-.01H18V2H6zm10 14.5V20H8v-3.5l4-4 4 4zm-4-5l-4-4V4h8v3.5l-4 4z"></path></g>
-<g id="hourglass-full"><path d="M6 2v6h.01L6 8.01 10 12l-4 4 .01.01H6V22h12v-5.99h-.01L18 16l-4-4 4-3.99-.01-.01H18V2H6z"></path></g>
-<g id="http"><path d="M4.5 11h-2V9H1v6h1.5v-2.5h2V15H6V9H4.5v2zm2.5-.5h1.5V15H10v-4.5h1.5V9H7v1.5zm5.5 0H14V15h1.5v-4.5H17V9h-4.5v1.5zm9-1.5H18v6h1.5v-2h2c.8 0 1.5-.7 1.5-1.5v-1c0-.8-.7-1.5-1.5-1.5zm0 2.5h-2v-1h2v1z"></path></g>
-<g id="https"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"></path></g>
-<g id="important-devices"><path d="M23 11.01L18 11c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5c.55 0 1-.45 1-1v-9c0-.55-.45-.99-1-.99zM23 20h-5v-7h5v7zM20 2H2C.89 2 0 2.89 0 4v12c0 1.1.89 2 2 2h7v2H7v2h8v-2h-2v-2h2v-2H2V4h18v5h2V4c0-1.11-.9-2-2-2zm-8.03 7L11 6l-.97 3H7l2.47 1.76-.94 2.91 2.47-1.8 2.47 1.8-.94-2.91L15 9h-3.03z"></path></g>
-<g id="inbox"><path d="M19 3H4.99c-1.11 0-1.98.89-1.98 2L3 19c0 1.1.88 2 1.99 2H19c1.1 0 2-.9 2-2V5c0-1.11-.9-2-2-2zm0 12h-4c0 1.66-1.35 3-3 3s-3-1.34-3-3H4.99V5H19v10z"></path></g>
-<g id="indeterminate-check-box"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"></path></g>
-<g id="info"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></g>
-<g id="info-outline"><path d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"></path></g>
-<g id="input"><path d="M21 3.01H3c-1.1 0-2 .9-2 2V9h2V4.99h18v14.03H3V15H1v4.01c0 1.1.9 1.98 2 1.98h18c1.1 0 2-.88 2-1.98v-14c0-1.11-.9-2-2-2zM11 16l4-4-4-4v3H1v2h10v3z"></path></g>
-<g id="invert-colors"><path d="M17.66 7.93L12 2.27 6.34 7.93c-3.12 3.12-3.12 8.19 0 11.31C7.9 20.8 9.95 21.58 12 21.58c2.05 0 4.1-.78 5.66-2.34 3.12-3.12 3.12-8.19 0-11.31zM12 19.59c-1.6 0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1v14.49z"></path></g>
-<g id="label"><path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"></path></g>
-<g id="label-outline"><path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16zM16 17H5V7h11l3.55 5L16 17z"></path></g>
-<g id="language"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"></path></g>
-<g id="last-page"><path d="M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z"></path></g>
-<g id="launch"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></g>
-<g id="lightbulb-outline"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"></path></g>
-<g id="line-style"><path d="M3 16h5v-2H3v2zm6.5 0h5v-2h-5v2zm6.5 0h5v-2h-5v2zM3 20h2v-2H3v2zm4 0h2v-2H7v2zm4 0h2v-2h-2v2zm4 0h2v-2h-2v2zm4 0h2v-2h-2v2zM3 12h8v-2H3v2zm10 0h8v-2h-8v2zM3 4v4h18V4H3z"></path></g>
-<g id="line-weight"><path d="M3 17h18v-2H3v2zm0 3h18v-1H3v1zm0-7h18v-3H3v3zm0-9v4h18V4H3z"></path></g>
-<g id="link"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></g>
-<g id="list"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"></path></g>
-<g id="lock"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"></path></g>
-<g id="lock-open"><path d="M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h1.9c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10z"></path></g>
-<g id="lock-outline"><path d="M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM8.9 6c0-1.71 1.39-3.1 3.1-3.1s3.1 1.39 3.1 3.1v2H8.9V6zM18 20H6V10h12v10z"></path></g>
-<g id="low-priority"><path d="M14 5h8v2h-8zm0 5.5h8v2h-8zm0 5.5h8v2h-8zM2 11.5C2 15.08 4.92 18 8.5 18H9v2l3-3-3-3v2h-.5C6.02 16 4 13.98 4 11.5S6.02 7 8.5 7H12V5H8.5C4.92 5 2 7.92 2 11.5z"></path></g>
-<g id="loyalty"><path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7zm11.77 8.27L13 19.54l-4.27-4.27C8.28 14.81 8 14.19 8 13.5c0-1.38 1.12-2.5 2.5-2.5.69 0 1.32.28 1.77.74l.73.72.73-.73c.45-.45 1.08-.73 1.77-.73 1.38 0 2.5 1.12 2.5 2.5 0 .69-.28 1.32-.73 1.77z"></path></g>
-<g id="mail"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></g>
-<g id="markunread"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></g>
-<g id="markunread-mailbox"><path d="M20 6H10v6H8V4h6V0H6v6H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"></path></g>
-<g id="menu"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></g>
-<g id="more-horiz"><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g>
-<g id="more-vert"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g>
-<g id="motorcycle"><path d="M19.44 9.03L15.41 5H11v2h3.59l2 2H5c-2.8 0-5 2.2-5 5s2.2 5 5 5c2.46 0 4.45-1.69 4.9-4h1.65l2.77-2.77c-.21.54-.32 1.14-.32 1.77 0 2.8 2.2 5 5 5s5-2.2 5-5c0-2.65-1.97-4.77-4.56-4.97zM7.82 15C7.4 16.15 6.28 17 5 17c-1.63 0-3-1.37-3-3s1.37-3 3-3c1.28 0 2.4.85 2.82 2H5v2h2.82zM19 17c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path></g>
-<g id="move-to-inbox"><path d="M19 3H4.99c-1.11 0-1.98.9-1.98 2L3 19c0 1.1.88 2 1.99 2H19c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 12h-4c0 1.66-1.35 3-3 3s-3-1.34-3-3H4.99V5H19v10zm-3-5h-2V7h-4v3H8l4 4 4-4z"></path></g>
-<g id="next-week"><path d="M20 7h-4V5c0-.55-.22-1.05-.59-1.41C15.05 3.22 14.55 3 14 3h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zM10 5h4v2h-4V5zm1 13.5l-1-1 3-3-3-3 1-1 4 4-4 4z"></path></g>
-<g id="note-add"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 14h-3v3h-2v-3H8v-2h3v-3h2v3h3v2zm-3-7V3.5L18.5 9H13z"></path></g>
-<g id="offline-pin"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm5 16H7v-2h10v2zm-6.7-4L7 10.7l1.4-1.4 1.9 1.9 5.3-5.3L17 7.3 10.3 14z"></path></g>
-<g id="opacity"><path d="M17.66 8L12 2.35 6.34 8C4.78 9.56 4 11.64 4 13.64s.78 4.11 2.34 5.67 3.61 2.35 5.66 2.35 4.1-.79 5.66-2.35S20 15.64 20 13.64 19.22 9.56 17.66 8zM6 14c.01-2 .62-3.27 1.76-4.4L12 5.27l4.24 4.38C17.38 10.77 17.99 12 18 14H6z"></path></g>
-<g id="open-in-browser"><path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"></path></g>
-<g id="open-in-new"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></g>
-<g id="open-with"><path d="M10 9h4V6h3l-5-5-5 5h3v3zm-1 1H6V7l-5 5 5 5v-3h3v-4zm14 2l-5-5v3h-3v4h3v3l5-5zm-9 3h-4v3H7l5 5 5-5h-3v-3z"></path></g>
-<g id="pageview"><path d="M11.5 9C10.12 9 9 10.12 9 11.5s1.12 2.5 2.5 2.5 2.5-1.12 2.5-2.5S12.88 9 11.5 9zM20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-3.21 14.21l-2.91-2.91c-.69.44-1.51.7-2.39.7C9.01 16 7 13.99 7 11.5S9.01 7 11.5 7 16 9.01 16 11.5c0 .88-.26 1.69-.7 2.39l2.91 2.9-1.42 1.42z"></path></g>
-<g id="pan-tool"><path d="M23 5.5V20c0 2.2-1.8 4-4 4h-7.3c-1.08 0-2.1-.43-2.85-1.19L1 14.83s1.26-1.23 1.3-1.25c.22-.19.49-.29.79-.29.22 0 .42.06.6.16.04.01 4.31 2.46 4.31 2.46V4c0-.83.67-1.5 1.5-1.5S11 3.17 11 4v7h1V1.5c0-.83.67-1.5 1.5-1.5S15 .67 15 1.5V11h1V2.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5V11h1V5.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5z"></path></g>
-<g id="payment"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"></path></g>
-<g id="perm-camera-mic"><path d="M20 5h-3.17L15 3H9L7.17 5H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7v-2.09c-2.83-.48-5-2.94-5-5.91h2c0 2.21 1.79 4 4 4s4-1.79 4-4h2c0 2.97-2.17 5.43-5 5.91V21h7c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm-6 8c0 1.1-.9 2-2 2s-2-.9-2-2V9c0-1.1.9-2 2-2s2 .9 2 2v4z"></path></g>
-<g id="perm-contact-calendar"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm6 12H6v-1c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1z"></path></g>
-<g id="perm-data-setting"><path d="M18.99 11.5c.34 0 .67.03 1 .07L20 0 0 20h11.56c-.04-.33-.07-.66-.07-1 0-4.14 3.36-7.5 7.5-7.5zm3.71 7.99c.02-.16.04-.32.04-.49 0-.17-.01-.33-.04-.49l1.06-.83c.09-.08.12-.21.06-.32l-1-1.73c-.06-.11-.19-.15-.31-.11l-1.24.5c-.26-.2-.54-.37-.85-.49l-.19-1.32c-.01-.12-.12-.21-.24-.21h-2c-.12 0-.23.09-.25.21l-.19 1.32c-.3.13-.59.29-.85.49l-1.24-.5c-.11-.04-.24 0-.31.11l-1 1.73c-.06.11-.04.24.06.32l1.06.83c-.02.16-.03.32-.03.49 0 .17.01.33.03.49l-1.06.83c-.09.08-.12.21-.06.32l1 1.73c.06.11.19.15.31.11l1.24-.5c.26.2.54.37.85.49l.19 1.32c.02.12.12.21.25.21h2c.12 0 .23-.09.25-.21l.19-1.32c.3-.13.59-.29.84-.49l1.25.5c.11.04.24 0 .31-.11l1-1.73c.06-.11.03-.24-.06-.32l-1.07-.83zm-3.71 1.01c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"></path></g>
-<g id="perm-device-information"><path d="M13 7h-2v2h2V7zm0 4h-2v6h2v-6zm4-9.99L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"></path></g>
-<g id="perm-identity"><path d="M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"></path></g>
-<g id="perm-media"><path d="M2 6H0v5h.01L0 20c0 1.1.9 2 2 2h18v-2H2V6zm20-2h-8l-2-2H6c-1.1 0-1.99.9-1.99 2L4 16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7 15l4.5-6 3.5 4.51 2.5-3.01L21 15H7z"></path></g>
-<g id="perm-phone-msg"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.58l2.2-2.21c.28-.27.36-.66.25-1.01C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM12 3v10l3-3h6V3h-9z"></path></g>
-<g id="perm-scan-wifi"><path d="M12 3C6.95 3 3.15 4.85 0 7.23L12 22 24 7.25C20.85 4.87 17.05 3 12 3zm1 13h-2v-6h2v6zm-2-8V6h2v2h-2z"></path></g>
-<g id="pets"><circle cx="4.5" cy="9.5" r="2.5"></circle><circle cx="9" cy="5.5" r="2.5"></circle><circle cx="15" cy="5.5" r="2.5"></circle><circle cx="19.5" cy="9.5" r="2.5"></circle><path d="M17.34 14.86c-.87-1.02-1.6-1.89-2.48-2.91-.46-.54-1.05-1.08-1.75-1.32-.11-.04-.22-.07-.33-.09-.25-.04-.52-.04-.78-.04s-.53 0-.79.05c-.11.02-.22.05-.33.09-.7.24-1.28.78-1.75 1.32-.87 1.02-1.6 1.89-2.48 2.91-1.31 1.31-2.92 2.76-2.62 4.79.29 1.02 1.02 2.03 2.33 2.32.73.15 3.06-.44 5.54-.44h.18c2.48 0 4.81.58 5.54.44 1.31-.29 2.04-1.31 2.33-2.32.31-2.04-1.3-3.49-2.61-4.8z"></path></g>
-<g id="picture-in-picture"><path d="M19 7h-8v6h8V7zm2-4H3c-1.1 0-2 .9-2 2v14c0 1.1.9 1.98 2 1.98h18c1.1 0 2-.88 2-1.98V5c0-1.1-.9-2-2-2zm0 16.01H3V4.98h18v14.03z"></path></g>
-<g id="picture-in-picture-alt"><path d="M19 11h-8v6h8v-6zm4 8V4.98C23 3.88 22.1 3 21 3H3c-1.1 0-2 .88-2 1.98V19c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2zm-2 .02H3V4.97h18v14.05z"></path></g>
-<g id="play-for-work"><path d="M11 5v5.59H7.5l4.5 4.5 4.5-4.5H13V5h-2zm-5 9c0 3.31 2.69 6 6 6s6-2.69 6-6h-2c0 2.21-1.79 4-4 4s-4-1.79-4-4H6z"></path></g>
-<g id="polymer"><path d="M19 4h-4L7.11 16.63 4.5 12 9 4H5L.5 12 5 20h4l7.89-12.63L19.5 12 15 20h4l4.5-8z"></path></g>
-<g id="power-settings-new"><path d="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z"></path></g>
-<g id="pregnant-woman"><path d="M9 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm7 9c-.01-1.34-.83-2.51-2-3 0-1.66-1.34-3-3-3s-3 1.34-3 3v7h2v5h3v-5h3v-4z"></path></g>
-<g id="print"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"></path></g>
-<g id="query-builder"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"></path></g>
-<g id="question-answer"><path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"></path></g>
-<g id="radio-button-checked"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></g>
-<g id="radio-button-unchecked"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></g>
-<g id="receipt"><path d="M18 17H6v-2h12v2zm0-4H6v-2h12v2zm0-4H6V7h12v2zM3 22l1.5-1.5L6 22l1.5-1.5L9 22l1.5-1.5L12 22l1.5-1.5L15 22l1.5-1.5L18 22l1.5-1.5L21 22V2l-1.5 1.5L18 2l-1.5 1.5L15 2l-1.5 1.5L12 2l-1.5 1.5L9 2 7.5 3.5 6 2 4.5 3.5 3 2v20z"></path></g>
-<g id="record-voice-over"><circle cx="9" cy="9" r="4"></circle><path d="M9 15c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4zm7.76-9.64l-1.68 1.69c.84 1.18.84 2.71 0 3.89l1.68 1.69c2.02-2.02 2.02-5.07 0-7.27zM20.07 2l-1.63 1.63c2.77 3.02 2.77 7.56 0 10.74L20.07 16c3.9-3.89 3.91-9.95 0-14z"></path></g>
-<g id="redeem"><path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"></path></g>
-<g id="redo"><path d="M18.4 10.6C16.55 8.99 14.15 8 11.5 8c-4.65 0-8.58 3.03-9.96 7.22L3.9 16c1.05-3.19 4.05-5.5 7.6-5.5 1.95 0 3.73.72 5.12 1.88L13 16h9V7l-3.6 3.6z"></path></g>
-<g id="refresh"><path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"></path></g>
-<g id="remove"><path d="M19 13H5v-2h14v2z"></path></g>
-<g id="remove-circle"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11H7v-2h10v2z"></path></g>
-<g id="remove-circle-outline"><path d="M7 11v2h10v-2H7zm5-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></g>
-<g id="remove-shopping-cart"><path d="M22.73 22.73L2.77 2.77 2 2l-.73-.73L0 2.54l4.39 4.39 2.21 4.66-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h7.46l1.38 1.38c-.5.36-.83.95-.83 1.62 0 1.1.89 2 1.99 2 .67 0 1.26-.33 1.62-.84L21.46 24l1.27-1.27zM7.42 15c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h2.36l2 2H7.42zm8.13-2c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H6.54l9.01 9zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2z"></path></g>
-<g id="reorder"><path d="M3 15h18v-2H3v2zm0 4h18v-2H3v2zm0-8h18V9H3v2zm0-6v2h18V5H3z"></path></g>
-<g id="reply"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path></g>
-<g id="reply-all"><path d="M7 8V5l-7 7 7 7v-3l-4-4 4-4zm6 1V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path></g>
-<g id="report"><path d="M15.73 3H8.27L3 8.27v7.46L8.27 21h7.46L21 15.73V8.27L15.73 3zM12 17.3c-.72 0-1.3-.58-1.3-1.3 0-.72.58-1.3 1.3-1.3.72 0 1.3.58 1.3 1.3 0 .72-.58 1.3-1.3 1.3zm1-4.3h-2V7h2v6z"></path></g>
-<g id="report-problem"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"></path></g>
-<g id="restore"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"></path></g>
-<g id="restore-page"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm-2 16c-2.05 0-3.81-1.24-4.58-3h1.71c.63.9 1.68 1.5 2.87 1.5 1.93 0 3.5-1.57 3.5-3.5S13.93 9.5 12 9.5c-1.35 0-2.52.78-3.1 1.9l1.6 1.6h-4V9l1.3 1.3C8.69 8.92 10.23 8 12 8c2.76 0 5 2.24 5 5s-2.24 5-5 5z"></path></g>
-<g id="room"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></g>
-<g id="rounded-corner"><path d="M19 19h2v2h-2v-2zm0-2h2v-2h-2v2zM3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm0-4h2V3H3v2zm4 0h2V3H7v2zm8 16h2v-2h-2v2zm-4 0h2v-2h-2v2zm4 0h2v-2h-2v2zm-8 0h2v-2H7v2zm-4 0h2v-2H3v2zM21 8c0-2.76-2.24-5-5-5h-5v2h5c1.65 0 3 1.35 3 3v5h2V8z"></path></g>
-<g id="rowing"><path d="M8.5 14.5L4 19l1.5 1.5L9 17h2l-2.5-2.5zM15 1c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 20.01L18 24l-2.99-3.01V19.5l-7.1-7.09c-.31.05-.61.07-.91.07v-2.16c1.66.03 3.61-.87 4.67-2.04l1.4-1.55c.19-.21.43-.38.69-.5.29-.14.62-.23.96-.23h.03C15.99 6.01 17 7.02 17 8.26v5.75c0 .84-.35 1.61-.92 2.16l-3.58-3.58v-2.27c-.63.52-1.43 1.02-2.29 1.39L16.5 18H18l3 3.01z"></path></g>
-<g id="save"><path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"></path></g>
-<g id="schedule"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"></path></g>
-<g id="search"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></g>
-<g id="select-all"><path d="M3 5h2V3c-1.1 0-2 .9-2 2zm0 8h2v-2H3v2zm4 8h2v-2H7v2zM3 9h2V7H3v2zm10-6h-2v2h2V3zm6 0v2h2c0-1.1-.9-2-2-2zM5 21v-2H3c0 1.1.9 2 2 2zm-2-4h2v-2H3v2zM9 3H7v2h2V3zm2 18h2v-2h-2v2zm8-8h2v-2h-2v2zm0 8c1.1 0 2-.9 2-2h-2v2zm0-12h2V7h-2v2zm0 8h2v-2h-2v2zm-4 4h2v-2h-2v2zm0-16h2V3h-2v2zM7 17h10V7H7v10zm2-8h6v6H9V9z"></path></g>
-<g id="send"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></g>
-<g id="settings"><path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"></path></g>
-<g id="settings-applications"><path d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm7-7H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-1.75 9c0 .23-.02.46-.05.68l1.48 1.16c.13.11.17.3.08.45l-1.4 2.42c-.09.15-.27.21-.43.15l-1.74-.7c-.36.28-.76.51-1.18.69l-.26 1.85c-.03.17-.18.3-.35.3h-2.8c-.17 0-.32-.13-.35-.29l-.26-1.85c-.43-.18-.82-.41-1.18-.69l-1.74.7c-.16.06-.34 0-.43-.15l-1.4-2.42c-.09-.15-.05-.34.08-.45l1.48-1.16c-.03-.23-.05-.46-.05-.69 0-.23.02-.46.05-.68l-1.48-1.16c-.13-.11-.17-.3-.08-.45l1.4-2.42c.09-.15.27-.21.43-.15l1.74.7c.36-.28.76-.51 1.18-.69l.26-1.85c.03-.17.18-.3.35-.3h2.8c.17 0 .32.13.35.29l.26 1.85c.43.18.82.41 1.18.69l1.74-.7c.16-.06.34 0 .43.15l1.4 2.42c.09.15.05.34-.08.45l-1.48 1.16c.03.23.05.46.05.69z"></path></g>
-<g id="settings-backup-restore"><path d="M14 12c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2zm-2-9c-4.97 0-9 4.03-9 9H0l4 4 4-4H5c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.51 0-2.91-.49-4.06-1.3l-1.42 1.44C8.04 20.3 9.94 21 12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9z"></path></g>
-<g id="settings-bluetooth"><path d="M11 24h2v-2h-2v2zm-4 0h2v-2H7v2zm8 0h2v-2h-2v2zm2.71-18.29L12 0h-1v7.59L6.41 3 5 4.41 10.59 10 5 15.59 6.41 17 11 12.41V20h1l5.71-5.71-4.3-4.29 4.3-4.29zM13 3.83l1.88 1.88L13 7.59V3.83zm1.88 10.46L13 16.17v-3.76l1.88 1.88z"></path></g>
-<g id="settings-brightness"><path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16.01H3V4.99h18v14.02zM8 16h2.5l1.5 1.5 1.5-1.5H16v-2.5l1.5-1.5-1.5-1.5V8h-2.5L12 6.5 10.5 8H8v2.5L6.5 12 8 13.5V16zm4-7c1.66 0 3 1.34 3 3s-1.34 3-3 3V9z"></path></g>
-<g id="settings-cell"><path d="M7 24h2v-2H7v2zm4 0h2v-2h-2v2zm4 0h2v-2h-2v2zM16 .01L8 0C6.9 0 6 .9 6 2v16c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V2c0-1.1-.9-1.99-2-1.99zM16 16H8V4h8v12z"></path></g>
-<g id="settings-ethernet"><path d="M7.77 6.76L6.23 5.48.82 12l5.41 6.52 1.54-1.28L3.42 12l4.35-5.24zM7 13h2v-2H7v2zm10-2h-2v2h2v-2zm-6 2h2v-2h-2v2zm6.77-7.52l-1.54 1.28L20.58 12l-4.35 5.24 1.54 1.28L23.18 12l-5.41-6.52z"></path></g>
-<g id="settings-input-antenna"><path d="M12 5c-3.87 0-7 3.13-7 7h2c0-2.76 2.24-5 5-5s5 2.24 5 5h2c0-3.87-3.13-7-7-7zm1 9.29c.88-.39 1.5-1.26 1.5-2.29 0-1.38-1.12-2.5-2.5-2.5S9.5 10.62 9.5 12c0 1.02.62 1.9 1.5 2.29v3.3L7.59 21 9 22.41l3-3 3 3L16.41 21 13 17.59v-3.3zM12 1C5.93 1 1 5.93 1 12h2c0-4.97 4.03-9 9-9s9 4.03 9 9h2c0-6.07-4.93-11-11-11z"></path></g>
-<g id="settings-input-component"><path d="M5 2c0-.55-.45-1-1-1s-1 .45-1 1v4H1v6h6V6H5V2zm4 14c0 1.3.84 2.4 2 2.82V23h2v-4.18c1.16-.41 2-1.51 2-2.82v-2H9v2zm-8 0c0 1.3.84 2.4 2 2.82V23h2v-4.18C6.16 18.4 7 17.3 7 16v-2H1v2zM21 6V2c0-.55-.45-1-1-1s-1 .45-1 1v4h-2v6h6V6h-2zm-8-4c0-.55-.45-1-1-1s-1 .45-1 1v4H9v6h6V6h-2V2zm4 14c0 1.3.84 2.4 2 2.82V23h2v-4.18c1.16-.41 2-1.51 2-2.82v-2h-6v2z"></path></g>
-<g id="settings-input-composite"><path d="M5 2c0-.55-.45-1-1-1s-1 .45-1 1v4H1v6h6V6H5V2zm4 14c0 1.3.84 2.4 2 2.82V23h2v-4.18c1.16-.41 2-1.51 2-2.82v-2H9v2zm-8 0c0 1.3.84 2.4 2 2.82V23h2v-4.18C6.16 18.4 7 17.3 7 16v-2H1v2zM21 6V2c0-.55-.45-1-1-1s-1 .45-1 1v4h-2v6h6V6h-2zm-8-4c0-.55-.45-1-1-1s-1 .45-1 1v4H9v6h6V6h-2V2zm4 14c0 1.3.84 2.4 2 2.82V23h2v-4.18c1.16-.41 2-1.51 2-2.82v-2h-6v2z"></path></g>
-<g id="settings-input-hdmi"><path d="M18 7V4c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v3H5v6l3 6v3h8v-3l3-6V7h-1zM8 4h8v3h-2V5h-1v2h-2V5h-1v2H8V4z"></path></g>
-<g id="settings-input-svideo"><path d="M8 11.5c0-.83-.67-1.5-1.5-1.5S5 10.67 5 11.5 5.67 13 6.5 13 8 12.33 8 11.5zm7-5c0-.83-.67-1.5-1.5-1.5h-3C9.67 5 9 5.67 9 6.5S9.67 8 10.5 8h3c.83 0 1.5-.67 1.5-1.5zM8.5 15c-.83 0-1.5.67-1.5 1.5S7.67 18 8.5 18s1.5-.67 1.5-1.5S9.33 15 8.5 15zM12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9zm5.5-11c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm-2 5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"></path></g>
-<g id="settings-overscan"><path d="M12.01 5.5L10 8h4l-1.99-2.5zM18 10v4l2.5-1.99L18 10zM6 10l-2.5 2.01L6 14v-4zm8 6h-4l2.01 2.5L14 16zm7-13H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16.01H3V4.99h18v14.02z"></path></g>
-<g id="settings-phone"><path d="M13 9h-2v2h2V9zm4 0h-2v2h2V9zm3 6.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.58l2.2-2.21c.28-.27.36-.66.25-1.01C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM19 9v2h2V9h-2z"></path></g>
-<g id="settings-power"><path d="M7 24h2v-2H7v2zm4 0h2v-2h-2v2zm2-22h-2v10h2V2zm3.56 2.44l-1.45 1.45C16.84 6.94 18 8.83 18 11c0 3.31-2.69 6-6 6s-6-2.69-6-6c0-2.17 1.16-4.06 2.88-5.12L7.44 4.44C5.36 5.88 4 8.28 4 11c0 4.42 3.58 8 8 8s8-3.58 8-8c0-2.72-1.36-5.12-3.44-6.56zM15 24h2v-2h-2v2z"></path></g>
-<g id="settings-remote"><path d="M15 9H9c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V10c0-.55-.45-1-1-1zm-3 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM7.05 6.05l1.41 1.41C9.37 6.56 10.62 6 12 6s2.63.56 3.54 1.46l1.41-1.41C15.68 4.78 13.93 4 12 4s-3.68.78-4.95 2.05zM12 0C8.96 0 6.21 1.23 4.22 3.22l1.41 1.41C7.26 3.01 9.51 2 12 2s4.74 1.01 6.36 2.64l1.41-1.41C17.79 1.23 15.04 0 12 0z"></path></g>
-<g id="settings-voice"><path d="M7 24h2v-2H7v2zm5-11c1.66 0 2.99-1.34 2.99-3L15 4c0-1.66-1.34-3-3-3S9 2.34 9 4v6c0 1.66 1.34 3 3 3zm-1 11h2v-2h-2v2zm4 0h2v-2h-2v2zm4-14h-1.7c0 3-2.54 5.1-5.3 5.1S6.7 13 6.7 10H5c0 3.41 2.72 6.23 6 6.72V20h2v-3.28c3.28-.49 6-3.31 6-6.72z"></path></g>
-<g id="shop"><path d="M16 6V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H2v13c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6h-6zm-6-2h4v2h-4V4zM9 18V9l7.5 4L9 18z"></path></g>
-<g id="shop-two"><path d="M3 9H1v11c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2H3V9zm15-4V3c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H5v11c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2V5h-5zm-6-2h4v2h-4V3zm0 12V8l5.5 3-5.5 4z"></path></g>
-<g id="shopping-basket"><path d="M17.21 9l-4.38-6.56c-.19-.28-.51-.42-.83-.42-.32 0-.64.14-.83.43L6.79 9H2c-.55 0-1 .45-1 1 0 .09.01.18.04.27l2.54 9.27c.23.84 1 1.46 1.92 1.46h13c.92 0 1.69-.62 1.93-1.46l2.54-9.27L23 10c0-.55-.45-1-1-1h-4.79zM9 9l3-4.4L15 9H9zm3 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"></path></g>
-<g id="shopping-cart"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"></path></g>
-<g id="sort"><path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z"></path></g>
-<g id="speaker-notes"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM8 14H6v-2h2v2zm0-3H6V9h2v2zm0-3H6V6h2v2zm7 6h-5v-2h5v2zm3-3h-8V9h8v2zm0-3h-8V6h8v2z"></path></g>
-<g id="speaker-notes-off"><path d="M10.54 11l-.54-.54L7.54 8 6 6.46 2.38 2.84 1.27 1.73 0 3l2.01 2.01L2 22l4-4h9l5.73 5.73L22 22.46 17.54 18l-7-7zM8 14H6v-2h2v2zm-2-3V9l2 2H6zm14-9H4.08L10 7.92V6h8v2h-7.92l1 1H18v2h-4.92l6.99 6.99C21.14 17.95 22 17.08 22 16V4c0-1.1-.9-2-2-2z"></path></g>
-<g id="spellcheck"><path d="M12.45 16h2.09L9.43 3H7.57L2.46 16h2.09l1.12-3h5.64l1.14 3zm-6.02-5L8.5 5.48 10.57 11H6.43zm15.16.59l-8.09 8.09L9.83 16l-1.41 1.41 5.09 5.09L23 13l-1.41-1.41z"></path></g>
-<g id="star"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></g>
-<g id="star-border"><path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path></g>
-<g id="star-half"><path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4V6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path></g>
-<g id="stars"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"></path></g>
-<g id="store"><path d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z"></path></g>
-<g id="subdirectory-arrow-left"><path d="M11 9l1.42 1.42L8.83 14H18V4h2v12H8.83l3.59 3.58L11 21l-6-6 6-6z"></path></g>
-<g id="subdirectory-arrow-right"><path d="M19 15l-6 6-1.42-1.42L15.17 16H4V4h2v10h9.17l-3.59-3.58L13 9l6 6z"></path></g>
-<g id="subject"><path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path></g>
-<g id="supervisor-account"><path d="M16.5 12c1.38 0 2.49-1.12 2.49-2.5S17.88 7 16.5 7C15.12 7 14 8.12 14 9.5s1.12 2.5 2.5 2.5zM9 11c1.66 0 2.99-1.34 2.99-3S10.66 5 9 5C7.34 5 6 6.34 6 8s1.34 3 3 3zm7.5 3c-1.83 0-5.5.92-5.5 2.75V19h11v-2.25c0-1.83-3.67-2.75-5.5-2.75zM9 13c-2.33 0-7 1.17-7 3.5V19h7v-2.25c0-.85.33-2.34 2.37-3.47C10.5 13.1 9.66 13 9 13z"></path></g>
-<g id="swap-horiz"><path d="M6.99 11L3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"></path></g>
-<g id="swap-vert"><path d="M16 17.01V10h-2v7.01h-3L15 21l4-3.99h-3zM9 3L5 6.99h3V14h2V6.99h3L9 3z"></path></g>
-<g id="swap-vertical-circle"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM6.5 9L10 5.5 13.5 9H11v4H9V9H6.5zm11 6L14 18.5 10.5 15H13v-4h2v4h2.5z"></path></g>
-<g id="system-update-alt"><path d="M12 16.5l4-4h-3v-9h-2v9H8l4 4zm9-13h-6v1.99h6v14.03H3V5.49h6V3.5H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2v-14c0-1.1-.9-2-2-2z"></path></g>
-<g id="tab"><path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h10v4h8v10z"></path></g>
-<g id="tab-unselected"><path d="M1 9h2V7H1v2zm0 4h2v-2H1v2zm0-8h2V3c-1.1 0-2 .9-2 2zm8 16h2v-2H9v2zm-8-4h2v-2H1v2zm2 4v-2H1c0 1.1.9 2 2 2zM21 3h-8v6h10V5c0-1.1-.9-2-2-2zm0 14h2v-2h-2v2zM9 5h2V3H9v2zM5 21h2v-2H5v2zM5 5h2V3H5v2zm16 16c1.1 0 2-.9 2-2h-2v2zm0-8h2v-2h-2v2zm-8 8h2v-2h-2v2zm4 0h2v-2h-2v2z"></path></g>
-<g id="text-format"><path d="M5 17v2h14v-2H5zm4.5-4.2h5l.9 2.2h2.1L12.75 4h-1.5L6.5 15h2.1l.9-2.2zM12 5.98L13.87 11h-3.74L12 5.98z"></path></g>
-<g id="theaters"><path d="M18 3v2h-2V3H8v2H6V3H4v18h2v-2h2v2h8v-2h2v2h2V3h-2zM8 17H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2zm10 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"></path></g>
-<g id="thumb-down"><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></g>
-<g id="thumb-up"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path></g>
-<g id="thumbs-up-down"><path d="M12 6c0-.55-.45-1-1-1H5.82l.66-3.18.02-.23c0-.31-.13-.59-.33-.8L5.38 0 .44 4.94C.17 5.21 0 5.59 0 6v6.5c0 .83.67 1.5 1.5 1.5h6.75c.62 0 1.15-.38 1.38-.91l2.26-5.29c.07-.17.11-.36.11-.55V6zm10.5 4h-6.75c-.62 0-1.15.38-1.38.91l-2.26 5.29c-.07.17-.11.36-.11.55V18c0 .55.45 1 1 1h5.18l-.66 3.18-.02.24c0 .31.13.59.33.8l.79.78 4.94-4.94c.27-.27.44-.65.44-1.06v-6.5c0-.83-.67-1.5-1.5-1.5z"></path></g>
-<g id="timeline"><path d="M23 8c0 1.1-.9 2-2 2-.18 0-.35-.02-.51-.07l-3.56 3.55c.05.16.07.34.07.52 0 1.1-.9 2-2 2s-2-.9-2-2c0-.18.02-.36.07-.52l-2.55-2.55c-.16.05-.34.07-.52.07s-.36-.02-.52-.07l-4.55 4.56c.05.16.07.33.07.51 0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2c.18 0 .35.02.51.07l4.56-4.55C8.02 9.36 8 9.18 8 9c0-1.1.9-2 2-2s2 .9 2 2c0 .18-.02.36-.07.52l2.55 2.55c.16-.05.34-.07.52-.07s.36.02.52.07l3.55-3.56C19.02 8.35 19 8.18 19 8c0-1.1.9-2 2-2s2 .9 2 2z"></path></g>
-<g id="toc"><path d="M3 9h14V7H3v2zm0 4h14v-2H3v2zm0 4h14v-2H3v2zm16 0h2v-2h-2v2zm0-10v2h2V7h-2zm0 6h2v-2h-2v2z"></path></g>
-<g id="today"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"></path></g>
-<g id="toll"><path d="M15 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zM3 12c0-2.61 1.67-4.83 4-5.65V4.26C3.55 5.15 1 8.27 1 12s2.55 6.85 6 7.74v-2.09c-2.33-.82-4-3.04-4-5.65z"></path></g>
-<g id="touch-app"><path d="M9 11.24V7.5C9 6.12 10.12 5 11.5 5S14 6.12 14 7.5v3.74c1.21-.81 2-2.18 2-3.74C16 5.01 13.99 3 11.5 3S7 5.01 7 7.5c0 1.56.79 2.93 2 3.74zm9.84 4.63l-4.54-2.26c-.17-.07-.35-.11-.54-.11H13v-6c0-.83-.67-1.5-1.5-1.5S10 6.67 10 7.5v10.74l-3.43-.72c-.08-.01-.15-.03-.24-.03-.31 0-.59.13-.79.33l-.79.8 4.94 4.94c.27.27.65.44 1.06.44h6.79c.75 0 1.33-.55 1.44-1.28l.75-5.27c.01-.07.02-.14.02-.2 0-.62-.38-1.16-.91-1.38z"></path></g>
-<g id="track-changes"><path d="M19.07 4.93l-1.41 1.41C19.1 7.79 20 9.79 20 12c0 4.42-3.58 8-8 8s-8-3.58-8-8c0-4.08 3.05-7.44 7-7.93v2.02C8.16 6.57 6 9.03 6 12c0 3.31 2.69 6 6 6s6-2.69 6-6c0-1.66-.67-3.16-1.76-4.24l-1.41 1.41C15.55 9.9 16 10.9 16 12c0 2.21-1.79 4-4 4s-4-1.79-4-4c0-1.86 1.28-3.41 3-3.86v2.14c-.6.35-1 .98-1 1.72 0 1.1.9 2 2 2s2-.9 2-2c0-.74-.4-1.38-1-1.72V2h-1C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10c0-2.76-1.12-5.26-2.93-7.07z"></path></g>
-<g id="translate"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></g>
-<g id="trending-down"><path d="M16 18l2.29-2.29-4.88-4.88-4 4L2 7.41 3.41 6l6 6 4-4 6.3 6.29L22 12v6z"></path></g>
-<g id="trending-flat"><path d="M22 12l-4-4v3H3v2h15v3z"></path></g>
-<g id="trending-up"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"></path></g>
-<g id="turned-in"><path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"></path></g>
-<g id="turned-in-not"><path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"></path></g>
-<g id="unarchive"><path d="M20.55 5.22l-1.39-1.68C18.88 3.21 18.47 3 18 3H6c-.47 0-.88.21-1.15.55L3.46 5.22C3.17 5.57 3 6.01 3 6.5V19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6.5c0-.49-.17-.93-.45-1.28zM12 9.5l5.5 5.5H14v2h-4v-2H6.5L12 9.5zM5.12 5l.82-1h12l.93 1H5.12z"></path></g>
-<g id="undo"><path d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.16 3.16-1.88 5.12-1.88 3.54 0 6.55 2.31 7.6 5.5l2.37-.78C21.08 11.03 17.15 8 12.5 8z"></path></g>
-<g id="unfold-less"><path d="M7.41 18.59L8.83 20 12 16.83 15.17 20l1.41-1.41L12 14l-4.59 4.59zm9.18-13.18L15.17 4 12 7.17 8.83 4 7.41 5.41 12 10l4.59-4.59z"></path></g>
-<g id="unfold-more"><path d="M12 5.83L15.17 9l1.41-1.41L12 3 7.41 7.59 8.83 9 12 5.83zm0 12.34L8.83 15l-1.41 1.41L12 21l4.59-4.59L15.17 15 12 18.17z"></path></g>
-<g id="update"><path d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79 2.73 2.71 7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58 3.51-3.47 9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8h1.5z"></path></g>
-<g id="verified-user"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"></path></g>
-<g id="view-agenda"><path d="M20 13H3c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h17c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1zm0-10H3c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h17c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1z"></path></g>
-<g id="view-array"><path d="M4 18h3V5H4v13zM18 5v13h3V5h-3zM8 18h9V5H8v13z"></path></g>
-<g id="view-carousel"><path d="M7 19h10V4H7v15zm-5-2h4V6H2v11zM18 6v11h4V6h-4z"></path></g>
-<g id="view-column"><path d="M10 18h5V5h-5v13zm-6 0h5V5H4v13zM16 5v13h5V5h-5z"></path></g>
-<g id="view-day"><path d="M2 21h19v-3H2v3zM20 8H3c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h17c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zM2 3v3h19V3H2z"></path></g>
-<g id="view-headline"><path d="M4 15h16v-2H4v2zm0 4h16v-2H4v2zm0-8h16V9H4v2zm0-6v2h16V5H4z"></path></g>
-<g id="view-list"><path d="M4 14h4v-4H4v4zm0 5h4v-4H4v4zM4 9h4V5H4v4zm5 5h12v-4H9v4zm0 5h12v-4H9v4zM9 5v4h12V5H9z"></path></g>
-<g id="view-module"><path d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z"></path></g>
-<g id="view-quilt"><path d="M10 18h5v-6h-5v6zm-6 0h5V5H4v13zm12 0h5v-6h-5v6zM10 5v6h11V5H10z"></path></g>
-<g id="view-stream"><path d="M4 18h17v-6H4v6zM4 5v6h17V5H4z"></path></g>
-<g id="view-week"><path d="M6 5H3c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zm14 0h-3c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zm-7 0h-3c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1z"></path></g>
-<g id="visibility"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></g>
-<g id="visibility-off"><path d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z"></path></g>
-<g id="warning"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"></path></g>
-<g id="watch-later"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z"></path></g>
-<g id="weekend"><path d="M21 10c-1.1 0-2 .9-2 2v3H5v-3c0-1.1-.9-2-2-2s-2 .9-2 2v5c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2v-5c0-1.1-.9-2-2-2zm-3-5H6c-1.1 0-2 .9-2 2v2.15c1.16.41 2 1.51 2 2.82V14h12v-2.03c0-1.3.84-2.4 2-2.82V7c0-1.1-.9-2-2-2z"></path></g>
-<g id="work"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"></path></g>
-<g id="youtube-searched-for"><path d="M17.01 14h-.8l-.27-.27c.98-1.14 1.57-2.61 1.57-4.23 0-3.59-2.91-6.5-6.5-6.5s-6.5 3-6.5 6.5H2l3.84 4 4.16-4H6.51C6.51 7 8.53 5 11.01 5s4.5 2.01 4.5 4.5c0 2.48-2.02 4.5-4.5 4.5-.65 0-1.26-.14-1.82-.38L7.71 15.1c.97.57 2.09.9 3.3.9 1.61 0 3.08-.59 4.22-1.57l.27.27v.79l5.01 4.99L22 19l-4.99-5z"></path></g>
-<g id="zoom-in"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zm2.5-4h-2v2H9v-2H7V9h2V7h1v2h2v1z"></path></g>
-<g id="zoom-out"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zM7 9h5v1H7z"></path></g>
-</defs></svg>
-</iron-iconset-svg>`;document.head.appendChild(template$2.content);Polymer({_template:html`
-    <style>
-      :host {
-        display: inline-block;
-        overflow: hidden;
-        position: relative;
-      }
-
-      #baseURIAnchor {
-        display: none;
-      }
-
-      #sizedImgDiv {
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-
-        display: none;
-      }
-
-      #img {
-        display: block;
-        width: var(--iron-image-width, auto);
-        height: var(--iron-image-height, auto);
-      }
-
-      :host([sizing]) #sizedImgDiv {
-        display: block;
-      }
-
-      :host([sizing]) #img {
-        display: none;
-      }
-
-      #placeholder {
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-
-        background-color: inherit;
-        opacity: 1;
-
-        @apply --iron-image-placeholder;
-      }
-
-      #placeholder.faded-out {
-        transition: opacity 0.5s linear;
-        opacity: 0;
-      }
-    </style>
-
-    <a id="baseURIAnchor" href="#"></a>
-    <div id="sizedImgDiv" role="img" hidden$="[[_computeImgDivHidden(sizing)]]" aria-hidden$="[[_computeImgDivARIAHidden(alt)]]" aria-label$="[[_computeImgDivARIALabel(alt, src)]]"></div>
-    <img id="img" alt$="[[alt]]" hidden$="[[_computeImgHidden(sizing)]]" crossorigin$="[[crossorigin]]" on-load="_imgOnLoad" on-error="_imgOnError">
-    <div id="placeholder" hidden$="[[_computePlaceholderHidden(preload, fade, loading, loaded)]]" class$="[[_computePlaceholderClassName(preload, fade, loading, loaded)]]"></div>
-`,is:"iron-image",properties:{/**
-     * The URL of an image.
-     */src:{type:String,value:""},/**
-     * A short text alternative for the image.
-     */alt:{type:String,value:null},/**
-     * CORS enabled images support:
-     * https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_enabled_image
-     */crossorigin:{type:String,value:null},/**
-     * When true, the image is prevented from loading and any placeholder is
-     * shown.  This may be useful when a binding to the src property is known to
-     * be invalid, to prevent 404 requests.
-     */preventLoad:{type:Boolean,value:!1},/**
-     * Sets a sizing option for the image.  Valid values are `contain` (full
-     * aspect ratio of the image is contained within the element and
-     * letterboxed) or `cover` (image is cropped in order to fully cover the
-     * bounds of the element), or `null` (default: image takes natural size).
-     */sizing:{type:String,value:null,reflectToAttribute:!0},/**
-     * When a sizing option is used (`cover` or `contain`), this determines
-     * how the image is aligned within the element bounds.
-     */position:{type:String,value:"center"},/**
-     * When `true`, any change to the `src` property will cause the
-     * `placeholder` image to be shown until the new image has loaded.
-     */preload:{type:Boolean,value:!1},/**
-     * This image will be used as a background/placeholder until the src image
-     * has loaded.  Use of a data-URI for placeholder is encouraged for instant
-     * rendering.
-     */placeholder:{type:String,value:null,observer:"_placeholderChanged"},/**
-     * When `preload` is true, setting `fade` to true will cause the image to
-     * fade into place.
-     */fade:{type:Boolean,value:!1},/**
-     * Read-only value that is true when the image is loaded.
-     */loaded:{notify:!0,readOnly:!0,type:Boolean,value:!1},/**
-     * Read-only value that tracks the loading state of the image when the
-     * `preload` option is used.
-     */loading:{notify:!0,readOnly:!0,type:Boolean,value:!1},/**
-     * Read-only value that indicates that the last set `src` failed to load.
-     */error:{notify:!0,readOnly:!0,type:Boolean,value:!1},/**
-     * Can be used to set the width of image (e.g. via binding); size may also
-     * be set via CSS.
-     */width:{observer:"_widthChanged",type:Number,value:null},/**
-     * Can be used to set the height of image (e.g. via binding); size may also
-     * be set via CSS.
-     *
-     * @attribute height
-     * @type number
-     * @default null
-     */height:{observer:"_heightChanged",type:Number,value:null}},observers:["_transformChanged(sizing, position)","_loadStateObserver(src, preventLoad)"],created:function(){this._resolvedSrc=""},_imgOnLoad:function(){if(this.$.img.src!==this._resolveSrc(this.src)){return}this._setLoading(!1);this._setLoaded(!0);this._setError(!1)},_imgOnError:function(){if(this.$.img.src!==this._resolveSrc(this.src)){return}this.$.img.removeAttribute("src");this.$.sizedImgDiv.style.backgroundImage="";this._setLoading(!1);this._setLoaded(!1);this._setError(!0)},_computePlaceholderHidden:function(){return!this.preload||!this.fade&&!this.loading&&this.loaded},_computePlaceholderClassName:function(){return this.preload&&this.fade&&!this.loading&&this.loaded?"faded-out":""},_computeImgDivHidden:function(){return!this.sizing},_computeImgDivARIAHidden:function(){return""===this.alt?"true":void 0},_computeImgDivARIALabel:function(){if(null!==this.alt){return this.alt}// Polymer.ResolveUrl.resolveUrl will resolve '' relative to a URL x to
-// that URL x, but '' is the default for src.
-if(""===this.src){return""}// NOTE: Use of `URL` was removed here because IE11 doesn't support
-// constructing it. If this ends up being problematic, we should
-// consider reverting and adding the URL polyfill as a dev dependency.
-var resolved=this._resolveSrc(this.src);// Remove query parts, get file name.
-return resolved.replace(/[?|#].*/g,"").split("/").pop()},_computeImgHidden:function(){return!!this.sizing},_widthChanged:function(){this.style.width=isNaN(this.width)?this.width:this.width+"px"},_heightChanged:function(){this.style.height=isNaN(this.height)?this.height:this.height+"px"},_loadStateObserver:function(src,preventLoad){var newResolvedSrc=this._resolveSrc(src);if(newResolvedSrc===this._resolvedSrc){return}this._resolvedSrc="";this.$.img.removeAttribute("src");this.$.sizedImgDiv.style.backgroundImage="";if(""===src||preventLoad){this._setLoading(!1);this._setLoaded(!1);this._setError(!1)}else{this._resolvedSrc=newResolvedSrc;this.$.img.src=this._resolvedSrc;this.$.sizedImgDiv.style.backgroundImage="url(\""+this._resolvedSrc+"\")";this._setLoading(!0);this._setLoaded(!1);this._setError(!1)}},_placeholderChanged:function(){this.$.placeholder.style.backgroundImage=this.placeholder?"url(\""+this.placeholder+"\")":""},_transformChanged:function(){var sizedImgDivStyle=this.$.sizedImgDiv.style,placeholderStyle=this.$.placeholder.style;sizedImgDivStyle.backgroundSize=placeholderStyle.backgroundSize=this.sizing;sizedImgDivStyle.backgroundPosition=placeholderStyle.backgroundPosition=this.sizing?this.position:"";sizedImgDivStyle.backgroundRepeat=placeholderStyle.backgroundRepeat=this.sizing?"no-repeat":""},_resolveSrc:function(testSrc){var resolved=resolveUrl(testSrc,this.$.baseURIAnchor.href);// NOTE: Use of `URL` was removed here because IE11 doesn't support
-// constructing it. If this ends up being problematic, we should
-// consider reverting and adding the URL polyfill as a dev dependency.
-if(2<=resolved.length&&"/"===resolved[0]&&"/"!==resolved[1]){// In IE location.origin might not work
-// https://connect.microsoft.com/IE/feedback/details/1763802/location-origin-is-undefined-in-ie-11-on-windows-10-but-works-on-windows-7
-resolved=(location.origin||location.protocol+"//"+location.host)+resolved}return resolved}});let IronValidatableBehaviorMeta=null;/**
-                                                * `Use IronValidatableBehavior` to implement an element that validates
-                                                * user input. Use the related `IronValidatorBehavior` to add custom
-                                                * validation logic to an iron-input.
-                                                *
-                                                * By default, an `<iron-form>` element validates its fields when the user
-                                                * presses the submit button. To validate a form imperatively, call the form's
-                                                * `validate()` method, which in turn will call `validate()` on all its
-                                                * children. By using `IronValidatableBehavior`, your custom element
-                                                * will get a public `validate()`, which will return the validity of the
-                                                * element, and a corresponding `invalid` attribute, which can be used for
-                                                * styling.
-                                                *
-                                                * To implement the custom validation logic of your element, you must override
-                                                * the protected `_getValidity()` method of this behaviour, rather than
-                                                * `validate()`. See
-                                                * [this](https://github.com/PolymerElements/iron-form/blob/master/demo/simple-element.html)
-                                                * for an example.
-                                                *
-                                                * ### Accessibility
-                                                *
-                                                * Changing the `invalid` property, either manually or by calling `validate()`
-                                                * will update the `aria-invalid` attribute.
-                                                *
-                                                * @demo demo/index.html
-                                                * @polymerBehavior
-                                                */_exports.IronValidatableBehaviorMeta=IronValidatableBehaviorMeta;const IronValidatableBehavior={properties:{/**
-     * Name of the validator to use.
-     */validator:{type:String},/**
-     * True if the last call to `validate` is invalid.
-     */invalid:{notify:!0,reflectToAttribute:!0,type:Boolean,value:!1,observer:"_invalidChanged"}},registered:function(){_exports.IronValidatableBehaviorMeta=IronValidatableBehaviorMeta=new IronMeta({type:"validator"})},_invalidChanged:function(){if(this.invalid){this.setAttribute("aria-invalid","true")}else{this.removeAttribute("aria-invalid")}},/* Recompute this every time it's needed, because we don't know if the
-   * underlying IronValidatableBehaviorMeta has changed. */get _validator(){return IronValidatableBehaviorMeta&&IronValidatableBehaviorMeta.byKey(this.validator)},/**
-   * @return {boolean} True if the validator `validator` exists.
-   */hasValidator:function(){return null!=this._validator},/**
-   * Returns true if the `value` is valid, and updates `invalid`. If you want
-   * your element to have custom validation logic, do not override this method;
-   * override `_getValidity(value)` instead.
-    * @param {Object} value Deprecated: The value to be validated. By default,
-   * it is passed to the validator's `validate()` function, if a validator is
-   set.
-   * If this argument is not specified, then the element's `value` property
-   * is used, if it exists.
-   * @return {boolean} True if `value` is valid.
-   */validate:function(value){// If this is an element that also has a value property, and there was
-// no explicit value argument passed, use the element's property instead.
-if(value===void 0&&this.value!==void 0)this.invalid=!this._getValidity(this.value);else this.invalid=!this._getValidity(value);return!this.invalid},/**
-   * Returns true if `value` is valid.  By default, it is passed
-   * to the validator's `validate()` function, if a validator is set. You
-   * should override this method if you want to implement custom validity
-   * logic for your element.
-   *
-   * @param {Object} value The value to be validated.
-   * @return {boolean} True if `value` is valid.
-   */_getValidity:function(value){if(this.hasValidator()){return this._validator.validate(value)}return!0}};_exports.IronValidatableBehavior=IronValidatableBehavior;var ironValidatableBehavior={get IronValidatableBehaviorMeta(){return IronValidatableBehaviorMeta},IronValidatableBehavior:IronValidatableBehavior};_exports.$ironValidatableBehavior=ironValidatableBehavior;Polymer({_template:html`
-    <style>
-      :host {
-        display: inline-block;
-      }
-    </style>
-    <slot id="content"></slot>
-`,is:"iron-input",behaviors:[IronValidatableBehavior],/**
-   * Fired whenever `validate()` is called.
-   *
-   * @event iron-input-validate
-   */properties:{/**
-     * Use this property instead of `value` for two-way data binding, or to
-     * set a default value for the input. **Do not** use the distributed
-     * input's `value` property to set a default value.
-     */bindValue:{type:String,value:""},/**
-     * Computed property that echoes `bindValue` (mostly used for Polymer 1.0
-     * backcompatibility, if you were one-way binding to the Polymer 1.0
-     * `input is="iron-input"` value attribute).
-     */value:{type:String,computed:"_computeValue(bindValue)"},/**
-     * Regex-like list of characters allowed as input; all characters not in the
-     * list will be rejected. The recommended format should be a list of allowed
-     * characters, for example, `[a-zA-Z0-9.+-!;:]`.
-     *
-     * This pattern represents the allowed characters for the field; as the user
-     * inputs text, each individual character will be checked against the
-     * pattern (rather than checking the entire value as a whole). If a
-     * character is not a match, it will be rejected.
-     *
-     * Pasted input will have each character checked individually; if any
-     * character doesn't match `allowedPattern`, the entire pasted string will
-     * be rejected.
-     *
-     * Note: if you were using `iron-input` in 1.0, you were also required to
-     * set `prevent-invalid-input`. This is no longer needed as of Polymer 2.0,
-     * and will be set automatically for you if an `allowedPattern` is provided.
-     *
-     */allowedPattern:{type:String},/**
-     * Set to true to auto-validate the input value as you type.
-     */autoValidate:{type:Boolean,value:!1},/**
-     * The native input element.
-     */_inputElement:Object},observers:["_bindValueChanged(bindValue, _inputElement)"],listeners:{input:"_onInput",keypress:"_onKeypress"},created:function(){IronA11yAnnouncer.requestAvailability();this._previousValidInput="";this._patternAlreadyChecked=!1},attached:function(){// If the input is added at a later time, update the internal reference.
-this._observer=dom(this).observeNodes(function(info){this._initSlottedInput()}.bind(this))},detached:function(){if(this._observer){dom(this).unobserveNodes(this._observer);this._observer=null}},/**
-   * Returns the distributed input element.
-   */get inputElement(){return this._inputElement},_initSlottedInput:function(){this._inputElement=this.getEffectiveChildren()[0];if(this.inputElement&&this.inputElement.value){this.bindValue=this.inputElement.value}this.fire("iron-input-ready")},get _patternRegExp(){var pattern;if(this.allowedPattern){pattern=new RegExp(this.allowedPattern)}else{switch(this.inputElement.type){case"number":pattern=/[0-9.,e-]/;break;}}return pattern},/**
-   * @suppress {checkTypes}
-   */_bindValueChanged:function(bindValue,inputElement){// The observer could have run before attached() when we have actually
-// initialized this property.
-if(!inputElement){return}if(bindValue===void 0){inputElement.value=null}else if(bindValue!==inputElement.value){this.inputElement.value=bindValue}if(this.autoValidate){this.validate()}// manually notify because we don't want to notify until after setting value
-this.fire("bind-value-changed",{value:bindValue})},_onInput:function(){// Need to validate each of the characters pasted if they haven't
-// been validated inside `_onKeypress` already.
-if(this.allowedPattern&&!this._patternAlreadyChecked){var valid=this._checkPatternValidity();if(!valid){this._announceInvalidCharacter("Invalid string of characters not entered.");this.inputElement.value=this._previousValidInput}}this.bindValue=this._previousValidInput=this.inputElement.value;this._patternAlreadyChecked=!1},_isPrintable:function(event){// What a control/printable character is varies wildly based on the browser.
-// - most control characters (arrows, backspace) do not send a `keypress`
-// event
-//   in Chrome, but the *do* on Firefox
-// - in Firefox, when they do send a `keypress` event, control chars have
-//   a charCode = 0, keyCode = xx (for ex. 40 for down arrow)
-// - printable characters always send a keypress event.
-// - in Firefox, printable chars always have a keyCode = 0. In Chrome, the
-// keyCode
-//   always matches the charCode.
-// None of this makes any sense.
-// For these keys, ASCII code == browser keycode.
-var anyNonPrintable=8==event.keyCode||// backspace
-9==event.keyCode||// tab
-13==event.keyCode||// enter
-27==event.keyCode,mozNonPrintable=19==event.keyCode||// pause
-20==event.keyCode||// caps lock
-45==event.keyCode||// insert
-46==event.keyCode||// delete
-144==event.keyCode||// num lock
-145==event.keyCode||// scroll lock
-32<event.keyCode&&41>event.keyCode||// page up/down, end, home, arrows
-111<event.keyCode&&124>event.keyCode;// escape
-// For these keys, make sure it's a browser keycode and not an ASCII code.
-// fn keys
-return!anyNonPrintable&&!(0==event.charCode&&mozNonPrintable)},_onKeypress:function(event){if(!this.allowedPattern&&"number"!==this.inputElement.type){return}var regexp=this._patternRegExp;if(!regexp){return}// Handle special keys and backspace
-if(event.metaKey||event.ctrlKey||event.altKey){return}// Check the pattern either here or in `_onInput`, but not in both.
-this._patternAlreadyChecked=!0;var thisChar=String.fromCharCode(event.charCode);if(this._isPrintable(event)&&!regexp.test(thisChar)){event.preventDefault();this._announceInvalidCharacter("Invalid character "+thisChar+" not entered.")}},_checkPatternValidity:function(){var regexp=this._patternRegExp;if(!regexp){return!0}for(var i=0;i<this.inputElement.value.length;i++){if(!regexp.test(this.inputElement.value[i])){return!1}}return!0},/**
-   * Returns true if `value` is valid. The validator provided in `validator`
-   * will be used first, then any constraints.
-   * @return {boolean} True if the value is valid.
-   */validate:function(){if(!this.inputElement){this.invalid=!1;return!0}// Use the nested input's native validity.
-var valid=this.inputElement.checkValidity();// Only do extra checking if the browser thought this was valid.
-if(valid){// Empty, required input is invalid
-if(this.required&&""===this.bindValue){valid=!1}else if(this.hasValidator()){valid=IronValidatableBehavior.validate.call(this,this.bindValue)}}this.invalid=!valid;this.fire("iron-input-validate");return valid},_announceInvalidCharacter:function(message){this.fire("iron-announce",{text:message})},_computeValue:function(bindValue){return bindValue}});class IronSelection{/**
-   * @param {!Function} selectCallback
-   * @suppress {missingProvide}
-   */constructor(selectCallback){this.selection=[];this.selectCallback=selectCallback}/**
-     * Retrieves the selected item(s).
-     *
-     * @returns Returns the selected item(s). If the multi property is true,
-     * `get` will return an array, otherwise it will return
-     * the selected item or undefined if there is no selection.
-     */get(){return this.multi?this.selection.slice():this.selection[0]}/**
-     * Clears all the selection except the ones indicated.
-     *
-     * @param {Array} excludes items to be excluded.
-     */clear(excludes){this.selection.slice().forEach(function(item){if(!excludes||0>excludes.indexOf(item)){this.setItemSelected(item,!1)}},this)}/**
-     * Indicates if a given item is selected.
-     *
-     * @param {*} item The item whose selection state should be checked.
-     * @return {boolean} Returns true if `item` is selected.
-     */isSelected(item){return 0<=this.selection.indexOf(item)}/**
-     * Sets the selection state for a given item to either selected or deselected.
-     *
-     * @param {*} item The item to select.
-     * @param {boolean} isSelected True for selected, false for deselected.
-     */setItemSelected(item,isSelected){if(null!=item){if(isSelected!==this.isSelected(item)){// proceed to update selection only if requested state differs from
-// current
-if(isSelected){this.selection.push(item)}else{var i=this.selection.indexOf(item);if(0<=i){this.selection.splice(i,1)}}if(this.selectCallback){this.selectCallback(item,isSelected)}}}}/**
-     * Sets the selection state for a given item. If the `multi` property
-     * is true, then the selected state of `item` will be toggled; otherwise
-     * the `item` will be selected.
-     *
-     * @param {*} item The item to select.
-     */select(item){if(this.multi){this.toggle(item)}else if(this.get()!==item){this.setItemSelected(this.get(),!1);this.setItemSelected(item,!0)}}/**
-     * Toggles the selection state for `item`.
-     *
-     * @param {*} item The item to toggle.
-     */toggle(item){this.setItemSelected(item,!this.isSelected(item))}}_exports.IronSelection=IronSelection;;var ironSelection={IronSelection:IronSelection};_exports.$ironSelection=ironSelection;const IronSelectableBehavior={/**
-   * Fired when iron-selector is activated (selected or deselected).
-   * It is fired before the selected items are changed.
-   * Cancel the event to abort selection.
-   *
-   * @event iron-activate
-   */ /**
-       * Fired when an item is selected
-       *
-       * @event iron-select
-       */ /**
-           * Fired when an item is deselected
-           *
-           * @event iron-deselect
-           */ /**
-               * Fired when the list of selectable items changes (e.g., items are
-               * added or removed). The detail of the event is a mutation record that
-               * describes what changed.
-               *
-               * @event iron-items-changed
-               */properties:{/**
-     * If you want to use an attribute value or property of an element for
-     * `selected` instead of the index, set this to the name of the attribute
-     * or property. Hyphenated values are converted to camel case when used to
-     * look up the property of a selectable element. Camel cased values are
-     * *not* converted to hyphenated values for attribute lookup. It's
-     * recommended that you provide the hyphenated form of the name so that
-     * selection works in both cases. (Use `attr-or-property-name` instead of
-     * `attrOrPropertyName`.)
-     */attrForSelected:{type:String,value:null},/**
-     * Gets or sets the selected element. The default is to use the index of the
-     * item.
-     * @type {string|number}
-     */selected:{type:String,notify:!0},/**
-     * Returns the currently selected item.
-     *
-     * @type {?Object}
-     */selectedItem:{type:Object,readOnly:!0,notify:!0},/**
-     * The event that fires from items when they are selected. Selectable
-     * will listen for this event from items and update the selection state.
-     * Set to empty string to listen to no events.
-     */activateEvent:{type:String,value:"tap",observer:"_activateEventChanged"},/**
-     * This is a CSS selector string.  If this is set, only items that match the
-     * CSS selector are selectable.
-     */selectable:String,/**
-     * The class to set on elements when selected.
-     */selectedClass:{type:String,value:"iron-selected"},/**
-     * The attribute to set on elements when selected.
-     */selectedAttribute:{type:String,value:null},/**
-     * Default fallback if the selection based on selected with
-     * `attrForSelected` is not found.
-     */fallbackSelection:{type:String,value:null},/**
-     * The list of items from which a selection can be made.
-     */items:{type:Array,readOnly:!0,notify:!0,value:function(){return[]}},/**
-     * The set of excluded elements where the key is the `localName`
-     * of the element that will be ignored from the item list.
-     *
-     * @default {template: 1}
-     */_excludedLocalNames:{type:Object,value:function(){return{template:1,"dom-bind":1,"dom-if":1,"dom-repeat":1}}}},observers:["_updateAttrForSelected(attrForSelected)","_updateSelected(selected)","_checkFallback(fallbackSelection)"],created:function(){this._bindFilterItem=this._filterItem.bind(this);this._selection=new IronSelection(this._applySelection.bind(this))},attached:function(){this._observer=this._observeItems(this);this._addListener(this.activateEvent)},detached:function(){if(this._observer){dom(this).unobserveNodes(this._observer)}this._removeListener(this.activateEvent)},/**
-   * Returns the index of the given item.
-   *
-   * @method indexOf
-   * @param {Object} item
-   * @returns Returns the index of the item
-   */indexOf:function(item){return this.items?this.items.indexOf(item):-1},/**
-   * Selects the given value.
-   *
-   * @method select
-   * @param {string|number} value the value to select.
-   */select:function(value){this.selected=value},/**
-   * Selects the previous item.
-   *
-   * @method selectPrevious
-   */selectPrevious:function(){var length=this.items.length,index=length-1;if(this.selected!==void 0){index=(+this._valueToIndex(this.selected)-1+length)%length}this.selected=this._indexToValue(index)},/**
-   * Selects the next item.
-   *
-   * @method selectNext
-   */selectNext:function(){var index=0;if(this.selected!==void 0){index=(+this._valueToIndex(this.selected)+1)%this.items.length}this.selected=this._indexToValue(index)},/**
-   * Selects the item at the given index.
-   *
-   * @method selectIndex
-   */selectIndex:function(index){this.select(this._indexToValue(index))},/**
-   * Force a synchronous update of the `items` property.
-   *
-   * NOTE: Consider listening for the `iron-items-changed` event to respond to
-   * updates to the set of selectable items after updates to the DOM list and
-   * selection state have been made.
-   *
-   * WARNING: If you are using this method, you should probably consider an
-   * alternate approach. Synchronously querying for items is potentially
-   * slow for many use cases. The `items` property will update asynchronously
-   * on its own to reflect selectable items in the DOM.
-   */forceSynchronousItemUpdate:function(){if(this._observer&&"function"===typeof this._observer.flush){// NOTE(bicknellr): `dom.flush` above is no longer sufficient to trigger
-// `observeNodes` callbacks. Polymer 2.x returns an object from
-// `observeNodes` with a `flush` that synchronously gives the callback any
-// pending MutationRecords (retrieved with `takeRecords`). Any case where
-// ShadyDOM flushes were expected to synchronously trigger item updates
-// will now require calling `forceSynchronousItemUpdate`.
-this._observer.flush()}else{this._updateItems()}},// UNUSED, FOR API COMPATIBILITY
-get _shouldUpdateSelection(){return null!=this.selected},_checkFallback:function(){this._updateSelected()},_addListener:function(eventName){this.listen(this,eventName,"_activateHandler")},_removeListener:function(eventName){this.unlisten(this,eventName,"_activateHandler")},_activateEventChanged:function(eventName,old){this._removeListener(old);this._addListener(eventName)},_updateItems:function(){var nodes=dom(this).queryDistributedElements(this.selectable||"*");nodes=Array.prototype.filter.call(nodes,this._bindFilterItem);this._setItems(nodes)},_updateAttrForSelected:function(){if(this.selectedItem){this.selected=this._valueForItem(this.selectedItem)}},_updateSelected:function(){this._selectSelected(this.selected)},_selectSelected:function(selected){if(!this.items){return}var item=this._valueToItem(this.selected);if(item){this._selection.select(item)}else{this._selection.clear()}// Check for items, since this array is populated only when attached
-// Since Number(0) is falsy, explicitly check for undefined
-if(this.fallbackSelection&&this.items.length&&this._selection.get()===void 0){this.selected=this.fallbackSelection}},_filterItem:function(node){return!this._excludedLocalNames[node.localName]},_valueToItem:function(value){return null==value?null:this.items[this._valueToIndex(value)]},_valueToIndex:function(value){if(this.attrForSelected){for(var i=0,item;item=this.items[i];i++){if(this._valueForItem(item)==value){return i}}}else{return+value}},_indexToValue:function(index){if(this.attrForSelected){var item=this.items[index];if(item){return this._valueForItem(item)}}else{return index}},_valueForItem:function(item){if(!item){return null}if(!this.attrForSelected){var i=this.indexOf(item);return-1===i?null:i}var propValue=item[dashToCamelCase(this.attrForSelected)];return propValue!=void 0?propValue:item.getAttribute(this.attrForSelected)},_applySelection:function(item,isSelected){if(this.selectedClass){this.toggleClass(this.selectedClass,isSelected,item)}if(this.selectedAttribute){this.toggleAttribute(this.selectedAttribute,isSelected,item)}this._selectionChange();this.fire("iron-"+(isSelected?"select":"deselect"),{item:item})},_selectionChange:function(){this._setSelectedItem(this._selection.get())},// observe items change under the given node.
-_observeItems:function(node){return dom(node).observeNodes(function(mutation){this._updateItems();this._updateSelected();// Let other interested parties know about the change so that
-// we don't have to recreate mutation observers everywhere.
-this.fire("iron-items-changed",mutation,{bubbles:!1,cancelable:!1})})},_activateHandler:function(e){var t=e.target,items=this.items;while(t&&t!=this){var i=items.indexOf(t);if(0<=i){var value=this._indexToValue(i);this._itemActivate(value,t);return}t=t.parentNode}},_itemActivate:function(value,item){if(!this.fire("iron-activate",{selected:value,item:item},{cancelable:!0}).defaultPrevented){this.select(value)}}};_exports.IronSelectableBehavior=IronSelectableBehavior;var ironSelectable={IronSelectableBehavior:IronSelectableBehavior};_exports.$ironSelectable=ironSelectable;const IronMultiSelectableBehaviorImpl={properties:{/**
-     * If true, multiple selections are allowed.
-     */multi:{type:Boolean,value:!1,observer:"multiChanged"},/**
-     * Gets or sets the selected elements. This is used instead of `selected`
-     * when `multi` is true.
-     */selectedValues:{type:Array,notify:!0,value:function(){return[]}},/**
-     * Returns an array of currently selected items.
-     */selectedItems:{type:Array,readOnly:!0,notify:!0,value:function(){return[]}}},observers:["_updateSelected(selectedValues.splices)"],/**
-   * Selects the given value. If the `multi` property is true, then the selected
-   * state of the `value` will be toggled; otherwise the `value` will be
-   * selected.
-   *
-   * @method select
-   * @param {string|number} value the value to select.
-   */select:function(value){if(this.multi){this._toggleSelected(value)}else{this.selected=value}},multiChanged:function(multi){this._selection.multi=multi;this._updateSelected()},// UNUSED, FOR API COMPATIBILITY
-get _shouldUpdateSelection(){return null!=this.selected||null!=this.selectedValues&&this.selectedValues.length},_updateAttrForSelected:function(){if(!this.multi){IronSelectableBehavior._updateAttrForSelected.apply(this)}else if(this.selectedItems&&0<this.selectedItems.length){this.selectedValues=this.selectedItems.map(function(selectedItem){return this._indexToValue(this.indexOf(selectedItem))},this).filter(function(unfilteredValue){return null!=unfilteredValue},this)}},_updateSelected:function(){if(this.multi){this._selectMulti(this.selectedValues)}else{this._selectSelected(this.selected)}},_selectMulti:function(values){values=values||[];var selectedItems=(this._valuesToItems(values)||[]).filter(function(item){return null!==item&&item!==void 0});// clear all but the current selected items
-this._selection.clear(selectedItems);// select only those not selected yet
-for(var i=0;i<selectedItems.length;i++){this._selection.setItemSelected(selectedItems[i],!0)}// Check for items, since this array is populated only when attached
-if(this.fallbackSelection&&!this._selection.get().length){var fallback=this._valueToItem(this.fallbackSelection);if(fallback){this.select(this.fallbackSelection)}}},_selectionChange:function(){var s=this._selection.get();if(this.multi){this._setSelectedItems(s);this._setSelectedItem(s.length?s[0]:null)}else{if(null!==s&&s!==void 0){this._setSelectedItems([s]);this._setSelectedItem(s)}else{this._setSelectedItems([]);this._setSelectedItem(null)}}},_toggleSelected:function(value){var i=this.selectedValues.indexOf(value),unselected=0>i;if(unselected){this.push("selectedValues",value)}else{this.splice("selectedValues",i,1)}},_valuesToItems:function(values){return null==values?null:values.map(function(value){return this._valueToItem(value)},this)}};/** @polymerBehavior */_exports.IronMultiSelectableBehaviorImpl=IronMultiSelectableBehaviorImpl;const IronMultiSelectableBehavior=[IronSelectableBehavior,IronMultiSelectableBehaviorImpl];_exports.IronMultiSelectableBehavior=IronMultiSelectableBehavior;var ironMultiSelectable={IronMultiSelectableBehaviorImpl:IronMultiSelectableBehaviorImpl,IronMultiSelectableBehavior:IronMultiSelectableBehavior};_exports.$ironMultiSelectable=ironMultiSelectable;const IronMenuBehaviorImpl={properties:{/**
-     * Returns the currently focused item.
-     * @type {?Object}
-     */focusedItem:{observer:"_focusedItemChanged",readOnly:!0,type:Object},/**
-     * The attribute to use on menu items to look up the item title. Typing the
-     * first letter of an item when the menu is open focuses that item. If
-     * unset, `textContent` will be used.
-     */attrForItemTitle:{type:String},/**
-     * @type {boolean}
-     */disabled:{type:Boolean,value:!1,observer:"_disabledChanged"}},/**
-   * The list of keys has been taken from
-   * https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/getModifierState
-   * @private
-   */_MODIFIER_KEYS:["Alt","AltGraph","CapsLock","Control","Fn","FnLock","Hyper","Meta","NumLock","OS","ScrollLock","Shift","Super","Symbol","SymbolLock"],/** @private */_SEARCH_RESET_TIMEOUT_MS:1e3,/** @private */_previousTabIndex:0,hostAttributes:{role:"menu"},observers:["_updateMultiselectable(multi)"],listeners:{focus:"_onFocus",keydown:"_onKeydown","iron-items-changed":"_onIronItemsChanged"},/**
-   * @type {!Object}
-   */keyBindings:{up:"_onUpKey",down:"_onDownKey",esc:"_onEscKey","shift+tab:keydown":"_onShiftTabDown"},attached:function(){this._resetTabindices()},/**
-   * Selects the given value. If the `multi` property is true, then the selected
-   * state of the `value` will be toggled; otherwise the `value` will be
-   * selected.
-   *
-   * @param {string|number} value the value to select.
-   */select:function(value){// Cancel automatically focusing a default item if the menu received focus
-// through a user action selecting a particular item.
-if(this._defaultFocusAsync){this.cancelAsync(this._defaultFocusAsync);this._defaultFocusAsync=null}var item=this._valueToItem(value);if(item&&item.hasAttribute("disabled"))return;this._setFocusedItem(item);IronMultiSelectableBehaviorImpl.select.apply(this,arguments)},/**
-   * Resets all tabindex attributes to the appropriate value based on the
-   * current selection state. The appropriate value is `0` (focusable) for
-   * the default selected item, and `-1` (not keyboard focusable) for all
-   * other items. Also sets the correct initial values for aria-selected
-   * attribute, true for default selected item and false for others.
-   */_resetTabindices:function(){var firstSelectedItem=this.multi?this.selectedItems&&this.selectedItems[0]:this.selectedItem;this.items.forEach(function(item){item.setAttribute("tabindex",item===firstSelectedItem?"0":"-1");item.setAttribute("aria-selected",this._selection.isSelected(item))},this)},/**
-   * Sets appropriate ARIA based on whether or not the menu is meant to be
-   * multi-selectable.
-   *
-   * @param {boolean} multi True if the menu should be multi-selectable.
-   */_updateMultiselectable:function(multi){if(multi){this.setAttribute("aria-multiselectable","true")}else{this.removeAttribute("aria-multiselectable")}},/**
-   * Given a KeyboardEvent, this method will focus the appropriate item in the
-   * menu (if there is a relevant item, and it is possible to focus it).
-   *
-   * @param {KeyboardEvent} event A KeyboardEvent.
-   */_focusWithKeyboardEvent:function(event){// Make sure that the key pressed is not a modifier key.
-// getModifierState is not being used, as it is not available in Safari
-// earlier than 10.0.2 (https://trac.webkit.org/changeset/206725/webkit)
-if(-1!==this._MODIFIER_KEYS.indexOf(event.key))return;this.cancelDebouncer("_clearSearchText");var searchText=this._searchText||"",key=event.key&&1==event.key.length?event.key:String.fromCharCode(event.keyCode);searchText+=key.toLocaleLowerCase();for(var searchLength=searchText.length,i=0,item;item=this.items[i];i++){if(item.hasAttribute("disabled")){continue}var attr=this.attrForItemTitle||"textContent",title=(item[attr]||item.getAttribute(attr)||"").trim();if(title.length<searchLength){continue}if(title.slice(0,searchLength).toLocaleLowerCase()==searchText){this._setFocusedItem(item);break}}this._searchText=searchText;this.debounce("_clearSearchText",this._clearSearchText,this._SEARCH_RESET_TIMEOUT_MS)},_clearSearchText:function(){this._searchText=""},/**
-   * Focuses the previous item (relative to the currently focused item) in the
-   * menu, disabled items will be skipped.
-   * Loop until length + 1 to handle case of single item in menu.
-   */_focusPrevious:function(){for(var length=this.items.length,curFocusIndex=+this.indexOf(this.focusedItem),i=1,item;i<length+1;i++){item=this.items[(curFocusIndex-i+length)%length];if(!item.hasAttribute("disabled")){var owner=dom(item).getOwnerRoot()||document;this._setFocusedItem(item);// Focus might not have worked, if the element was hidden or not
-// focusable. In that case, try again.
-if(dom(owner).activeElement==item){return}}}},/**
-   * Focuses the next item (relative to the currently focused item) in the
-   * menu, disabled items will be skipped.
-   * Loop until length + 1 to handle case of single item in menu.
-   */_focusNext:function(){for(var length=this.items.length,curFocusIndex=+this.indexOf(this.focusedItem),i=1,item;i<length+1;i++){item=this.items[(curFocusIndex+i)%length];if(!item.hasAttribute("disabled")){var owner=dom(item).getOwnerRoot()||document;this._setFocusedItem(item);// Focus might not have worked, if the element was hidden or not
-// focusable. In that case, try again.
-if(dom(owner).activeElement==item){return}}}},/**
-   * Mutates items in the menu based on provided selection details, so that
-   * all items correctly reflect selection state.
-   *
-   * @param {Element} item An item in the menu.
-   * @param {boolean} isSelected True if the item should be shown in a
-   * selected state, otherwise false.
-   */_applySelection:function(item,isSelected){if(isSelected){item.setAttribute("aria-selected","true")}else{item.setAttribute("aria-selected","false")}IronSelectableBehavior._applySelection.apply(this,arguments)},/**
-   * Discretely updates tabindex values among menu items as the focused item
-   * changes.
-   *
-   * @param {Element} focusedItem The element that is currently focused.
-   * @param {?Element} old The last element that was considered focused, if
-   * applicable.
-   */_focusedItemChanged:function(focusedItem,old){old&&old.setAttribute("tabindex","-1");if(focusedItem&&!focusedItem.hasAttribute("disabled")&&!this.disabled){focusedItem.setAttribute("tabindex","0");focusedItem.focus()}},/**
-   * A handler that responds to mutation changes related to the list of items
-   * in the menu.
-   *
-   * @param {CustomEvent} event An event containing mutation records as its
-   * detail.
-   */_onIronItemsChanged:function(event){if(event.detail.addedNodes.length){this._resetTabindices()}},/**
-   * Handler that is called when a shift+tab keypress is detected by the menu.
-   *
-   * @param {CustomEvent} event A key combination event.
-   */_onShiftTabDown:function(event){var oldTabIndex=this.getAttribute("tabindex");IronMenuBehaviorImpl._shiftTabPressed=!0;this._setFocusedItem(null);this.setAttribute("tabindex","-1");this.async(function(){this.setAttribute("tabindex",oldTabIndex);IronMenuBehaviorImpl._shiftTabPressed=!1;// NOTE(cdata): polymer/polymer#1305
-},1)},/**
-   * Handler that is called when the menu receives focus.
-   *
-   * @param {FocusEvent} event A focus event.
-   */_onFocus:function(event){if(IronMenuBehaviorImpl._shiftTabPressed){// do not focus the menu itself
-return}// Do not focus the selected tab if the deepest target is part of the
-// menu element's local DOM and is focusable.
-var rootTarget=/** @type {?HTMLElement} */dom(event).rootTarget;if(rootTarget!==this&&"undefined"!==typeof rootTarget.tabIndex&&!this.isLightDescendant(rootTarget)){return}// clear the cached focus item
-this._defaultFocusAsync=this.async(function(){// focus the selected item when the menu receives focus, or the first item
-// if no item is selected
-var firstSelectedItem=this.multi?this.selectedItems&&this.selectedItems[0]:this.selectedItem;this._setFocusedItem(null);if(firstSelectedItem){this._setFocusedItem(firstSelectedItem)}else if(this.items[0]){// We find the first none-disabled item (if one exists)
-this._focusNext()}})},/**
-   * Handler that is called when the up key is pressed.
-   *
-   * @param {CustomEvent} event A key combination event.
-   */_onUpKey:function(event){// up and down arrows moves the focus
-this._focusPrevious();event.detail.keyboardEvent.preventDefault()},/**
-   * Handler that is called when the down key is pressed.
-   *
-   * @param {CustomEvent} event A key combination event.
-   */_onDownKey:function(event){this._focusNext();event.detail.keyboardEvent.preventDefault()},/**
-   * Handler that is called when the esc key is pressed.
-   *
-   * @param {CustomEvent} event A key combination event.
-   */_onEscKey:function(event){var focusedItem=this.focusedItem;if(focusedItem){focusedItem.blur()}},/**
-   * Handler that is called when a keydown event is detected.
-   *
-   * @param {KeyboardEvent} event A keyboard event.
-   */_onKeydown:function(event){if(!this.keyboardEventMatchesKeys(event,"up down esc")){// all other keys focus the menu item starting with that character
-this._focusWithKeyboardEvent(event)}event.stopPropagation()},// override _activateHandler
-_activateHandler:function(event){IronSelectableBehavior._activateHandler.call(this,event);event.stopPropagation()},/**
-   * Updates this element's tab index when it's enabled/disabled.
-   * @param {boolean} disabled
-   */_disabledChanged:function(disabled){if(disabled){this._previousTabIndex=this.hasAttribute("tabindex")?this.tabIndex:0;this.removeAttribute("tabindex");// No tabindex means not tab-able or select-able.
-}else if(!this.hasAttribute("tabindex")){this.setAttribute("tabindex",this._previousTabIndex)}}};_exports.IronMenuBehaviorImpl=IronMenuBehaviorImpl;IronMenuBehaviorImpl._shiftTabPressed=!1;/** @polymerBehavior */const IronMenuBehavior=[IronMultiSelectableBehavior,IronA11yKeysBehavior,IronMenuBehaviorImpl];_exports.IronMenuBehavior=IronMenuBehavior;var ironMenuBehavior={IronMenuBehaviorImpl:IronMenuBehaviorImpl,IronMenuBehavior:IronMenuBehavior};_exports.$ironMenuBehavior=ironMenuBehavior;var p$2=Element.prototype,matches$1=p$2.matches||p$2.matchesSelector||p$2.mozMatchesSelector||p$2.msMatchesSelector||p$2.oMatchesSelector||p$2.webkitMatchesSelector;const IronFocusablesHelper={/**
+if(0>diff||0===diff&&(vAlignOk||hAlignOk)){position=candidate}}return position}};_exports.IronFitBehavior=IronFitBehavior;var ironFitBehavior={IronFitBehavior:IronFitBehavior};_exports.$ironFitBehavior=ironFitBehavior;var p$2=Element.prototype,matches$1=p$2.matches||p$2.matchesSelector||p$2.mozMatchesSelector||p$2.msMatchesSelector||p$2.oMatchesSelector||p$2.webkitMatchesSelector;const IronFocusablesHelper={/**
    * Returns a sorted array of tabbable nodes, including the root node.
    * It searches the tabbable nodes in the light and shadow dom of the chidren,
    * sorting the result by tabindex.
@@ -15362,25 +14229,7 @@ document.documentElement.scrollTop=document.body.scrollTop=this.__scrollTop;docu
                                                                                                                * @event iron-overlay-closed
                                                                                                                * @param {Event} event The `event.detail` is the `closingReason` property
                                                                                                                * (contains `canceled`, whether the overlay was canceled).
-                                                                                                               */_exports.IronOverlayBehavior=IronOverlayBehavior;var ironOverlayBehavior={IronOverlayBehaviorImpl:IronOverlayBehaviorImpl,IronOverlayBehavior:IronOverlayBehavior};_exports.$ironOverlayBehavior=ironOverlayBehavior;const IronRangeBehavior={properties:{/**
-     * The number that represents the current value.
-     */value:{type:Number,value:0,notify:!0,reflectToAttribute:!0},/**
-     * The number that indicates the minimum value of the range.
-     */min:{type:Number,value:0,notify:!0},/**
-     * The number that indicates the maximum value of the range.
-     */max:{type:Number,value:100,notify:!0},/**
-     * Specifies the value granularity of the range's value.
-     */step:{type:Number,value:1,notify:!0},/**
-     * Returns the ratio of the value.
-     */ratio:{type:Number,value:0,readOnly:!0,notify:!0}},observers:["_update(value, min, max, step)"],_calcRatio:function(value){return(this._clampValue(value)-this.min)/(this.max-this.min)},_clampValue:function(value){return Math.min(this.max,Math.max(this.min,this._calcStep(value)))},_calcStep:function(value){// polymer/issues/2493
-value=parseFloat(value);if(!this.step){return value}var numSteps=Math.round((value-this.min)/this.step);if(1>this.step){/**
-       * For small values of this.step, if we calculate the step using
-       * `Math.round(value / step) * step` we may hit a precision point issue
-       * eg. 0.1 * 0.2 =  0.020000000000000004
-       * http://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html
-       *
-       * as a work around we can divide by the reciprocal of `step`
-       */return numSteps/(1/this.step)+this.min}else{return numSteps*this.step+this.min}},_validateValue:function(){var v=this._clampValue(this.value);this.value=this.oldValue=isNaN(v)?this.oldValue:v;return this.value!==v},_update:function(){this._validateValue();this._setRatio(100*this._calcRatio(this.value))}};_exports.IronRangeBehavior=IronRangeBehavior;var ironRangeBehavior={IronRangeBehavior:IronRangeBehavior};_exports.$ironRangeBehavior=ironRangeBehavior;const NeonAnimatableBehavior={properties:{/**
+                                                                                                               */_exports.IronOverlayBehavior=IronOverlayBehavior;var ironOverlayBehavior={IronOverlayBehaviorImpl:IronOverlayBehaviorImpl,IronOverlayBehavior:IronOverlayBehavior};_exports.$ironOverlayBehavior=ironOverlayBehavior;const NeonAnimatableBehavior={properties:{/**
      * Animation configuration. See README for more info.
      */animationConfig:{type:Object},/**
      * Convenience property for setting an 'entry' animation. Do not set
@@ -15416,7 +14265,1663 @@ if("function"!=typeof result.cancel){result=document.timeline.play(result)}}catc
    * @param {!Object=} cookie
    */playAnimation:function(type,cookie){var configs=this.getAnimationConfig(type);if(!configs){return}this._active=this._active||{};if(this._active[type]){this._complete(this._active[type]);delete this._active[type]}var activeEntries=this._configureAnimations(configs);if(0==activeEntries.length){this.fire("neon-animation-finish",cookie,{bubbles:!1});return}this._active[type]=activeEntries;for(var i=0;i<activeEntries.length;i++){activeEntries[i].animation.onfinish=function(){if(this._shouldComplete(activeEntries)){this._complete(activeEntries);delete this._active[type];this.fire("neon-animation-finish",cookie,{bubbles:!1})}}.bind(this)}},/**
    * Cancels the currently running animations.
-   */cancelAnimation:function(){for(var k in this._active){var entries=this._active[k];for(var j in entries){entries[j].animation.cancel()}}this._active={}}};/** @polymerBehavior */_exports.NeonAnimationRunnerBehaviorImpl=NeonAnimationRunnerBehaviorImpl;const NeonAnimationRunnerBehavior=[NeonAnimatableBehavior,NeonAnimationRunnerBehaviorImpl];_exports.NeonAnimationRunnerBehavior=NeonAnimationRunnerBehavior;var neonAnimationRunnerBehavior={NeonAnimationRunnerBehaviorImpl:NeonAnimationRunnerBehaviorImpl,NeonAnimationRunnerBehavior:NeonAnimationRunnerBehavior};_exports.$neonAnimationRunnerBehavior=neonAnimationRunnerBehavior;var Utility={distance:function(x1,y1,x2,y2){var xDelta=x1-x2,yDelta=y1-y2;return Math.sqrt(xDelta*xDelta+yDelta*yDelta)},now:window.performance&&window.performance.now?window.performance.now.bind(window.performance):Date.now};/**
+   */cancelAnimation:function(){for(var k in this._active){var entries=this._active[k];for(var j in entries){entries[j].animation.cancel()}}this._active={}}};/** @polymerBehavior */_exports.NeonAnimationRunnerBehaviorImpl=NeonAnimationRunnerBehaviorImpl;const NeonAnimationRunnerBehavior=[NeonAnimatableBehavior,NeonAnimationRunnerBehaviorImpl];_exports.NeonAnimationRunnerBehavior=NeonAnimationRunnerBehavior;var neonAnimationRunnerBehavior={NeonAnimationRunnerBehaviorImpl:NeonAnimationRunnerBehaviorImpl,NeonAnimationRunnerBehavior:NeonAnimationRunnerBehavior};_exports.$neonAnimationRunnerBehavior=neonAnimationRunnerBehavior;Polymer({_template:html`
+    <style>
+      :host {
+        position: fixed;
+      }
+
+      #contentWrapper ::slotted(*) {
+        overflow: auto;
+      }
+
+      #contentWrapper.animating ::slotted(*) {
+        overflow: hidden;
+        pointer-events: none;
+      }
+    </style>
+
+    <div id="contentWrapper">
+      <slot id="content" name="dropdown-content"></slot>
+    </div>
+`,is:"iron-dropdown",behaviors:[IronControlState,IronA11yKeysBehavior,IronOverlayBehavior,NeonAnimationRunnerBehavior],properties:{/**
+     * The orientation against which to align the dropdown content
+     * horizontally relative to the dropdown trigger.
+     * Overridden from `Polymer.IronFitBehavior`.
+     */horizontalAlign:{type:String,value:"left",reflectToAttribute:!0},/**
+     * The orientation against which to align the dropdown content
+     * vertically relative to the dropdown trigger.
+     * Overridden from `Polymer.IronFitBehavior`.
+     */verticalAlign:{type:String,value:"top",reflectToAttribute:!0},/**
+     * An animation config. If provided, this will be used to animate the
+     * opening of the dropdown. Pass an Array for multiple animations.
+     * See `neon-animation` documentation for more animation configuration
+     * details.
+     */openAnimationConfig:{type:Object},/**
+     * An animation config. If provided, this will be used to animate the
+     * closing of the dropdown. Pass an Array for multiple animations.
+     * See `neon-animation` documentation for more animation configuration
+     * details.
+     */closeAnimationConfig:{type:Object},/**
+     * If provided, this will be the element that will be focused when
+     * the dropdown opens.
+     */focusTarget:{type:Object},/**
+     * Set to true to disable animations when opening and closing the
+     * dropdown.
+     */noAnimations:{type:Boolean,value:!1},/**
+     * By default, the dropdown will constrain scrolling on the page
+     * to itself when opened.
+     * Set to true in order to prevent scroll from being constrained
+     * to the dropdown when it opens.
+     * This property is a shortcut to set `scrollAction` to lock or refit.
+     * Prefer directly setting the `scrollAction` property.
+     */allowOutsideScroll:{type:Boolean,value:!1,observer:"_allowOutsideScrollChanged"}},listeners:{"neon-animation-finish":"_onNeonAnimationFinish"},observers:["_updateOverlayPosition(positionTarget, verticalAlign, horizontalAlign, verticalOffset, horizontalOffset)"],/**
+   * The element that is contained by the dropdown, if any.
+   */get containedElement(){// Polymer 2.x returns slot.assignedNodes which can contain text nodes.
+for(var nodes=dom(this.$.content).getDistributedNodes(),i=0,l=nodes.length;i<l;i++){if(nodes[i].nodeType===Node.ELEMENT_NODE){return nodes[i]}}},ready:function(){// Ensure scrollAction is set.
+if(!this.scrollAction){this.scrollAction=this.allowOutsideScroll?"refit":"lock"}this._readied=!0},attached:function(){if(!this.sizingTarget||this.sizingTarget===this){this.sizingTarget=this.containedElement||this}},detached:function(){this.cancelAnimation()},/**
+   * Called when the value of `opened` changes.
+   * Overridden from `IronOverlayBehavior`
+   */_openedChanged:function(){if(this.opened&&this.disabled){this.cancel()}else{this.cancelAnimation();this._updateAnimationConfig();IronOverlayBehaviorImpl._openedChanged.apply(this,arguments)}},/**
+   * Overridden from `IronOverlayBehavior`.
+   */_renderOpened:function(){if(!this.noAnimations&&this.animationConfig.open){this.$.contentWrapper.classList.add("animating");this.playAnimation("open")}else{IronOverlayBehaviorImpl._renderOpened.apply(this,arguments)}},/**
+   * Overridden from `IronOverlayBehavior`.
+   */_renderClosed:function(){if(!this.noAnimations&&this.animationConfig.close){this.$.contentWrapper.classList.add("animating");this.playAnimation("close")}else{IronOverlayBehaviorImpl._renderClosed.apply(this,arguments)}},/**
+   * Called when animation finishes on the dropdown (when opening or
+   * closing). Responsible for "completing" the process of opening or
+   * closing the dropdown by positioning it or setting its display to
+   * none.
+   */_onNeonAnimationFinish:function(){this.$.contentWrapper.classList.remove("animating");if(this.opened){this._finishRenderOpened()}else{this._finishRenderClosed()}},/**
+   * Constructs the final animation config from different properties used
+   * to configure specific parts of the opening and closing animations.
+   */_updateAnimationConfig:function(){// Update the animation node to be the containedElement.
+for(var animationNode=this.containedElement,animations=[].concat(this.openAnimationConfig||[]).concat(this.closeAnimationConfig||[]),i=0;i<animations.length;i++){animations[i].node=animationNode}this.animationConfig={open:this.openAnimationConfig,close:this.closeAnimationConfig}},/**
+   * Updates the overlay position based on configured horizontal
+   * and vertical alignment.
+   */_updateOverlayPosition:function(){if(this.isAttached){// This triggers iron-resize, and iron-overlay-behavior will call refit if
+// needed.
+this.notifyResize()}},/**
+   * Sets scrollAction according to the value of allowOutsideScroll.
+   * Prefer setting directly scrollAction.
+   */_allowOutsideScrollChanged:function(allowOutsideScroll){// Wait until initial values are all set.
+if(!this._readied){return}if(!allowOutsideScroll){this.scrollAction="lock"}else if(!this.scrollAction||"lock"===this.scrollAction){this.scrollAction="refit"}},/**
+   * Apply focus to focusTarget or containedElement
+   */_applyFocus:function(){var focusTarget=this.focusTarget||this.containedElement;if(focusTarget&&this.opened&&!this.noAutoFocus){focusTarget.focus()}else{IronOverlayBehaviorImpl._applyFocus.apply(this,arguments)}}});const template$1=html`
+/* Most common used flex styles*/
+<dom-module id="iron-flex">
+  <template>
+    <style>
+      .layout.horizontal,
+      .layout.vertical {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+      }
+
+      .layout.inline {
+        display: -ms-inline-flexbox;
+        display: -webkit-inline-flex;
+        display: inline-flex;
+      }
+
+      .layout.horizontal {
+        -ms-flex-direction: row;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+      }
+
+      .layout.vertical {
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+      }
+
+      .layout.wrap {
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+      }
+
+      .layout.no-wrap {
+        -ms-flex-wrap: nowrap;
+        -webkit-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+      }
+
+      .layout.center,
+      .layout.center-center {
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .layout.center-justified,
+      .layout.center-center {
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+      }
+
+      .flex {
+        -ms-flex: 1 1 0.000000001px;
+        -webkit-flex: 1;
+        flex: 1;
+        -webkit-flex-basis: 0.000000001px;
+        flex-basis: 0.000000001px;
+      }
+
+      .flex-auto {
+        -ms-flex: 1 1 auto;
+        -webkit-flex: 1 1 auto;
+        flex: 1 1 auto;
+      }
+
+      .flex-none {
+        -ms-flex: none;
+        -webkit-flex: none;
+        flex: none;
+      }
+    </style>
+  </template>
+</dom-module>
+/* Basic flexbox reverse styles */
+<dom-module id="iron-flex-reverse">
+  <template>
+    <style>
+      .layout.horizontal-reverse,
+      .layout.vertical-reverse {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+      }
+
+      .layout.horizontal-reverse {
+        -ms-flex-direction: row-reverse;
+        -webkit-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+      }
+
+      .layout.vertical-reverse {
+        -ms-flex-direction: column-reverse;
+        -webkit-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+      }
+
+      .layout.wrap-reverse {
+        -ms-flex-wrap: wrap-reverse;
+        -webkit-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+      }
+    </style>
+  </template>
+</dom-module>
+/* Flexbox alignment */
+<dom-module id="iron-flex-alignment">
+  <template>
+    <style>
+      /**
+       * Alignment in cross axis.
+       */
+      .layout.start {
+        -ms-flex-align: start;
+        -webkit-align-items: flex-start;
+        align-items: flex-start;
+      }
+
+      .layout.center,
+      .layout.center-center {
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .layout.end {
+        -ms-flex-align: end;
+        -webkit-align-items: flex-end;
+        align-items: flex-end;
+      }
+
+      .layout.baseline {
+        -ms-flex-align: baseline;
+        -webkit-align-items: baseline;
+        align-items: baseline;
+      }
+
+      /**
+       * Alignment in main axis.
+       */
+      .layout.start-justified {
+        -ms-flex-pack: start;
+        -webkit-justify-content: flex-start;
+        justify-content: flex-start;
+      }
+
+      .layout.center-justified,
+      .layout.center-center {
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+      }
+
+      .layout.end-justified {
+        -ms-flex-pack: end;
+        -webkit-justify-content: flex-end;
+        justify-content: flex-end;
+      }
+
+      .layout.around-justified {
+        -ms-flex-pack: distribute;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+      }
+
+      .layout.justified {
+        -ms-flex-pack: justify;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+      }
+
+      /**
+       * Self alignment.
+       */
+      .self-start {
+        -ms-align-self: flex-start;
+        -webkit-align-self: flex-start;
+        align-self: flex-start;
+      }
+
+      .self-center {
+        -ms-align-self: center;
+        -webkit-align-self: center;
+        align-self: center;
+      }
+
+      .self-end {
+        -ms-align-self: flex-end;
+        -webkit-align-self: flex-end;
+        align-self: flex-end;
+      }
+
+      .self-stretch {
+        -ms-align-self: stretch;
+        -webkit-align-self: stretch;
+        align-self: stretch;
+      }
+
+      .self-baseline {
+        -ms-align-self: baseline;
+        -webkit-align-self: baseline;
+        align-self: baseline;
+      }
+
+      /**
+       * multi-line alignment in main axis.
+       */
+      .layout.start-aligned {
+        -ms-flex-line-pack: start;  /* IE10 */
+        -ms-align-content: flex-start;
+        -webkit-align-content: flex-start;
+        align-content: flex-start;
+      }
+
+      .layout.end-aligned {
+        -ms-flex-line-pack: end;  /* IE10 */
+        -ms-align-content: flex-end;
+        -webkit-align-content: flex-end;
+        align-content: flex-end;
+      }
+
+      .layout.center-aligned {
+        -ms-flex-line-pack: center;  /* IE10 */
+        -ms-align-content: center;
+        -webkit-align-content: center;
+        align-content: center;
+      }
+
+      .layout.between-aligned {
+        -ms-flex-line-pack: justify;  /* IE10 */
+        -ms-align-content: space-between;
+        -webkit-align-content: space-between;
+        align-content: space-between;
+      }
+
+      .layout.around-aligned {
+        -ms-flex-line-pack: distribute;  /* IE10 */
+        -ms-align-content: space-around;
+        -webkit-align-content: space-around;
+        align-content: space-around;
+      }
+    </style>
+  </template>
+</dom-module>
+/* Non-flexbox positioning helper styles */
+<dom-module id="iron-flex-factors">
+  <template>
+    <style>
+      .flex,
+      .flex-1 {
+        -ms-flex: 1 1 0.000000001px;
+        -webkit-flex: 1;
+        flex: 1;
+        -webkit-flex-basis: 0.000000001px;
+        flex-basis: 0.000000001px;
+      }
+
+      .flex-2 {
+        -ms-flex: 2;
+        -webkit-flex: 2;
+        flex: 2;
+      }
+
+      .flex-3 {
+        -ms-flex: 3;
+        -webkit-flex: 3;
+        flex: 3;
+      }
+
+      .flex-4 {
+        -ms-flex: 4;
+        -webkit-flex: 4;
+        flex: 4;
+      }
+
+      .flex-5 {
+        -ms-flex: 5;
+        -webkit-flex: 5;
+        flex: 5;
+      }
+
+      .flex-6 {
+        -ms-flex: 6;
+        -webkit-flex: 6;
+        flex: 6;
+      }
+
+      .flex-7 {
+        -ms-flex: 7;
+        -webkit-flex: 7;
+        flex: 7;
+      }
+
+      .flex-8 {
+        -ms-flex: 8;
+        -webkit-flex: 8;
+        flex: 8;
+      }
+
+      .flex-9 {
+        -ms-flex: 9;
+        -webkit-flex: 9;
+        flex: 9;
+      }
+
+      .flex-10 {
+        -ms-flex: 10;
+        -webkit-flex: 10;
+        flex: 10;
+      }
+
+      .flex-11 {
+        -ms-flex: 11;
+        -webkit-flex: 11;
+        flex: 11;
+      }
+
+      .flex-12 {
+        -ms-flex: 12;
+        -webkit-flex: 12;
+        flex: 12;
+      }
+    </style>
+  </template>
+</dom-module>
+<dom-module id="iron-positioning">
+  <template>
+    <style>
+      .block {
+        display: block;
+      }
+
+      [hidden] {
+        display: none !important;
+      }
+
+      .invisible {
+        visibility: hidden !important;
+      }
+
+      .relative {
+        position: relative;
+      }
+
+      .fit {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+
+      body.fullbleed {
+        margin: 0;
+        height: 100vh;
+      }
+
+      .scroll {
+        -webkit-overflow-scrolling: touch;
+        overflow: auto;
+      }
+
+      /* fixed position */
+      .fixed-bottom,
+      .fixed-left,
+      .fixed-right,
+      .fixed-top {
+        position: fixed;
+      }
+
+      .fixed-top {
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+
+      .fixed-right {
+        top: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      .fixed-bottom {
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+
+      .fixed-left {
+        top: 0;
+        bottom: 0;
+        left: 0;
+      }
+    </style>
+  </template>
+</dom-module>
+`;template$1.setAttribute("style","display: none;");document.head.appendChild(template$1.content);Polymer({_template:html`
+    <style>
+      :host {
+        @apply --layout-inline;
+        @apply --layout-center-center;
+        position: relative;
+
+        vertical-align: middle;
+
+        fill: var(--iron-icon-fill-color, currentcolor);
+        stroke: var(--iron-icon-stroke-color, none);
+
+        width: var(--iron-icon-width, 24px);
+        height: var(--iron-icon-height, 24px);
+        @apply --iron-icon;
+      }
+
+      :host([hidden]) {
+        display: none;
+      }
+    </style>
+`,is:"iron-icon",properties:{/**
+     * The name of the icon to use. The name should be of the form:
+     * `iconset_name:icon_name`.
+     */icon:{type:String},/**
+     * The name of the theme to used, if one is specified by the
+     * iconset.
+     */theme:{type:String},/**
+     * If using iron-icon without an iconset, you can set the src to be
+     * the URL of an individual icon image file. Note that this will take
+     * precedence over a given icon attribute.
+     */src:{type:String},/**
+     * @type {!IronMeta}
+     */_meta:{value:Base.create("iron-meta",{type:"iconset"})}},observers:["_updateIcon(_meta, isAttached)","_updateIcon(theme, isAttached)","_srcChanged(src, isAttached)","_iconChanged(icon, isAttached)"],_DEFAULT_ICONSET:"icons",_iconChanged:function(icon){var parts=(icon||"").split(":");this._iconName=parts.pop();this._iconsetName=parts.pop()||this._DEFAULT_ICONSET;this._updateIcon()},_srcChanged:function(src){this._updateIcon()},_usesIconset:function(){return this.icon||!this.src},/** @suppress {visibility} */_updateIcon:function(){if(this._usesIconset()){if(this._img&&this._img.parentNode){dom(this.root).removeChild(this._img)}if(""===this._iconName){if(this._iconset){this._iconset.removeIcon(this)}}else if(this._iconsetName&&this._meta){this._iconset=/** @type {?Polymer.Iconset} */this._meta.byKey(this._iconsetName);if(this._iconset){this._iconset.applyIcon(this,this._iconName,this.theme);this.unlisten(window,"iron-iconset-added","_updateIcon")}else{this.listen(window,"iron-iconset-added","_updateIcon")}}}else{if(this._iconset){this._iconset.removeIcon(this)}if(!this._img){this._img=document.createElement("img");this._img.style.width="100%";this._img.style.height="100%";this._img.draggable=!1}this._img.src=this.src;dom(this.root).appendChild(this._img)}}});Polymer({is:"iron-iconset-svg",properties:{/**
+     * The name of the iconset.
+     */name:{type:String,observer:"_nameChanged"},/**
+     * The size of an individual icon. Note that icons must be square.
+     */size:{type:Number,value:24},/**
+     * Set to true to enable mirroring of icons where specified when they are
+     * stamped. Icons that should be mirrored should be decorated with a
+     * `mirror-in-rtl` attribute.
+     *
+     * NOTE: For performance reasons, direction will be resolved once per
+     * document per iconset, so moving icons in and out of RTL subtrees will
+     * not cause their mirrored state to change.
+     */rtlMirroring:{type:Boolean,value:!1},/**
+     * Set to true to measure RTL based on the dir attribute on the body or
+     * html elements (measured on document.body or document.documentElement as
+     * available).
+     */useGlobalRtlAttribute:{type:Boolean,value:!1}},created:function(){this._meta=new IronMeta({type:"iconset",key:null,value:null})},attached:function(){this.style.display="none"},/**
+   * Construct an array of all icon names in this iconset.
+   *
+   * @return {!Array} Array of icon names.
+   */getIconNames:function(){this._icons=this._createIconMap();return Object.keys(this._icons).map(function(n){return this.name+":"+n},this)},/**
+   * Applies an icon to the given element.
+   *
+   * An svg icon is prepended to the element's shadowRoot if it exists,
+   * otherwise to the element itself.
+   *
+   * If RTL mirroring is enabled, and the icon is marked to be mirrored in
+   * RTL, the element will be tested (once and only once ever for each
+   * iconset) to determine the direction of the subtree the element is in.
+   * This direction will apply to all future icon applications, although only
+   * icons marked to be mirrored will be affected.
+   *
+   * @method applyIcon
+   * @param {Element} element Element to which the icon is applied.
+   * @param {string} iconName Name of the icon to apply.
+   * @return {?Element} The svg element which renders the icon.
+   */applyIcon:function(element,iconName){// Remove old svg element
+this.removeIcon(element);// install new svg element
+var svg=this._cloneIcon(iconName,this.rtlMirroring&&this._targetIsRTL(element));if(svg){// insert svg element into shadow root, if it exists
+var pde=dom(element.root||element);pde.insertBefore(svg,pde.childNodes[0]);return element._svgIcon=svg}return null},/**
+   * Remove an icon from the given element by undoing the changes effected
+   * by `applyIcon`.
+   *
+   * @param {Element} element The element from which the icon is removed.
+   */removeIcon:function(element){// Remove old svg element
+if(element._svgIcon){dom(element.root||element).removeChild(element._svgIcon);element._svgIcon=null}},/**
+   * Measures and memoizes the direction of the element. Note that this
+   * measurement is only done once and the result is memoized for future
+   * invocations.
+   */_targetIsRTL:function(target){if(null==this.__targetIsRTL){if(this.useGlobalRtlAttribute){var globalElement=document.body&&document.body.hasAttribute("dir")?document.body:document.documentElement;this.__targetIsRTL="rtl"===globalElement.getAttribute("dir")}else{if(target&&target.nodeType!==Node.ELEMENT_NODE){target=target.host}this.__targetIsRTL=target&&"rtl"===window.getComputedStyle(target).direction}}return this.__targetIsRTL},/**
+   *
+   * When name is changed, register iconset metadata
+   *
+   */_nameChanged:function(){this._meta.value=null;this._meta.key=this.name;this._meta.value=this;this.async(function(){this.fire("iron-iconset-added",this,{node:window})})},/**
+   * Create a map of child SVG elements by id.
+   *
+   * @return {!Object} Map of id's to SVG elements.
+   */_createIconMap:function(){// Objects chained to Object.prototype (`{}`) have members. Specifically,
+// on FF there is a `watch` method that confuses the icon map, so we
+// need to use a null-based object here.
+var icons=Object.create(null);dom(this).querySelectorAll("[id]").forEach(function(icon){icons[icon.id]=icon});return icons},/**
+   * Produce installable clone of the SVG element matching `id` in this
+   * iconset, or `undefined` if there is no matching element.
+   *
+   * @return {Element} Returns an installable clone of the SVG element
+   * matching `id`.
+   */_cloneIcon:function(id,mirrorAllowed){// create the icon map on-demand, since the iconset itself has no discrete
+// signal to know when it's children are fully parsed
+this._icons=this._icons||this._createIconMap();return this._prepareSvgClone(this._icons[id],this.size,mirrorAllowed)},/**
+   * @param {Element} sourceSvg
+   * @param {number} size
+   * @param {Boolean} mirrorAllowed
+   * @return {Element}
+   */_prepareSvgClone:function(sourceSvg,size,mirrorAllowed){if(sourceSvg){var content=sourceSvg.cloneNode(!0),svg=document.createElementNS("http://www.w3.org/2000/svg","svg"),viewBox=content.getAttribute("viewBox")||"0 0 "+size+" "+size,cssText="pointer-events: none; display: block; width: 100%; height: 100%;";if(mirrorAllowed&&content.hasAttribute("mirror-in-rtl")){cssText+="-webkit-transform:scale(-1,1);transform:scale(-1,1);transform-origin:center;"}svg.setAttribute("viewBox",viewBox);svg.setAttribute("preserveAspectRatio","xMidYMid meet");svg.setAttribute("focusable","false");// TODO(dfreedm): `pointer-events: none` works around
+// https://crbug.com/370136
+// TODO(sjmiles): inline style may not be ideal, but avoids requiring a
+// shadow-root
+svg.style.cssText=cssText;svg.appendChild(content).removeAttribute("id");return svg}return null}});const template$2=html`<iron-iconset-svg name="icons" size="24">
+<svg><defs>
+<g id="3d-rotation"><path d="M7.52 21.48C4.25 19.94 1.91 16.76 1.55 13H.05C.56 19.16 5.71 24 12 24l.66-.03-3.81-3.81-1.33 1.32zm.89-6.52c-.19 0-.37-.03-.52-.08-.16-.06-.29-.13-.4-.24-.11-.1-.2-.22-.26-.37-.06-.14-.09-.3-.09-.47h-1.3c0 .36.07.68.21.95.14.27.33.5.56.69.24.18.51.32.82.41.3.1.62.15.96.15.37 0 .72-.05 1.03-.15.32-.1.6-.25.83-.44s.42-.43.55-.72c.13-.29.2-.61.2-.97 0-.19-.02-.38-.07-.56-.05-.18-.12-.35-.23-.51-.1-.16-.24-.3-.4-.43-.17-.13-.37-.23-.61-.31.2-.09.37-.2.52-.33.15-.13.27-.27.37-.42.1-.15.17-.3.22-.46.05-.16.07-.32.07-.48 0-.36-.06-.68-.18-.96-.12-.28-.29-.51-.51-.69-.2-.19-.47-.33-.77-.43C9.1 8.05 8.76 8 8.39 8c-.36 0-.69.05-1 .16-.3.11-.57.26-.79.45-.21.19-.38.41-.51.67-.12.26-.18.54-.18.85h1.3c0-.17.03-.32.09-.45s.14-.25.25-.34c.11-.09.23-.17.38-.22.15-.05.3-.08.48-.08.4 0 .7.1.89.31.19.2.29.49.29.86 0 .18-.03.34-.08.49-.05.15-.14.27-.25.37-.11.1-.25.18-.41.24-.16.06-.36.09-.58.09H7.5v1.03h.77c.22 0 .42.02.6.07s.33.13.45.23c.12.11.22.24.29.4.07.16.1.35.1.57 0 .41-.12.72-.35.93-.23.23-.55.33-.95.33zm8.55-5.92c-.32-.33-.7-.59-1.14-.77-.43-.18-.92-.27-1.46-.27H12v8h2.3c.55 0 1.06-.09 1.51-.27.45-.18.84-.43 1.16-.76.32-.33.57-.73.74-1.19.17-.47.26-.99.26-1.57v-.4c0-.58-.09-1.1-.26-1.57-.18-.47-.43-.87-.75-1.2zm-.39 3.16c0 .42-.05.79-.14 1.13-.1.33-.24.62-.43.85-.19.23-.43.41-.71.53-.29.12-.62.18-.99.18h-.91V9.12h.97c.72 0 1.27.23 1.64.69.38.46.57 1.12.57 1.99v.4zM12 0l-.66.03 3.81 3.81 1.33-1.33c3.27 1.55 5.61 4.72 5.96 8.48h1.5C23.44 4.84 18.29 0 12 0z"></path></g>
+<g id="accessibility"><path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"></path></g>
+<g id="accessible"><circle cx="12" cy="4" r="2"></circle><path d="M19 13v-2c-1.54.02-3.09-.75-4.07-1.83l-1.29-1.43c-.17-.19-.38-.34-.61-.45-.01 0-.01-.01-.02-.01H13c-.35-.2-.75-.3-1.19-.26C10.76 7.11 10 8.04 10 9.09V15c0 1.1.9 2 2 2h5v5h2v-5.5c0-1.1-.9-2-2-2h-3v-3.45c1.29 1.07 3.25 1.94 5 1.95zm-6.17 5c-.41 1.16-1.52 2-2.83 2-1.66 0-3-1.34-3-3 0-1.31.84-2.41 2-2.83V12.1c-2.28.46-4 2.48-4 4.9 0 2.76 2.24 5 5 5 2.42 0 4.44-1.72 4.9-4h-2.07z"></path></g>
+<g id="account-balance"><path d="M4 10v7h3v-7H4zm6 0v7h3v-7h-3zM2 22h19v-3H2v3zm14-12v7h3v-7h-3zm-4.5-9L2 6v2h19V6l-9.5-5z"></path></g>
+<g id="account-balance-wallet"><path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"></path></g>
+<g id="account-box"><path d="M3 5v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2H5c-1.11 0-2 .9-2 2zm12 4c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3zm-9 8c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1H6v-1z"></path></g>
+<g id="account-circle"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"></path></g>
+<g id="add"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path></g>
+<g id="add-alert"><path d="M10.01 21.01c0 1.1.89 1.99 1.99 1.99s1.99-.89 1.99-1.99h-3.98zm8.87-4.19V11c0-3.25-2.25-5.97-5.29-6.69v-.72C13.59 2.71 12.88 2 12 2s-1.59.71-1.59 1.59v.72C7.37 5.03 5.12 7.75 5.12 11v5.82L3 18.94V20h18v-1.06l-2.12-2.12zM16 13.01h-3v3h-2v-3H8V11h3V8h2v3h3v2.01z"></path></g>
+<g id="add-box"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"></path></g>
+<g id="add-circle"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"></path></g>
+<g id="add-circle-outline"><path d="M13 7h-2v4H7v2h4v4h2v-4h4v-2h-4V7zm-1-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></g>
+<g id="add-shopping-cart"><path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z"></path></g>
+<g id="alarm"><path d="M22 5.72l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM7.88 3.39L6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM12.5 8H11v6l4.75 2.85.75-1.23-4-2.37V8zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"></path></g>
+<g id="alarm-add"><path d="M7.88 3.39L6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM22 5.72l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7zm1-11h-2v3H8v2h3v3h2v-3h3v-2h-3V9z"></path></g>
+<g id="alarm-off"><path d="M12 6c3.87 0 7 3.13 7 7 0 .84-.16 1.65-.43 2.4l1.52 1.52c.58-1.19.91-2.51.91-3.92 0-4.97-4.03-9-9-9-1.41 0-2.73.33-3.92.91L9.6 6.43C10.35 6.16 11.16 6 12 6zm10-.28l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM2.92 2.29L1.65 3.57 2.98 4.9l-1.11.93 1.42 1.42 1.11-.94.8.8C3.83 8.69 3 10.75 3 13c0 4.97 4.02 9 9 9 2.25 0 4.31-.83 5.89-2.2l2.2 2.2 1.27-1.27L3.89 3.27l-.97-.98zm13.55 16.1C15.26 19.39 13.7 20 12 20c-3.87 0-7-3.13-7-7 0-1.7.61-3.26 1.61-4.47l9.86 9.86zM8.02 3.28L6.6 1.86l-.86.71 1.42 1.42.86-.71z"></path></g>
+<g id="alarm-on"><path d="M22 5.72l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM7.88 3.39L6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7zm-1.46-5.47L8.41 12.4l-1.06 1.06 3.18 3.18 6-6-1.06-1.06-4.93 4.95z"></path></g>
+<g id="all-out"><path d="M16.21 4.16l4 4v-4zm4 12l-4 4h4zm-12 4l-4-4v4zm-4-12l4-4h-4zm12.95-.95c-2.73-2.73-7.17-2.73-9.9 0s-2.73 7.17 0 9.9 7.17 2.73 9.9 0 2.73-7.16 0-9.9zm-1.1 8.8c-2.13 2.13-5.57 2.13-7.7 0s-2.13-5.57 0-7.7 5.57-2.13 7.7 0 2.13 5.57 0 7.7z"></path></g>
+<g id="android"><path d="M6 18c0 .55.45 1 1 1h1v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h2v3.5c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5V19h1c.55 0 1-.45 1-1V8H6v10zM3.5 8C2.67 8 2 8.67 2 9.5v7c0 .83.67 1.5 1.5 1.5S5 17.33 5 16.5v-7C5 8.67 4.33 8 3.5 8zm17 0c-.83 0-1.5.67-1.5 1.5v7c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5v-7c0-.83-.67-1.5-1.5-1.5zm-4.97-5.84l1.3-1.3c.2-.2.2-.51 0-.71-.2-.2-.51-.2-.71 0l-1.48 1.48C13.85 1.23 12.95 1 12 1c-.96 0-1.86.23-2.66.63L7.85.15c-.2-.2-.51-.2-.71 0-.2.2-.2.51 0 .71l1.31 1.31C6.97 3.26 6 5.01 6 7h12c0-1.99-.97-3.75-2.47-4.84zM10 5H9V4h1v1zm5 0h-1V4h1v1z"></path></g>
+<g id="announcement"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 9h-2V5h2v6zm0 4h-2v-2h2v2z"></path></g>
+<g id="apps"><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"></path></g>
+<g id="archive"><path d="M20.54 5.23l-1.39-1.68C18.88 3.21 18.47 3 18 3H6c-.47 0-.88.21-1.16.55L3.46 5.23C3.17 5.57 3 6.02 3 6.5V19c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6.5c0-.48-.17-.93-.46-1.27zM12 17.5L6.5 12H10v-2h4v2h3.5L12 17.5zM5.12 5l.81-1h12l.94 1H5.12z"></path></g>
+<g id="arrow-back"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"></path></g>
+<g id="arrow-downward"><path d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"></path></g>
+<g id="arrow-drop-down"><path d="M7 10l5 5 5-5z"></path></g>
+<g id="arrow-drop-down-circle"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 12l-4-4h8l-4 4z"></path></g>
+<g id="arrow-drop-up"><path d="M7 14l5-5 5 5z"></path></g>
+<g id="arrow-forward"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></g>
+<g id="arrow-upward"><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"></path></g>
+<g id="aspect-ratio"><path d="M19 12h-2v3h-3v2h5v-5zM7 9h3V7H5v5h2V9zm14-6H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16.01H3V4.99h18v14.02z"></path></g>
+<g id="assessment"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path></g>
+<g id="assignment"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"></path></g>
+<g id="assignment-ind"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm0 4c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm6 12H6v-1.4c0-2 4-3.1 6-3.1s6 1.1 6 3.1V19z"></path></g>
+<g id="assignment-late"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-6 15h-2v-2h2v2zm0-4h-2V8h2v6zm-1-9c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"></path></g>
+<g id="assignment-return"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm4 12h-4v3l-5-5 5-5v3h4v4z"></path></g>
+<g id="assignment-returned"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm0 15l-5-5h3V9h4v4h3l-5 5z"></path></g>
+<g id="assignment-turned-in"><path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm-2 14l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"></path></g>
+<g id="attachment"><path d="M2 12.5C2 9.46 4.46 7 7.5 7H18c2.21 0 4 1.79 4 4s-1.79 4-4 4H9.5C8.12 15 7 13.88 7 12.5S8.12 10 9.5 10H17v2H9.41c-.55 0-.55 1 0 1H18c1.1 0 2-.9 2-2s-.9-2-2-2H7.5C5.57 9 4 10.57 4 12.5S5.57 16 7.5 16H17v2H7.5C4.46 18 2 15.54 2 12.5z"></path></g>
+<g id="autorenew"><path d="M12 6v3l4-4-4-4v3c-4.42 0-8 3.58-8 8 0 1.57.46 3.03 1.24 4.26L6.7 14.8c-.45-.83-.7-1.79-.7-2.8 0-3.31 2.69-6 6-6zm6.76 1.74L17.3 9.2c.44.84.7 1.79.7 2.8 0 3.31-2.69 6-6 6v-3l-4 4 4 4v-3c4.42 0 8-3.58 8-8 0-1.57-.46-3.03-1.24-4.26z"></path></g>
+<g id="backspace"><path d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-3 12.59L17.59 17 14 13.41 10.41 17 9 15.59 12.59 12 9 8.41 10.41 7 14 10.59 17.59 7 19 8.41 15.41 12 19 15.59z"></path></g>
+<g id="backup"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"></path></g>
+<g id="block"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM4 12c0-4.42 3.58-8 8-8 1.85 0 3.55.63 4.9 1.69L5.69 16.9C4.63 15.55 4 13.85 4 12zm8 8c-1.85 0-3.55-.63-4.9-1.69L18.31 7.1C19.37 8.45 20 10.15 20 12c0 4.42-3.58 8-8 8z"></path></g>
+<g id="book"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"></path></g>
+<g id="bookmark"><path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"></path></g>
+<g id="bookmark-border"><path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"></path></g>
+<g id="bug-report"><path d="M20 8h-2.81c-.45-.78-1.07-1.45-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5c-.49 0-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8zm-6 8h-4v-2h4v2zm0-4h-4v-2h4v2z"></path></g>
+<g id="build"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"></path></g>
+<g id="cached"><path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"></path></g>
+<g id="camera-enhance"><path d="M9 3L7.17 5H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2h-3.17L15 3H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-1l1.25-2.75L16 13l-2.75-1.25L12 9l-1.25 2.75L8 13l2.75 1.25z"></path></g>
+<g id="cancel"><path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"></path></g>
+<g id="card-giftcard"><path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"></path></g>
+<g id="card-membership"><path d="M20 2H4c-1.11 0-2 .89-2 2v11c0 1.11.89 2 2 2h4v5l4-2 4 2v-5h4c1.11 0 2-.89 2-2V4c0-1.11-.89-2-2-2zm0 13H4v-2h16v2zm0-5H4V4h16v6z"></path></g>
+<g id="card-travel"><path d="M20 6h-3V4c0-1.11-.89-2-2-2H9c-1.11 0-2 .89-2 2v2H4c-1.11 0-2 .89-2 2v11c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zM9 4h6v2H9V4zm11 15H4v-2h16v2zm0-5H4V8h3v2h2V8h6v2h2V8h3v6z"></path></g>
+<g id="change-history"><path d="M12 7.77L18.39 18H5.61L12 7.77M12 4L2 20h20L12 4z"></path></g>
+<g id="check"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></g>
+<g id="check-box"><path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></g>
+<g id="check-box-outline-blank"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></g>
+<g id="check-circle"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></g>
+<g id="chevron-left"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path></g>
+<g id="chevron-right"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></g>
+<g id="chrome-reader-mode"><path d="M13 12h7v1.5h-7zm0-2.5h7V11h-7zm0 5h7V16h-7zM21 4H3c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 15h-9V6h9v13z"></path></g>
+<g id="class"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"></path></g>
+<g id="clear"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></g>
+<g id="close"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></g>
+<g id="cloud"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"></path></g>
+<g id="cloud-circle"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.5 14H8c-1.66 0-3-1.34-3-3s1.34-3 3-3l.14.01C8.58 8.28 10.13 7 12 7c2.21 0 4 1.79 4 4h.5c1.38 0 2.5 1.12 2.5 2.5S17.88 16 16.5 16z"></path></g>
+<g id="cloud-done"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM10 17l-3.5-3.5 1.41-1.41L10 14.17 15.18 9l1.41 1.41L10 17z"></path></g>
+<g id="cloud-download"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"></path></g>
+<g id="cloud-off"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4c-1.48 0-2.85.43-4.01 1.17l1.46 1.46C10.21 6.23 11.08 6 12 6c3.04 0 5.5 2.46 5.5 5.5v.5H19c1.66 0 3 1.34 3 3 0 1.13-.64 2.11-1.56 2.62l1.45 1.45C23.16 18.16 24 16.68 24 15c0-2.64-2.05-4.78-4.65-4.96zM3 5.27l2.75 2.74C2.56 8.15 0 10.77 0 14c0 3.31 2.69 6 6 6h11.73l2 2L21 20.73 4.27 4 3 5.27zM7.73 10l8 8H6c-2.21 0-4-1.79-4-4s1.79-4 4-4h1.73z"></path></g>
+<g id="cloud-queue"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4s1.79-4 4-4h.71C7.37 7.69 9.48 6 12 6c3.04 0 5.5 2.46 5.5 5.5v.5H19c1.66 0 3 1.34 3 3s-1.34 3-3 3z"></path></g>
+<g id="cloud-upload"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM14 13v4h-4v-4H7l5-5 5 5h-3z"></path></g>
+<g id="code"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"></path></g>
+<g id="compare-arrows"><path d="M9.01 14H2v2h7.01v3L13 15l-3.99-4v3zm5.98-1v-3H22V8h-7.01V5L11 9l3.99 4z"></path></g>
+<g id="content-copy"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"></path></g>
+<g id="content-cut"><path d="M9.64 7.64c.23-.5.36-1.05.36-1.64 0-2.21-1.79-4-4-4S2 3.79 2 6s1.79 4 4 4c.59 0 1.14-.13 1.64-.36L10 12l-2.36 2.36C7.14 14.13 6.59 14 6 14c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4c0-.59-.13-1.14-.36-1.64L12 14l7 7h3v-1L9.64 7.64zM6 8c-1.1 0-2-.89-2-2s.9-2 2-2 2 .89 2 2-.9 2-2 2zm0 12c-1.1 0-2-.89-2-2s.9-2 2-2 2 .89 2 2-.9 2-2 2zm6-7.5c-.28 0-.5-.22-.5-.5s.22-.5.5-.5.5.22.5.5-.22.5-.5.5zM19 3l-6 6 2 2 7-7V3z"></path></g>
+<g id="content-paste"><path d="M19 2h-4.18C14.4.84 13.3 0 12 0c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm7 18H5V4h2v3h10V4h2v16z"></path></g>
+<g id="copyright"><path d="M10.08 10.86c.05-.33.16-.62.3-.87s.34-.46.59-.62c.24-.15.54-.22.91-.23.23.01.44.05.63.13.2.09.38.21.52.36s.25.33.34.53.13.42.14.64h1.79c-.02-.47-.11-.9-.28-1.29s-.4-.73-.7-1.01-.66-.5-1.08-.66-.88-.23-1.39-.23c-.65 0-1.22.11-1.7.34s-.88.53-1.2.92-.56.84-.71 1.36S8 11.29 8 11.87v.27c0 .58.08 1.12.23 1.64s.39.97.71 1.35.72.69 1.2.91 1.05.34 1.7.34c.47 0 .91-.08 1.32-.23s.77-.36 1.08-.63.56-.58.74-.94.29-.74.3-1.15h-1.79c-.01.21-.06.4-.15.58s-.21.33-.36.46-.32.23-.52.3c-.19.07-.39.09-.6.1-.36-.01-.66-.08-.89-.23-.25-.16-.45-.37-.59-.62s-.25-.55-.3-.88-.08-.67-.08-1v-.27c0-.35.03-.68.08-1.01zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></g>
+<g id="create"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path></g>
+<g id="create-new-folder"><path d="M20 6h-8l-2-2H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-1 8h-3v3h-2v-3h-3v-2h3V9h2v3h3v2z"></path></g>
+<g id="credit-card"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"></path></g>
+<g id="dashboard"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"></path></g>
+<g id="date-range"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"></path></g>
+<g id="delete"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"></path></g>
+<g id="delete-forever"><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zm2.46-7.12l1.41-1.41L12 12.59l2.12-2.12 1.41 1.41L13.41 14l2.12 2.12-1.41 1.41L12 15.41l-2.12 2.12-1.41-1.41L10.59 14l-2.13-2.12zM15.5 4l-1-1h-5l-1 1H5v2h14V4z"></path></g>
+<g id="delete-sweep"><path d="M15 16h4v2h-4zm0-8h7v2h-7zm0 4h6v2h-6zM3 18c0 1.1.9 2 2 2h6c1.1 0 2-.9 2-2V8H3v10zM14 5h-3l-1-1H6L5 5H2v2h12z"></path></g>
+<g id="description"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"></path></g>
+<g id="dns"><path d="M20 13H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1zM7 19c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM20 3H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zM7 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"></path></g>
+<g id="done"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"></path></g>
+<g id="done-all"><path d="M18 7l-1.41-1.41-6.34 6.34 1.41 1.41L18 7zm4.24-1.41L11.66 16.17 7.48 12l-1.41 1.41L11.66 19l12-12-1.42-1.41zM.41 13.41L6 19l1.41-1.41L1.83 12 .41 13.41z"></path></g>
+<g id="donut-large"><path d="M11 5.08V2c-5 .5-9 4.81-9 10s4 9.5 9 10v-3.08c-3-.48-6-3.4-6-6.92s3-6.44 6-6.92zM18.97 11H22c-.47-5-4-8.53-9-9v3.08C16 5.51 18.54 8 18.97 11zM13 18.92V22c5-.47 8.53-4 9-9h-3.03c-.43 3-2.97 5.49-5.97 5.92z"></path></g>
+<g id="donut-small"><path d="M11 9.16V2c-5 .5-9 4.79-9 10s4 9.5 9 10v-7.16c-1-.41-2-1.52-2-2.84s1-2.43 2-2.84zM14.86 11H22c-.48-4.75-4-8.53-9-9v7.16c1 .3 1.52.98 1.86 1.84zM13 14.84V22c5-.47 8.52-4.25 9-9h-7.14c-.34.86-.86 1.54-1.86 1.84z"></path></g>
+<g id="drafts"><path d="M21.99 8c0-.72-.37-1.35-.94-1.7L12 1 2.95 6.3C2.38 6.65 2 7.28 2 8v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2l-.01-10zM12 13L3.74 7.84 12 3l8.26 4.84L12 13z"></path></g>
+<g id="eject"><path d="M5 17h14v2H5zm7-12L5.33 15h13.34z"></path></g>
+<g id="error"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"></path></g>
+<g id="error-outline"><path d="M11 15h2v2h-2zm0-8h2v6h-2zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></g>
+<g id="euro-symbol"><path d="M15 18.5c-2.51 0-4.68-1.42-5.76-3.5H15v-2H8.58c-.05-.33-.08-.66-.08-1s.03-.67.08-1H15V9H9.24C10.32 6.92 12.5 5.5 15 5.5c1.61 0 3.09.59 4.23 1.57L21 5.3C19.41 3.87 17.3 3 15 3c-3.92 0-7.24 2.51-8.48 6H3v2h3.06c-.04.33-.06.66-.06 1 0 .34.02.67.06 1H3v2h3.52c1.24 3.49 4.56 6 8.48 6 2.31 0 4.41-.87 6-2.3l-1.78-1.77c-1.13.98-2.6 1.57-4.22 1.57z"></path></g>
+<g id="event"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"></path></g>
+<g id="event-seat"><path d="M4 18v3h3v-3h10v3h3v-6H4zm15-8h3v3h-3zM2 10h3v3H2zm15 3H7V5c0-1.1.9-2 2-2h6c1.1 0 2 .9 2 2v8z"></path></g>
+<g id="exit-to-app"><path d="M10.09 15.59L11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59zM19 3H5c-1.11 0-2 .9-2 2v4h2V5h14v14H5v-4H3v4c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></g>
+<g id="expand-less"><path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"></path></g>
+<g id="expand-more"><path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path></g>
+<g id="explore"><path d="M12 10.9c-.61 0-1.1.49-1.1 1.1s.49 1.1 1.1 1.1c.61 0 1.1-.49 1.1-1.1s-.49-1.1-1.1-1.1zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm2.19 12.19L6 18l3.81-8.19L18 6l-3.81 8.19z"></path></g>
+<g id="extension"><path d="M20.5 11H19V7c0-1.1-.9-2-2-2h-4V3.5C13 2.12 11.88 1 10.5 1S8 2.12 8 3.5V5H4c-1.1 0-1.99.9-1.99 2v3.8H3.5c1.49 0 2.7 1.21 2.7 2.7s-1.21 2.7-2.7 2.7H2V20c0 1.1.9 2 2 2h3.8v-1.5c0-1.49 1.21-2.7 2.7-2.7 1.49 0 2.7 1.21 2.7 2.7V22H17c1.1 0 2-.9 2-2v-4h1.5c1.38 0 2.5-1.12 2.5-2.5S21.88 11 20.5 11z"></path></g>
+<g id="face"><path d="M9 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm6 0c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 14.05 10 17.42 10c.78 0 1.53-.09 2.25-.26.21.71.33 1.47.33 2.26 0 4.41-3.59 8-8 8z"></path></g>
+<g id="favorite"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></g>
+<g id="favorite-border"><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path></g>
+<g id="feedback"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"></path></g>
+<g id="file-download"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></g>
+<g id="file-upload"><path d="M9 16h6v-6h4l-7-7-7 7h4zm-4 2h14v2H5z"></path></g>
+<g id="filter-list"><path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"></path></g>
+<g id="find-in-page"><path d="M20 19.59V8l-6-6H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c.45 0 .85-.15 1.19-.4l-4.43-4.43c-.8.52-1.74.83-2.76.83-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5c0 1.02-.31 1.96-.83 2.75L20 19.59zM9 13c0 1.66 1.34 3 3 3s3-1.34 3-3-1.34-3-3-3-3 1.34-3 3z"></path></g>
+<g id="find-replace"><path d="M11 6c1.38 0 2.63.56 3.54 1.46L12 10h6V4l-2.05 2.05C14.68 4.78 12.93 4 11 4c-3.53 0-6.43 2.61-6.92 6H6.1c.46-2.28 2.48-4 4.9-4zm5.64 9.14c.66-.9 1.12-1.97 1.28-3.14H15.9c-.46 2.28-2.48 4-4.9 4-1.38 0-2.63-.56-3.54-1.46L10 12H4v6l2.05-2.05C7.32 17.22 9.07 18 11 18c1.55 0 2.98-.51 4.14-1.36L20 21.49 21.49 20l-4.85-4.86z"></path></g>
+<g id="fingerprint"><path d="M17.81 4.47c-.08 0-.16-.02-.23-.06C15.66 3.42 14 3 12.01 3c-1.98 0-3.86.47-5.57 1.41-.24.13-.54.04-.68-.2-.13-.24-.04-.55.2-.68C7.82 2.52 9.86 2 12.01 2c2.13 0 3.99.47 6.03 1.52.25.13.34.43.21.67-.09.18-.26.28-.44.28zM3.5 9.72c-.1 0-.2-.03-.29-.09-.23-.16-.28-.47-.12-.7.99-1.4 2.25-2.5 3.75-3.27C9.98 4.04 14 4.03 17.15 5.65c1.5.77 2.76 1.86 3.75 3.25.16.22.11.54-.12.7-.23.16-.54.11-.7-.12-.9-1.26-2.04-2.25-3.39-2.94-2.87-1.47-6.54-1.47-9.4.01-1.36.7-2.5 1.7-3.4 2.96-.08.14-.23.21-.39.21zm6.25 12.07c-.13 0-.26-.05-.35-.15-.87-.87-1.34-1.43-2.01-2.64-.69-1.23-1.05-2.73-1.05-4.34 0-2.97 2.54-5.39 5.66-5.39s5.66 2.42 5.66 5.39c0 .28-.22.5-.5.5s-.5-.22-.5-.5c0-2.42-2.09-4.39-4.66-4.39-2.57 0-4.66 1.97-4.66 4.39 0 1.44.32 2.77.93 3.85.64 1.15 1.08 1.64 1.85 2.42.19.2.19.51 0 .71-.11.1-.24.15-.37.15zm7.17-1.85c-1.19 0-2.24-.3-3.1-.89-1.49-1.01-2.38-2.65-2.38-4.39 0-.28.22-.5.5-.5s.5.22.5.5c0 1.41.72 2.74 1.94 3.56.71.48 1.54.71 2.54.71.24 0 .64-.03 1.04-.1.27-.05.53.13.58.41.05.27-.13.53-.41.58-.57.11-1.07.12-1.21.12zM14.91 22c-.04 0-.09-.01-.13-.02-1.59-.44-2.63-1.03-3.72-2.1-1.4-1.39-2.17-3.24-2.17-5.22 0-1.62 1.38-2.94 3.08-2.94 1.7 0 3.08 1.32 3.08 2.94 0 1.07.93 1.94 2.08 1.94s2.08-.87 2.08-1.94c0-3.77-3.25-6.83-7.25-6.83-2.84 0-5.44 1.58-6.61 4.03-.39.81-.59 1.76-.59 2.8 0 .78.07 2.01.67 3.61.1.26-.03.55-.29.64-.26.1-.55-.04-.64-.29-.49-1.31-.73-2.61-.73-3.96 0-1.2.23-2.29.68-3.24 1.33-2.79 4.28-4.6 7.51-4.6 4.55 0 8.25 3.51 8.25 7.83 0 1.62-1.38 2.94-3.08 2.94s-3.08-1.32-3.08-2.94c0-1.07-.93-1.94-2.08-1.94s-2.08.87-2.08 1.94c0 1.71.66 3.31 1.87 4.51.95.94 1.86 1.46 3.27 1.85.27.07.42.35.35.61-.05.23-.26.38-.47.38z"></path></g>
+<g id="first-page"><path d="M18.41 16.59L13.82 12l4.59-4.59L17 6l-6 6 6 6zM6 6h2v12H6z"></path></g>
+<g id="flag"><path d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z"></path></g>
+<g id="flight-land"><path d="M2.5 19h19v2h-19zm7.18-5.73l4.35 1.16 5.31 1.42c.8.21 1.62-.26 1.84-1.06.21-.8-.26-1.62-1.06-1.84l-5.31-1.42-2.76-9.02L10.12 2v8.28L5.15 8.95l-.93-2.32-1.45-.39v5.17l1.6.43 5.31 1.43z"></path></g>
+<g id="flight-takeoff"><path d="M2.5 19h19v2h-19zm19.57-9.36c-.21-.8-1.04-1.28-1.84-1.06L14.92 10l-6.9-6.43-1.93.51 4.14 7.17-4.97 1.33-1.97-1.54-1.45.39 1.82 3.16.77 1.33 1.6-.43 5.31-1.42 4.35-1.16L21 11.49c.81-.23 1.28-1.05 1.07-1.85z"></path></g>
+<g id="flip-to-back"><path d="M9 7H7v2h2V7zm0 4H7v2h2v-2zm0-8c-1.11 0-2 .9-2 2h2V3zm4 12h-2v2h2v-2zm6-12v2h2c0-1.1-.9-2-2-2zm-6 0h-2v2h2V3zM9 17v-2H7c0 1.1.89 2 2 2zm10-4h2v-2h-2v2zm0-4h2V7h-2v2zm0 8c1.1 0 2-.9 2-2h-2v2zM5 7H3v12c0 1.1.89 2 2 2h12v-2H5V7zm10-2h2V3h-2v2zm0 12h2v-2h-2v2z"></path></g>
+<g id="flip-to-front"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm2 4v-2H3c0 1.1.89 2 2 2zM3 9h2V7H3v2zm12 12h2v-2h-2v2zm4-18H9c-1.11 0-2 .9-2 2v10c0 1.1.89 2 2 2h10c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 12H9V5h10v10zm-8 6h2v-2h-2v2zm-4 0h2v-2H7v2z"></path></g>
+<g id="folder"><path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"></path></g>
+<g id="folder-open"><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"></path></g>
+<g id="folder-shared"><path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-5 3c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm4 8h-8v-1c0-1.33 2.67-2 4-2s4 .67 4 2v1z"></path></g>
+<g id="font-download"><path d="M9.93 13.5h4.14L12 7.98zM20 2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-4.05 16.5l-1.14-3H9.17l-1.12 3H5.96l5.11-13h1.86l5.11 13h-2.09z"></path></g>
+<g id="forward"><path d="M12 8V4l8 8-8 8v-4H4V8z"></path></g>
+<g id="fullscreen"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"></path></g>
+<g id="fullscreen-exit"><path d="M5 16h3v3h2v-5H5v2zm3-8H5v2h5V5H8v3zm6 11h2v-3h3v-2h-5v5zm2-11V5h-2v5h5V8h-3z"></path></g>
+<g id="g-translate"><path d="M20 5h-9.12L10 2H4c-1.1 0-2 .9-2 2v13c0 1.1.9 2 2 2h7l1 3h8c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zM7.17 14.59c-2.25 0-4.09-1.83-4.09-4.09s1.83-4.09 4.09-4.09c1.04 0 1.99.37 2.74 1.07l.07.06-1.23 1.18-.06-.05c-.29-.27-.78-.59-1.52-.59-1.31 0-2.38 1.09-2.38 2.42s1.07 2.42 2.38 2.42c1.37 0 1.96-.87 2.12-1.46H7.08V9.91h3.95l.01.07c.04.21.05.4.05.61 0 2.35-1.61 4-3.92 4zm6.03-1.71c.33.6.74 1.18 1.19 1.7l-.54.53-.65-2.23zm.77-.76h-.99l-.31-1.04h3.99s-.34 1.31-1.56 2.74c-.52-.62-.89-1.23-1.13-1.7zM21 20c0 .55-.45 1-1 1h-7l2-2-.81-2.77.92-.92L17.79 18l.73-.73-2.71-2.68c.9-1.03 1.6-2.25 1.92-3.51H19v-1.04h-3.64V9h-1.04v1.04h-1.96L11.18 6H20c.55 0 1 .45 1 1v13z"></path></g>
+<g id="gavel"><path d="M1 21h12v2H1zM5.245 8.07l2.83-2.827 14.14 14.142-2.828 2.828zM12.317 1l5.657 5.656-2.83 2.83-5.654-5.66zM3.825 9.485l5.657 5.657-2.828 2.828-5.657-5.657z"></path></g>
+<g id="gesture"><path d="M4.59 6.89c.7-.71 1.4-1.35 1.71-1.22.5.2 0 1.03-.3 1.52-.25.42-2.86 3.89-2.86 6.31 0 1.28.48 2.34 1.34 2.98.75.56 1.74.73 2.64.46 1.07-.31 1.95-1.4 3.06-2.77 1.21-1.49 2.83-3.44 4.08-3.44 1.63 0 1.65 1.01 1.76 1.79-3.78.64-5.38 3.67-5.38 5.37 0 1.7 1.44 3.09 3.21 3.09 1.63 0 4.29-1.33 4.69-6.1H21v-2.5h-2.47c-.15-1.65-1.09-4.2-4.03-4.2-2.25 0-4.18 1.91-4.94 2.84-.58.73-2.06 2.48-2.29 2.72-.25.3-.68.84-1.11.84-.45 0-.72-.83-.36-1.92.35-1.09 1.4-2.86 1.85-3.52.78-1.14 1.3-1.92 1.3-3.28C8.95 3.69 7.31 3 6.44 3 5.12 3 3.97 4 3.72 4.25c-.36.36-.66.66-.88.93l1.75 1.71zm9.29 11.66c-.31 0-.74-.26-.74-.72 0-.6.73-2.2 2.87-2.76-.3 2.69-1.43 3.48-2.13 3.48z"></path></g>
+<g id="get-app"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"></path></g>
+<g id="gif"><path d="M11.5 9H13v6h-1.5zM9 9H6c-.6 0-1 .5-1 1v4c0 .5.4 1 1 1h3c.6 0 1-.5 1-1v-2H8.5v1.5h-2v-3H10V10c0-.5-.4-1-1-1zm10 1.5V9h-4.5v6H16v-2h2v-1.5h-2v-1z"></path></g>
+<g id="grade"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></g>
+<g id="group-work"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8 17.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM9.5 8c0-1.38 1.12-2.5 2.5-2.5s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5S9.5 9.38 9.5 8zm6.5 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></g>
+<g id="help"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path></g>
+<g id="help-outline"><path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"></path></g>
+<g id="highlight-off"><path d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></g>
+<g id="history"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"></path></g>
+<g id="home"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></g>
+<g id="hourglass-empty"><path d="M6 2v6h.01L6 8.01 10 12l-4 4 .01.01H6V22h12v-5.99h-.01L18 16l-4-4 4-3.99-.01-.01H18V2H6zm10 14.5V20H8v-3.5l4-4 4 4zm-4-5l-4-4V4h8v3.5l-4 4z"></path></g>
+<g id="hourglass-full"><path d="M6 2v6h.01L6 8.01 10 12l-4 4 .01.01H6V22h12v-5.99h-.01L18 16l-4-4 4-3.99-.01-.01H18V2H6z"></path></g>
+<g id="http"><path d="M4.5 11h-2V9H1v6h1.5v-2.5h2V15H6V9H4.5v2zm2.5-.5h1.5V15H10v-4.5h1.5V9H7v1.5zm5.5 0H14V15h1.5v-4.5H17V9h-4.5v1.5zm9-1.5H18v6h1.5v-2h2c.8 0 1.5-.7 1.5-1.5v-1c0-.8-.7-1.5-1.5-1.5zm0 2.5h-2v-1h2v1z"></path></g>
+<g id="https"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"></path></g>
+<g id="important-devices"><path d="M23 11.01L18 11c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5c.55 0 1-.45 1-1v-9c0-.55-.45-.99-1-.99zM23 20h-5v-7h5v7zM20 2H2C.89 2 0 2.89 0 4v12c0 1.1.89 2 2 2h7v2H7v2h8v-2h-2v-2h2v-2H2V4h18v5h2V4c0-1.11-.9-2-2-2zm-8.03 7L11 6l-.97 3H7l2.47 1.76-.94 2.91 2.47-1.8 2.47 1.8-.94-2.91L15 9h-3.03z"></path></g>
+<g id="inbox"><path d="M19 3H4.99c-1.11 0-1.98.89-1.98 2L3 19c0 1.1.88 2 1.99 2H19c1.1 0 2-.9 2-2V5c0-1.11-.9-2-2-2zm0 12h-4c0 1.66-1.35 3-3 3s-3-1.34-3-3H4.99V5H19v10z"></path></g>
+<g id="indeterminate-check-box"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2z"></path></g>
+<g id="info"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></g>
+<g id="info-outline"><path d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"></path></g>
+<g id="input"><path d="M21 3.01H3c-1.1 0-2 .9-2 2V9h2V4.99h18v14.03H3V15H1v4.01c0 1.1.9 1.98 2 1.98h18c1.1 0 2-.88 2-1.98v-14c0-1.11-.9-2-2-2zM11 16l4-4-4-4v3H1v2h10v3z"></path></g>
+<g id="invert-colors"><path d="M17.66 7.93L12 2.27 6.34 7.93c-3.12 3.12-3.12 8.19 0 11.31C7.9 20.8 9.95 21.58 12 21.58c2.05 0 4.1-.78 5.66-2.34 3.12-3.12 3.12-8.19 0-11.31zM12 19.59c-1.6 0-3.11-.62-4.24-1.76C6.62 16.69 6 15.19 6 13.59s.62-3.11 1.76-4.24L12 5.1v14.49z"></path></g>
+<g id="label"><path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16z"></path></g>
+<g id="label-outline"><path d="M17.63 5.84C17.27 5.33 16.67 5 16 5L5 5.01C3.9 5.01 3 5.9 3 7v10c0 1.1.9 1.99 2 1.99L16 19c.67 0 1.27-.33 1.63-.84L22 12l-4.37-6.16zM16 17H5V7h11l3.55 5L16 17z"></path></g>
+<g id="language"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"></path></g>
+<g id="last-page"><path d="M5.59 7.41L10.18 12l-4.59 4.59L7 18l6-6-6-6zM16 6h2v12h-2z"></path></g>
+<g id="launch"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></g>
+<g id="lightbulb-outline"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"></path></g>
+<g id="line-style"><path d="M3 16h5v-2H3v2zm6.5 0h5v-2h-5v2zm6.5 0h5v-2h-5v2zM3 20h2v-2H3v2zm4 0h2v-2H7v2zm4 0h2v-2h-2v2zm4 0h2v-2h-2v2zm4 0h2v-2h-2v2zM3 12h8v-2H3v2zm10 0h8v-2h-8v2zM3 4v4h18V4H3z"></path></g>
+<g id="line-weight"><path d="M3 17h18v-2H3v2zm0 3h18v-1H3v1zm0-7h18v-3H3v3zm0-9v4h18V4H3z"></path></g>
+<g id="link"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></g>
+<g id="list"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"></path></g>
+<g id="lock"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"></path></g>
+<g id="lock-open"><path d="M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6h1.9c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm0 12H6V10h12v10z"></path></g>
+<g id="lock-outline"><path d="M12 17c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm6-9h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM8.9 6c0-1.71 1.39-3.1 3.1-3.1s3.1 1.39 3.1 3.1v2H8.9V6zM18 20H6V10h12v10z"></path></g>
+<g id="low-priority"><path d="M14 5h8v2h-8zm0 5.5h8v2h-8zm0 5.5h8v2h-8zM2 11.5C2 15.08 4.92 18 8.5 18H9v2l3-3-3-3v2h-.5C6.02 16 4 13.98 4 11.5S6.02 7 8.5 7H12V5H8.5C4.92 5 2 7.92 2 11.5z"></path></g>
+<g id="loyalty"><path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7zm11.77 8.27L13 19.54l-4.27-4.27C8.28 14.81 8 14.19 8 13.5c0-1.38 1.12-2.5 2.5-2.5.69 0 1.32.28 1.77.74l.73.72.73-.73c.45-.45 1.08-.73 1.77-.73 1.38 0 2.5 1.12 2.5 2.5 0 .69-.28 1.32-.73 1.77z"></path></g>
+<g id="mail"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></g>
+<g id="markunread"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></g>
+<g id="markunread-mailbox"><path d="M20 6H10v6H8V4h6V0H6v6H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2z"></path></g>
+<g id="menu"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></g>
+<g id="more-horiz"><path d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g>
+<g id="more-vert"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></g>
+<g id="motorcycle"><path d="M19.44 9.03L15.41 5H11v2h3.59l2 2H5c-2.8 0-5 2.2-5 5s2.2 5 5 5c2.46 0 4.45-1.69 4.9-4h1.65l2.77-2.77c-.21.54-.32 1.14-.32 1.77 0 2.8 2.2 5 5 5s5-2.2 5-5c0-2.65-1.97-4.77-4.56-4.97zM7.82 15C7.4 16.15 6.28 17 5 17c-1.63 0-3-1.37-3-3s1.37-3 3-3c1.28 0 2.4.85 2.82 2H5v2h2.82zM19 17c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"></path></g>
+<g id="move-to-inbox"><path d="M19 3H4.99c-1.11 0-1.98.9-1.98 2L3 19c0 1.1.88 2 1.99 2H19c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 12h-4c0 1.66-1.35 3-3 3s-3-1.34-3-3H4.99V5H19v10zm-3-5h-2V7h-4v3H8l4 4 4-4z"></path></g>
+<g id="next-week"><path d="M20 7h-4V5c0-.55-.22-1.05-.59-1.41C15.05 3.22 14.55 3 14 3h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zM10 5h4v2h-4V5zm1 13.5l-1-1 3-3-3-3 1-1 4 4-4 4z"></path></g>
+<g id="note-add"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 14h-3v3h-2v-3H8v-2h3v-3h2v3h3v2zm-3-7V3.5L18.5 9H13z"></path></g>
+<g id="offline-pin"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm5 16H7v-2h10v2zm-6.7-4L7 10.7l1.4-1.4 1.9 1.9 5.3-5.3L17 7.3 10.3 14z"></path></g>
+<g id="opacity"><path d="M17.66 8L12 2.35 6.34 8C4.78 9.56 4 11.64 4 13.64s.78 4.11 2.34 5.67 3.61 2.35 5.66 2.35 4.1-.79 5.66-2.35S20 15.64 20 13.64 19.22 9.56 17.66 8zM6 14c.01-2 .62-3.27 1.76-4.4L12 5.27l4.24 4.38C17.38 10.77 17.99 12 18 14H6z"></path></g>
+<g id="open-in-browser"><path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"></path></g>
+<g id="open-in-new"><path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"></path></g>
+<g id="open-with"><path d="M10 9h4V6h3l-5-5-5 5h3v3zm-1 1H6V7l-5 5 5 5v-3h3v-4zm14 2l-5-5v3h-3v4h3v3l5-5zm-9 3h-4v3H7l5 5 5-5h-3v-3z"></path></g>
+<g id="pageview"><path d="M11.5 9C10.12 9 9 10.12 9 11.5s1.12 2.5 2.5 2.5 2.5-1.12 2.5-2.5S12.88 9 11.5 9zM20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-3.21 14.21l-2.91-2.91c-.69.44-1.51.7-2.39.7C9.01 16 7 13.99 7 11.5S9.01 7 11.5 7 16 9.01 16 11.5c0 .88-.26 1.69-.7 2.39l2.91 2.9-1.42 1.42z"></path></g>
+<g id="pan-tool"><path d="M23 5.5V20c0 2.2-1.8 4-4 4h-7.3c-1.08 0-2.1-.43-2.85-1.19L1 14.83s1.26-1.23 1.3-1.25c.22-.19.49-.29.79-.29.22 0 .42.06.6.16.04.01 4.31 2.46 4.31 2.46V4c0-.83.67-1.5 1.5-1.5S11 3.17 11 4v7h1V1.5c0-.83.67-1.5 1.5-1.5S15 .67 15 1.5V11h1V2.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5V11h1V5.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5z"></path></g>
+<g id="payment"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"></path></g>
+<g id="perm-camera-mic"><path d="M20 5h-3.17L15 3H9L7.17 5H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7v-2.09c-2.83-.48-5-2.94-5-5.91h2c0 2.21 1.79 4 4 4s4-1.79 4-4h2c0 2.97-2.17 5.43-5 5.91V21h7c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm-6 8c0 1.1-.9 2-2 2s-2-.9-2-2V9c0-1.1.9-2 2-2s2 .9 2 2v4z"></path></g>
+<g id="perm-contact-calendar"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm6 12H6v-1c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1z"></path></g>
+<g id="perm-data-setting"><path d="M18.99 11.5c.34 0 .67.03 1 .07L20 0 0 20h11.56c-.04-.33-.07-.66-.07-1 0-4.14 3.36-7.5 7.5-7.5zm3.71 7.99c.02-.16.04-.32.04-.49 0-.17-.01-.33-.04-.49l1.06-.83c.09-.08.12-.21.06-.32l-1-1.73c-.06-.11-.19-.15-.31-.11l-1.24.5c-.26-.2-.54-.37-.85-.49l-.19-1.32c-.01-.12-.12-.21-.24-.21h-2c-.12 0-.23.09-.25.21l-.19 1.32c-.3.13-.59.29-.85.49l-1.24-.5c-.11-.04-.24 0-.31.11l-1 1.73c-.06.11-.04.24.06.32l1.06.83c-.02.16-.03.32-.03.49 0 .17.01.33.03.49l-1.06.83c-.09.08-.12.21-.06.32l1 1.73c.06.11.19.15.31.11l1.24-.5c.26.2.54.37.85.49l.19 1.32c.02.12.12.21.25.21h2c.12 0 .23-.09.25-.21l.19-1.32c.3-.13.59-.29.84-.49l1.25.5c.11.04.24 0 .31-.11l1-1.73c.06-.11.03-.24-.06-.32l-1.07-.83zm-3.71 1.01c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"></path></g>
+<g id="perm-device-information"><path d="M13 7h-2v2h2V7zm0 4h-2v6h2v-6zm4-9.99L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"></path></g>
+<g id="perm-identity"><path d="M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"></path></g>
+<g id="perm-media"><path d="M2 6H0v5h.01L0 20c0 1.1.9 2 2 2h18v-2H2V6zm20-2h-8l-2-2H6c-1.1 0-1.99.9-1.99 2L4 16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7 15l4.5-6 3.5 4.51 2.5-3.01L21 15H7z"></path></g>
+<g id="perm-phone-msg"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.58l2.2-2.21c.28-.27.36-.66.25-1.01C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM12 3v10l3-3h6V3h-9z"></path></g>
+<g id="perm-scan-wifi"><path d="M12 3C6.95 3 3.15 4.85 0 7.23L12 22 24 7.25C20.85 4.87 17.05 3 12 3zm1 13h-2v-6h2v6zm-2-8V6h2v2h-2z"></path></g>
+<g id="pets"><circle cx="4.5" cy="9.5" r="2.5"></circle><circle cx="9" cy="5.5" r="2.5"></circle><circle cx="15" cy="5.5" r="2.5"></circle><circle cx="19.5" cy="9.5" r="2.5"></circle><path d="M17.34 14.86c-.87-1.02-1.6-1.89-2.48-2.91-.46-.54-1.05-1.08-1.75-1.32-.11-.04-.22-.07-.33-.09-.25-.04-.52-.04-.78-.04s-.53 0-.79.05c-.11.02-.22.05-.33.09-.7.24-1.28.78-1.75 1.32-.87 1.02-1.6 1.89-2.48 2.91-1.31 1.31-2.92 2.76-2.62 4.79.29 1.02 1.02 2.03 2.33 2.32.73.15 3.06-.44 5.54-.44h.18c2.48 0 4.81.58 5.54.44 1.31-.29 2.04-1.31 2.33-2.32.31-2.04-1.3-3.49-2.61-4.8z"></path></g>
+<g id="picture-in-picture"><path d="M19 7h-8v6h8V7zm2-4H3c-1.1 0-2 .9-2 2v14c0 1.1.9 1.98 2 1.98h18c1.1 0 2-.88 2-1.98V5c0-1.1-.9-2-2-2zm0 16.01H3V4.98h18v14.03z"></path></g>
+<g id="picture-in-picture-alt"><path d="M19 11h-8v6h8v-6zm4 8V4.98C23 3.88 22.1 3 21 3H3c-1.1 0-2 .88-2 1.98V19c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2zm-2 .02H3V4.97h18v14.05z"></path></g>
+<g id="play-for-work"><path d="M11 5v5.59H7.5l4.5 4.5 4.5-4.5H13V5h-2zm-5 9c0 3.31 2.69 6 6 6s6-2.69 6-6h-2c0 2.21-1.79 4-4 4s-4-1.79-4-4H6z"></path></g>
+<g id="polymer"><path d="M19 4h-4L7.11 16.63 4.5 12 9 4H5L.5 12 5 20h4l7.89-12.63L19.5 12 15 20h4l4.5-8z"></path></g>
+<g id="power-settings-new"><path d="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z"></path></g>
+<g id="pregnant-woman"><path d="M9 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm7 9c-.01-1.34-.83-2.51-2-3 0-1.66-1.34-3-3-3s-3 1.34-3 3v7h2v5h3v-5h3v-4z"></path></g>
+<g id="print"><path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"></path></g>
+<g id="query-builder"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"></path></g>
+<g id="question-answer"><path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"></path></g>
+<g id="radio-button-checked"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></g>
+<g id="radio-button-unchecked"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></g>
+<g id="receipt"><path d="M18 17H6v-2h12v2zm0-4H6v-2h12v2zm0-4H6V7h12v2zM3 22l1.5-1.5L6 22l1.5-1.5L9 22l1.5-1.5L12 22l1.5-1.5L15 22l1.5-1.5L18 22l1.5-1.5L21 22V2l-1.5 1.5L18 2l-1.5 1.5L15 2l-1.5 1.5L12 2l-1.5 1.5L9 2 7.5 3.5 6 2 4.5 3.5 3 2v20z"></path></g>
+<g id="record-voice-over"><circle cx="9" cy="9" r="4"></circle><path d="M9 15c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4zm7.76-9.64l-1.68 1.69c.84 1.18.84 2.71 0 3.89l1.68 1.69c2.02-2.02 2.02-5.07 0-7.27zM20.07 2l-1.63 1.63c2.77 3.02 2.77 7.56 0 10.74L20.07 16c3.9-3.89 3.91-9.95 0-14z"></path></g>
+<g id="redeem"><path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"></path></g>
+<g id="redo"><path d="M18.4 10.6C16.55 8.99 14.15 8 11.5 8c-4.65 0-8.58 3.03-9.96 7.22L3.9 16c1.05-3.19 4.05-5.5 7.6-5.5 1.95 0 3.73.72 5.12 1.88L13 16h9V7l-3.6 3.6z"></path></g>
+<g id="refresh"><path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"></path></g>
+<g id="remove"><path d="M19 13H5v-2h14v2z"></path></g>
+<g id="remove-circle"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11H7v-2h10v2z"></path></g>
+<g id="remove-circle-outline"><path d="M7 11v2h10v-2H7zm5-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></g>
+<g id="remove-shopping-cart"><path d="M22.73 22.73L2.77 2.77 2 2l-.73-.73L0 2.54l4.39 4.39 2.21 4.66-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h7.46l1.38 1.38c-.5.36-.83.95-.83 1.62 0 1.1.89 2 1.99 2 .67 0 1.26-.33 1.62-.84L21.46 24l1.27-1.27zM7.42 15c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h2.36l2 2H7.42zm8.13-2c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H6.54l9.01 9zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2z"></path></g>
+<g id="reorder"><path d="M3 15h18v-2H3v2zm0 4h18v-2H3v2zm0-8h18V9H3v2zm0-6v2h18V5H3z"></path></g>
+<g id="reply"><path d="M10 9V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path></g>
+<g id="reply-all"><path d="M7 8V5l-7 7 7 7v-3l-4-4 4-4zm6 1V5l-7 7 7 7v-4.1c5 0 8.5 1.6 11 5.1-1-5-4-10-11-11z"></path></g>
+<g id="report"><path d="M15.73 3H8.27L3 8.27v7.46L8.27 21h7.46L21 15.73V8.27L15.73 3zM12 17.3c-.72 0-1.3-.58-1.3-1.3 0-.72.58-1.3 1.3-1.3.72 0 1.3.58 1.3 1.3 0 .72-.58 1.3-1.3 1.3zm1-4.3h-2V7h2v6z"></path></g>
+<g id="report-problem"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"></path></g>
+<g id="restore"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"></path></g>
+<g id="restore-page"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm-2 16c-2.05 0-3.81-1.24-4.58-3h1.71c.63.9 1.68 1.5 2.87 1.5 1.93 0 3.5-1.57 3.5-3.5S13.93 9.5 12 9.5c-1.35 0-2.52.78-3.1 1.9l1.6 1.6h-4V9l1.3 1.3C8.69 8.92 10.23 8 12 8c2.76 0 5 2.24 5 5s-2.24 5-5 5z"></path></g>
+<g id="room"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></g>
+<g id="rounded-corner"><path d="M19 19h2v2h-2v-2zm0-2h2v-2h-2v2zM3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm0-4h2V3H3v2zm4 0h2V3H7v2zm8 16h2v-2h-2v2zm-4 0h2v-2h-2v2zm4 0h2v-2h-2v2zm-8 0h2v-2H7v2zm-4 0h2v-2H3v2zM21 8c0-2.76-2.24-5-5-5h-5v2h5c1.65 0 3 1.35 3 3v5h2V8z"></path></g>
+<g id="rowing"><path d="M8.5 14.5L4 19l1.5 1.5L9 17h2l-2.5-2.5zM15 1c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 20.01L18 24l-2.99-3.01V19.5l-7.1-7.09c-.31.05-.61.07-.91.07v-2.16c1.66.03 3.61-.87 4.67-2.04l1.4-1.55c.19-.21.43-.38.69-.5.29-.14.62-.23.96-.23h.03C15.99 6.01 17 7.02 17 8.26v5.75c0 .84-.35 1.61-.92 2.16l-3.58-3.58v-2.27c-.63.52-1.43 1.02-2.29 1.39L16.5 18H18l3 3.01z"></path></g>
+<g id="save"><path d="M17 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V7l-4-4zm-5 16c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3zm3-10H5V5h10v4z"></path></g>
+<g id="schedule"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"></path></g>
+<g id="search"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></g>
+<g id="select-all"><path d="M3 5h2V3c-1.1 0-2 .9-2 2zm0 8h2v-2H3v2zm4 8h2v-2H7v2zM3 9h2V7H3v2zm10-6h-2v2h2V3zm6 0v2h2c0-1.1-.9-2-2-2zM5 21v-2H3c0 1.1.9 2 2 2zm-2-4h2v-2H3v2zM9 3H7v2h2V3zm2 18h2v-2h-2v2zm8-8h2v-2h-2v2zm0 8c1.1 0 2-.9 2-2h-2v2zm0-12h2V7h-2v2zm0 8h2v-2h-2v2zm-4 4h2v-2h-2v2zm0-16h2V3h-2v2zM7 17h10V7H7v10zm2-8h6v6H9V9z"></path></g>
+<g id="send"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path></g>
+<g id="settings"><path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"></path></g>
+<g id="settings-applications"><path d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm7-7H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-1.75 9c0 .23-.02.46-.05.68l1.48 1.16c.13.11.17.3.08.45l-1.4 2.42c-.09.15-.27.21-.43.15l-1.74-.7c-.36.28-.76.51-1.18.69l-.26 1.85c-.03.17-.18.3-.35.3h-2.8c-.17 0-.32-.13-.35-.29l-.26-1.85c-.43-.18-.82-.41-1.18-.69l-1.74.7c-.16.06-.34 0-.43-.15l-1.4-2.42c-.09-.15-.05-.34.08-.45l1.48-1.16c-.03-.23-.05-.46-.05-.69 0-.23.02-.46.05-.68l-1.48-1.16c-.13-.11-.17-.3-.08-.45l1.4-2.42c.09-.15.27-.21.43-.15l1.74.7c.36-.28.76-.51 1.18-.69l.26-1.85c.03-.17.18-.3.35-.3h2.8c.17 0 .32.13.35.29l.26 1.85c.43.18.82.41 1.18.69l1.74-.7c.16-.06.34 0 .43.15l1.4 2.42c.09.15.05.34-.08.45l-1.48 1.16c.03.23.05.46.05.69z"></path></g>
+<g id="settings-backup-restore"><path d="M14 12c0-1.1-.9-2-2-2s-2 .9-2 2 .9 2 2 2 2-.9 2-2zm-2-9c-4.97 0-9 4.03-9 9H0l4 4 4-4H5c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.51 0-2.91-.49-4.06-1.3l-1.42 1.44C8.04 20.3 9.94 21 12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9z"></path></g>
+<g id="settings-bluetooth"><path d="M11 24h2v-2h-2v2zm-4 0h2v-2H7v2zm8 0h2v-2h-2v2zm2.71-18.29L12 0h-1v7.59L6.41 3 5 4.41 10.59 10 5 15.59 6.41 17 11 12.41V20h1l5.71-5.71-4.3-4.29 4.3-4.29zM13 3.83l1.88 1.88L13 7.59V3.83zm1.88 10.46L13 16.17v-3.76l1.88 1.88z"></path></g>
+<g id="settings-brightness"><path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16.01H3V4.99h18v14.02zM8 16h2.5l1.5 1.5 1.5-1.5H16v-2.5l1.5-1.5-1.5-1.5V8h-2.5L12 6.5 10.5 8H8v2.5L6.5 12 8 13.5V16zm4-7c1.66 0 3 1.34 3 3s-1.34 3-3 3V9z"></path></g>
+<g id="settings-cell"><path d="M7 24h2v-2H7v2zm4 0h2v-2h-2v2zm4 0h2v-2h-2v2zM16 .01L8 0C6.9 0 6 .9 6 2v16c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V2c0-1.1-.9-1.99-2-1.99zM16 16H8V4h8v12z"></path></g>
+<g id="settings-ethernet"><path d="M7.77 6.76L6.23 5.48.82 12l5.41 6.52 1.54-1.28L3.42 12l4.35-5.24zM7 13h2v-2H7v2zm10-2h-2v2h2v-2zm-6 2h2v-2h-2v2zm6.77-7.52l-1.54 1.28L20.58 12l-4.35 5.24 1.54 1.28L23.18 12l-5.41-6.52z"></path></g>
+<g id="settings-input-antenna"><path d="M12 5c-3.87 0-7 3.13-7 7h2c0-2.76 2.24-5 5-5s5 2.24 5 5h2c0-3.87-3.13-7-7-7zm1 9.29c.88-.39 1.5-1.26 1.5-2.29 0-1.38-1.12-2.5-2.5-2.5S9.5 10.62 9.5 12c0 1.02.62 1.9 1.5 2.29v3.3L7.59 21 9 22.41l3-3 3 3L16.41 21 13 17.59v-3.3zM12 1C5.93 1 1 5.93 1 12h2c0-4.97 4.03-9 9-9s9 4.03 9 9h2c0-6.07-4.93-11-11-11z"></path></g>
+<g id="settings-input-component"><path d="M5 2c0-.55-.45-1-1-1s-1 .45-1 1v4H1v6h6V6H5V2zm4 14c0 1.3.84 2.4 2 2.82V23h2v-4.18c1.16-.41 2-1.51 2-2.82v-2H9v2zm-8 0c0 1.3.84 2.4 2 2.82V23h2v-4.18C6.16 18.4 7 17.3 7 16v-2H1v2zM21 6V2c0-.55-.45-1-1-1s-1 .45-1 1v4h-2v6h6V6h-2zm-8-4c0-.55-.45-1-1-1s-1 .45-1 1v4H9v6h6V6h-2V2zm4 14c0 1.3.84 2.4 2 2.82V23h2v-4.18c1.16-.41 2-1.51 2-2.82v-2h-6v2z"></path></g>
+<g id="settings-input-composite"><path d="M5 2c0-.55-.45-1-1-1s-1 .45-1 1v4H1v6h6V6H5V2zm4 14c0 1.3.84 2.4 2 2.82V23h2v-4.18c1.16-.41 2-1.51 2-2.82v-2H9v2zm-8 0c0 1.3.84 2.4 2 2.82V23h2v-4.18C6.16 18.4 7 17.3 7 16v-2H1v2zM21 6V2c0-.55-.45-1-1-1s-1 .45-1 1v4h-2v6h6V6h-2zm-8-4c0-.55-.45-1-1-1s-1 .45-1 1v4H9v6h6V6h-2V2zm4 14c0 1.3.84 2.4 2 2.82V23h2v-4.18c1.16-.41 2-1.51 2-2.82v-2h-6v2z"></path></g>
+<g id="settings-input-hdmi"><path d="M18 7V4c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v3H5v6l3 6v3h8v-3l3-6V7h-1zM8 4h8v3h-2V5h-1v2h-2V5h-1v2H8V4z"></path></g>
+<g id="settings-input-svideo"><path d="M8 11.5c0-.83-.67-1.5-1.5-1.5S5 10.67 5 11.5 5.67 13 6.5 13 8 12.33 8 11.5zm7-5c0-.83-.67-1.5-1.5-1.5h-3C9.67 5 9 5.67 9 6.5S9.67 8 10.5 8h3c.83 0 1.5-.67 1.5-1.5zM8.5 15c-.83 0-1.5.67-1.5 1.5S7.67 18 8.5 18s1.5-.67 1.5-1.5S9.33 15 8.5 15zM12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9zm5.5-11c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm-2 5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5z"></path></g>
+<g id="settings-overscan"><path d="M12.01 5.5L10 8h4l-1.99-2.5zM18 10v4l2.5-1.99L18 10zM6 10l-2.5 2.01L6 14v-4zm8 6h-4l2.01 2.5L14 16zm7-13H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16.01H3V4.99h18v14.02z"></path></g>
+<g id="settings-phone"><path d="M13 9h-2v2h2V9zm4 0h-2v2h2V9zm3 6.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.58l2.2-2.21c.28-.27.36-.66.25-1.01C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM19 9v2h2V9h-2z"></path></g>
+<g id="settings-power"><path d="M7 24h2v-2H7v2zm4 0h2v-2h-2v2zm2-22h-2v10h2V2zm3.56 2.44l-1.45 1.45C16.84 6.94 18 8.83 18 11c0 3.31-2.69 6-6 6s-6-2.69-6-6c0-2.17 1.16-4.06 2.88-5.12L7.44 4.44C5.36 5.88 4 8.28 4 11c0 4.42 3.58 8 8 8s8-3.58 8-8c0-2.72-1.36-5.12-3.44-6.56zM15 24h2v-2h-2v2z"></path></g>
+<g id="settings-remote"><path d="M15 9H9c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V10c0-.55-.45-1-1-1zm-3 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM7.05 6.05l1.41 1.41C9.37 6.56 10.62 6 12 6s2.63.56 3.54 1.46l1.41-1.41C15.68 4.78 13.93 4 12 4s-3.68.78-4.95 2.05zM12 0C8.96 0 6.21 1.23 4.22 3.22l1.41 1.41C7.26 3.01 9.51 2 12 2s4.74 1.01 6.36 2.64l1.41-1.41C17.79 1.23 15.04 0 12 0z"></path></g>
+<g id="settings-voice"><path d="M7 24h2v-2H7v2zm5-11c1.66 0 2.99-1.34 2.99-3L15 4c0-1.66-1.34-3-3-3S9 2.34 9 4v6c0 1.66 1.34 3 3 3zm-1 11h2v-2h-2v2zm4 0h2v-2h-2v2zm4-14h-1.7c0 3-2.54 5.1-5.3 5.1S6.7 13 6.7 10H5c0 3.41 2.72 6.23 6 6.72V20h2v-3.28c3.28-.49 6-3.31 6-6.72z"></path></g>
+<g id="shop"><path d="M16 6V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H2v13c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6h-6zm-6-2h4v2h-4V4zM9 18V9l7.5 4L9 18z"></path></g>
+<g id="shop-two"><path d="M3 9H1v11c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2H3V9zm15-4V3c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H5v11c0 1.11.89 2 2 2h14c1.11 0 2-.89 2-2V5h-5zm-6-2h4v2h-4V3zm0 12V8l5.5 3-5.5 4z"></path></g>
+<g id="shopping-basket"><path d="M17.21 9l-4.38-6.56c-.19-.28-.51-.42-.83-.42-.32 0-.64.14-.83.43L6.79 9H2c-.55 0-1 .45-1 1 0 .09.01.18.04.27l2.54 9.27c.23.84 1 1.46 1.92 1.46h13c.92 0 1.69-.62 1.93-1.46l2.54-9.27L23 10c0-.55-.45-1-1-1h-4.79zM9 9l3-4.4L15 9H9zm3 8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"></path></g>
+<g id="shopping-cart"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"></path></g>
+<g id="sort"><path d="M3 18h6v-2H3v2zM3 6v2h18V6H3zm0 7h12v-2H3v2z"></path></g>
+<g id="speaker-notes"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM8 14H6v-2h2v2zm0-3H6V9h2v2zm0-3H6V6h2v2zm7 6h-5v-2h5v2zm3-3h-8V9h8v2zm0-3h-8V6h8v2z"></path></g>
+<g id="speaker-notes-off"><path d="M10.54 11l-.54-.54L7.54 8 6 6.46 2.38 2.84 1.27 1.73 0 3l2.01 2.01L2 22l4-4h9l5.73 5.73L22 22.46 17.54 18l-7-7zM8 14H6v-2h2v2zm-2-3V9l2 2H6zm14-9H4.08L10 7.92V6h8v2h-7.92l1 1H18v2h-4.92l6.99 6.99C21.14 17.95 22 17.08 22 16V4c0-1.1-.9-2-2-2z"></path></g>
+<g id="spellcheck"><path d="M12.45 16h2.09L9.43 3H7.57L2.46 16h2.09l1.12-3h5.64l1.14 3zm-6.02-5L8.5 5.48 10.57 11H6.43zm15.16.59l-8.09 8.09L9.83 16l-1.41 1.41 5.09 5.09L23 13l-1.41-1.41z"></path></g>
+<g id="star"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path></g>
+<g id="star-border"><path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path></g>
+<g id="star-half"><path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4V6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z"></path></g>
+<g id="stars"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm4.24 16L12 15.45 7.77 18l1.12-4.81-3.73-3.23 4.92-.42L12 5l1.92 4.53 4.92.42-3.73 3.23L16.23 18z"></path></g>
+<g id="store"><path d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z"></path></g>
+<g id="subdirectory-arrow-left"><path d="M11 9l1.42 1.42L8.83 14H18V4h2v12H8.83l3.59 3.58L11 21l-6-6 6-6z"></path></g>
+<g id="subdirectory-arrow-right"><path d="M19 15l-6 6-1.42-1.42L15.17 16H4V4h2v10h9.17l-3.59-3.58L13 9l6 6z"></path></g>
+<g id="subject"><path d="M14 17H4v2h10v-2zm6-8H4v2h16V9zM4 15h16v-2H4v2zM4 5v2h16V5H4z"></path></g>
+<g id="supervisor-account"><path d="M16.5 12c1.38 0 2.49-1.12 2.49-2.5S17.88 7 16.5 7C15.12 7 14 8.12 14 9.5s1.12 2.5 2.5 2.5zM9 11c1.66 0 2.99-1.34 2.99-3S10.66 5 9 5C7.34 5 6 6.34 6 8s1.34 3 3 3zm7.5 3c-1.83 0-5.5.92-5.5 2.75V19h11v-2.25c0-1.83-3.67-2.75-5.5-2.75zM9 13c-2.33 0-7 1.17-7 3.5V19h7v-2.25c0-.85.33-2.34 2.37-3.47C10.5 13.1 9.66 13 9 13z"></path></g>
+<g id="swap-horiz"><path d="M6.99 11L3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"></path></g>
+<g id="swap-vert"><path d="M16 17.01V10h-2v7.01h-3L15 21l4-3.99h-3zM9 3L5 6.99h3V14h2V6.99h3L9 3z"></path></g>
+<g id="swap-vertical-circle"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM6.5 9L10 5.5 13.5 9H11v4H9V9H6.5zm11 6L14 18.5 10.5 15H13v-4h2v4h2.5z"></path></g>
+<g id="system-update-alt"><path d="M12 16.5l4-4h-3v-9h-2v9H8l4 4zm9-13h-6v1.99h6v14.03H3V5.49h6V3.5H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2v-14c0-1.1-.9-2-2-2z"></path></g>
+<g id="tab"><path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h10v4h8v10z"></path></g>
+<g id="tab-unselected"><path d="M1 9h2V7H1v2zm0 4h2v-2H1v2zm0-8h2V3c-1.1 0-2 .9-2 2zm8 16h2v-2H9v2zm-8-4h2v-2H1v2zm2 4v-2H1c0 1.1.9 2 2 2zM21 3h-8v6h10V5c0-1.1-.9-2-2-2zm0 14h2v-2h-2v2zM9 5h2V3H9v2zM5 21h2v-2H5v2zM5 5h2V3H5v2zm16 16c1.1 0 2-.9 2-2h-2v2zm0-8h2v-2h-2v2zm-8 8h2v-2h-2v2zm4 0h2v-2h-2v2z"></path></g>
+<g id="text-format"><path d="M5 17v2h14v-2H5zm4.5-4.2h5l.9 2.2h2.1L12.75 4h-1.5L6.5 15h2.1l.9-2.2zM12 5.98L13.87 11h-3.74L12 5.98z"></path></g>
+<g id="theaters"><path d="M18 3v2h-2V3H8v2H6V3H4v18h2v-2h2v2h8v-2h2v2h2V3h-2zM8 17H6v-2h2v2zm0-4H6v-2h2v2zm0-4H6V7h2v2zm10 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V7h2v2z"></path></g>
+<g id="thumb-down"><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"></path></g>
+<g id="thumb-up"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"></path></g>
+<g id="thumbs-up-down"><path d="M12 6c0-.55-.45-1-1-1H5.82l.66-3.18.02-.23c0-.31-.13-.59-.33-.8L5.38 0 .44 4.94C.17 5.21 0 5.59 0 6v6.5c0 .83.67 1.5 1.5 1.5h6.75c.62 0 1.15-.38 1.38-.91l2.26-5.29c.07-.17.11-.36.11-.55V6zm10.5 4h-6.75c-.62 0-1.15.38-1.38.91l-2.26 5.29c-.07.17-.11.36-.11.55V18c0 .55.45 1 1 1h5.18l-.66 3.18-.02.24c0 .31.13.59.33.8l.79.78 4.94-4.94c.27-.27.44-.65.44-1.06v-6.5c0-.83-.67-1.5-1.5-1.5z"></path></g>
+<g id="timeline"><path d="M23 8c0 1.1-.9 2-2 2-.18 0-.35-.02-.51-.07l-3.56 3.55c.05.16.07.34.07.52 0 1.1-.9 2-2 2s-2-.9-2-2c0-.18.02-.36.07-.52l-2.55-2.55c-.16.05-.34.07-.52.07s-.36-.02-.52-.07l-4.55 4.56c.05.16.07.33.07.51 0 1.1-.9 2-2 2s-2-.9-2-2 .9-2 2-2c.18 0 .35.02.51.07l4.56-4.55C8.02 9.36 8 9.18 8 9c0-1.1.9-2 2-2s2 .9 2 2c0 .18-.02.36-.07.52l2.55 2.55c.16-.05.34-.07.52-.07s.36.02.52.07l3.55-3.56C19.02 8.35 19 8.18 19 8c0-1.1.9-2 2-2s2 .9 2 2z"></path></g>
+<g id="toc"><path d="M3 9h14V7H3v2zm0 4h14v-2H3v2zm0 4h14v-2H3v2zm16 0h2v-2h-2v2zm0-10v2h2V7h-2zm0 6h2v-2h-2v2z"></path></g>
+<g id="today"><path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"></path></g>
+<g id="toll"><path d="M15 4c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zM3 12c0-2.61 1.67-4.83 4-5.65V4.26C3.55 5.15 1 8.27 1 12s2.55 6.85 6 7.74v-2.09c-2.33-.82-4-3.04-4-5.65z"></path></g>
+<g id="touch-app"><path d="M9 11.24V7.5C9 6.12 10.12 5 11.5 5S14 6.12 14 7.5v3.74c1.21-.81 2-2.18 2-3.74C16 5.01 13.99 3 11.5 3S7 5.01 7 7.5c0 1.56.79 2.93 2 3.74zm9.84 4.63l-4.54-2.26c-.17-.07-.35-.11-.54-.11H13v-6c0-.83-.67-1.5-1.5-1.5S10 6.67 10 7.5v10.74l-3.43-.72c-.08-.01-.15-.03-.24-.03-.31 0-.59.13-.79.33l-.79.8 4.94 4.94c.27.27.65.44 1.06.44h6.79c.75 0 1.33-.55 1.44-1.28l.75-5.27c.01-.07.02-.14.02-.2 0-.62-.38-1.16-.91-1.38z"></path></g>
+<g id="track-changes"><path d="M19.07 4.93l-1.41 1.41C19.1 7.79 20 9.79 20 12c0 4.42-3.58 8-8 8s-8-3.58-8-8c0-4.08 3.05-7.44 7-7.93v2.02C8.16 6.57 6 9.03 6 12c0 3.31 2.69 6 6 6s6-2.69 6-6c0-1.66-.67-3.16-1.76-4.24l-1.41 1.41C15.55 9.9 16 10.9 16 12c0 2.21-1.79 4-4 4s-4-1.79-4-4c0-1.86 1.28-3.41 3-3.86v2.14c-.6.35-1 .98-1 1.72 0 1.1.9 2 2 2s2-.9 2-2c0-.74-.4-1.38-1-1.72V2h-1C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10c0-2.76-1.12-5.26-2.93-7.07z"></path></g>
+<g id="translate"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></g>
+<g id="trending-down"><path d="M16 18l2.29-2.29-4.88-4.88-4 4L2 7.41 3.41 6l6 6 4-4 6.3 6.29L22 12v6z"></path></g>
+<g id="trending-flat"><path d="M22 12l-4-4v3H3v2h15v3z"></path></g>
+<g id="trending-up"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"></path></g>
+<g id="turned-in"><path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z"></path></g>
+<g id="turned-in-not"><path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"></path></g>
+<g id="unarchive"><path d="M20.55 5.22l-1.39-1.68C18.88 3.21 18.47 3 18 3H6c-.47 0-.88.21-1.15.55L3.46 5.22C3.17 5.57 3 6.01 3 6.5V19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6.5c0-.49-.17-.93-.45-1.28zM12 9.5l5.5 5.5H14v2h-4v-2H6.5L12 9.5zM5.12 5l.82-1h12l.93 1H5.12z"></path></g>
+<g id="undo"><path d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.16 3.16-1.88 5.12-1.88 3.54 0 6.55 2.31 7.6 5.5l2.37-.78C21.08 11.03 17.15 8 12.5 8z"></path></g>
+<g id="unfold-less"><path d="M7.41 18.59L8.83 20 12 16.83 15.17 20l1.41-1.41L12 14l-4.59 4.59zm9.18-13.18L15.17 4 12 7.17 8.83 4 7.41 5.41 12 10l4.59-4.59z"></path></g>
+<g id="unfold-more"><path d="M12 5.83L15.17 9l1.41-1.41L12 3 7.41 7.59 8.83 9 12 5.83zm0 12.34L8.83 15l-1.41 1.41L12 21l4.59-4.59L15.17 15 12 18.17z"></path></g>
+<g id="update"><path d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1-2.73 2.71-2.73 7.08 0 9.79 2.73 2.71 7.15 2.71 9.88 0C18.32 15.65 19 14.08 19 12.1h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58 3.51-3.47 9.14-3.47 12.65 0L21 3v7.12zM12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8h1.5z"></path></g>
+<g id="verified-user"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"></path></g>
+<g id="view-agenda"><path d="M20 13H3c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h17c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1zm0-10H3c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h17c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1z"></path></g>
+<g id="view-array"><path d="M4 18h3V5H4v13zM18 5v13h3V5h-3zM8 18h9V5H8v13z"></path></g>
+<g id="view-carousel"><path d="M7 19h10V4H7v15zm-5-2h4V6H2v11zM18 6v11h4V6h-4z"></path></g>
+<g id="view-column"><path d="M10 18h5V5h-5v13zm-6 0h5V5H4v13zM16 5v13h5V5h-5z"></path></g>
+<g id="view-day"><path d="M2 21h19v-3H2v3zM20 8H3c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h17c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zM2 3v3h19V3H2z"></path></g>
+<g id="view-headline"><path d="M4 15h16v-2H4v2zm0 4h16v-2H4v2zm0-8h16V9H4v2zm0-6v2h16V5H4z"></path></g>
+<g id="view-list"><path d="M4 14h4v-4H4v4zm0 5h4v-4H4v4zM4 9h4V5H4v4zm5 5h12v-4H9v4zm0 5h12v-4H9v4zM9 5v4h12V5H9z"></path></g>
+<g id="view-module"><path d="M4 11h5V5H4v6zm0 7h5v-6H4v6zm6 0h5v-6h-5v6zm6 0h5v-6h-5v6zm-6-7h5V5h-5v6zm6-6v6h5V5h-5z"></path></g>
+<g id="view-quilt"><path d="M10 18h5v-6h-5v6zm-6 0h5V5H4v13zm12 0h5v-6h-5v6zM10 5v6h11V5H10z"></path></g>
+<g id="view-stream"><path d="M4 18h17v-6H4v6zM4 5v6h17V5H4z"></path></g>
+<g id="view-week"><path d="M6 5H3c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zm14 0h-3c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1zm-7 0h-3c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h3c.55 0 1-.45 1-1V6c0-.55-.45-1-1-1z"></path></g>
+<g id="visibility"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></g>
+<g id="visibility-off"><path d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10.02 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2zm4.31-.78l3.15 3.15.02-.16c0-1.66-1.34-3-3-3l-.17.01z"></path></g>
+<g id="warning"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"></path></g>
+<g id="watch-later"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z"></path></g>
+<g id="weekend"><path d="M21 10c-1.1 0-2 .9-2 2v3H5v-3c0-1.1-.9-2-2-2s-2 .9-2 2v5c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2v-5c0-1.1-.9-2-2-2zm-3-5H6c-1.1 0-2 .9-2 2v2.15c1.16.41 2 1.51 2 2.82V14h12v-2.03c0-1.3.84-2.4 2-2.82V7c0-1.1-.9-2-2-2z"></path></g>
+<g id="work"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"></path></g>
+<g id="youtube-searched-for"><path d="M17.01 14h-.8l-.27-.27c.98-1.14 1.57-2.61 1.57-4.23 0-3.59-2.91-6.5-6.5-6.5s-6.5 3-6.5 6.5H2l3.84 4 4.16-4H6.51C6.51 7 8.53 5 11.01 5s4.5 2.01 4.5 4.5c0 2.48-2.02 4.5-4.5 4.5-.65 0-1.26-.14-1.82-.38L7.71 15.1c.97.57 2.09.9 3.3.9 1.61 0 3.08-.59 4.22-1.57l.27.27v.79l5.01 4.99L22 19l-4.99-5z"></path></g>
+<g id="zoom-in"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zm2.5-4h-2v2H9v-2H7V9h2V7h1v2h2v1z"></path></g>
+<g id="zoom-out"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14zM7 9h5v1H7z"></path></g>
+</defs></svg>
+</iron-iconset-svg>`;document.head.appendChild(template$2.content);Polymer({_template:html`
+    <style>
+      :host {
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+      }
+
+      #baseURIAnchor {
+        display: none;
+      }
+
+      #sizedImgDiv {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+
+        display: none;
+      }
+
+      #img {
+        display: block;
+        width: var(--iron-image-width, auto);
+        height: var(--iron-image-height, auto);
+      }
+
+      :host([sizing]) #sizedImgDiv {
+        display: block;
+      }
+
+      :host([sizing]) #img {
+        display: none;
+      }
+
+      #placeholder {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+
+        background-color: inherit;
+        opacity: 1;
+
+        @apply --iron-image-placeholder;
+      }
+
+      #placeholder.faded-out {
+        transition: opacity 0.5s linear;
+        opacity: 0;
+      }
+    </style>
+
+    <a id="baseURIAnchor" href="#"></a>
+    <div id="sizedImgDiv" role="img" hidden$="[[_computeImgDivHidden(sizing)]]" aria-hidden$="[[_computeImgDivARIAHidden(alt)]]" aria-label$="[[_computeImgDivARIALabel(alt, src)]]"></div>
+    <img id="img" alt$="[[alt]]" hidden$="[[_computeImgHidden(sizing)]]" crossorigin$="[[crossorigin]]" on-load="_imgOnLoad" on-error="_imgOnError">
+    <div id="placeholder" hidden$="[[_computePlaceholderHidden(preload, fade, loading, loaded)]]" class$="[[_computePlaceholderClassName(preload, fade, loading, loaded)]]"></div>
+`,is:"iron-image",properties:{/**
+     * The URL of an image.
+     */src:{type:String,value:""},/**
+     * A short text alternative for the image.
+     */alt:{type:String,value:null},/**
+     * CORS enabled images support:
+     * https://developer.mozilla.org/en-US/docs/Web/HTML/CORS_enabled_image
+     */crossorigin:{type:String,value:null},/**
+     * When true, the image is prevented from loading and any placeholder is
+     * shown.  This may be useful when a binding to the src property is known to
+     * be invalid, to prevent 404 requests.
+     */preventLoad:{type:Boolean,value:!1},/**
+     * Sets a sizing option for the image.  Valid values are `contain` (full
+     * aspect ratio of the image is contained within the element and
+     * letterboxed) or `cover` (image is cropped in order to fully cover the
+     * bounds of the element), or `null` (default: image takes natural size).
+     */sizing:{type:String,value:null,reflectToAttribute:!0},/**
+     * When a sizing option is used (`cover` or `contain`), this determines
+     * how the image is aligned within the element bounds.
+     */position:{type:String,value:"center"},/**
+     * When `true`, any change to the `src` property will cause the
+     * `placeholder` image to be shown until the new image has loaded.
+     */preload:{type:Boolean,value:!1},/**
+     * This image will be used as a background/placeholder until the src image
+     * has loaded.  Use of a data-URI for placeholder is encouraged for instant
+     * rendering.
+     */placeholder:{type:String,value:null,observer:"_placeholderChanged"},/**
+     * When `preload` is true, setting `fade` to true will cause the image to
+     * fade into place.
+     */fade:{type:Boolean,value:!1},/**
+     * Read-only value that is true when the image is loaded.
+     */loaded:{notify:!0,readOnly:!0,type:Boolean,value:!1},/**
+     * Read-only value that tracks the loading state of the image when the
+     * `preload` option is used.
+     */loading:{notify:!0,readOnly:!0,type:Boolean,value:!1},/**
+     * Read-only value that indicates that the last set `src` failed to load.
+     */error:{notify:!0,readOnly:!0,type:Boolean,value:!1},/**
+     * Can be used to set the width of image (e.g. via binding); size may also
+     * be set via CSS.
+     */width:{observer:"_widthChanged",type:Number,value:null},/**
+     * Can be used to set the height of image (e.g. via binding); size may also
+     * be set via CSS.
+     *
+     * @attribute height
+     * @type number
+     * @default null
+     */height:{observer:"_heightChanged",type:Number,value:null}},observers:["_transformChanged(sizing, position)","_loadStateObserver(src, preventLoad)"],created:function(){this._resolvedSrc=""},_imgOnLoad:function(){if(this.$.img.src!==this._resolveSrc(this.src)){return}this._setLoading(!1);this._setLoaded(!0);this._setError(!1)},_imgOnError:function(){if(this.$.img.src!==this._resolveSrc(this.src)){return}this.$.img.removeAttribute("src");this.$.sizedImgDiv.style.backgroundImage="";this._setLoading(!1);this._setLoaded(!1);this._setError(!0)},_computePlaceholderHidden:function(){return!this.preload||!this.fade&&!this.loading&&this.loaded},_computePlaceholderClassName:function(){return this.preload&&this.fade&&!this.loading&&this.loaded?"faded-out":""},_computeImgDivHidden:function(){return!this.sizing},_computeImgDivARIAHidden:function(){return""===this.alt?"true":void 0},_computeImgDivARIALabel:function(){if(null!==this.alt){return this.alt}// Polymer.ResolveUrl.resolveUrl will resolve '' relative to a URL x to
+// that URL x, but '' is the default for src.
+if(""===this.src){return""}// NOTE: Use of `URL` was removed here because IE11 doesn't support
+// constructing it. If this ends up being problematic, we should
+// consider reverting and adding the URL polyfill as a dev dependency.
+var resolved=this._resolveSrc(this.src);// Remove query parts, get file name.
+return resolved.replace(/[?|#].*/g,"").split("/").pop()},_computeImgHidden:function(){return!!this.sizing},_widthChanged:function(){this.style.width=isNaN(this.width)?this.width:this.width+"px"},_heightChanged:function(){this.style.height=isNaN(this.height)?this.height:this.height+"px"},_loadStateObserver:function(src,preventLoad){var newResolvedSrc=this._resolveSrc(src);if(newResolvedSrc===this._resolvedSrc){return}this._resolvedSrc="";this.$.img.removeAttribute("src");this.$.sizedImgDiv.style.backgroundImage="";if(""===src||preventLoad){this._setLoading(!1);this._setLoaded(!1);this._setError(!1)}else{this._resolvedSrc=newResolvedSrc;this.$.img.src=this._resolvedSrc;this.$.sizedImgDiv.style.backgroundImage="url(\""+this._resolvedSrc+"\")";this._setLoading(!0);this._setLoaded(!1);this._setError(!1)}},_placeholderChanged:function(){this.$.placeholder.style.backgroundImage=this.placeholder?"url(\""+this.placeholder+"\")":""},_transformChanged:function(){var sizedImgDivStyle=this.$.sizedImgDiv.style,placeholderStyle=this.$.placeholder.style;sizedImgDivStyle.backgroundSize=placeholderStyle.backgroundSize=this.sizing;sizedImgDivStyle.backgroundPosition=placeholderStyle.backgroundPosition=this.sizing?this.position:"";sizedImgDivStyle.backgroundRepeat=placeholderStyle.backgroundRepeat=this.sizing?"no-repeat":""},_resolveSrc:function(testSrc){var resolved=resolveUrl(testSrc,this.$.baseURIAnchor.href);// NOTE: Use of `URL` was removed here because IE11 doesn't support
+// constructing it. If this ends up being problematic, we should
+// consider reverting and adding the URL polyfill as a dev dependency.
+if(2<=resolved.length&&"/"===resolved[0]&&"/"!==resolved[1]){// In IE location.origin might not work
+// https://connect.microsoft.com/IE/feedback/details/1763802/location-origin-is-undefined-in-ie-11-on-windows-10-but-works-on-windows-7
+resolved=(location.origin||location.protocol+"//"+location.host)+resolved}return resolved}});Polymer({_template:html`
+    <style>
+      :host {
+        display: inline-block;
+      }
+    </style>
+    <slot id="content"></slot>
+`,is:"iron-input",behaviors:[IronValidatableBehavior],/**
+   * Fired whenever `validate()` is called.
+   *
+   * @event iron-input-validate
+   */properties:{/**
+     * Use this property instead of `value` for two-way data binding, or to
+     * set a default value for the input. **Do not** use the distributed
+     * input's `value` property to set a default value.
+     */bindValue:{type:String,value:""},/**
+     * Computed property that echoes `bindValue` (mostly used for Polymer 1.0
+     * backcompatibility, if you were one-way binding to the Polymer 1.0
+     * `input is="iron-input"` value attribute).
+     */value:{type:String,computed:"_computeValue(bindValue)"},/**
+     * Regex-like list of characters allowed as input; all characters not in the
+     * list will be rejected. The recommended format should be a list of allowed
+     * characters, for example, `[a-zA-Z0-9.+-!;:]`.
+     *
+     * This pattern represents the allowed characters for the field; as the user
+     * inputs text, each individual character will be checked against the
+     * pattern (rather than checking the entire value as a whole). If a
+     * character is not a match, it will be rejected.
+     *
+     * Pasted input will have each character checked individually; if any
+     * character doesn't match `allowedPattern`, the entire pasted string will
+     * be rejected.
+     *
+     * Note: if you were using `iron-input` in 1.0, you were also required to
+     * set `prevent-invalid-input`. This is no longer needed as of Polymer 2.0,
+     * and will be set automatically for you if an `allowedPattern` is provided.
+     *
+     */allowedPattern:{type:String},/**
+     * Set to true to auto-validate the input value as you type.
+     */autoValidate:{type:Boolean,value:!1},/**
+     * The native input element.
+     */_inputElement:Object},observers:["_bindValueChanged(bindValue, _inputElement)"],listeners:{input:"_onInput",keypress:"_onKeypress"},created:function(){IronA11yAnnouncer.requestAvailability();this._previousValidInput="";this._patternAlreadyChecked=!1},attached:function(){// If the input is added at a later time, update the internal reference.
+this._observer=dom(this).observeNodes(function(info){this._initSlottedInput()}.bind(this))},detached:function(){if(this._observer){dom(this).unobserveNodes(this._observer);this._observer=null}},/**
+   * Returns the distributed input element.
+   */get inputElement(){return this._inputElement},_initSlottedInput:function(){this._inputElement=this.getEffectiveChildren()[0];if(this.inputElement&&this.inputElement.value){this.bindValue=this.inputElement.value}this.fire("iron-input-ready")},get _patternRegExp(){var pattern;if(this.allowedPattern){pattern=new RegExp(this.allowedPattern)}else{switch(this.inputElement.type){case"number":pattern=/[0-9.,e-]/;break;}}return pattern},/**
+   * @suppress {checkTypes}
+   */_bindValueChanged:function(bindValue,inputElement){// The observer could have run before attached() when we have actually
+// initialized this property.
+if(!inputElement){return}if(bindValue===void 0){inputElement.value=null}else if(bindValue!==inputElement.value){this.inputElement.value=bindValue}if(this.autoValidate){this.validate()}// manually notify because we don't want to notify until after setting value
+this.fire("bind-value-changed",{value:bindValue})},_onInput:function(){// Need to validate each of the characters pasted if they haven't
+// been validated inside `_onKeypress` already.
+if(this.allowedPattern&&!this._patternAlreadyChecked){var valid=this._checkPatternValidity();if(!valid){this._announceInvalidCharacter("Invalid string of characters not entered.");this.inputElement.value=this._previousValidInput}}this.bindValue=this._previousValidInput=this.inputElement.value;this._patternAlreadyChecked=!1},_isPrintable:function(event){// What a control/printable character is varies wildly based on the browser.
+// - most control characters (arrows, backspace) do not send a `keypress`
+// event
+//   in Chrome, but the *do* on Firefox
+// - in Firefox, when they do send a `keypress` event, control chars have
+//   a charCode = 0, keyCode = xx (for ex. 40 for down arrow)
+// - printable characters always send a keypress event.
+// - in Firefox, printable chars always have a keyCode = 0. In Chrome, the
+// keyCode
+//   always matches the charCode.
+// None of this makes any sense.
+// For these keys, ASCII code == browser keycode.
+var anyNonPrintable=8==event.keyCode||// backspace
+9==event.keyCode||// tab
+13==event.keyCode||// enter
+27==event.keyCode,mozNonPrintable=19==event.keyCode||// pause
+20==event.keyCode||// caps lock
+45==event.keyCode||// insert
+46==event.keyCode||// delete
+144==event.keyCode||// num lock
+145==event.keyCode||// scroll lock
+32<event.keyCode&&41>event.keyCode||// page up/down, end, home, arrows
+111<event.keyCode&&124>event.keyCode;// escape
+// For these keys, make sure it's a browser keycode and not an ASCII code.
+// fn keys
+return!anyNonPrintable&&!(0==event.charCode&&mozNonPrintable)},_onKeypress:function(event){if(!this.allowedPattern&&"number"!==this.inputElement.type){return}var regexp=this._patternRegExp;if(!regexp){return}// Handle special keys and backspace
+if(event.metaKey||event.ctrlKey||event.altKey){return}// Check the pattern either here or in `_onInput`, but not in both.
+this._patternAlreadyChecked=!0;var thisChar=String.fromCharCode(event.charCode);if(this._isPrintable(event)&&!regexp.test(thisChar)){event.preventDefault();this._announceInvalidCharacter("Invalid character "+thisChar+" not entered.")}},_checkPatternValidity:function(){var regexp=this._patternRegExp;if(!regexp){return!0}for(var i=0;i<this.inputElement.value.length;i++){if(!regexp.test(this.inputElement.value[i])){return!1}}return!0},/**
+   * Returns true if `value` is valid. The validator provided in `validator`
+   * will be used first, then any constraints.
+   * @return {boolean} True if the value is valid.
+   */validate:function(){if(!this.inputElement){this.invalid=!1;return!0}// Use the nested input's native validity.
+var valid=this.inputElement.checkValidity();// Only do extra checking if the browser thought this was valid.
+if(valid){// Empty, required input is invalid
+if(this.required&&""===this.bindValue){valid=!1}else if(this.hasValidator()){valid=IronValidatableBehavior.validate.call(this,this.bindValue)}}this.invalid=!valid;this.fire("iron-input-validate");return valid},_announceInvalidCharacter:function(message){this.fire("iron-announce",{text:message})},_computeValue:function(bindValue){return bindValue}});class IronSelection{/**
+   * @param {!Function} selectCallback
+   * @suppress {missingProvide}
+   */constructor(selectCallback){this.selection=[];this.selectCallback=selectCallback}/**
+     * Retrieves the selected item(s).
+     *
+     * @returns Returns the selected item(s). If the multi property is true,
+     * `get` will return an array, otherwise it will return
+     * the selected item or undefined if there is no selection.
+     */get(){return this.multi?this.selection.slice():this.selection[0]}/**
+     * Clears all the selection except the ones indicated.
+     *
+     * @param {Array} excludes items to be excluded.
+     */clear(excludes){this.selection.slice().forEach(function(item){if(!excludes||0>excludes.indexOf(item)){this.setItemSelected(item,!1)}},this)}/**
+     * Indicates if a given item is selected.
+     *
+     * @param {*} item The item whose selection state should be checked.
+     * @return {boolean} Returns true if `item` is selected.
+     */isSelected(item){return 0<=this.selection.indexOf(item)}/**
+     * Sets the selection state for a given item to either selected or deselected.
+     *
+     * @param {*} item The item to select.
+     * @param {boolean} isSelected True for selected, false for deselected.
+     */setItemSelected(item,isSelected){if(null!=item){if(isSelected!==this.isSelected(item)){// proceed to update selection only if requested state differs from
+// current
+if(isSelected){this.selection.push(item)}else{var i=this.selection.indexOf(item);if(0<=i){this.selection.splice(i,1)}}if(this.selectCallback){this.selectCallback(item,isSelected)}}}}/**
+     * Sets the selection state for a given item. If the `multi` property
+     * is true, then the selected state of `item` will be toggled; otherwise
+     * the `item` will be selected.
+     *
+     * @param {*} item The item to select.
+     */select(item){if(this.multi){this.toggle(item)}else if(this.get()!==item){this.setItemSelected(this.get(),!1);this.setItemSelected(item,!0)}}/**
+     * Toggles the selection state for `item`.
+     *
+     * @param {*} item The item to toggle.
+     */toggle(item){this.setItemSelected(item,!this.isSelected(item))}}_exports.IronSelection=IronSelection;;var ironSelection={IronSelection:IronSelection};_exports.$ironSelection=ironSelection;const IronSelectableBehavior={/**
+   * Fired when iron-selector is activated (selected or deselected).
+   * It is fired before the selected items are changed.
+   * Cancel the event to abort selection.
+   *
+   * @event iron-activate
+   */ /**
+       * Fired when an item is selected
+       *
+       * @event iron-select
+       */ /**
+           * Fired when an item is deselected
+           *
+           * @event iron-deselect
+           */ /**
+               * Fired when the list of selectable items changes (e.g., items are
+               * added or removed). The detail of the event is a mutation record that
+               * describes what changed.
+               *
+               * @event iron-items-changed
+               */properties:{/**
+     * If you want to use an attribute value or property of an element for
+     * `selected` instead of the index, set this to the name of the attribute
+     * or property. Hyphenated values are converted to camel case when used to
+     * look up the property of a selectable element. Camel cased values are
+     * *not* converted to hyphenated values for attribute lookup. It's
+     * recommended that you provide the hyphenated form of the name so that
+     * selection works in both cases. (Use `attr-or-property-name` instead of
+     * `attrOrPropertyName`.)
+     */attrForSelected:{type:String,value:null},/**
+     * Gets or sets the selected element. The default is to use the index of the
+     * item.
+     * @type {string|number}
+     */selected:{type:String,notify:!0},/**
+     * Returns the currently selected item.
+     *
+     * @type {?Object}
+     */selectedItem:{type:Object,readOnly:!0,notify:!0},/**
+     * The event that fires from items when they are selected. Selectable
+     * will listen for this event from items and update the selection state.
+     * Set to empty string to listen to no events.
+     */activateEvent:{type:String,value:"tap",observer:"_activateEventChanged"},/**
+     * This is a CSS selector string.  If this is set, only items that match the
+     * CSS selector are selectable.
+     */selectable:String,/**
+     * The class to set on elements when selected.
+     */selectedClass:{type:String,value:"iron-selected"},/**
+     * The attribute to set on elements when selected.
+     */selectedAttribute:{type:String,value:null},/**
+     * Default fallback if the selection based on selected with
+     * `attrForSelected` is not found.
+     */fallbackSelection:{type:String,value:null},/**
+     * The list of items from which a selection can be made.
+     */items:{type:Array,readOnly:!0,notify:!0,value:function(){return[]}},/**
+     * The set of excluded elements where the key is the `localName`
+     * of the element that will be ignored from the item list.
+     *
+     * @default {template: 1}
+     */_excludedLocalNames:{type:Object,value:function(){return{template:1,"dom-bind":1,"dom-if":1,"dom-repeat":1}}}},observers:["_updateAttrForSelected(attrForSelected)","_updateSelected(selected)","_checkFallback(fallbackSelection)"],created:function(){this._bindFilterItem=this._filterItem.bind(this);this._selection=new IronSelection(this._applySelection.bind(this))},attached:function(){this._observer=this._observeItems(this);this._addListener(this.activateEvent)},detached:function(){if(this._observer){dom(this).unobserveNodes(this._observer)}this._removeListener(this.activateEvent)},/**
+   * Returns the index of the given item.
+   *
+   * @method indexOf
+   * @param {Object} item
+   * @returns Returns the index of the item
+   */indexOf:function(item){return this.items?this.items.indexOf(item):-1},/**
+   * Selects the given value.
+   *
+   * @method select
+   * @param {string|number} value the value to select.
+   */select:function(value){this.selected=value},/**
+   * Selects the previous item.
+   *
+   * @method selectPrevious
+   */selectPrevious:function(){var length=this.items.length,index=length-1;if(this.selected!==void 0){index=(+this._valueToIndex(this.selected)-1+length)%length}this.selected=this._indexToValue(index)},/**
+   * Selects the next item.
+   *
+   * @method selectNext
+   */selectNext:function(){var index=0;if(this.selected!==void 0){index=(+this._valueToIndex(this.selected)+1)%this.items.length}this.selected=this._indexToValue(index)},/**
+   * Selects the item at the given index.
+   *
+   * @method selectIndex
+   */selectIndex:function(index){this.select(this._indexToValue(index))},/**
+   * Force a synchronous update of the `items` property.
+   *
+   * NOTE: Consider listening for the `iron-items-changed` event to respond to
+   * updates to the set of selectable items after updates to the DOM list and
+   * selection state have been made.
+   *
+   * WARNING: If you are using this method, you should probably consider an
+   * alternate approach. Synchronously querying for items is potentially
+   * slow for many use cases. The `items` property will update asynchronously
+   * on its own to reflect selectable items in the DOM.
+   */forceSynchronousItemUpdate:function(){if(this._observer&&"function"===typeof this._observer.flush){// NOTE(bicknellr): `dom.flush` above is no longer sufficient to trigger
+// `observeNodes` callbacks. Polymer 2.x returns an object from
+// `observeNodes` with a `flush` that synchronously gives the callback any
+// pending MutationRecords (retrieved with `takeRecords`). Any case where
+// ShadyDOM flushes were expected to synchronously trigger item updates
+// will now require calling `forceSynchronousItemUpdate`.
+this._observer.flush()}else{this._updateItems()}},// UNUSED, FOR API COMPATIBILITY
+get _shouldUpdateSelection(){return null!=this.selected},_checkFallback:function(){this._updateSelected()},_addListener:function(eventName){this.listen(this,eventName,"_activateHandler")},_removeListener:function(eventName){this.unlisten(this,eventName,"_activateHandler")},_activateEventChanged:function(eventName,old){this._removeListener(old);this._addListener(eventName)},_updateItems:function(){var nodes=dom(this).queryDistributedElements(this.selectable||"*");nodes=Array.prototype.filter.call(nodes,this._bindFilterItem);this._setItems(nodes)},_updateAttrForSelected:function(){if(this.selectedItem){this.selected=this._valueForItem(this.selectedItem)}},_updateSelected:function(){this._selectSelected(this.selected)},_selectSelected:function(selected){if(!this.items){return}var item=this._valueToItem(this.selected);if(item){this._selection.select(item)}else{this._selection.clear()}// Check for items, since this array is populated only when attached
+// Since Number(0) is falsy, explicitly check for undefined
+if(this.fallbackSelection&&this.items.length&&this._selection.get()===void 0){this.selected=this.fallbackSelection}},_filterItem:function(node){return!this._excludedLocalNames[node.localName]},_valueToItem:function(value){return null==value?null:this.items[this._valueToIndex(value)]},_valueToIndex:function(value){if(this.attrForSelected){for(var i=0,item;item=this.items[i];i++){if(this._valueForItem(item)==value){return i}}}else{return+value}},_indexToValue:function(index){if(this.attrForSelected){var item=this.items[index];if(item){return this._valueForItem(item)}}else{return index}},_valueForItem:function(item){if(!item){return null}if(!this.attrForSelected){var i=this.indexOf(item);return-1===i?null:i}var propValue=item[dashToCamelCase(this.attrForSelected)];return propValue!=void 0?propValue:item.getAttribute(this.attrForSelected)},_applySelection:function(item,isSelected){if(this.selectedClass){this.toggleClass(this.selectedClass,isSelected,item)}if(this.selectedAttribute){this.toggleAttribute(this.selectedAttribute,isSelected,item)}this._selectionChange();this.fire("iron-"+(isSelected?"select":"deselect"),{item:item})},_selectionChange:function(){this._setSelectedItem(this._selection.get())},// observe items change under the given node.
+_observeItems:function(node){return dom(node).observeNodes(function(mutation){this._updateItems();this._updateSelected();// Let other interested parties know about the change so that
+// we don't have to recreate mutation observers everywhere.
+this.fire("iron-items-changed",mutation,{bubbles:!1,cancelable:!1})})},_activateHandler:function(e){var t=e.target,items=this.items;while(t&&t!=this){var i=items.indexOf(t);if(0<=i){var value=this._indexToValue(i);this._itemActivate(value,t);return}t=t.parentNode}},_itemActivate:function(value,item){if(!this.fire("iron-activate",{selected:value,item:item},{cancelable:!0}).defaultPrevented){this.select(value)}}};_exports.IronSelectableBehavior=IronSelectableBehavior;var ironSelectable={IronSelectableBehavior:IronSelectableBehavior};_exports.$ironSelectable=ironSelectable;const IronMultiSelectableBehaviorImpl={properties:{/**
+     * If true, multiple selections are allowed.
+     */multi:{type:Boolean,value:!1,observer:"multiChanged"},/**
+     * Gets or sets the selected elements. This is used instead of `selected`
+     * when `multi` is true.
+     */selectedValues:{type:Array,notify:!0,value:function(){return[]}},/**
+     * Returns an array of currently selected items.
+     */selectedItems:{type:Array,readOnly:!0,notify:!0,value:function(){return[]}}},observers:["_updateSelected(selectedValues.splices)"],/**
+   * Selects the given value. If the `multi` property is true, then the selected
+   * state of the `value` will be toggled; otherwise the `value` will be
+   * selected.
+   *
+   * @method select
+   * @param {string|number} value the value to select.
+   */select:function(value){if(this.multi){this._toggleSelected(value)}else{this.selected=value}},multiChanged:function(multi){this._selection.multi=multi;this._updateSelected()},// UNUSED, FOR API COMPATIBILITY
+get _shouldUpdateSelection(){return null!=this.selected||null!=this.selectedValues&&this.selectedValues.length},_updateAttrForSelected:function(){if(!this.multi){IronSelectableBehavior._updateAttrForSelected.apply(this)}else if(this.selectedItems&&0<this.selectedItems.length){this.selectedValues=this.selectedItems.map(function(selectedItem){return this._indexToValue(this.indexOf(selectedItem))},this).filter(function(unfilteredValue){return null!=unfilteredValue},this)}},_updateSelected:function(){if(this.multi){this._selectMulti(this.selectedValues)}else{this._selectSelected(this.selected)}},_selectMulti:function(values){values=values||[];var selectedItems=(this._valuesToItems(values)||[]).filter(function(item){return null!==item&&item!==void 0});// clear all but the current selected items
+this._selection.clear(selectedItems);// select only those not selected yet
+for(var i=0;i<selectedItems.length;i++){this._selection.setItemSelected(selectedItems[i],!0)}// Check for items, since this array is populated only when attached
+if(this.fallbackSelection&&!this._selection.get().length){var fallback=this._valueToItem(this.fallbackSelection);if(fallback){this.select(this.fallbackSelection)}}},_selectionChange:function(){var s=this._selection.get();if(this.multi){this._setSelectedItems(s);this._setSelectedItem(s.length?s[0]:null)}else{if(null!==s&&s!==void 0){this._setSelectedItems([s]);this._setSelectedItem(s)}else{this._setSelectedItems([]);this._setSelectedItem(null)}}},_toggleSelected:function(value){var i=this.selectedValues.indexOf(value),unselected=0>i;if(unselected){this.push("selectedValues",value)}else{this.splice("selectedValues",i,1)}},_valuesToItems:function(values){return null==values?null:values.map(function(value){return this._valueToItem(value)},this)}};/** @polymerBehavior */_exports.IronMultiSelectableBehaviorImpl=IronMultiSelectableBehaviorImpl;const IronMultiSelectableBehavior=[IronSelectableBehavior,IronMultiSelectableBehaviorImpl];_exports.IronMultiSelectableBehavior=IronMultiSelectableBehavior;var ironMultiSelectable={IronMultiSelectableBehaviorImpl:IronMultiSelectableBehaviorImpl,IronMultiSelectableBehavior:IronMultiSelectableBehavior};_exports.$ironMultiSelectable=ironMultiSelectable;const IronMenuBehaviorImpl={properties:{/**
+     * Returns the currently focused item.
+     * @type {?Object}
+     */focusedItem:{observer:"_focusedItemChanged",readOnly:!0,type:Object},/**
+     * The attribute to use on menu items to look up the item title. Typing the
+     * first letter of an item when the menu is open focuses that item. If
+     * unset, `textContent` will be used.
+     */attrForItemTitle:{type:String},/**
+     * @type {boolean}
+     */disabled:{type:Boolean,value:!1,observer:"_disabledChanged"}},/**
+   * The list of keys has been taken from
+   * https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/getModifierState
+   * @private
+   */_MODIFIER_KEYS:["Alt","AltGraph","CapsLock","Control","Fn","FnLock","Hyper","Meta","NumLock","OS","ScrollLock","Shift","Super","Symbol","SymbolLock"],/** @private */_SEARCH_RESET_TIMEOUT_MS:1e3,/** @private */_previousTabIndex:0,hostAttributes:{role:"menu"},observers:["_updateMultiselectable(multi)"],listeners:{focus:"_onFocus",keydown:"_onKeydown","iron-items-changed":"_onIronItemsChanged"},/**
+   * @type {!Object}
+   */keyBindings:{up:"_onUpKey",down:"_onDownKey",esc:"_onEscKey","shift+tab:keydown":"_onShiftTabDown"},attached:function(){this._resetTabindices()},/**
+   * Selects the given value. If the `multi` property is true, then the selected
+   * state of the `value` will be toggled; otherwise the `value` will be
+   * selected.
+   *
+   * @param {string|number} value the value to select.
+   */select:function(value){// Cancel automatically focusing a default item if the menu received focus
+// through a user action selecting a particular item.
+if(this._defaultFocusAsync){this.cancelAsync(this._defaultFocusAsync);this._defaultFocusAsync=null}var item=this._valueToItem(value);if(item&&item.hasAttribute("disabled"))return;this._setFocusedItem(item);IronMultiSelectableBehaviorImpl.select.apply(this,arguments)},/**
+   * Resets all tabindex attributes to the appropriate value based on the
+   * current selection state. The appropriate value is `0` (focusable) for
+   * the default selected item, and `-1` (not keyboard focusable) for all
+   * other items. Also sets the correct initial values for aria-selected
+   * attribute, true for default selected item and false for others.
+   */_resetTabindices:function(){var firstSelectedItem=this.multi?this.selectedItems&&this.selectedItems[0]:this.selectedItem;this.items.forEach(function(item){item.setAttribute("tabindex",item===firstSelectedItem?"0":"-1");item.setAttribute("aria-selected",this._selection.isSelected(item))},this)},/**
+   * Sets appropriate ARIA based on whether or not the menu is meant to be
+   * multi-selectable.
+   *
+   * @param {boolean} multi True if the menu should be multi-selectable.
+   */_updateMultiselectable:function(multi){if(multi){this.setAttribute("aria-multiselectable","true")}else{this.removeAttribute("aria-multiselectable")}},/**
+   * Given a KeyboardEvent, this method will focus the appropriate item in the
+   * menu (if there is a relevant item, and it is possible to focus it).
+   *
+   * @param {KeyboardEvent} event A KeyboardEvent.
+   */_focusWithKeyboardEvent:function(event){// Make sure that the key pressed is not a modifier key.
+// getModifierState is not being used, as it is not available in Safari
+// earlier than 10.0.2 (https://trac.webkit.org/changeset/206725/webkit)
+if(-1!==this._MODIFIER_KEYS.indexOf(event.key))return;this.cancelDebouncer("_clearSearchText");var searchText=this._searchText||"",key=event.key&&1==event.key.length?event.key:String.fromCharCode(event.keyCode);searchText+=key.toLocaleLowerCase();for(var searchLength=searchText.length,i=0,item;item=this.items[i];i++){if(item.hasAttribute("disabled")){continue}var attr=this.attrForItemTitle||"textContent",title=(item[attr]||item.getAttribute(attr)||"").trim();if(title.length<searchLength){continue}if(title.slice(0,searchLength).toLocaleLowerCase()==searchText){this._setFocusedItem(item);break}}this._searchText=searchText;this.debounce("_clearSearchText",this._clearSearchText,this._SEARCH_RESET_TIMEOUT_MS)},_clearSearchText:function(){this._searchText=""},/**
+   * Focuses the previous item (relative to the currently focused item) in the
+   * menu, disabled items will be skipped.
+   * Loop until length + 1 to handle case of single item in menu.
+   */_focusPrevious:function(){for(var length=this.items.length,curFocusIndex=+this.indexOf(this.focusedItem),i=1,item;i<length+1;i++){item=this.items[(curFocusIndex-i+length)%length];if(!item.hasAttribute("disabled")){var owner=dom(item).getOwnerRoot()||document;this._setFocusedItem(item);// Focus might not have worked, if the element was hidden or not
+// focusable. In that case, try again.
+if(dom(owner).activeElement==item){return}}}},/**
+   * Focuses the next item (relative to the currently focused item) in the
+   * menu, disabled items will be skipped.
+   * Loop until length + 1 to handle case of single item in menu.
+   */_focusNext:function(){for(var length=this.items.length,curFocusIndex=+this.indexOf(this.focusedItem),i=1,item;i<length+1;i++){item=this.items[(curFocusIndex+i)%length];if(!item.hasAttribute("disabled")){var owner=dom(item).getOwnerRoot()||document;this._setFocusedItem(item);// Focus might not have worked, if the element was hidden or not
+// focusable. In that case, try again.
+if(dom(owner).activeElement==item){return}}}},/**
+   * Mutates items in the menu based on provided selection details, so that
+   * all items correctly reflect selection state.
+   *
+   * @param {Element} item An item in the menu.
+   * @param {boolean} isSelected True if the item should be shown in a
+   * selected state, otherwise false.
+   */_applySelection:function(item,isSelected){if(isSelected){item.setAttribute("aria-selected","true")}else{item.setAttribute("aria-selected","false")}IronSelectableBehavior._applySelection.apply(this,arguments)},/**
+   * Discretely updates tabindex values among menu items as the focused item
+   * changes.
+   *
+   * @param {Element} focusedItem The element that is currently focused.
+   * @param {?Element} old The last element that was considered focused, if
+   * applicable.
+   */_focusedItemChanged:function(focusedItem,old){old&&old.setAttribute("tabindex","-1");if(focusedItem&&!focusedItem.hasAttribute("disabled")&&!this.disabled){focusedItem.setAttribute("tabindex","0");focusedItem.focus()}},/**
+   * A handler that responds to mutation changes related to the list of items
+   * in the menu.
+   *
+   * @param {CustomEvent} event An event containing mutation records as its
+   * detail.
+   */_onIronItemsChanged:function(event){if(event.detail.addedNodes.length){this._resetTabindices()}},/**
+   * Handler that is called when a shift+tab keypress is detected by the menu.
+   *
+   * @param {CustomEvent} event A key combination event.
+   */_onShiftTabDown:function(event){var oldTabIndex=this.getAttribute("tabindex");IronMenuBehaviorImpl._shiftTabPressed=!0;this._setFocusedItem(null);this.setAttribute("tabindex","-1");this.async(function(){this.setAttribute("tabindex",oldTabIndex);IronMenuBehaviorImpl._shiftTabPressed=!1;// NOTE(cdata): polymer/polymer#1305
+},1)},/**
+   * Handler that is called when the menu receives focus.
+   *
+   * @param {FocusEvent} event A focus event.
+   */_onFocus:function(event){if(IronMenuBehaviorImpl._shiftTabPressed){// do not focus the menu itself
+return}// Do not focus the selected tab if the deepest target is part of the
+// menu element's local DOM and is focusable.
+var rootTarget=/** @type {?HTMLElement} */dom(event).rootTarget;if(rootTarget!==this&&"undefined"!==typeof rootTarget.tabIndex&&!this.isLightDescendant(rootTarget)){return}// clear the cached focus item
+this._defaultFocusAsync=this.async(function(){// focus the selected item when the menu receives focus, or the first item
+// if no item is selected
+var firstSelectedItem=this.multi?this.selectedItems&&this.selectedItems[0]:this.selectedItem;this._setFocusedItem(null);if(firstSelectedItem){this._setFocusedItem(firstSelectedItem)}else if(this.items[0]){// We find the first none-disabled item (if one exists)
+this._focusNext()}})},/**
+   * Handler that is called when the up key is pressed.
+   *
+   * @param {CustomEvent} event A key combination event.
+   */_onUpKey:function(event){// up and down arrows moves the focus
+this._focusPrevious();event.detail.keyboardEvent.preventDefault()},/**
+   * Handler that is called when the down key is pressed.
+   *
+   * @param {CustomEvent} event A key combination event.
+   */_onDownKey:function(event){this._focusNext();event.detail.keyboardEvent.preventDefault()},/**
+   * Handler that is called when the esc key is pressed.
+   *
+   * @param {CustomEvent} event A key combination event.
+   */_onEscKey:function(event){var focusedItem=this.focusedItem;if(focusedItem){focusedItem.blur()}},/**
+   * Handler that is called when a keydown event is detected.
+   *
+   * @param {KeyboardEvent} event A keyboard event.
+   */_onKeydown:function(event){if(!this.keyboardEventMatchesKeys(event,"up down esc")){// all other keys focus the menu item starting with that character
+this._focusWithKeyboardEvent(event)}event.stopPropagation()},// override _activateHandler
+_activateHandler:function(event){IronSelectableBehavior._activateHandler.call(this,event);event.stopPropagation()},/**
+   * Updates this element's tab index when it's enabled/disabled.
+   * @param {boolean} disabled
+   */_disabledChanged:function(disabled){if(disabled){this._previousTabIndex=this.hasAttribute("tabindex")?this.tabIndex:0;this.removeAttribute("tabindex");// No tabindex means not tab-able or select-able.
+}else if(!this.hasAttribute("tabindex")){this.setAttribute("tabindex",this._previousTabIndex)}}};_exports.IronMenuBehaviorImpl=IronMenuBehaviorImpl;IronMenuBehaviorImpl._shiftTabPressed=!1;/** @polymerBehavior */const IronMenuBehavior=[IronMultiSelectableBehavior,IronA11yKeysBehavior,IronMenuBehaviorImpl];_exports.IronMenuBehavior=IronMenuBehavior;var ironMenuBehavior={IronMenuBehaviorImpl:IronMenuBehaviorImpl,IronMenuBehavior:IronMenuBehavior};_exports.$ironMenuBehavior=ironMenuBehavior;const IronMenubarBehaviorImpl={hostAttributes:{role:"menubar"},/**
+   * @type {!Object}
+   */keyBindings:{left:"_onLeftKey",right:"_onRightKey"},_onUpKey:function(event){this.focusedItem.click();event.detail.keyboardEvent.preventDefault()},_onDownKey:function(event){this.focusedItem.click();event.detail.keyboardEvent.preventDefault()},get _isRTL(){return"rtl"===window.getComputedStyle(this).direction},_onLeftKey:function(event){if(this._isRTL){this._focusNext()}else{this._focusPrevious()}event.detail.keyboardEvent.preventDefault()},_onRightKey:function(event){if(this._isRTL){this._focusPrevious()}else{this._focusNext()}event.detail.keyboardEvent.preventDefault()},_onKeydown:function(event){if(this.keyboardEventMatchesKeys(event,"up down left right esc")){return}// all other keys focus the menu item starting with that character
+this._focusWithKeyboardEvent(event)}};/** @polymerBehavior */_exports.IronMenubarBehaviorImpl=IronMenubarBehaviorImpl;const IronMenubarBehavior=[IronMenuBehavior,IronMenubarBehaviorImpl];_exports.IronMenubarBehavior=IronMenubarBehavior;var ironMenubarBehavior={IronMenubarBehaviorImpl:IronMenubarBehaviorImpl,IronMenubarBehavior:IronMenubarBehavior};_exports.$ironMenubarBehavior=ironMenubarBehavior;const IronRangeBehavior={properties:{/**
+     * The number that represents the current value.
+     */value:{type:Number,value:0,notify:!0,reflectToAttribute:!0},/**
+     * The number that indicates the minimum value of the range.
+     */min:{type:Number,value:0,notify:!0},/**
+     * The number that indicates the maximum value of the range.
+     */max:{type:Number,value:100,notify:!0},/**
+     * Specifies the value granularity of the range's value.
+     */step:{type:Number,value:1,notify:!0},/**
+     * Returns the ratio of the value.
+     */ratio:{type:Number,value:0,readOnly:!0,notify:!0}},observers:["_update(value, min, max, step)"],_calcRatio:function(value){return(this._clampValue(value)-this.min)/(this.max-this.min)},_clampValue:function(value){return Math.min(this.max,Math.max(this.min,this._calcStep(value)))},_calcStep:function(value){// polymer/issues/2493
+value=parseFloat(value);if(!this.step){return value}var numSteps=Math.round((value-this.min)/this.step);if(1>this.step){/**
+       * For small values of this.step, if we calculate the step using
+       * `Math.round(value / step) * step` we may hit a precision point issue
+       * eg. 0.1 * 0.2 =  0.020000000000000004
+       * http://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html
+       *
+       * as a work around we can divide by the reciprocal of `step`
+       */return numSteps/(1/this.step)+this.min}else{return numSteps*this.step+this.min}},_validateValue:function(){var v=this._clampValue(this.value);this.value=this.oldValue=isNaN(v)?this.oldValue:v;return this.value!==v},_update:function(){this._validateValue();this._setRatio(100*this._calcRatio(this.value))}};_exports.IronRangeBehavior=IronRangeBehavior;var ironRangeBehavior={IronRangeBehavior:IronRangeBehavior};/**
+    * marked - a markdown parser
+    * Copyright (c) 2011-2014, Christopher Jeffrey. (MIT Licensed)
+    * https://github.com/markedjs/marked
+    */_exports.$ironRangeBehavior=ironRangeBehavior;;(function(root){'use strict';/**
+                 * Block-Level Grammar
+                 */var block={newline:/^\n+/,code:/^( {4}[^\n]+\n*)+/,fences:noop,hr:/^ {0,3}((?:- *){3,}|(?:_ *){3,}|(?:\* *){3,})(?:\n+|$)/,heading:/^ *(#{1,6}) *([^\n]+?) *#* *(?:\n+|$)/,nptable:noop,blockquote:/^( {0,3}> ?(paragraph|[^\n]*)(?:\n|$))+/,list:/^( *)(bull) [\s\S]+?(?:hr|def|\n{2,}(?! )(?!\1bull )\n*|\s*$)/,html:/^ *(?:comment *(?:\n|\s*$)|closed *(?:\n{2,}|\s*$)|closing *(?:\n{2,}|\s*$))/,def:/^ {0,3}\[(label)\]: *\n? *<?([^\s>]+)>?(?:(?: +\n? *| *\n *)(title))? *(?:\n+|$)/,table:noop,lheading:/^([^\n]+)\n *(=|-){2,} *(?:\n+|$)/,paragraph:/^([^\n]+(?:\n?(?!hr|heading|lheading| {0,3}>|tag)[^\n]+)+)/,text:/^[^\n]+/,_label:/(?:\\[\[\]]|[^\[\]])+/,_title:/(?:"(?:\\"|[^"]|"[^"\n]*")*"|'\n?(?:[^'\n]+\n?)*'|\([^()]*\))/};block.def=edit(block.def).replace("label",block._label).replace("title",block._title).getRegex();block.bullet=/(?:[*+-]|\d+\.)/;block.item=/^( *)(bull) [^\n]*(?:\n(?!\1bull )[^\n]*)*/;block.item=edit(block.item,"gm").replace(/bull/g,block.bullet).getRegex();block.list=edit(block.list).replace(/bull/g,block.bullet).replace("hr","\\n+(?=\\1?(?:(?:- *){3,}|(?:_ *){3,}|(?:\\* *){3,})(?:\\n+|$))").replace("def","\\n+(?="+block.def.source+")").getRegex();block._tag="(?!(?:"+"a|em|strong|small|s|cite|q|dfn|abbr|data|time|code"+"|var|samp|kbd|sub|sup|i|b|u|mark|ruby|rt|rp|bdi|bdo"+"|span|br|wbr|ins|del|img)\\b)\\w+(?!:|[^\\w\\s@]*@)\\b";block.html=edit(block.html).replace("comment",/<!--[\s\S]*?-->/).replace("closed",/<(tag)[\s\S]+?<\/\1>/).replace("closing",/<tag(?:"[^"]*"|'[^']*'|\s[^'"\/>\s]*)*?\/?>/).replace(/tag/g,block._tag).getRegex();block.paragraph=edit(block.paragraph).replace("hr",block.hr).replace("heading",block.heading).replace("lheading",block.lheading).replace("tag","<"+block._tag).getRegex();block.blockquote=edit(block.blockquote).replace("paragraph",block.paragraph).getRegex();/**
+                                                                                               * Normal Block Grammar
+                                                                                               */block.normal=merge({},block);/**
+                                    * GFM Block Grammar
+                                    */block.gfm=merge({},block.normal,{fences:/^ *(`{3,}|~{3,})[ \.]*(\S+)? *\n([\s\S]*?)\n? *\1 *(?:\n+|$)/,paragraph:/^/,heading:/^ *(#{1,6}) +([^\n]+?) *#* *(?:\n+|$)/});block.gfm.paragraph=edit(block.paragraph).replace("(?!","(?!"+block.gfm.fences.source.replace("\\1","\\2")+"|"+block.list.source.replace("\\1","\\3")+"|").getRegex();/**
+                                                                                                                                                                                       * GFM + Tables Block Grammar
+                                                                                                                                                                                       */block.tables=merge({},block.gfm,{nptable:/^ *(\S.*\|.*)\n *([-:]+ *\|[-| :]*)\n((?:.*\|.*(?:\n|$))*)\n*/,table:/^ *\|(.+)\n *\|( *[-:]+[-| :]*)\n((?: *\|.*(?:\n|$))*)\n*/});/**
+       * Block Lexer
+       */function Lexer(options){this.tokens=[];this.tokens.links={};this.options=options||marked.defaults;this.rules=block.normal;if(this.options.gfm){if(this.options.tables){this.rules=block.tables}else{this.rules=block.gfm}}}/**
+     * Expose Block Rules
+     */Lexer.rules=block;/**
+                        * Static Lex Method
+                        */Lexer.lex=function(src,options){var lexer=new Lexer(options);return lexer.lex(src)};/**
+      * Preprocessing
+      */Lexer.prototype.lex=function(src){src=src.replace(/\r\n|\r/g,"\n").replace(/\t/g,"    ").replace(/\u00a0/g," ").replace(/\u2424/g,"\n");return this.token(src,!0)};/**
+      * Lexing
+      */Lexer.prototype.token=function(src,top){src=src.replace(/^ +$/gm,"");var next,loose,cap,bull,b,item,space,i,tag,l,isordered;while(src){// newline
+if(cap=this.rules.newline.exec(src)){src=src.substring(cap[0].length);if(1<cap[0].length){this.tokens.push({type:"space"})}}// code
+if(cap=this.rules.code.exec(src)){src=src.substring(cap[0].length);cap=cap[0].replace(/^ {4}/gm,"");this.tokens.push({type:"code",text:!this.options.pedantic?cap.replace(/\n+$/,""):cap});continue}// fences (gfm)
+if(cap=this.rules.fences.exec(src)){src=src.substring(cap[0].length);this.tokens.push({type:"code",lang:cap[2],text:cap[3]||""});continue}// heading
+if(cap=this.rules.heading.exec(src)){src=src.substring(cap[0].length);this.tokens.push({type:"heading",depth:cap[1].length,text:cap[2]});continue}// table no leading pipe (gfm)
+if(top&&(cap=this.rules.nptable.exec(src))){src=src.substring(cap[0].length);item={type:"table",header:cap[1].replace(/^ *| *\| *$/g,"").split(/ *\| */),align:cap[2].replace(/^ *|\| *$/g,"").split(/ *\| */),cells:cap[3].replace(/\n$/,"").split("\n")};for(i=0;i<item.align.length;i++){if(/^ *-+: *$/.test(item.align[i])){item.align[i]="right"}else if(/^ *:-+: *$/.test(item.align[i])){item.align[i]="center"}else if(/^ *:-+ *$/.test(item.align[i])){item.align[i]="left"}else{item.align[i]=null}}for(i=0;i<item.cells.length;i++){item.cells[i]=item.cells[i].split(/ *\| */)}this.tokens.push(item);continue}// hr
+if(cap=this.rules.hr.exec(src)){src=src.substring(cap[0].length);this.tokens.push({type:"hr"});continue}// blockquote
+if(cap=this.rules.blockquote.exec(src)){src=src.substring(cap[0].length);this.tokens.push({type:"blockquote_start"});cap=cap[0].replace(/^ *> ?/gm,"");// Pass `top` to keep the current
+// "toplevel" state. This is exactly
+// how markdown.pl works.
+this.token(cap,top);this.tokens.push({type:"blockquote_end"});continue}// list
+if(cap=this.rules.list.exec(src)){src=src.substring(cap[0].length);bull=cap[2];isordered=1<bull.length;this.tokens.push({type:"list_start",ordered:isordered,start:isordered?+bull:""});// Get each top-level item.
+cap=cap[0].match(this.rules.item);next=!1;l=cap.length;i=0;for(;i<l;i++){item=cap[i];// Remove the list item's bullet
+// so it is seen as the next token.
+space=item.length;item=item.replace(/^ *([*+-]|\d+\.) +/,"");// Outdent whatever the
+// list item contains. Hacky.
+if(~item.indexOf("\n ")){space-=item.length;item=!this.options.pedantic?item.replace(new RegExp("^ {1,"+space+"}","gm"),""):item.replace(/^ {1,4}/gm,"")}// Determine whether the next list item belongs here.
+// Backpedal if it does not belong in this list.
+if(this.options.smartLists&&i!==l-1){b=block.bullet.exec(cap[i+1])[0];if(bull!==b&&!(1<bull.length&&1<b.length)){src=cap.slice(i+1).join("\n")+src;i=l-1}}// Determine whether item is loose or not.
+// Use: /(^|\n)(?! )[^\n]+\n\n(?!\s*$)/
+// for discount behavior.
+loose=next||/\n\n(?!\s*$)/.test(item);if(i!==l-1){next="\n"===item.charAt(item.length-1);if(!loose)loose=next}this.tokens.push({type:loose?"loose_item_start":"list_item_start"});// Recurse.
+this.token(item,!1);this.tokens.push({type:"list_item_end"})}this.tokens.push({type:"list_end"});continue}// html
+if(cap=this.rules.html.exec(src)){src=src.substring(cap[0].length);this.tokens.push({type:this.options.sanitize?"paragraph":"html",pre:!this.options.sanitizer&&("pre"===cap[1]||"script"===cap[1]||"style"===cap[1]),text:cap[0]});continue}// def
+if(top&&(cap=this.rules.def.exec(src))){src=src.substring(cap[0].length);if(cap[3])cap[3]=cap[3].substring(1,cap[3].length-1);tag=cap[1].toLowerCase();if(!this.tokens.links[tag]){this.tokens.links[tag]={href:cap[2],title:cap[3]}}continue}// table (gfm)
+if(top&&(cap=this.rules.table.exec(src))){src=src.substring(cap[0].length);item={type:"table",header:cap[1].replace(/^ *| *\| *$/g,"").split(/ *\| */),align:cap[2].replace(/^ *|\| *$/g,"").split(/ *\| */),cells:cap[3].replace(/(?: *\| *)?\n$/,"").split("\n")};for(i=0;i<item.align.length;i++){if(/^ *-+: *$/.test(item.align[i])){item.align[i]="right"}else if(/^ *:-+: *$/.test(item.align[i])){item.align[i]="center"}else if(/^ *:-+ *$/.test(item.align[i])){item.align[i]="left"}else{item.align[i]=null}}for(i=0;i<item.cells.length;i++){item.cells[i]=item.cells[i].replace(/^ *\| *| *\| *$/g,"").split(/ *\| */)}this.tokens.push(item);continue}// lheading
+if(cap=this.rules.lheading.exec(src)){src=src.substring(cap[0].length);this.tokens.push({type:"heading",depth:"="===cap[2]?1:2,text:cap[1]});continue}// top-level paragraph
+if(top&&(cap=this.rules.paragraph.exec(src))){src=src.substring(cap[0].length);this.tokens.push({type:"paragraph",text:"\n"===cap[1].charAt(cap[1].length-1)?cap[1].slice(0,-1):cap[1]});continue}// text
+if(cap=this.rules.text.exec(src)){// Top-level should never reach here.
+src=src.substring(cap[0].length);this.tokens.push({type:"text",text:cap[0]});continue}if(src){throw new Error("Infinite loop on byte: "+src.charCodeAt(0))}}return this.tokens};/**
+      * Inline-Level Grammar
+      */var inline={escape:/^\\([\\`*{}\[\]()#+\-.!_>])/,autolink:/^<(scheme:[^\s\x00-\x1f<>]*|email)>/,url:noop,tag:/^<!--[\s\S]*?-->|^<\/?[a-zA-Z0-9\-]+(?:"[^"]*"|'[^']*'|\s[^<'">\/\s]*)*?\/?>/,link:/^!?\[(inside)\]\(href\)/,reflink:/^!?\[(inside)\]\s*\[([^\]]*)\]/,nolink:/^!?\[((?:\[[^\[\]]*\]|\\[\[\]]|[^\[\]])*)\]/,strong:/^__([\s\S]+?)__(?!_)|^\*\*([\s\S]+?)\*\*(?!\*)/,em:/^_([^\s_](?:[^_]|__)+?[^\s_])_\b|^\*((?:\*\*|[^*])+?)\*(?!\*)/,code:/^(`+)\s*([\s\S]*?[^`]?)\s*\1(?!`)/,br:/^ {2,}\n(?!\s*$)/,del:noop,text:/^[\s\S]+?(?=[\\<!\[`*]|\b_| {2,}\n|$)/,_scheme:/[a-zA-Z][a-zA-Z0-9+.-]{1,31}/,_email:/[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+(@)[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+(?![-_])/};inline.autolink=edit(inline.autolink).replace("scheme",inline._scheme).replace("email",inline._email).getRegex();inline._inside=/(?:\[[^\[\]]*\]|\\[\[\]]|[^\[\]]|\](?=[^\[]*\]))*/;inline._href=/\s*<?([\s\S]*?)>?(?:\s+['"]([\s\S]*?)['"])?\s*/;inline.link=edit(inline.link).replace("inside",inline._inside).replace("href",inline._href).getRegex();inline.reflink=edit(inline.reflink).replace("inside",inline._inside).getRegex();/**
+                                                                                       * Normal Inline Grammar
+                                                                                       */inline.normal=merge({},inline);/**
+                                      * Pedantic Inline Grammar
+                                      */inline.pedantic=merge({},inline.normal,{strong:/^__(?=\S)([\s\S]*?\S)__(?!_)|^\*\*(?=\S)([\s\S]*?\S)\*\*(?!\*)/,em:/^_(?=\S)([\s\S]*?\S)_(?!_)|^\*(?=\S)([\s\S]*?\S)\*(?!\*)/});/**
+       * GFM Inline Grammar
+       */inline.gfm=merge({},inline.normal,{escape:edit(inline.escape).replace("])","~|])").getRegex(),url:edit(/^((?:ftp|https?):\/\/|www\.)(?:[a-zA-Z0-9\-]+\.?)+[^\s<]*|^email/).replace("email",inline._email).getRegex(),_backpedal:/(?:[^?!.,:;*_~()&]+|\([^)]*\)|&(?![a-zA-Z0-9]+;$)|[?!.,:;*_~)]+(?!$))+/,del:/^~~(?=\S)([\s\S]*?\S)~~/,text:edit(inline.text).replace("]|","~]|").replace("|","|https?://|ftp://|www\\.|[a-zA-Z0-9.!#$%&'*+/=?^_`{\\|}~-]+@|").getRegex()});/**
+       * GFM + Line Breaks Inline Grammar
+       */inline.breaks=merge({},inline.gfm,{br:edit(inline.br).replace("{2,}","*").getRegex(),text:edit(inline.gfm.text).replace("{2,}","*").getRegex()});/**
+       * Inline Lexer & Compiler
+       */function InlineLexer(links,options){this.options=options||marked.defaults;this.links=links;this.rules=inline.normal;this.renderer=this.options.renderer||new Renderer;this.renderer.options=this.options;if(!this.links){throw new Error("Tokens array requires a `links` property.")}if(this.options.gfm){if(this.options.breaks){this.rules=inline.breaks}else{this.rules=inline.gfm}}else if(this.options.pedantic){this.rules=inline.pedantic}}/**
+     * Expose Inline Rules
+     */InlineLexer.rules=inline;/**
+                               * Static Lexing/Compiling Method
+                               */InlineLexer.output=function(src,links,options){var inline=new InlineLexer(links,options);return inline.output(src)};/**
+      * Lexing/Compiling
+      */InlineLexer.prototype.output=function(src){var out="",link,text,href,cap;while(src){// escape
+if(cap=this.rules.escape.exec(src)){src=src.substring(cap[0].length);out+=cap[1];continue}// autolink
+if(cap=this.rules.autolink.exec(src)){src=src.substring(cap[0].length);if("@"===cap[2]){text=escape(this.mangle(cap[1]));href="mailto:"+text}else{text=escape(cap[1]);href=text}out+=this.renderer.link(href,null,text);continue}// url (gfm)
+if(!this.inLink&&(cap=this.rules.url.exec(src))){cap[0]=this.rules._backpedal.exec(cap[0])[0];src=src.substring(cap[0].length);if("@"===cap[2]){text=escape(cap[0]);href="mailto:"+text}else{text=escape(cap[0]);if("www."===cap[1]){href="http://"+text}else{href=text}}out+=this.renderer.link(href,null,text);continue}// tag
+if(cap=this.rules.tag.exec(src)){if(!this.inLink&&/^<a /i.test(cap[0])){this.inLink=!0}else if(this.inLink&&/^<\/a>/i.test(cap[0])){this.inLink=!1}src=src.substring(cap[0].length);out+=this.options.sanitize?this.options.sanitizer?this.options.sanitizer(cap[0]):escape(cap[0]):cap[0];continue}// link
+if(cap=this.rules.link.exec(src)){src=src.substring(cap[0].length);this.inLink=!0;out+=this.outputLink(cap,{href:cap[2],title:cap[3]});this.inLink=!1;continue}// reflink, nolink
+if((cap=this.rules.reflink.exec(src))||(cap=this.rules.nolink.exec(src))){src=src.substring(cap[0].length);link=(cap[2]||cap[1]).replace(/\s+/g," ");link=this.links[link.toLowerCase()];if(!link||!link.href){out+=cap[0].charAt(0);src=cap[0].substring(1)+src;continue}this.inLink=!0;out+=this.outputLink(cap,link);this.inLink=!1;continue}// strong
+if(cap=this.rules.strong.exec(src)){src=src.substring(cap[0].length);out+=this.renderer.strong(this.output(cap[2]||cap[1]));continue}// em
+if(cap=this.rules.em.exec(src)){src=src.substring(cap[0].length);out+=this.renderer.em(this.output(cap[2]||cap[1]));continue}// code
+if(cap=this.rules.code.exec(src)){src=src.substring(cap[0].length);out+=this.renderer.codespan(escape(cap[2].trim(),!0));continue}// br
+if(cap=this.rules.br.exec(src)){src=src.substring(cap[0].length);out+=this.renderer.br();continue}// del (gfm)
+if(cap=this.rules.del.exec(src)){src=src.substring(cap[0].length);out+=this.renderer.del(this.output(cap[1]));continue}// text
+if(cap=this.rules.text.exec(src)){src=src.substring(cap[0].length);out+=this.renderer.text(escape(this.smartypants(cap[0])));continue}if(src){throw new Error("Infinite loop on byte: "+src.charCodeAt(0))}}return out};/**
+      * Compile Link
+      */InlineLexer.prototype.outputLink=function(cap,link){var href=escape(link.href),title=link.title?escape(link.title):null;return"!"!==cap[0].charAt(0)?this.renderer.link(href,title,this.output(cap[1])):this.renderer.image(href,title,escape(cap[1]))};/**
+      * Smartypants Transformations
+      */InlineLexer.prototype.smartypants=function(text){if(!this.options.smartypants)return text;return text// em-dashes
+.replace(/---/g,"\u2014")// en-dashes
+.replace(/--/g,"\u2013")// opening singles
+.replace(/(^|[-\u2014/(\[{"\s])'/g,"$1\u2018")// closing singles & apostrophes
+.replace(/'/g,"\u2019")// opening doubles
+.replace(/(^|[-\u2014/(\[{\u2018\s])"/g,"$1\u201C")// closing doubles
+.replace(/"/g,"\u201D")// ellipses
+.replace(/\.{3}/g,"\u2026")};/**
+      * Mangle Links
+      */InlineLexer.prototype.mangle=function(text){if(!this.options.mangle)return text;var out="",l=text.length,i=0,ch;for(;i<l;i++){ch=text.charCodeAt(i);if(.5<Math.random()){ch="x"+ch.toString(16)}out+="&#"+ch+";"}return out};/**
+      * Renderer
+      */function Renderer(options){this.options=options||{}}Renderer.prototype.code=function(code,lang,escaped){if(this.options.highlight){var out=this.options.highlight(code,lang);if(null!=out&&out!==code){escaped=!0;code=out}}if(!lang){return"<pre><code>"+(escaped?code:escape(code,!0))+"\n</code></pre>"}return"<pre><code class=\""+this.options.langPrefix+escape(lang,!0)+"\">"+(escaped?code:escape(code,!0))+"\n</code></pre>\n"};Renderer.prototype.blockquote=function(quote){return"<blockquote>\n"+quote+"</blockquote>\n"};Renderer.prototype.html=function(html){return html};Renderer.prototype.heading=function(text,level,raw){return"<h"+level+" id=\""+this.options.headerPrefix+raw.toLowerCase().replace(/[^\w]+/g,"-")+"\">"+text+"</h"+level+">\n"};Renderer.prototype.hr=function(){return this.options.xhtml?"<hr/>\n":"<hr>\n"};Renderer.prototype.list=function(body,ordered,start){var type=ordered?"ol":"ul",startatt=ordered&&1!==start?" start=\""+start+"\"":"";return"<"+type+startatt+">\n"+body+"</"+type+">\n"};Renderer.prototype.listitem=function(text){return"<li>"+text+"</li>\n"};Renderer.prototype.paragraph=function(text){return"<p>"+text+"</p>\n"};Renderer.prototype.table=function(header,body){return"<table>\n"+"<thead>\n"+header+"</thead>\n"+"<tbody>\n"+body+"</tbody>\n"+"</table>\n"};Renderer.prototype.tablerow=function(content){return"<tr>\n"+content+"</tr>\n"};Renderer.prototype.tablecell=function(content,flags){var type=flags.header?"th":"td",tag=flags.align?"<"+type+" style=\"text-align:"+flags.align+"\">":"<"+type+">";return tag+content+"</"+type+">\n"};// span level renderer
+Renderer.prototype.strong=function(text){return"<strong>"+text+"</strong>"};Renderer.prototype.em=function(text){return"<em>"+text+"</em>"};Renderer.prototype.codespan=function(text){return"<code>"+text+"</code>"};Renderer.prototype.br=function(){return this.options.xhtml?"<br/>":"<br>"};Renderer.prototype.del=function(text){return"<del>"+text+"</del>"};Renderer.prototype.link=function(href,title,text){if(this.options.sanitize){try{var prot=decodeURIComponent(unescape(href)).replace(/[^\w:]/g,"").toLowerCase()}catch(e){return text}if(0===prot.indexOf("javascript:")||0===prot.indexOf("vbscript:")||0===prot.indexOf("data:")){return text}}if(this.options.baseUrl&&!originIndependentUrl.test(href)){href=resolveUrl(this.options.baseUrl,href)}var out="<a href=\""+href+"\"";if(title){out+=" title=\""+title+"\""}out+=">"+text+"</a>";return out};Renderer.prototype.image=function(href,title,text){if(this.options.baseUrl&&!originIndependentUrl.test(href)){href=resolveUrl(this.options.baseUrl,href)}var out="<img src=\""+href+"\" alt=\""+text+"\"";if(title){out+=" title=\""+title+"\""}out+=this.options.xhtml?"/>":">";return out};Renderer.prototype.text=function(text){return text};/**
+      * TextRenderer
+      * returns only the textual part of the token
+      */function TextRenderer(){}// no need for block level renderers
+TextRenderer.prototype.strong=TextRenderer.prototype.em=TextRenderer.prototype.codespan=TextRenderer.prototype.del=TextRenderer.prototype.text=function(text){return text};TextRenderer.prototype.link=TextRenderer.prototype.image=function(href,title,text){return""+text};TextRenderer.prototype.br=function(){return""};/**
+      * Parsing & Compiling
+      */function Parser(options){this.tokens=[];this.token=null;this.options=options||marked.defaults;this.options.renderer=this.options.renderer||new Renderer;this.renderer=this.options.renderer;this.renderer.options=this.options}/**
+     * Static Parse Method
+     */Parser.parse=function(src,options){var parser=new Parser(options);return parser.parse(src)};/**
+      * Parse Loop
+      */Parser.prototype.parse=function(src){this.inline=new InlineLexer(src.links,this.options);// use an InlineLexer with a TextRenderer to extract pure text
+this.inlineText=new InlineLexer(src.links,merge({},this.options,{renderer:new TextRenderer}));this.tokens=src.reverse();var out="";while(this.next()){out+=this.tok()}return out};/**
+      * Next Token
+      */Parser.prototype.next=function(){return this.token=this.tokens.pop()};/**
+      * Preview Next Token
+      */Parser.prototype.peek=function(){return this.tokens[this.tokens.length-1]||0};/**
+      * Parse Text Tokens
+      */Parser.prototype.parseText=function(){var body=this.token.text;while("text"===this.peek().type){body+="\n"+this.next().text}return this.inline.output(body)};/**
+      * Parse Current Token
+      */Parser.prototype.tok=function(){switch(this.token.type){case"space":{return""}case"hr":{return this.renderer.hr()}case"heading":{return this.renderer.heading(this.inline.output(this.token.text),this.token.depth,unescape(this.inlineText.output(this.token.text)))}case"code":{return this.renderer.code(this.token.text,this.token.lang,this.token.escaped)}case"table":{var header="",body="",i,row,cell,j;// header
+cell="";for(i=0;i<this.token.header.length;i++){cell+=this.renderer.tablecell(this.inline.output(this.token.header[i]),{header:!0,align:this.token.align[i]})}header+=this.renderer.tablerow(cell);for(i=0;i<this.token.cells.length;i++){row=this.token.cells[i];cell="";for(j=0;j<row.length;j++){cell+=this.renderer.tablecell(this.inline.output(row[j]),{header:!1,align:this.token.align[j]})}body+=this.renderer.tablerow(cell)}return this.renderer.table(header,body)}case"blockquote_start":{body="";while("blockquote_end"!==this.next().type){body+=this.tok()}return this.renderer.blockquote(body)}case"list_start":{body="";var ordered=this.token.ordered,start=this.token.start;while("list_end"!==this.next().type){body+=this.tok()}return this.renderer.list(body,ordered,start)}case"list_item_start":{body="";while("list_item_end"!==this.next().type){body+="text"===this.token.type?this.parseText():this.tok()}return this.renderer.listitem(body)}case"loose_item_start":{body="";while("list_item_end"!==this.next().type){body+=this.tok()}return this.renderer.listitem(body)}case"html":{var html=!this.token.pre&&!this.options.pedantic?this.inline.output(this.token.text):this.token.text;return this.renderer.html(html)}case"paragraph":{return this.renderer.paragraph(this.inline.output(this.token.text))}case"text":{return this.renderer.paragraph(this.parseText())}}};/**
+      * Helpers
+      */function escape(html,encode){return html.replace(!encode?/&(?!#?\w+;)/g:/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;")}function unescape(html){// explicitly match decimal, hex, and named HTML entities
+return html.replace(/&(#(?:\d+)|(?:#x[0-9A-Fa-f]+)|(?:\w+));?/ig,function(_,n){n=n.toLowerCase();if("colon"===n)return":";if("#"===n.charAt(0)){return"x"===n.charAt(1)?String.fromCharCode(parseInt(n.substring(2),16)):String.fromCharCode(+n.substring(1))}return""})}function edit(regex,opt){regex=regex.source;opt=opt||"";return{replace:function(name,val){val=val.source||val;val=val.replace(/(^|[^\[])\^/g,"$1");regex=regex.replace(name,val);return this},getRegex:function(){return new RegExp(regex,opt)}}}function resolveUrl(base,href){if(!baseUrls[" "+base]){// we can ignore everything in base after the last slash of its path component,
+// but we might need to add _that_
+// https://tools.ietf.org/html/rfc3986#section-3
+if(/^[^:]+:\/*[^/]*$/.test(base)){baseUrls[" "+base]=base+"/"}else{baseUrls[" "+base]=base.replace(/[^/]*$/,"")}}base=baseUrls[" "+base];if("//"===href.slice(0,2)){return base.replace(/:[\s\S]*/,":")+href}else if("/"===href.charAt(0)){return base.replace(/(:\/*[^/]*)[\s\S]*/,"$1")+href}else{return base+href}}var baseUrls={},originIndependentUrl=/^$|^[a-z][a-z0-9+.-]*:|^[?#]/i;function noop(){}noop.exec=noop;function merge(obj){var i=1,target,key;for(;i<arguments.length;i++){target=arguments[i];for(key in target){if(Object.prototype.hasOwnProperty.call(target,key)){obj[key]=target[key]}}}return obj}/**
+     * Marked
+     */function marked(src,opt,callback){// throw error in case of non string input
+if("undefined"===typeof src||null===src){throw new Error("marked(): input parameter is undefined or null")}if("string"!==typeof src){throw new Error("marked(): input parameter is of type "+Object.prototype.toString.call(src)+", string expected")}if(callback||"function"===typeof opt){if(!callback){callback=opt;opt=null}opt=merge({},marked.defaults,opt||{});var highlight=opt.highlight,tokens,pending,i=0;try{tokens=Lexer.lex(src,opt)}catch(e){return callback(e)}pending=tokens.length;var done=function(err){if(err){opt.highlight=highlight;return callback(err)}var out;try{out=Parser.parse(tokens,opt)}catch(e){err=e}opt.highlight=highlight;return err?callback(err):callback(null,out)};if(!highlight||3>highlight.length){return done()}delete opt.highlight;if(!pending)return done();for(;i<tokens.length;i++){(function(token){if("code"!==token.type){return--pending||done()}return highlight(token.text,token.lang,function(err,code){if(err)return done(err);if(null==code||code===token.text){return--pending||done()}token.text=code;token.escaped=!0;--pending||done()})})(tokens[i])}return}try{if(opt)opt=merge({},marked.defaults,opt);return Parser.parse(Lexer.lex(src,opt),opt)}catch(e){e.message+="\nPlease report this to https://github.com/markedjs/marked.";if((opt||marked.defaults).silent){return"<p>An error occurred:</p><pre>"+escape(e.message+"",!0)+"</pre>"}throw e}}/**
+     * Options
+     */marked.options=marked.setOptions=function(opt){merge(marked.defaults,opt);return marked};marked.defaults={gfm:!0,tables:!0,breaks:!1,pedantic:!1,sanitize:!1,sanitizer:null,mangle:!0,smartLists:!1,silent:!1,highlight:null,langPrefix:"lang-",smartypants:!1,headerPrefix:"",renderer:new Renderer,xhtml:!1,baseUrl:null};/**
+      * Expose
+      */marked.Parser=Parser;marked.parser=Parser.parse;marked.Renderer=Renderer;marked.TextRenderer=TextRenderer;marked.Lexer=Lexer;marked.lexer=Lexer.lex;marked.InlineLexer=InlineLexer;marked.inlineLexer=InlineLexer.output;marked.parse=marked;if("undefined"!==typeof module&&"object"===typeof exports){module.exports=marked}else if("function"===typeof define&&define.amd){define(function(){return marked})}else{root.marked=marked}})(void 0||("undefined"!==typeof window?window:global));var marked$1={};if(!window.marked){// For webpack support for the Polymer 3 version created by the Polymer
+// Modulizer More info:
+// https://github.com/PolymerElements/marked-element/issues/81
+window.marked=marked$1}Polymer({_template:html`
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <slot name="markdown-html">
+      <div id="content"></div>
+    </slot>
+  `,is:"marked-element",properties:{/**
+     * The markdown source that should be rendered by this element.
+     */markdown:{type:String,value:null},/**
+     * Enable GFM line breaks (regular newlines instead of two spaces for
+     * breaks)
+     */breaks:{type:Boolean,value:!1},/**
+     * Conform to obscure parts of markdown.pl as much as possible. Don't fix
+     * any of the original markdown bugs or poor behavior.
+     */pedantic:{type:Boolean,value:!1},/**
+     * Function used to customize a renderer based on the [API specified in the
+     * Marked
+     * library](https://github.com/chjj/marked#overriding-renderer-methods).
+     * It takes one argument: a marked renderer object, which is mutated by the
+     * function.
+     */renderer:{type:Function,value:null},/**
+     * Sanitize the output. Ignore any HTML that has been input.
+     */sanitize:{type:Boolean,value:!1},/**
+     * Function used to customize a sanitize behavior.
+     * It takes one argument: element String without text Contents.
+     *
+     * e.g. `<div>` `<a href="/">` `</p>'.
+     * Note: To enable this function, must set `sanitize` to true.
+     * WARNING: If you are using this option to untrusted text, you must to
+     * prevent XSS Attacks.
+     */sanitizer:{type:Function,value:null},/**
+     * If true, disables the default sanitization of any markdown received by
+     * a request and allows fetched unsanitized markdown
+     *
+     * e.g. fetching markdown via `src` that has HTML.
+     * Note: this value overrides `sanitize` if a request is made.
+     */disableRemoteSanitization:{type:Boolean,value:!1},/**
+     * Use "smart" typographic punctuation for things like quotes and dashes.
+     */smartypants:{type:Boolean,value:!1},/**
+     * Callback function invoked by Marked after HTML has been rendered.
+     * It must take two arguments: err and text and must return the resulting
+     * text.
+     */callback:{type:Function,value:null},/**
+     * A reference to the XMLHttpRequest instance used to generate the
+     * network request.
+     *
+     * @type {XMLHttpRequest}
+     */xhr:{type:Object,notify:!0,readOnly:!0}},observers:["render(markdown, breaks, pedantic, renderer, sanitize, sanitizer, smartypants, callback)"],ready:function(){if(this.markdown){return}// Use the Markdown from the first `<script>` descendant whose MIME type
+// starts with "text/markdown". Script elements beyond the first are
+// ignored.
+this._markdownElement=dom(this).querySelector("[type=\"text/markdown\"]");if(!this._markdownElement){return}if(this._markdownElement.src){this._request(this._markdownElement.src)}if(""!==this._markdownElement.textContent.trim()){this.markdown=this._unindent(this._markdownElement.textContent)}var observer=new MutationObserver(this._onScriptAttributeChanged.bind(this));observer.observe(this._markdownElement,{attributes:!0})},/**
+   * Renders `markdown` to HTML when the element is attached.
+   *
+   * This serves a dual purpose:
+   *
+   *  * Prevents unnecessary work (no need to render when not visible).
+   *
+   *  * `attached` fires top-down, so we can give ancestors a chance to
+   *    register listeners for the `syntax-highlight` event _before_ we render
+   *    any markdown.
+   *
+   */attached:function(){this._attached=!0;this._outputElement=this.outputElement;this.render()},detached:function(){this._attached=!1},/**
+   * Unindents the markdown source that will be rendered.
+   *
+   * @param {string} text
+   * @return {string}
+   */unindent:function(text){return this._unindent(text)},get outputElement(){var child=dom(this).queryDistributedElements("[slot=\"markdown-html\"]")[0];return child||this.$.content},/**
+   * The `marked-render-complete` event is fired once Markdown to HTML
+   * conversion has finished, and the DOM has been populated via the resulting
+   * HTML.
+   *
+   * @event marked-render-complete
+   */ /**
+       * Renders `markdown` into this element's DOM.
+       *
+       * This is automatically called whenever the `markdown` property is changed.
+       *
+       * The only case where you should be calling this is if you are providing
+       * markdown via `<script type="text/markdown">` after this element has been
+       * constructed (or updating that markdown).
+       */render:function(){if(!this._attached){return};if(!this.markdown){dom(this._outputElement).innerHTML="";return}var renderer=new marked.Renderer;if(this.renderer){this.renderer(renderer)}var opts={renderer:renderer,highlight:this._highlight.bind(this),breaks:this.breaks,sanitize:this.sanitize,sanitizer:this.sanitizer,pedantic:this.pedantic,smartypants:this.smartypants};dom(this._outputElement).innerHTML=marked(this.markdown,opts,this.callback);this.fire("marked-render-complete",{},{composed:!0})},/**
+   * Fired when the content is being processed and before it is rendered.
+   * Provides an opportunity to highlight code blocks based on the programming
+   * language used. This is also known as syntax highlighting. One example would
+   * be to use a prebuilt syntax highlighting library, e.g with
+   * [highlightjs](https://highlightjs.org/).
+   *
+   * @param {string} code
+   * @param {string} lang
+   * @return {string}
+   * @event syntax-highlight
+   */_highlight:function(code,lang){var event=this.fire("syntax-highlight",{code:code,lang:lang},{composed:!0});return event.detail.code||code},/**
+   * @param {string} text
+   * @return {string}
+   */_unindent:function(text){if(!text)return text;var lines=text.replace(/\t/g,"  ").split("\n"),indent=lines.reduce(function(prev,line){if(/^\s*$/.test(line))return prev;// Completely ignore blank lines.
+var lineIndent=line.match(/^(\s*)/)[0].length;if(null===prev)return lineIndent;return lineIndent<prev?lineIndent:prev},null);return lines.map(function(l){return l.substr(indent)}).join("\n")},/**
+   * Fired when the XHR finishes loading
+   *
+   * @param {string} url
+   * @event marked-loadend
+   */_request:function(url){this._setXhr(new XMLHttpRequest);var xhr=this.xhr;if(0<xhr.readyState){return null}xhr.addEventListener("error",this._handleError.bind(this));xhr.addEventListener("loadend",function(e){var status=this.xhr.status||0;// Note: if we are using the file:// protocol, the status code will be 0
+// for all outcomes (successful or otherwise).
+if(0===status||200<=status&&300>status){this.sanitize=!this.disableRemoteSanitization;this.markdown=e.target.response}else{this._handleError(e)}this.fire("marked-loadend",e)}.bind(this));xhr.open("GET",url);xhr.setRequestHeader("Accept","text/markdown");xhr.send()},/**
+   * Fired when an error is received while fetching remote markdown content.
+   *
+   * @param {!Event} e
+   * @event marked-request-error
+   */_handleError:function(e){var evt=this.fire("marked-request-error",e,{cancelable:!0});if(!evt.defaultPrevented){this.markdown="Failed loading markdown source"}},/**
+   * @param {!Array<!MutationRecord>} mutation
+   */_onScriptAttributeChanged:function(mutation){if("src"!==mutation[0].attributeName){return}this._request(this._markdownElement.src)}});const NeonAnimationBehavior={properties:{/**
+     * Defines the animation timing.
+     */animationTiming:{type:Object,value:function(){return{duration:500,easing:"cubic-bezier(0.4, 0, 0.2, 1)",fill:"both"}}}},/**
+   * Can be used to determine that elements implement this behavior.
+   */isNeonAnimation:!0,/**
+   * Do any animation configuration here.
+   */ // configure: function(config) {
+// },
+created:function(){if(!document.body.animate){console.warn("No web animations detected. This element will not"+" function without a web animations polyfill.")}},/**
+   * Returns the animation timing by mixing in properties from `config` to the
+   * defaults defined by the animation.
+   */timingFromConfig:function(config){if(config.timing){for(var property in config.timing){this.animationTiming[property]=config.timing[property]}}return this.animationTiming},/**
+   * Sets `transform` and `transformOrigin` properties along with the prefixed
+   * versions.
+   */setPrefixedProperty:function(node,property,value){for(var map={transform:["webkitTransform"],transformOrigin:["mozTransformOrigin","webkitTransformOrigin"]},prefixes=map[property],prefix,index=0;prefix=prefixes[index];index++){node.style[prefix]=value}node.style[property]=value},/**
+   * Called when the animation finishes.
+   */complete:function(config){}};_exports.NeonAnimationBehavior=NeonAnimationBehavior;var neonAnimationBehavior={NeonAnimationBehavior:NeonAnimationBehavior};_exports.$neonAnimationBehavior=neonAnimationBehavior;Polymer({is:"fade-in-animation",behaviors:[NeonAnimationBehavior],configure:function(config){var node=config.node;this._effect=new KeyframeEffect(node,[{opacity:"0"},{opacity:"1"}],this.timingFromConfig(config));return this._effect}});Polymer({is:"fade-out-animation",behaviors:[NeonAnimationBehavior],configure:function(config){var node=config.node;this._effect=new KeyframeEffect(node,[{opacity:"1"},{opacity:"0"}],this.timingFromConfig(config));return this._effect}});var Utility={distance:function(x1,y1,x2,y2){var xDelta=x1-x2,yDelta=y1-y2;return Math.sqrt(xDelta*xDelta+yDelta*yDelta)},now:window.performance&&window.performance.now?window.performance.now.bind(window.performance):Date.now};/**
     * @param {HTMLElement} element
     * @constructor
     */function ElementMetrics(element){this.element=element;this.width=this.boundingRect.width;this.height=this.boundingRect.height;this.size=Math.max(this.width,this.height)}ElementMetrics.prototype={get boundingRect(){return this.element.getBoundingClientRect()},furthestCornerDistanceFrom:function(x,y){var topLeft=Utility.distance(x,y,0,0),topRight=Utility.distance(x,y,this.width,0),bottomLeft=Utility.distance(x,y,0,this.height),bottomRight=Utility.distance(x,y,this.width,this.height);return Math.max(topLeft,topRight,bottomLeft,bottomRight)}};/**
@@ -15692,7 +16197,11 @@ if(this.hasRipple()&&1>this.getRipple().ripples.length){this._ripple.uiDownActio
    * create a ripple up effect.
    *
    * @param {!KeyboardEvent} event .
-   */_spaceKeyUpHandler:function(event){IronButtonStateImpl._spaceKeyUpHandler.call(this,event);if(this.hasRipple()){this._ripple.uiUpAction()}}};/** @polymerBehavior */_exports.PaperButtonBehaviorImpl=PaperButtonBehaviorImpl;const PaperButtonBehavior=[IronButtonState,IronControlState,PaperRippleBehavior,PaperButtonBehaviorImpl];_exports.PaperButtonBehavior=PaperButtonBehavior;var paperButtonBehavior={PaperButtonBehaviorImpl:PaperButtonBehaviorImpl,PaperButtonBehavior:PaperButtonBehavior};_exports.$paperButtonBehavior=paperButtonBehavior;const PaperInkyFocusBehaviorImpl={observers:["_focusedChanged(receivedFocusFromKeyboard)"],_focusedChanged:function(receivedFocusFromKeyboard){if(receivedFocusFromKeyboard){this.ensureRipple()}if(this.hasRipple()){this._ripple.holdDown=receivedFocusFromKeyboard}},_createRipple:function(){var ripple=PaperRippleBehavior._createRipple();ripple.id="ink";ripple.setAttribute("center","");ripple.classList.add("circle");return ripple}};/** @polymerBehavior */_exports.PaperInkyFocusBehaviorImpl=PaperInkyFocusBehaviorImpl;const PaperInkyFocusBehavior=[IronButtonState,IronControlState,PaperRippleBehavior,PaperInkyFocusBehaviorImpl];_exports.PaperInkyFocusBehavior=PaperInkyFocusBehavior;var paperInkyFocusBehavior={PaperInkyFocusBehaviorImpl:PaperInkyFocusBehaviorImpl,PaperInkyFocusBehavior:PaperInkyFocusBehavior};_exports.$paperInkyFocusBehavior=paperInkyFocusBehavior;const template$3=html`
+   */_spaceKeyUpHandler:function(event){IronButtonStateImpl._spaceKeyUpHandler.call(this,event);if(this.hasRipple()){this._ripple.uiUpAction()}}};/** @polymerBehavior */_exports.PaperButtonBehaviorImpl=PaperButtonBehaviorImpl;const PaperButtonBehavior=[IronButtonState,IronControlState,PaperRippleBehavior,PaperButtonBehaviorImpl];_exports.PaperButtonBehavior=PaperButtonBehavior;var paperButtonBehavior={PaperButtonBehaviorImpl:PaperButtonBehaviorImpl,PaperButtonBehavior:PaperButtonBehavior};_exports.$paperButtonBehavior=paperButtonBehavior;const PaperInkyFocusBehaviorImpl={observers:["_focusedChanged(receivedFocusFromKeyboard)"],_focusedChanged:function(receivedFocusFromKeyboard){if(receivedFocusFromKeyboard){this.ensureRipple()}if(this.hasRipple()){this._ripple.holdDown=receivedFocusFromKeyboard}},_createRipple:function(){var ripple=PaperRippleBehavior._createRipple();ripple.id="ink";ripple.setAttribute("center","");ripple.classList.add("circle");return ripple}};/** @polymerBehavior */_exports.PaperInkyFocusBehaviorImpl=PaperInkyFocusBehaviorImpl;const PaperInkyFocusBehavior=[IronButtonState,IronControlState,PaperRippleBehavior,PaperInkyFocusBehaviorImpl];_exports.PaperInkyFocusBehavior=PaperInkyFocusBehavior;var paperInkyFocusBehavior={PaperInkyFocusBehaviorImpl:PaperInkyFocusBehaviorImpl,PaperInkyFocusBehavior:PaperInkyFocusBehavior};_exports.$paperInkyFocusBehavior=paperInkyFocusBehavior;const PaperCheckedElementBehaviorImpl={/**
+   * Synchronizes the element's checked state with its ripple effect.
+   */_checkedChanged:function(){IronCheckedElementBehaviorImpl._checkedChanged.call(this);if(this.hasRipple()){if(this.checked){this._ripple.setAttribute("checked","")}else{this._ripple.removeAttribute("checked")}}},/**
+   * Synchronizes the element's `active` and `checked` state.
+   */_buttonStateChanged:function(){PaperRippleBehavior._buttonStateChanged.call(this);if(this.disabled){return}if(this.isAttached){this.checked=this.active}}};/** @polymerBehavior */_exports.PaperCheckedElementBehaviorImpl=PaperCheckedElementBehaviorImpl;const PaperCheckedElementBehavior=[PaperInkyFocusBehavior,IronCheckedElementBehavior,PaperCheckedElementBehaviorImpl];_exports.PaperCheckedElementBehavior=PaperCheckedElementBehavior;var paperCheckedElementBehavior={PaperCheckedElementBehaviorImpl:PaperCheckedElementBehaviorImpl,PaperCheckedElementBehavior:PaperCheckedElementBehavior};_exports.$paperCheckedElementBehavior=paperCheckedElementBehavior;const template$3=html`
 <custom-style>
   <style is="custom-style">
     html {
@@ -16781,77 +17290,76 @@ this.dialogElement=this.dialogElement||this.parentElement;// Check if dialog imp
 if(this.dialogElement&&this.dialogElement.behaviors&&0<=this.dialogElement.behaviors.indexOf(PaperDialogBehaviorImpl)){this.dialogElement.sizingTarget=this.scrollTarget;this.scrollTarget.classList.remove("fit")}else if(this.dialogElement){this.scrollTarget.classList.add("fit")}}});Polymer({_template:html`
     <style include="paper-dialog-shared-styles"></style>
     <slot></slot>
-`,is:"paper-dialog",behaviors:[PaperDialogBehavior,NeonAnimationRunnerBehavior],listeners:{"neon-animation-finish":"_onNeonAnimationFinish"},_renderOpened:function(){this.cancelAnimation();this.playAnimation("entry")},_renderClosed:function(){this.cancelAnimation();this.playAnimation("exit")},_onNeonAnimationFinish:function(){if(this.opened){this._finishRenderOpened()}else{this._finishRenderClosed()}}});Polymer({is:"paper-icon-button",_template:html`
+`,is:"paper-dialog",behaviors:[PaperDialogBehavior,NeonAnimationRunnerBehavior],listeners:{"neon-animation-finish":"_onNeonAnimationFinish"},_renderOpened:function(){this.cancelAnimation();this.playAnimation("entry")},_renderClosed:function(){this.cancelAnimation();this.playAnimation("exit")},_onNeonAnimationFinish:function(){if(this.opened){this._finishRenderOpened()}else{this._finishRenderClosed()}}});const $_documentContainer$2=document.createElement("template");$_documentContainer$2.setAttribute("style","display: none;");$_documentContainer$2.innerHTML=`<iron-iconset-svg name="paper-dropdown-menu" size="24">
+<svg><defs>
+<g id="arrow-drop-down"><path d="M7 10l5 5 5-5z"></path></g>
+</defs></svg>
+</iron-iconset-svg>`;document.head.appendChild($_documentContainer$2.content);const $_documentContainer$3=document.createElement("template");$_documentContainer$3.setAttribute("style","display: none;");$_documentContainer$3.innerHTML=`<dom-module id="paper-dropdown-menu-shared-styles">
+  <template>
     <style>
       :host {
         display: inline-block;
         position: relative;
-        padding: 8px;
-        outline: none;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        cursor: pointer;
-        z-index: 0;
-        line-height: 1;
+        text-align: left;
 
-        width: 40px;
-        height: 40px;
-
-        /*
-          NOTE: Both values are needed, since some phones require the value to
-          be \`transparent\`.
-        */
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        /* NOTE(cdata): Both values are needed, since some phones require the
+         * value to be \`transparent\`.
+         */
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
         -webkit-tap-highlight-color: transparent;
 
-        /* Because of polymer/2558, this style has lower specificity than * */
-        box-sizing: border-box !important;
+        --paper-input-container-input: {
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          max-width: 100%;
+          box-sizing: border-box;
+          cursor: pointer;
+        };
 
-        @apply --paper-icon-button;
-      }
-
-      :host #ink {
-        color: var(--paper-icon-button-ink-color, var(--primary-text-color));
-        opacity: 0.6;
+        @apply --paper-dropdown-menu;
       }
 
       :host([disabled]) {
-        color: var(--paper-icon-button-disabled-text, var(--disabled-text-color));
-        pointer-events: none;
-        cursor: auto;
-
-        @apply --paper-icon-button-disabled;
+        @apply --paper-dropdown-menu-disabled;
       }
 
-      :host([hidden]) {
-        display: none !important;
+      :host([noink]) paper-ripple {
+        display: none;
       }
 
-      :host(:hover) {
-        @apply --paper-icon-button-hover;
+      :host([no-label-float]) paper-ripple {
+        top: 8px;
+      }
+
+      paper-ripple {
+        top: 12px;
+        left: 0px;
+        bottom: 8px;
+        right: 0px;
+
+        @apply --paper-dropdown-menu-ripple;
+      }
+
+      paper-menu-button {
+        display: block;
+        padding: 0;
+
+        @apply --paper-dropdown-menu-button;
+      }
+
+      paper-input {
+        @apply --paper-dropdown-menu-input;
       }
 
       iron-icon {
-        --iron-icon-width: 100%;
-        --iron-icon-height: 100%;
+        color: var(--disabled-text-color);
+
+        @apply --paper-dropdown-menu-icon;
       }
     </style>
-
-    <iron-icon id="icon" src="[[src]]" icon="[[icon]]"
-               alt$="[[alt]]"></iron-icon>
-  `,hostAttributes:{role:"button",tabindex:"0"},behaviors:[PaperInkyFocusBehavior],registered:function(){this._template.setAttribute("strip-whitespace","")},properties:{/**
-     * The URL of an image for the icon. If the src property is specified,
-     * the icon property should not be.
-     */src:{type:String},/**
-     * Specifies the icon name or index in the set of icons available in
-     * the icon's icon set. If the icon property is specified,
-     * the src property should not be.
-     */icon:{type:String},/**
-     * Specifies the alternate text for the button, for accessibility.
-     */alt:{type:String,observer:"_altChanged"}},_altChanged:function(newValue,oldValue){var label=this.getAttribute("aria-label");// Don't stomp over a user-set aria-label.
-if(!label||oldValue==label){this.setAttribute("aria-label",newValue)}}});const PaperInputAddonBehavior={attached:function(){this.fire("addon-attached")},/**
+  </template>
+</dom-module>`;document.head.appendChild($_documentContainer$3.content);const PaperInputAddonBehavior={attached:function(){this.fire("addon-attached")},/**
    * The function called by `<paper-input-container>` when the input value or
    * validity changes.
    * @param {{
@@ -16862,221 +17370,7 @@ if(!label||oldValue==label){this.setAttribute("aria-label",newValue)}}});const P
    *     inputElement: The input element.
    *     value: The input value.
    *     invalid: True if the input value is invalid.
-   */update:function(state){}};_exports.PaperInputAddonBehavior=PaperInputAddonBehavior;var paperInputAddonBehavior={PaperInputAddonBehavior:PaperInputAddonBehavior};// aria-labelledby) and add-ons.
-_exports.$paperInputAddonBehavior=paperInputAddonBehavior;const PaperInputHelper={};_exports.PaperInputHelper=PaperInputHelper;PaperInputHelper.NextLabelID=1;PaperInputHelper.NextAddonID=1;PaperInputHelper.NextInputID=1;/**
-                                   * Use `PaperInputBehavior` to implement inputs with `<paper-input-container>`.
-                                   * This behavior is implemented by `<paper-input>`. It exposes a number of
-                                   * properties from `<paper-input-container>` and `<input is="iron-input">` and
-                                   * they should be bound in your template.
-                                   *
-                                   * The input element can be accessed by the `inputElement` property if you need
-                                   * to access properties or methods that are not exposed.
-                                   * @polymerBehavior PaperInputBehavior
-                                   */const PaperInputBehaviorImpl={properties:{/**
-     * Fired when the input changes due to user interaction.
-     *
-     * @event change
-     */ /**
-         * The label for this input. If you're using PaperInputBehavior to
-         * implement your own paper-input-like element, bind this to
-         * `<label>`'s content and `hidden` property, e.g.
-         * `<label hidden$="[[!label]]">[[label]]</label>` in your `template`
-         */label:{type:String},/**
-     * The value for this input. If you're using PaperInputBehavior to
-     * implement your own paper-input-like element, bind this to
-     * the `<iron-input>`'s `bindValue`
-     * property, or the value property of your input that is `notify:true`.
-     * @type {*}
-     */value:{notify:!0,type:String},/**
-     * Set to true to disable this input. If you're using PaperInputBehavior to
-     * implement your own paper-input-like element, bind this to
-     * both the `<paper-input-container>`'s and the input's `disabled` property.
-     */disabled:{type:Boolean,value:!1},/**
-     * Returns true if the value is invalid. If you're using PaperInputBehavior
-     * to implement your own paper-input-like element, bind this to both the
-     * `<paper-input-container>`'s and the input's `invalid` property.
-     *
-     * If `autoValidate` is true, the `invalid` attribute is managed
-     * automatically, which can clobber attempts to manage it manually.
-     */invalid:{type:Boolean,value:!1,notify:!0},/**
-     * Set this to specify the pattern allowed by `preventInvalidInput`. If
-     * you're using PaperInputBehavior to implement your own paper-input-like
-     * element, bind this to the `<input is="iron-input">`'s `allowedPattern`
-     * property.
-     */allowedPattern:{type:String},/**
-     * The type of the input. The supported types are the
-     * [native input's
-     * types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Form_<input>_types).
-     * If you're using PaperInputBehavior to implement your own paper-input-like
-     * element, bind this to the (Polymer 1) `<input is="iron-input">`'s or
-     * (Polymer 2)
-     * `<iron-input>`'s `type` property.
-     */type:{type:String},/**
-     * The datalist of the input (if any). This should match the id of an
-     * existing `<datalist>`. If you're using PaperInputBehavior to implement
-     * your own paper-input-like element, bind this to the `<input
-     * is="iron-input">`'s `list` property.
-     */list:{type:String},/**
-     * A pattern to validate the `input` with. If you're using
-     * PaperInputBehavior to implement your own paper-input-like element, bind
-     * this to the `<input is="iron-input">`'s `pattern` property.
-     */pattern:{type:String},/**
-     * Set to true to mark the input as required. If you're using
-     * PaperInputBehavior to implement your own paper-input-like element, bind
-     * this to the `<input is="iron-input">`'s `required` property.
-     */required:{type:Boolean,value:!1},/**
-     * The error message to display when the input is invalid. If you're using
-     * PaperInputBehavior to implement your own paper-input-like element,
-     * bind this to the `<paper-input-error>`'s content, if using.
-     */errorMessage:{type:String},/**
-     * Set to true to show a character counter.
-     */charCounter:{type:Boolean,value:!1},/**
-     * Set to true to disable the floating label. If you're using
-     * PaperInputBehavior to implement your own paper-input-like element, bind
-     * this to the `<paper-input-container>`'s `noLabelFloat` property.
-     */noLabelFloat:{type:Boolean,value:!1},/**
-     * Set to true to always float the label. If you're using PaperInputBehavior
-     * to implement your own paper-input-like element, bind this to the
-     * `<paper-input-container>`'s `alwaysFloatLabel` property.
-     */alwaysFloatLabel:{type:Boolean,value:!1},/**
-     * Set to true to auto-validate the input value. If you're using
-     * PaperInputBehavior to implement your own paper-input-like element, bind
-     * this to the `<paper-input-container>`'s `autoValidate` property.
-     */autoValidate:{type:Boolean,value:!1},/**
-     * Name of the validator to use. If you're using PaperInputBehavior to
-     * implement your own paper-input-like element, bind this to
-     * the `<input is="iron-input">`'s `validator` property.
-     */validator:{type:String},// HTMLInputElement attributes for binding if needed
-/**
-     * If you're using PaperInputBehavior to implement your own paper-input-like
-     * element, bind this to the `<input is="iron-input">`'s `autocomplete`
-     * property.
-     */autocomplete:{type:String,value:"off"},/**
-     * If you're using PaperInputBehavior to implement your own paper-input-like
-     * element, bind this to the `<input is="iron-input">`'s `autofocus`
-     * property.
-     */autofocus:{type:Boolean,observer:"_autofocusChanged"},/**
-     * If you're using PaperInputBehavior to implement your own paper-input-like
-     * element, bind this to the `<input is="iron-input">`'s `inputmode`
-     * property.
-     */inputmode:{type:String},/**
-     * The minimum length of the input value.
-     * If you're using PaperInputBehavior to implement your own paper-input-like
-     * element, bind this to the `<input is="iron-input">`'s `minlength`
-     * property.
-     */minlength:{type:Number},/**
-     * The maximum length of the input value.
-     * If you're using PaperInputBehavior to implement your own paper-input-like
-     * element, bind this to the `<input is="iron-input">`'s `maxlength`
-     * property.
-     */maxlength:{type:Number},/**
-     * The minimum (numeric or date-time) input value.
-     * If you're using PaperInputBehavior to implement your own paper-input-like
-     * element, bind this to the `<input is="iron-input">`'s `min` property.
-     */min:{type:String},/**
-     * The maximum (numeric or date-time) input value.
-     * Can be a String (e.g. `"2000-01-01"`) or a Number (e.g. `2`).
-     * If you're using PaperInputBehavior to implement your own paper-input-like
-     * element, bind this to the `<input is="iron-input">`'s `max` property.
-     */max:{type:String},/**
-     * Limits the numeric or date-time increments.
-     * If you're using PaperInputBehavior to implement your own paper-input-like
-     * element, bind this to the `<input is="iron-input">`'s `step` property.
-     */step:{type:String},/**
-     * If you're using PaperInputBehavior to implement your own paper-input-like
-     * element, bind this to the `<input is="iron-input">`'s `name` property.
-     */name:{type:String},/**
-     * A placeholder string in addition to the label. If this is set, the label
-     * will always float.
-     */placeholder:{type:String,// need to set a default so _computeAlwaysFloatLabel is run
-value:""},/**
-     * If you're using PaperInputBehavior to implement your own paper-input-like
-     * element, bind this to the `<input is="iron-input">`'s `readonly`
-     * property.
-     */readonly:{type:Boolean,value:!1},/**
-     * If you're using PaperInputBehavior to implement your own paper-input-like
-     * element, bind this to the `<input is="iron-input">`'s `size` property.
-     */size:{type:Number},// Nonstandard attributes for binding if needed
-/**
-     * If you're using PaperInputBehavior to implement your own paper-input-like
-     * element, bind this to the `<input is="iron-input">`'s `autocapitalize`
-     * property.
-     *
-     * @type {string}
-     */autocapitalize:{type:String,value:"none"},/**
-     * If you're using PaperInputBehavior to implement your own paper-input-like
-     * element, bind this to the `<input is="iron-input">`'s `autocorrect`
-     * property.
-     */autocorrect:{type:String,value:"off"},/**
-     * If you're using PaperInputBehavior to implement your own paper-input-like
-     * element, bind this to the `<input is="iron-input">`'s `autosave`
-     * property, used with type=search.
-     */autosave:{type:String},/**
-     * If you're using PaperInputBehavior to implement your own paper-input-like
-     * element, bind this to the `<input is="iron-input">`'s `results` property,
-     * used with type=search.
-     */results:{type:Number},/**
-     * If you're using PaperInputBehavior to implement your own paper-input-like
-     * element, bind this to the `<input is="iron-input">`'s `accept` property,
-     * used with type=file.
-     */accept:{type:String},/**
-     * If you're using PaperInputBehavior to implement your own paper-input-like
-     * element, bind this to the`<input is="iron-input">`'s `multiple` property,
-     * used with type=file.
-     */multiple:{type:Boolean},/** @private */_ariaDescribedBy:{type:String,value:""},/** @private */_ariaLabelledBy:{type:String,value:""},/** @private */_inputId:{type:String,value:""}},listeners:{"addon-attached":"_onAddonAttached"},/**
-   * @type {!Object}
-   */keyBindings:{"shift+tab:keydown":"_onShiftTabDown"},/** @private */hostAttributes:{tabindex:0},/**
-   * Returns a reference to the input element.
-   * @return {!HTMLElement}
-   */get inputElement(){// Chrome generates audit errors if an <input type="password"> has a
-// duplicate ID, which is almost always true in Shady DOM. Generate
-// a unique ID instead.
-if(!this.$){this.$={}}if(!this.$.input){this._generateInputId();this.$.input=this.$$("#"+this._inputId)}return this.$.input},/**
-   * Returns a reference to the focusable element.
-   * @return {!HTMLElement}
-   */get _focusableElement(){return this.inputElement},created:function(){// These types have some default placeholder text; overlapping
-// the label on top of it looks terrible. Auto-float the label in this case.
-this._typesThatHaveText=["date","datetime","datetime-local","month","time","week","file"]},attached:function(){this._updateAriaLabelledBy();// In the 2.0 version of the element, this is handled in `onIronInputReady`,
-// i.e. after the native input has finished distributing. In the 1.0
-// version, the input is in the shadow tree, so it's already available.
-if(!PolymerElement&&this.inputElement&&-1!==this._typesThatHaveText.indexOf(this.inputElement.type)){this.alwaysFloatLabel=!0}},_appendStringWithSpace:function(str,more){if(str){str=str+" "+more}else{str=more}return str},_onAddonAttached:function(event){var target=dom(event).rootTarget;if(target.id){this._ariaDescribedBy=this._appendStringWithSpace(this._ariaDescribedBy,target.id)}else{var id="paper-input-add-on-"+PaperInputHelper.NextAddonID++;target.id=id;this._ariaDescribedBy=this._appendStringWithSpace(this._ariaDescribedBy,id)}},/**
-   * Validates the input element and sets an error style if needed.
-   *
-   * @return {boolean}
-   */validate:function(){return this.inputElement.validate()},/**
-   * Forward focus to inputElement. Overriden from IronControlState.
-   */_focusBlurHandler:function(event){IronControlState._focusBlurHandler.call(this,event);// Forward the focus to the nested input.
-if(this.focused&&!this._shiftTabPressed&&this._focusableElement){this._focusableElement.focus()}},/**
-   * Handler that is called when a shift+tab keypress is detected by the menu.
-   *
-   * @param {CustomEvent} event A key combination event.
-   */_onShiftTabDown:function(event){var oldTabIndex=this.getAttribute("tabindex");this._shiftTabPressed=!0;this.setAttribute("tabindex","-1");this.async(function(){this.setAttribute("tabindex",oldTabIndex);this._shiftTabPressed=!1},1)},/**
-   * If `autoValidate` is true, then validates the element.
-   */_handleAutoValidate:function(){if(this.autoValidate)this.validate()},/**
-   * Restores the cursor to its original position after updating the value.
-   * @param {string} newValue The value that should be saved.
-   */updateValueAndPreserveCaret:function(newValue){// Not all elements might have selection, and even if they have the
-// right properties, accessing them might throw an exception (like for
-// <input type=number>)
-try{var start=this.inputElement.selectionStart;this.value=newValue;// The cursor automatically jumps to the end after re-setting the value,
-// so restore it to its original position.
-this.inputElement.selectionStart=start;this.inputElement.selectionEnd=start}catch(e){// Just set the value and give up on the caret.
-this.value=newValue}},_computeAlwaysFloatLabel:function(alwaysFloatLabel,placeholder){return placeholder||alwaysFloatLabel},_updateAriaLabelledBy:function(){var label=dom(this.root).querySelector("label");if(!label){this._ariaLabelledBy="";return}var labelledBy;if(label.id){labelledBy=label.id}else{labelledBy="paper-input-label-"+PaperInputHelper.NextLabelID++;label.id=labelledBy}this._ariaLabelledBy=labelledBy},_generateInputId:function(){if(!this._inputId||""===this._inputId){this._inputId="input-"+PaperInputHelper.NextInputID++}},_onChange:function(event){// In the Shadow DOM, the `change` event is not leaked into the
-// ancestor tree, so we must do this manually.
-// See
-// https://w3c.github.io/webcomponents/spec/shadow/#events-that-are-not-leaked-into-ancestor-trees.
-if(this.shadowRoot){this.fire(event.type,{sourceEvent:event},{node:this,bubbles:event.bubbles,cancelable:event.cancelable})}},_autofocusChanged:function(){// Firefox doesn't respect the autofocus attribute if it's applied after
-// the page is loaded (Chrome/WebKit do respect it), preventing an
-// autofocus attribute specified in markup from taking effect when the
-// element is upgraded. As a workaround, if the autofocus property is set,
-// and the focus hasn't already been moved elsewhere, we take focus.
-if(this.autofocus&&this._focusableElement){// In IE 11, the default document.activeElement can be the page's
-// outermost html element, but there are also cases (under the
-// polyfill?) in which the activeElement is not a real HTMLElement, but
-// just a plain object. We identify the latter case as having no valid
-// activeElement.
-var activeElement=document.activeElement,isActiveElementValid=activeElement instanceof HTMLElement,isSomeElementActive=isActiveElementValid&&activeElement!==document.body&&activeElement!==document.documentElement;/* IE 11 */if(!isSomeElementActive){// No specific element has taken the focus yet, so we can take it.
-this._focusableElement.focus()}}}};/** @polymerBehavior */_exports.PaperInputBehaviorImpl=PaperInputBehaviorImpl;const PaperInputBehavior=[IronControlState,IronA11yKeysBehavior,PaperInputBehaviorImpl];_exports.PaperInputBehavior=PaperInputBehavior;var paperInputBehavior={PaperInputHelper:PaperInputHelper,PaperInputBehaviorImpl:PaperInputBehaviorImpl,PaperInputBehavior:PaperInputBehavior};_exports.$paperInputBehavior=paperInputBehavior;Polymer({_template:html`
+   */update:function(state){}};_exports.PaperInputAddonBehavior=PaperInputAddonBehavior;var paperInputAddonBehavior={PaperInputAddonBehavior:PaperInputAddonBehavior};_exports.$paperInputAddonBehavior=paperInputAddonBehavior;Polymer({_template:html`
     <style>
       :host {
         display: inline-block;
@@ -17549,7 +17843,221 @@ if(label){this.$.labelAndInputContainer.style.position="relative"}if(invalid){cl
    *     inputElement: The input element.
    *     value: The input value.
    *     invalid: True if the input value is invalid.
-   */update:function(state){this._setInvalid(state.invalid)}});Polymer({is:"paper-input",_template:html`
+   */update:function(state){this._setInvalid(state.invalid)}});// aria-labelledby) and add-ons.
+const PaperInputHelper={};_exports.PaperInputHelper=PaperInputHelper;PaperInputHelper.NextLabelID=1;PaperInputHelper.NextAddonID=1;PaperInputHelper.NextInputID=1;/**
+                                   * Use `PaperInputBehavior` to implement inputs with `<paper-input-container>`.
+                                   * This behavior is implemented by `<paper-input>`. It exposes a number of
+                                   * properties from `<paper-input-container>` and `<input is="iron-input">` and
+                                   * they should be bound in your template.
+                                   *
+                                   * The input element can be accessed by the `inputElement` property if you need
+                                   * to access properties or methods that are not exposed.
+                                   * @polymerBehavior PaperInputBehavior
+                                   */const PaperInputBehaviorImpl={properties:{/**
+     * Fired when the input changes due to user interaction.
+     *
+     * @event change
+     */ /**
+         * The label for this input. If you're using PaperInputBehavior to
+         * implement your own paper-input-like element, bind this to
+         * `<label>`'s content and `hidden` property, e.g.
+         * `<label hidden$="[[!label]]">[[label]]</label>` in your `template`
+         */label:{type:String},/**
+     * The value for this input. If you're using PaperInputBehavior to
+     * implement your own paper-input-like element, bind this to
+     * the `<iron-input>`'s `bindValue`
+     * property, or the value property of your input that is `notify:true`.
+     * @type {*}
+     */value:{notify:!0,type:String},/**
+     * Set to true to disable this input. If you're using PaperInputBehavior to
+     * implement your own paper-input-like element, bind this to
+     * both the `<paper-input-container>`'s and the input's `disabled` property.
+     */disabled:{type:Boolean,value:!1},/**
+     * Returns true if the value is invalid. If you're using PaperInputBehavior
+     * to implement your own paper-input-like element, bind this to both the
+     * `<paper-input-container>`'s and the input's `invalid` property.
+     *
+     * If `autoValidate` is true, the `invalid` attribute is managed
+     * automatically, which can clobber attempts to manage it manually.
+     */invalid:{type:Boolean,value:!1,notify:!0},/**
+     * Set this to specify the pattern allowed by `preventInvalidInput`. If
+     * you're using PaperInputBehavior to implement your own paper-input-like
+     * element, bind this to the `<input is="iron-input">`'s `allowedPattern`
+     * property.
+     */allowedPattern:{type:String},/**
+     * The type of the input. The supported types are the
+     * [native input's
+     * types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Form_<input>_types).
+     * If you're using PaperInputBehavior to implement your own paper-input-like
+     * element, bind this to the (Polymer 1) `<input is="iron-input">`'s or
+     * (Polymer 2)
+     * `<iron-input>`'s `type` property.
+     */type:{type:String},/**
+     * The datalist of the input (if any). This should match the id of an
+     * existing `<datalist>`. If you're using PaperInputBehavior to implement
+     * your own paper-input-like element, bind this to the `<input
+     * is="iron-input">`'s `list` property.
+     */list:{type:String},/**
+     * A pattern to validate the `input` with. If you're using
+     * PaperInputBehavior to implement your own paper-input-like element, bind
+     * this to the `<input is="iron-input">`'s `pattern` property.
+     */pattern:{type:String},/**
+     * Set to true to mark the input as required. If you're using
+     * PaperInputBehavior to implement your own paper-input-like element, bind
+     * this to the `<input is="iron-input">`'s `required` property.
+     */required:{type:Boolean,value:!1},/**
+     * The error message to display when the input is invalid. If you're using
+     * PaperInputBehavior to implement your own paper-input-like element,
+     * bind this to the `<paper-input-error>`'s content, if using.
+     */errorMessage:{type:String},/**
+     * Set to true to show a character counter.
+     */charCounter:{type:Boolean,value:!1},/**
+     * Set to true to disable the floating label. If you're using
+     * PaperInputBehavior to implement your own paper-input-like element, bind
+     * this to the `<paper-input-container>`'s `noLabelFloat` property.
+     */noLabelFloat:{type:Boolean,value:!1},/**
+     * Set to true to always float the label. If you're using PaperInputBehavior
+     * to implement your own paper-input-like element, bind this to the
+     * `<paper-input-container>`'s `alwaysFloatLabel` property.
+     */alwaysFloatLabel:{type:Boolean,value:!1},/**
+     * Set to true to auto-validate the input value. If you're using
+     * PaperInputBehavior to implement your own paper-input-like element, bind
+     * this to the `<paper-input-container>`'s `autoValidate` property.
+     */autoValidate:{type:Boolean,value:!1},/**
+     * Name of the validator to use. If you're using PaperInputBehavior to
+     * implement your own paper-input-like element, bind this to
+     * the `<input is="iron-input">`'s `validator` property.
+     */validator:{type:String},// HTMLInputElement attributes for binding if needed
+/**
+     * If you're using PaperInputBehavior to implement your own paper-input-like
+     * element, bind this to the `<input is="iron-input">`'s `autocomplete`
+     * property.
+     */autocomplete:{type:String,value:"off"},/**
+     * If you're using PaperInputBehavior to implement your own paper-input-like
+     * element, bind this to the `<input is="iron-input">`'s `autofocus`
+     * property.
+     */autofocus:{type:Boolean,observer:"_autofocusChanged"},/**
+     * If you're using PaperInputBehavior to implement your own paper-input-like
+     * element, bind this to the `<input is="iron-input">`'s `inputmode`
+     * property.
+     */inputmode:{type:String},/**
+     * The minimum length of the input value.
+     * If you're using PaperInputBehavior to implement your own paper-input-like
+     * element, bind this to the `<input is="iron-input">`'s `minlength`
+     * property.
+     */minlength:{type:Number},/**
+     * The maximum length of the input value.
+     * If you're using PaperInputBehavior to implement your own paper-input-like
+     * element, bind this to the `<input is="iron-input">`'s `maxlength`
+     * property.
+     */maxlength:{type:Number},/**
+     * The minimum (numeric or date-time) input value.
+     * If you're using PaperInputBehavior to implement your own paper-input-like
+     * element, bind this to the `<input is="iron-input">`'s `min` property.
+     */min:{type:String},/**
+     * The maximum (numeric or date-time) input value.
+     * Can be a String (e.g. `"2000-01-01"`) or a Number (e.g. `2`).
+     * If you're using PaperInputBehavior to implement your own paper-input-like
+     * element, bind this to the `<input is="iron-input">`'s `max` property.
+     */max:{type:String},/**
+     * Limits the numeric or date-time increments.
+     * If you're using PaperInputBehavior to implement your own paper-input-like
+     * element, bind this to the `<input is="iron-input">`'s `step` property.
+     */step:{type:String},/**
+     * If you're using PaperInputBehavior to implement your own paper-input-like
+     * element, bind this to the `<input is="iron-input">`'s `name` property.
+     */name:{type:String},/**
+     * A placeholder string in addition to the label. If this is set, the label
+     * will always float.
+     */placeholder:{type:String,// need to set a default so _computeAlwaysFloatLabel is run
+value:""},/**
+     * If you're using PaperInputBehavior to implement your own paper-input-like
+     * element, bind this to the `<input is="iron-input">`'s `readonly`
+     * property.
+     */readonly:{type:Boolean,value:!1},/**
+     * If you're using PaperInputBehavior to implement your own paper-input-like
+     * element, bind this to the `<input is="iron-input">`'s `size` property.
+     */size:{type:Number},// Nonstandard attributes for binding if needed
+/**
+     * If you're using PaperInputBehavior to implement your own paper-input-like
+     * element, bind this to the `<input is="iron-input">`'s `autocapitalize`
+     * property.
+     *
+     * @type {string}
+     */autocapitalize:{type:String,value:"none"},/**
+     * If you're using PaperInputBehavior to implement your own paper-input-like
+     * element, bind this to the `<input is="iron-input">`'s `autocorrect`
+     * property.
+     */autocorrect:{type:String,value:"off"},/**
+     * If you're using PaperInputBehavior to implement your own paper-input-like
+     * element, bind this to the `<input is="iron-input">`'s `autosave`
+     * property, used with type=search.
+     */autosave:{type:String},/**
+     * If you're using PaperInputBehavior to implement your own paper-input-like
+     * element, bind this to the `<input is="iron-input">`'s `results` property,
+     * used with type=search.
+     */results:{type:Number},/**
+     * If you're using PaperInputBehavior to implement your own paper-input-like
+     * element, bind this to the `<input is="iron-input">`'s `accept` property,
+     * used with type=file.
+     */accept:{type:String},/**
+     * If you're using PaperInputBehavior to implement your own paper-input-like
+     * element, bind this to the`<input is="iron-input">`'s `multiple` property,
+     * used with type=file.
+     */multiple:{type:Boolean},/** @private */_ariaDescribedBy:{type:String,value:""},/** @private */_ariaLabelledBy:{type:String,value:""},/** @private */_inputId:{type:String,value:""}},listeners:{"addon-attached":"_onAddonAttached"},/**
+   * @type {!Object}
+   */keyBindings:{"shift+tab:keydown":"_onShiftTabDown"},/** @private */hostAttributes:{tabindex:0},/**
+   * Returns a reference to the input element.
+   * @return {!HTMLElement}
+   */get inputElement(){// Chrome generates audit errors if an <input type="password"> has a
+// duplicate ID, which is almost always true in Shady DOM. Generate
+// a unique ID instead.
+if(!this.$){this.$={}}if(!this.$.input){this._generateInputId();this.$.input=this.$$("#"+this._inputId)}return this.$.input},/**
+   * Returns a reference to the focusable element.
+   * @return {!HTMLElement}
+   */get _focusableElement(){return this.inputElement},created:function(){// These types have some default placeholder text; overlapping
+// the label on top of it looks terrible. Auto-float the label in this case.
+this._typesThatHaveText=["date","datetime","datetime-local","month","time","week","file"]},attached:function(){this._updateAriaLabelledBy();// In the 2.0 version of the element, this is handled in `onIronInputReady`,
+// i.e. after the native input has finished distributing. In the 1.0
+// version, the input is in the shadow tree, so it's already available.
+if(!PolymerElement&&this.inputElement&&-1!==this._typesThatHaveText.indexOf(this.inputElement.type)){this.alwaysFloatLabel=!0}},_appendStringWithSpace:function(str,more){if(str){str=str+" "+more}else{str=more}return str},_onAddonAttached:function(event){var target=dom(event).rootTarget;if(target.id){this._ariaDescribedBy=this._appendStringWithSpace(this._ariaDescribedBy,target.id)}else{var id="paper-input-add-on-"+PaperInputHelper.NextAddonID++;target.id=id;this._ariaDescribedBy=this._appendStringWithSpace(this._ariaDescribedBy,id)}},/**
+   * Validates the input element and sets an error style if needed.
+   *
+   * @return {boolean}
+   */validate:function(){return this.inputElement.validate()},/**
+   * Forward focus to inputElement. Overriden from IronControlState.
+   */_focusBlurHandler:function(event){IronControlState._focusBlurHandler.call(this,event);// Forward the focus to the nested input.
+if(this.focused&&!this._shiftTabPressed&&this._focusableElement){this._focusableElement.focus()}},/**
+   * Handler that is called when a shift+tab keypress is detected by the menu.
+   *
+   * @param {CustomEvent} event A key combination event.
+   */_onShiftTabDown:function(event){var oldTabIndex=this.getAttribute("tabindex");this._shiftTabPressed=!0;this.setAttribute("tabindex","-1");this.async(function(){this.setAttribute("tabindex",oldTabIndex);this._shiftTabPressed=!1},1)},/**
+   * If `autoValidate` is true, then validates the element.
+   */_handleAutoValidate:function(){if(this.autoValidate)this.validate()},/**
+   * Restores the cursor to its original position after updating the value.
+   * @param {string} newValue The value that should be saved.
+   */updateValueAndPreserveCaret:function(newValue){// Not all elements might have selection, and even if they have the
+// right properties, accessing them might throw an exception (like for
+// <input type=number>)
+try{var start=this.inputElement.selectionStart;this.value=newValue;// The cursor automatically jumps to the end after re-setting the value,
+// so restore it to its original position.
+this.inputElement.selectionStart=start;this.inputElement.selectionEnd=start}catch(e){// Just set the value and give up on the caret.
+this.value=newValue}},_computeAlwaysFloatLabel:function(alwaysFloatLabel,placeholder){return placeholder||alwaysFloatLabel},_updateAriaLabelledBy:function(){var label=dom(this.root).querySelector("label");if(!label){this._ariaLabelledBy="";return}var labelledBy;if(label.id){labelledBy=label.id}else{labelledBy="paper-input-label-"+PaperInputHelper.NextLabelID++;label.id=labelledBy}this._ariaLabelledBy=labelledBy},_generateInputId:function(){if(!this._inputId||""===this._inputId){this._inputId="input-"+PaperInputHelper.NextInputID++}},_onChange:function(event){// In the Shadow DOM, the `change` event is not leaked into the
+// ancestor tree, so we must do this manually.
+// See
+// https://w3c.github.io/webcomponents/spec/shadow/#events-that-are-not-leaked-into-ancestor-trees.
+if(this.shadowRoot){this.fire(event.type,{sourceEvent:event},{node:this,bubbles:event.bubbles,cancelable:event.cancelable})}},_autofocusChanged:function(){// Firefox doesn't respect the autofocus attribute if it's applied after
+// the page is loaded (Chrome/WebKit do respect it), preventing an
+// autofocus attribute specified in markup from taking effect when the
+// element is upgraded. As a workaround, if the autofocus property is set,
+// and the focus hasn't already been moved elsewhere, we take focus.
+if(this.autofocus&&this._focusableElement){// In IE 11, the default document.activeElement can be the page's
+// outermost html element, but there are also cases (under the
+// polyfill?) in which the activeElement is not a real HTMLElement, but
+// just a plain object. We identify the latter case as having no valid
+// activeElement.
+var activeElement=document.activeElement,isActiveElementValid=activeElement instanceof HTMLElement,isSomeElementActive=isActiveElementValid&&activeElement!==document.body&&activeElement!==document.documentElement;/* IE 11 */if(!isSomeElementActive){// No specific element has taken the focus yet, so we can take it.
+this._focusableElement.focus()}}}};/** @polymerBehavior */_exports.PaperInputBehaviorImpl=PaperInputBehaviorImpl;const PaperInputBehavior=[IronControlState,IronA11yKeysBehavior,PaperInputBehaviorImpl];_exports.PaperInputBehavior=PaperInputBehavior;var paperInputBehavior={PaperInputHelper:PaperInputHelper,PaperInputBehaviorImpl:PaperInputBehaviorImpl,PaperInputBehavior:PaperInputBehavior};_exports.$paperInputBehavior=paperInputBehavior;Polymer({is:"paper-input",_template:html`
     <style>
       :host {
         display: block;
@@ -17665,7 +18173,435 @@ type:String}},/**
 listeners:{"iron-input-ready":"_onIronInputReady"},_onIronInputReady:function(){// Even though this is only used in the next line, save this for
 // backwards compatibility, since the native input had this ID until 2.0.5.
 if(!this.$.nativeInput){this.$.nativeInput=this.$$("input")}if(this.inputElement&&-1!==this._typesThatHaveText.indexOf(this.$.nativeInput.type)){this.alwaysFloatLabel=!0}// Only validate when attached if the input already has a value.
-if(!!this.inputElement.bindValue){this.$.container._handleValueAndAutoValidate(this.inputElement)}}});const PaperItemBehaviorImpl={hostAttributes:{role:"option",tabindex:"0"}};/** @polymerBehavior */_exports.PaperItemBehaviorImpl=PaperItemBehaviorImpl;const PaperItemBehavior=[IronButtonState,IronControlState,PaperItemBehaviorImpl];_exports.PaperItemBehavior=PaperItemBehavior;var paperItemBehavior={PaperItemBehaviorImpl:PaperItemBehaviorImpl,PaperItemBehavior:PaperItemBehavior};_exports.$paperItemBehavior=paperItemBehavior;const $_documentContainer$2=document.createElement("template");$_documentContainer$2.setAttribute("style","display: none;");$_documentContainer$2.innerHTML=`<dom-module id="paper-item-shared-styles">
+if(!!this.inputElement.bindValue){this.$.container._handleValueAndAutoValidate(this.inputElement)}}});Polymer({is:"paper-menu-grow-height-animation",behaviors:[NeonAnimationBehavior],configure:function(config){var node=config.node,rect=node.getBoundingClientRect(),height=rect.height;this._effect=new KeyframeEffect(node,[{height:height/2+"px"},{height:height+"px"}],this.timingFromConfig(config));return this._effect}});Polymer({is:"paper-menu-grow-width-animation",behaviors:[NeonAnimationBehavior],configure:function(config){var node=config.node,rect=node.getBoundingClientRect(),width=rect.width;this._effect=new KeyframeEffect(node,[{width:width/2+"px"},{width:width+"px"}],this.timingFromConfig(config));return this._effect}});Polymer({is:"paper-menu-shrink-width-animation",behaviors:[NeonAnimationBehavior],configure:function(config){var node=config.node,rect=node.getBoundingClientRect(),width=rect.width;this._effect=new KeyframeEffect(node,[{width:width+"px"},{width:width-width/20+"px"}],this.timingFromConfig(config));return this._effect}});Polymer({is:"paper-menu-shrink-height-animation",behaviors:[NeonAnimationBehavior],configure:function(config){var node=config.node,rect=node.getBoundingClientRect(),height=rect.height;this.setPrefixedProperty(node,"transformOrigin","0 0");this._effect=new KeyframeEffect(node,[{height:height+"px",transform:"translateY(0)"},{height:height/2+"px",transform:"translateY(-20px)"}],this.timingFromConfig(config));return this._effect}});var config={ANIMATION_CUBIC_BEZIER:"cubic-bezier(.3,.95,.5,1)",MAX_ANIMATION_TIME_MS:400};/**
+   Material design: [Dropdown
+   buttons](https://www.google.com/design/spec/components/buttons.html#buttons-dropdown-buttons)
+   
+   `paper-menu-button` allows one to compose a designated "trigger" element with
+   another element that represents "content", to create a dropdown menu that
+   displays the "content" when the "trigger" is clicked.
+   
+   The child element assigned to the `dropdown-trigger` slot will be used as the
+   "trigger" element. The child element assigned to the `dropdown-content` slot
+   will be used as the "content" element.
+   
+   The `paper-menu-button` is sensitive to its content's `iron-select` events. If
+   the "content" element triggers an `iron-select` event, the `paper-menu-button`
+   will close automatically.
+   
+   Example:
+   
+       <paper-menu-button>
+         <paper-icon-button icon="menu"
+   slot="dropdown-trigger"></paper-icon-button> <paper-listbox
+   slot="dropdown-content"> <paper-item>Share</paper-item>
+           <paper-item>Settings</paper-item>
+           <paper-item>Help</paper-item>
+         </paper-listbox>
+       </paper-menu-button>
+   
+   ### Styling
+   
+   The following custom properties and mixins are also available for styling:
+   
+   Custom property | Description | Default
+   ----------------|-------------|----------
+   `--paper-menu-button-dropdown-background` | Background color of the paper-menu-button dropdown | `--primary-background-color`
+   `--paper-menu-button` | Mixin applied to the paper-menu-button | `{}`
+   `--paper-menu-button-disabled` | Mixin applied to the paper-menu-button when disabled | `{}`
+   `--paper-menu-button-dropdown` | Mixin applied to the paper-menu-button dropdown | `{}`
+   `--paper-menu-button-content` | Mixin applied to the paper-menu-button content | `{}`
+   
+   @hero hero.svg
+   @demo demo/index.html
+   */const PaperMenuButton=Polymer({_template:html`
+    <style>
+      :host {
+        display: inline-block;
+        position: relative;
+        padding: 8px;
+        outline: none;
+
+        @apply --paper-menu-button;
+      }
+
+      :host([disabled]) {
+        cursor: auto;
+        color: var(--disabled-text-color);
+
+        @apply --paper-menu-button-disabled;
+      }
+
+      iron-dropdown {
+        @apply --paper-menu-button-dropdown;
+      }
+
+      .dropdown-content {
+        @apply --shadow-elevation-2dp;
+
+        position: relative;
+        border-radius: 2px;
+        background-color: var(--paper-menu-button-dropdown-background, var(--primary-background-color));
+
+        @apply --paper-menu-button-content;
+      }
+
+      :host([vertical-align="top"]) .dropdown-content {
+        margin-bottom: 20px;
+        margin-top: -10px;
+        top: 10px;
+      }
+
+      :host([vertical-align="bottom"]) .dropdown-content {
+        bottom: 10px;
+        margin-bottom: -10px;
+        margin-top: 20px;
+      }
+
+      #trigger {
+        cursor: pointer;
+      }
+    </style>
+
+    <div id="trigger" on-tap="toggle">
+      <slot name="dropdown-trigger"></slot>
+    </div>
+
+    <iron-dropdown id="dropdown" opened="{{opened}}" horizontal-align="[[horizontalAlign]]" vertical-align="[[verticalAlign]]" dynamic-align="[[dynamicAlign]]" horizontal-offset="[[horizontalOffset]]" vertical-offset="[[verticalOffset]]" no-overlap="[[noOverlap]]" open-animation-config="[[openAnimationConfig]]" close-animation-config="[[closeAnimationConfig]]" no-animations="[[noAnimations]]" focus-target="[[_dropdownContent]]" allow-outside-scroll="[[allowOutsideScroll]]" restore-focus-on-close="[[restoreFocusOnClose]]" on-iron-overlay-canceled="__onIronOverlayCanceled">
+      <div slot="dropdown-content" class="dropdown-content">
+        <slot id="content" name="dropdown-content"></slot>
+      </div>
+    </iron-dropdown>
+`,is:"paper-menu-button",/**
+   * Fired when the dropdown opens.
+   *
+   * @event paper-dropdown-open
+   */ /**
+       * Fired when the dropdown closes.
+       *
+       * @event paper-dropdown-close
+       */behaviors:[IronA11yKeysBehavior,IronControlState],properties:{/**
+     * True if the content is currently displayed.
+     */opened:{type:Boolean,value:!1,notify:!0,observer:"_openedChanged"},/**
+     * The orientation against which to align the menu dropdown
+     * horizontally relative to the dropdown trigger.
+     */horizontalAlign:{type:String,value:"left",reflectToAttribute:!0},/**
+     * The orientation against which to align the menu dropdown
+     * vertically relative to the dropdown trigger.
+     */verticalAlign:{type:String,value:"top",reflectToAttribute:!0},/**
+     * If true, the `horizontalAlign` and `verticalAlign` properties will
+     * be considered preferences instead of strict requirements when
+     * positioning the dropdown and may be changed if doing so reduces
+     * the area of the dropdown falling outside of `fitInto`.
+     */dynamicAlign:{type:Boolean},/**
+     * A pixel value that will be added to the position calculated for the
+     * given `horizontalAlign`. Use a negative value to offset to the
+     * left, or a positive value to offset to the right.
+     */horizontalOffset:{type:Number,value:0,notify:!0},/**
+     * A pixel value that will be added to the position calculated for the
+     * given `verticalAlign`. Use a negative value to offset towards the
+     * top, or a positive value to offset towards the bottom.
+     */verticalOffset:{type:Number,value:0,notify:!0},/**
+     * If true, the dropdown will be positioned so that it doesn't overlap
+     * the button.
+     */noOverlap:{type:Boolean},/**
+     * Set to true to disable animations when opening and closing the
+     * dropdown.
+     */noAnimations:{type:Boolean,value:!1},/**
+     * Set to true to disable automatically closing the dropdown after
+     * a selection has been made.
+     */ignoreSelect:{type:Boolean,value:!1},/**
+     * Set to true to enable automatically closing the dropdown after an
+     * item has been activated, even if the selection did not change.
+     */closeOnActivate:{type:Boolean,value:!1},/**
+     * An animation config. If provided, this will be used to animate the
+     * opening of the dropdown.
+     */openAnimationConfig:{type:Object,value:function(){return[{name:"fade-in-animation",timing:{delay:100,duration:200}},{name:"paper-menu-grow-width-animation",timing:{delay:100,duration:150,easing:config.ANIMATION_CUBIC_BEZIER}},{name:"paper-menu-grow-height-animation",timing:{delay:100,duration:275,easing:config.ANIMATION_CUBIC_BEZIER}}]}},/**
+     * An animation config. If provided, this will be used to animate the
+     * closing of the dropdown.
+     */closeAnimationConfig:{type:Object,value:function(){return[{name:"fade-out-animation",timing:{duration:150}},{name:"paper-menu-shrink-width-animation",timing:{delay:100,duration:50,easing:config.ANIMATION_CUBIC_BEZIER}},{name:"paper-menu-shrink-height-animation",timing:{duration:200,easing:"ease-in"}}]}},/**
+     * By default, the dropdown will constrain scrolling on the page
+     * to itself when opened.
+     * Set to true in order to prevent scroll from being constrained
+     * to the dropdown when it opens.
+     */allowOutsideScroll:{type:Boolean,value:!1},/**
+     * Whether focus should be restored to the button when the menu closes.
+     */restoreFocusOnClose:{type:Boolean,value:!0},/**
+     * This is the element intended to be bound as the focus target
+     * for the `iron-dropdown` contained by `paper-menu-button`.
+     */_dropdownContent:{type:Object}},hostAttributes:{role:"group","aria-haspopup":"true"},listeners:{"iron-activate":"_onIronActivate","iron-select":"_onIronSelect"},/**
+   * The content element that is contained by the menu button, if any.
+   */get contentElement(){// Polymer 2.x returns slot.assignedNodes which can contain text nodes.
+for(var nodes=dom(this.$.content).getDistributedNodes(),i=0,l=nodes.length;i<l;i++){if(nodes[i].nodeType===Node.ELEMENT_NODE){return nodes[i]}}},/**
+   * Toggles the dropdown content between opened and closed.
+   */toggle:function(){if(this.opened){this.close()}else{this.open()}},/**
+   * Make the dropdown content appear as an overlay positioned relative
+   * to the dropdown trigger.
+   */open:function(){if(this.disabled){return}this.$.dropdown.open()},/**
+   * Hide the dropdown content.
+   */close:function(){this.$.dropdown.close()},/**
+   * When an `iron-select` event is received, the dropdown should
+   * automatically close on the assumption that a value has been chosen.
+   *
+   * @param {CustomEvent} event A CustomEvent instance with type
+   * set to `"iron-select"`.
+   */_onIronSelect:function(event){if(!this.ignoreSelect){this.close()}},/**
+   * Closes the dropdown when an `iron-activate` event is received if
+   * `closeOnActivate` is true.
+   *
+   * @param {CustomEvent} event A CustomEvent of type 'iron-activate'.
+   */_onIronActivate:function(event){if(this.closeOnActivate){this.close()}},/**
+   * When the dropdown opens, the `paper-menu-button` fires `paper-open`.
+   * When the dropdown closes, the `paper-menu-button` fires `paper-close`.
+   *
+   * @param {boolean} opened True if the dropdown is opened, otherwise false.
+   * @param {boolean} oldOpened The previous value of `opened`.
+   */_openedChanged:function(opened,oldOpened){if(opened){// TODO(cdata): Update this when we can measure changes in distributed
+// children in an idiomatic way.
+// We poke this property in case the element has changed. This will
+// cause the focus target for the `iron-dropdown` to be updated as
+// necessary:
+this._dropdownContent=this.contentElement;this.fire("paper-dropdown-open")}else if(null!=oldOpened){this.fire("paper-dropdown-close")}},/**
+   * If the dropdown is open when disabled becomes true, close the
+   * dropdown.
+   *
+   * @param {boolean} disabled True if disabled, otherwise false.
+   */_disabledChanged:function(disabled){IronControlState._disabledChanged.apply(this,arguments);if(disabled&&this.opened){this.close()}},__onIronOverlayCanceled:function(event){var uiEvent=event.detail,trigger=this.$.trigger,path=dom(uiEvent).path;if(-1<path.indexOf(trigger)){event.preventDefault()}}});_exports.PaperMenuButton=PaperMenuButton;Object.keys(config).forEach(function(key){PaperMenuButton[key]=config[key]});var paperMenuButton={PaperMenuButton:PaperMenuButton};_exports.$paperMenuButton=paperMenuButton;Polymer({_template:html`
+    <style include="paper-dropdown-menu-shared-styles"></style>
+
+    <!-- this div fulfills an a11y requirement for combobox, do not remove -->
+    <span role="button"></span>
+    <paper-menu-button id="menuButton" vertical-align="[[verticalAlign]]" horizontal-align="[[horizontalAlign]]" dynamic-align="[[dynamicAlign]]" vertical-offset="[[_computeMenuVerticalOffset(noLabelFloat, verticalOffset)]]" disabled="[[disabled]]" no-animations="[[noAnimations]]" on-iron-select="_onIronSelect" on-iron-deselect="_onIronDeselect" opened="{{opened}}" close-on-activate allow-outside-scroll="[[allowOutsideScroll]]" restore-focus-on-close="[[restoreFocusOnClose]]">
+      <!-- support hybrid mode: user might be using paper-menu-button 1.x which distributes via <content> -->
+      <div class="dropdown-trigger" slot="dropdown-trigger">
+        <paper-ripple></paper-ripple>
+        <!-- paper-input has type="text" for a11y, do not remove -->
+        <paper-input type="text" invalid="[[invalid]]" readonly disabled="[[disabled]]" value="[[value]]" placeholder="[[placeholder]]" error-message="[[errorMessage]]" always-float-label="[[alwaysFloatLabel]]" no-label-float="[[noLabelFloat]]" label="[[label]]">
+          <!-- support hybrid mode: user might be using paper-input 1.x which distributes via <content> -->
+          <iron-icon icon="paper-dropdown-menu:arrow-drop-down" suffix slot="suffix"></iron-icon>
+        </paper-input>
+      </div>
+      <slot id="content" name="dropdown-content" slot="dropdown-content"></slot>
+    </paper-menu-button>
+`,is:"paper-dropdown-menu",behaviors:[IronButtonState,IronControlState,IronFormElementBehavior,IronValidatableBehavior],properties:{/**
+     * The derived "label" of the currently selected item. This value
+     * is the `label` property on the selected item if set, or else the
+     * trimmed text content of the selected item.
+     */selectedItemLabel:{type:String,notify:!0,readOnly:!0},/**
+     * The last selected item. An item is selected if the dropdown menu has
+     * a child with slot `dropdown-content`, and that child triggers an
+     * `iron-select` event with the selected `item` in the `detail`.
+     *
+     * @type {?Object}
+     */selectedItem:{type:Object,notify:!0,readOnly:!0},/**
+     * The value for this element that will be used when submitting in
+     * a form. It reflects the value of `selectedItemLabel`. If set directly,
+     * it will not update the `selectedItemLabel` value.
+     */value:{type:String,notify:!0},/**
+     * The label for the dropdown.
+     */label:{type:String},/**
+     * The placeholder for the dropdown.
+     */placeholder:{type:String},/**
+     * The error message to display when invalid.
+     */errorMessage:{type:String},/**
+     * True if the dropdown is open. Otherwise, false.
+     */opened:{type:Boolean,notify:!0,value:!1,observer:"_openedChanged"},/**
+     * By default, the dropdown will constrain scrolling on the page
+     * to itself when opened.
+     * Set to true in order to prevent scroll from being constrained
+     * to the dropdown when it opens.
+     */allowOutsideScroll:{type:Boolean,value:!1},/**
+     * Set to true to disable the floating label. Bind this to the
+     * `<paper-input-container>`'s `noLabelFloat` property.
+     */noLabelFloat:{type:Boolean,value:!1,reflectToAttribute:!0},/**
+     * Set to true to always float the label. Bind this to the
+     * `<paper-input-container>`'s `alwaysFloatLabel` property.
+     */alwaysFloatLabel:{type:Boolean,value:!1},/**
+     * Set to true to disable animations when opening and closing the
+     * dropdown.
+     */noAnimations:{type:Boolean,value:!1},/**
+     * The orientation against which to align the menu dropdown
+     * horizontally relative to the dropdown trigger.
+     */horizontalAlign:{type:String,value:"right"},/**
+     * The orientation against which to align the menu dropdown
+     * vertically relative to the dropdown trigger.
+     */verticalAlign:{type:String,value:"top"},/**
+     * Overrides the vertical offset computed in
+     * _computeMenuVerticalOffset.
+     */verticalOffset:Number,/**
+     * If true, the `horizontalAlign` and `verticalAlign` properties will
+     * be considered preferences instead of strict requirements when
+     * positioning the dropdown and may be changed if doing so reduces
+     * the area of the dropdown falling outside of `fitInto`.
+     */dynamicAlign:{type:Boolean},/**
+     * Whether focus should be restored to the dropdown when the menu closes.
+     */restoreFocusOnClose:{type:Boolean,value:!0}},listeners:{tap:"_onTap"},/**
+   * @type {!Object}
+   */keyBindings:{"up down":"open",esc:"close"},hostAttributes:{role:"combobox","aria-autocomplete":"none","aria-haspopup":"true"},observers:["_selectedItemChanged(selectedItem)"],attached:function(){// NOTE(cdata): Due to timing, a preselected value in a `IronSelectable`
+// child will cause an `iron-select` event to fire while the element is
+// still in a `DocumentFragment`. This has the effect of causing
+// handlers not to fire. So, we double check this value on attached:
+var contentElement=this.contentElement;if(contentElement&&contentElement.selectedItem){this._setSelectedItem(contentElement.selectedItem)}},/**
+   * The content element that is contained by the dropdown menu, if any.
+   */get contentElement(){// Polymer 2.x returns slot.assignedNodes which can contain text nodes.
+for(var nodes=dom(this.$.content).getDistributedNodes(),i=0,l=nodes.length;i<l;i++){if(nodes[i].nodeType===Node.ELEMENT_NODE){return nodes[i]}}},/**
+   * Show the dropdown content.
+   */open:function(){this.$.menuButton.open()},/**
+   * Hide the dropdown content.
+   */close:function(){this.$.menuButton.close()},/**
+   * A handler that is called when `iron-select` is fired.
+   *
+   * @param {CustomEvent} event An `iron-select` event.
+   */_onIronSelect:function(event){this._setSelectedItem(event.detail.item)},/**
+   * A handler that is called when `iron-deselect` is fired.
+   *
+   * @param {CustomEvent} event An `iron-deselect` event.
+   */_onIronDeselect:function(event){this._setSelectedItem(null)},/**
+   * A handler that is called when the dropdown is tapped.
+   *
+   * @param {CustomEvent} event A tap event.
+   */_onTap:function(event){if(findOriginalTarget(event)===this){this.open()}},/**
+   * Compute the label for the dropdown given a selected item.
+   *
+   * @param {Element} selectedItem A selected Element item, with an
+   * optional `label` property.
+   */_selectedItemChanged:function(selectedItem){var value="";if(!selectedItem){value=""}else{value=selectedItem.label||selectedItem.getAttribute("label")||selectedItem.textContent.trim()}this.value=value;this._setSelectedItemLabel(value)},/**
+   * Compute the vertical offset of the menu based on the value of
+   * `noLabelFloat`.
+   *
+   * @param {boolean} noLabelFloat True if the label should not float
+   * @param {number=} opt_verticalOffset Optional offset from the user
+   * above the input, otherwise false.
+   */_computeMenuVerticalOffset:function(noLabelFloat,opt_verticalOffset){// Override offset if it's passed from the user.
+if(opt_verticalOffset){return opt_verticalOffset}// NOTE(cdata): These numbers are somewhat magical because they are
+// derived from the metrics of elements internal to `paper-input`'s
+// template. The metrics will change depending on whether or not the
+// input has a floating label.
+return noLabelFloat?-4:8},/**
+   * Returns false if the element is required and does not have a selection,
+   * and true otherwise.
+   * @param {*=} _value Ignored.
+   * @return {boolean} true if `required` is false, or if `required` is true
+   * and the element has a valid selection.
+   */_getValidity:function(_value){return this.disabled||!this.required||this.required&&!!this.value},_openedChanged:function(){var openState=this.opened?"true":"false",e=this.contentElement;if(e){e.setAttribute("aria-expanded",openState)}}});Polymer({is:"paper-icon-button",_template:html`
+    <style>
+      :host {
+        display: inline-block;
+        position: relative;
+        padding: 8px;
+        outline: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: pointer;
+        z-index: 0;
+        line-height: 1;
+
+        width: 40px;
+        height: 40px;
+
+        /*
+          NOTE: Both values are needed, since some phones require the value to
+          be \`transparent\`.
+        */
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: transparent;
+
+        /* Because of polymer/2558, this style has lower specificity than * */
+        box-sizing: border-box !important;
+
+        @apply --paper-icon-button;
+      }
+
+      :host #ink {
+        color: var(--paper-icon-button-ink-color, var(--primary-text-color));
+        opacity: 0.6;
+      }
+
+      :host([disabled]) {
+        color: var(--paper-icon-button-disabled-text, var(--disabled-text-color));
+        pointer-events: none;
+        cursor: auto;
+
+        @apply --paper-icon-button-disabled;
+      }
+
+      :host([hidden]) {
+        display: none !important;
+      }
+
+      :host(:hover) {
+        @apply --paper-icon-button-hover;
+      }
+
+      iron-icon {
+        --iron-icon-width: 100%;
+        --iron-icon-height: 100%;
+      }
+    </style>
+
+    <iron-icon id="icon" src="[[src]]" icon="[[icon]]"
+               alt$="[[alt]]"></iron-icon>
+  `,hostAttributes:{role:"button",tabindex:"0"},behaviors:[PaperInkyFocusBehavior],registered:function(){this._template.setAttribute("strip-whitespace","")},properties:{/**
+     * The URL of an image for the icon. If the src property is specified,
+     * the icon property should not be.
+     */src:{type:String},/**
+     * Specifies the icon name or index in the set of icons available in
+     * the icon's icon set. If the icon property is specified,
+     * the src property should not be.
+     */icon:{type:String},/**
+     * Specifies the alternate text for the button, for accessibility.
+     */alt:{type:String,observer:"_altChanged"}},_altChanged:function(newValue,oldValue){var label=this.getAttribute("aria-label");// Don't stomp over a user-set aria-label.
+if(!label||oldValue==label){this.setAttribute("aria-label",newValue)}}});Polymer({_template:html`
+    <style>
+      :host {
+        display: block;
+      }
+
+      :host([hidden]) {
+        display: none !important;
+      }
+
+      label {
+        pointer-events: none;
+      }
+    </style>
+
+    <paper-input-container no-label-float$="[[noLabelFloat]]" always-float-label="[[_computeAlwaysFloatLabel(alwaysFloatLabel,placeholder)]]" auto-validate$="[[autoValidate]]" disabled$="[[disabled]]" invalid="[[invalid]]">
+
+      <label hidden$="[[!label]]" aria-hidden="true" for$="[[_inputId]]" slot="label">[[label]]</label>
+
+      <iron-autogrow-textarea class="paper-input-input" slot="input" id$="[[_inputId]]" aria-labelledby$="[[_ariaLabelledBy]]" aria-describedby$="[[_ariaDescribedBy]]" bind-value="{{value}}" invalid="{{invalid}}" validator$="[[validator]]" disabled$="[[disabled]]" autocomplete$="[[autocomplete]]" autofocus$="[[autofocus]]" inputmode$="[[inputmode]]" name$="[[name]]" placeholder$="[[placeholder]]" readonly$="[[readonly]]" required$="[[required]]" minlength$="[[minlength]]" maxlength$="[[maxlength]]" autocapitalize$="[[autocapitalize]]" rows$="[[rows]]" max-rows$="[[maxRows]]" on-change="_onChange"></iron-autogrow-textarea>
+
+      <template is="dom-if" if="[[errorMessage]]">
+        <paper-input-error aria-live="assertive" slot="add-on">[[errorMessage]]</paper-input-error>
+      </template>
+
+      <template is="dom-if" if="[[charCounter]]">
+        <paper-input-char-counter slot="add-on"></paper-input-char-counter>
+      </template>
+
+    </paper-input-container>
+`,is:"paper-textarea",behaviors:[PaperInputBehavior,IronFormElementBehavior],properties:{_ariaLabelledBy:{observer:"_ariaLabelledByChanged",type:String},_ariaDescribedBy:{observer:"_ariaDescribedByChanged",type:String},value:{// Required for the correct TypeScript type-generation
+type:String},/**
+     * The initial number of rows.
+     *
+     * @attribute rows
+     * @type {number}
+     * @default 1
+     */rows:{type:Number,value:1},/**
+     * The maximum number of rows this element can grow to until it
+     * scrolls. 0 means no maximum.
+     *
+     * @attribute maxRows
+     * @type {number}
+     * @default 0
+     */maxRows:{type:Number,value:0}},/**
+   * @return {number}
+   */get selectionStart(){return this.$.input.textarea.selectionStart},set selectionStart(start){this.$.input.textarea.selectionStart=start},/**
+   * @return {number}
+   */get selectionEnd(){return this.$.input.textarea.selectionEnd},set selectionEnd(end){this.$.input.textarea.selectionEnd=end},_ariaLabelledByChanged:function(ariaLabelledBy){this._focusableElement.setAttribute("aria-labelledby",ariaLabelledBy)},_ariaDescribedByChanged:function(ariaDescribedBy){this._focusableElement.setAttribute("aria-describedby",ariaDescribedBy)},get _focusableElement(){return this.inputElement.textarea}});const PaperItemBehaviorImpl={hostAttributes:{role:"option",tabindex:"0"}};/** @polymerBehavior */_exports.PaperItemBehaviorImpl=PaperItemBehaviorImpl;const PaperItemBehavior=[IronButtonState,IronControlState,PaperItemBehaviorImpl];_exports.PaperItemBehavior=PaperItemBehavior;var paperItemBehavior={PaperItemBehaviorImpl:PaperItemBehaviorImpl,PaperItemBehavior:PaperItemBehavior};_exports.$paperItemBehavior=paperItemBehavior;const $_documentContainer$4=document.createElement("template");$_documentContainer$4.setAttribute("style","display: none;");$_documentContainer$4.innerHTML=`<dom-module id="paper-item-shared-styles">
   <template>
     <style>
       :host, .paper-item {
@@ -17719,7 +18655,7 @@ if(!!this.inputElement.bindValue){this.$.container._handleValueAndAutoValidate(t
       }
     </style>
   </template>
-</dom-module>`;document.head.appendChild($_documentContainer$2.content);Polymer({_template:html`
+</dom-module>`;document.head.appendChild($_documentContainer$4.content);Polymer({_template:html`
     <style include="paper-item-shared-styles">
       :host {
         @apply --layout-horizontal;
@@ -17919,7 +18855,209 @@ if(!!this.inputElement.bindValue){this.$.container._handleValueAndAutoValidate(t
      */disabled:{type:Boolean,value:!1,reflectToAttribute:!0,observer:"_disabledChanged"}},observers:["_progressChanged(secondaryProgress, value, min, max, indeterminate)"],hostAttributes:{role:"progressbar"},_toggleIndeterminate:function(indeterminate){// If we use attribute/class binding, the animation sometimes doesn't
 // translate properly on Safari 7.1. So instead, we toggle the class here in
 // the update method.
-this.toggleClass("indeterminate",indeterminate,this.$.primaryProgress)},_transformProgress:function(progress,ratio){var transform="scaleX("+ratio/100+")";progress.style.transform=progress.style.webkitTransform=transform},_mainRatioChanged:function(ratio){this._transformProgress(this.$.primaryProgress,ratio)},_progressChanged:function(secondaryProgress,value,min,max,indeterminate){secondaryProgress=this._clampValue(secondaryProgress);value=this._clampValue(value);var secondaryRatio=100*this._calcRatio(secondaryProgress),mainRatio=100*this._calcRatio(value);this._setSecondaryRatio(secondaryRatio);this._transformProgress(this.$.secondaryProgress,secondaryRatio);this._transformProgress(this.$.primaryProgress,mainRatio);this.secondaryProgress=secondaryProgress;if(indeterminate){this.removeAttribute("aria-valuenow")}else{this.setAttribute("aria-valuenow",value)}this.setAttribute("aria-valuemin",min);this.setAttribute("aria-valuemax",max)},_disabledChanged:function(disabled){this.setAttribute("aria-disabled",disabled?"true":"false")},_hideSecondaryProgress:function(secondaryRatio){return 0===secondaryRatio}});const PaperSpinnerBehavior={properties:{/**
+this.toggleClass("indeterminate",indeterminate,this.$.primaryProgress)},_transformProgress:function(progress,ratio){var transform="scaleX("+ratio/100+")";progress.style.transform=progress.style.webkitTransform=transform},_mainRatioChanged:function(ratio){this._transformProgress(this.$.primaryProgress,ratio)},_progressChanged:function(secondaryProgress,value,min,max,indeterminate){secondaryProgress=this._clampValue(secondaryProgress);value=this._clampValue(value);var secondaryRatio=100*this._calcRatio(secondaryProgress),mainRatio=100*this._calcRatio(value);this._setSecondaryRatio(secondaryRatio);this._transformProgress(this.$.secondaryProgress,secondaryRatio);this._transformProgress(this.$.primaryProgress,mainRatio);this.secondaryProgress=secondaryProgress;if(indeterminate){this.removeAttribute("aria-valuenow")}else{this.setAttribute("aria-valuenow",value)}this.setAttribute("aria-valuemin",min);this.setAttribute("aria-valuemax",max)},_disabledChanged:function(disabled){this.setAttribute("aria-disabled",disabled?"true":"false")},_hideSecondaryProgress:function(secondaryRatio){return 0===secondaryRatio}});const template$a=html`
+<style>
+  :host {
+    display: inline-block;
+    line-height: 0;
+    white-space: nowrap;
+    cursor: pointer;
+    @apply --paper-font-common-base;
+    --calculated-paper-radio-button-size: var(--paper-radio-button-size, 16px);
+    /* -1px is a sentinel for the default and is replace in \`attached\`. */
+    --calculated-paper-radio-button-ink-size: var(--paper-radio-button-ink-size, -1px);
+  }
+
+  :host(:focus) {
+    outline: none;
+  }
+
+  #radioContainer {
+    @apply --layout-inline;
+    @apply --layout-center-center;
+    position: relative;
+    width: var(--calculated-paper-radio-button-size);
+    height: var(--calculated-paper-radio-button-size);
+    vertical-align: middle;
+
+    @apply --paper-radio-button-radio-container;
+  }
+
+  #ink {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    width: var(--calculated-paper-radio-button-ink-size);
+    height: var(--calculated-paper-radio-button-ink-size);
+    color: var(--paper-radio-button-unchecked-ink-color, var(--primary-text-color));
+    opacity: 0.6;
+    pointer-events: none;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  #ink[checked] {
+    color: var(--paper-radio-button-checked-ink-color, var(--primary-color));
+  }
+
+  #offRadio, #onRadio {
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  #offRadio {
+    border: 2px solid var(--paper-radio-button-unchecked-color, var(--primary-text-color));
+    background-color: var(--paper-radio-button-unchecked-background-color, transparent);
+    transition: border-color 0.28s;
+  }
+
+  #onRadio {
+    background-color: var(--paper-radio-button-checked-color, var(--primary-color));
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    transition: -webkit-transform ease 0.28s;
+    transition: transform ease 0.28s;
+    will-change: transform;
+  }
+
+  :host([checked]) #offRadio {
+    border-color: var(--paper-radio-button-checked-color, var(--primary-color));
+  }
+
+  :host([checked]) #onRadio {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  #radioLabel {
+    line-height: normal;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: var(--paper-radio-button-label-spacing, 10px);
+    white-space: normal;
+    color: var(--paper-radio-button-label-color, var(--primary-text-color));
+
+    @apply --paper-radio-button-label;
+  }
+
+  :host([checked]) #radioLabel {
+    @apply --paper-radio-button-label-checked;
+  }
+
+  #radioLabel:dir(rtl) {
+    margin-left: 0;
+    margin-right: var(--paper-radio-button-label-spacing, 10px);
+  }
+
+  #radioLabel[hidden] {
+    display: none;
+  }
+
+  /* disabled state */
+
+  :host([disabled]) #offRadio {
+    border-color: var(--paper-radio-button-unchecked-color, var(--primary-text-color));
+    opacity: 0.5;
+  }
+
+  :host([disabled][checked]) #onRadio {
+    background-color: var(--paper-radio-button-unchecked-color, var(--primary-text-color));
+    opacity: 0.5;
+  }
+
+  :host([disabled]) #radioLabel {
+    /* slightly darker than the button, so that it's readable */
+    opacity: 0.65;
+  }
+</style>
+
+<div id="radioContainer">
+  <div id="offRadio"></div>
+  <div id="onRadio"></div>
+</div>
+
+<div id="radioLabel"><slot></slot></div>`;template$a.setAttribute("strip-whitespace","");/**
+                                                 Material design: [Radio button](https://www.google.com/design/spec/components/selection-controls.html#selection-controls-radio-button)
+                                                                                               `paper-radio-button` is a button that can be either checked or unchecked. The
+                                                 user can tap the radio button to check or uncheck it.
+                                                                                               Use a `<paper-radio-group>` to group a set of radio buttons. When radio buttons
+                                                 are inside a radio group, exactly one radio button in the group can be checked
+                                                 at any time.
+                                                                                               Example:
+                                                                                                   <paper-radio-button></paper-radio-button>
+                                                   <paper-radio-button>Item label</paper-radio-button>
+                                                                                               ### Styling
+                                                                                               The following custom properties and mixins are available for styling:
+                                                                                               Custom property | Description | Default
+                                                 ----------------|-------------|----------
+                                                 `--paper-radio-button-unchecked-background-color` | Radio button background color when the input is not checked | `transparent`
+                                                 `--paper-radio-button-unchecked-color` | Radio button color when the input is not checked | `--primary-text-color`
+                                                 `--paper-radio-button-unchecked-ink-color` | Selected/focus ripple color when the input is not checked | `--primary-text-color`
+                                                 `--paper-radio-button-checked-color` | Radio button color when the input is checked | `--primary-color`
+                                                 `--paper-radio-button-checked-ink-color` | Selected/focus ripple color when the input is checked | `--primary-color`
+                                                 `--paper-radio-button-size` | Size of the radio button | `16px`
+                                                 `--paper-radio-button-ink-size` | Size of the ripple | `48px`
+                                                 `--paper-radio-button-label-color` | Label color | `--primary-text-color`
+                                                 `--paper-radio-button-label-spacing` | Spacing between the label and the button | `10px`
+                                                 `--paper-radio-button-radio-container` | A mixin applied to the internal radio container | `{}`
+                                                 `--paper-radio-button-label` | A mixin applied to the internal label | `{}`
+                                                 `--paper-radio-button-label-checked` | A mixin applied to the internal label when the radio button is checked | `{}`
+                                                                                               This element applies the mixin `--paper-font-common-base` but does not import
+                                                 `paper-styles/typography.html`. In order to apply the `Roboto` font to this
+                                                 element, make sure you've imported `paper-styles/typography.html`.
+                                                                                               @group Paper Elements
+                                                 @element paper-radio-button
+                                                 @demo demo/index.html
+                                                 */Polymer({_template:template$a,is:"paper-radio-button",behaviors:[PaperCheckedElementBehavior],hostAttributes:{role:"radio","aria-checked":!1,tabindex:0},properties:{/**
+     * Fired when the checked state changes due to user interaction.
+     *
+     * @event change
+     */ /**
+         * Fired when the checked state changes.
+         *
+         * @event iron-change
+         */ariaActiveAttribute:{type:String,value:"aria-checked"}},ready:function(){this._rippleContainer=this.$.radioContainer},attached:function(){// Wait until styles have resolved to check for the default sentinel.
+// See polymer#4009 for more details.
+afterNextRender(this,function(){var inkSize=this.getComputedStyleValue("--calculated-paper-radio-button-ink-size").trim();// If unset, compute and set the default `--paper-radio-button-ink-size`.
+if("-1px"===inkSize){var size=parseFloat(this.getComputedStyleValue("--calculated-paper-radio-button-size").trim()),defaultInkSize=Math.floor(3*size);// The button and ripple need to have the same parity so that their
+// centers align.
+if(defaultInkSize%2!==size%2){defaultInkSize++}this.updateStyles({"--paper-radio-button-ink-size":defaultInkSize+"px"})}})}});Polymer({_template:html`
+    <style>
+      :host {
+        display: inline-block;
+      }
+
+      :host ::slotted(*) {
+        padding: var(--paper-radio-group-item-padding, 12px);
+      }
+    </style>
+
+    <slot></slot>
+`,is:"paper-radio-group",behaviors:[IronMenubarBehavior],/** @private */hostAttributes:{role:"radiogroup"},properties:{/**
+     * Fired when the radio group selection changes.
+     *
+     * @event paper-radio-group-changed
+     */ /**
+         * Overriden from Polymer.IronSelectableBehavior
+         */attrForSelected:{type:String,value:"name"},/**
+     * Overriden from Polymer.IronSelectableBehavior
+     */selectedAttribute:{type:String,value:"checked"},/**
+     * Overriden from Polymer.IronSelectableBehavior
+     */selectable:{type:String,value:"paper-radio-button"},/**
+     * If true, radio-buttons can be deselected
+     */allowEmptySelection:{type:Boolean,value:!1}},/**
+   * Selects the given value.
+   */select:function(value){var newItem=this._valueToItem(value);if(newItem&&newItem.hasAttribute("disabled")){return}if(this.selected){var oldItem=this._valueToItem(this.selected);if(this.selected==value){// If deselecting is allowed we'll have to apply an empty selection.
+// Otherwise, we should force the selection to stay and make this
+// action a no-op.
+if(this.allowEmptySelection){value=""}else{if(oldItem)oldItem.checked=!0;return}}if(oldItem)oldItem.checked=!1}IronSelectableBehavior.select.apply(this,[value]);this.fire("paper-radio-group-changed")},_activateFocusedItem:function(){this._itemActivate(this._valueForItem(this.focusedItem),this.focusedItem)},_onUpKey:function(event){this._focusPrevious();event.preventDefault();this._activateFocusedItem()},_onDownKey:function(event){this._focusNext();event.preventDefault();this._activateFocusedItem()},_onLeftKey:function(event){IronMenubarBehaviorImpl._onLeftKey.apply(this,arguments);this._activateFocusedItem()},_onRightKey:function(event){IronMenubarBehaviorImpl._onRightKey.apply(this,arguments);this._activateFocusedItem()}});const PaperSpinnerBehavior={properties:{/**
      * Displays the spinner.
      */active:{type:Boolean,value:!1,reflectToAttribute:!0,observer:"__activeChanged"},/**
      * Alternative text content for accessibility support.
@@ -17936,7 +19074,7 @@ if("loading"===alt){this.alt=this.getAttribute("aria-label")||alt}else{this.__se
    found at http://polymer.github.io/CONTRIBUTORS.txt Code distributed by Google as
    part of the polymer project is also subject to an additional IP rights grant
    found at http://polymer.github.io/PATENTS.txt
-   */_exports.$paperSpinnerBehavior=paperSpinnerBehavior;const $_documentContainer$3=document.createElement("template");$_documentContainer$3.setAttribute("style","display: none;");$_documentContainer$3.innerHTML=`<dom-module id="paper-spinner-styles">
+   */_exports.$paperSpinnerBehavior=paperSpinnerBehavior;const $_documentContainer$5=document.createElement("template");$_documentContainer$5.setAttribute("style","display: none;");$_documentContainer$5.innerHTML=`<dom-module id="paper-spinner-styles">
   <template>
     <style>
       /*
@@ -18264,7 +19402,7 @@ if("loading"===alt){this.alt=this.getAttribute("aria-label")||alt}else{this.__se
       }
     </style>
   </template>
-</dom-module>`;document.head.appendChild($_documentContainer$3.content);const template$a=html`
+</dom-module>`;document.head.appendChild($_documentContainer$5.content);const template$b=html`
   <style include="paper-spinner-styles"></style>
 
   <div id="spinnerContainer" class-name="[[__computeContainerClasses(active, __coolingDown)]]" on-animationend="__reset" on-webkit-animation-end="__reset">
@@ -18304,7 +19442,7 @@ if("loading"===alt){this.alt=this.getAttribute("aria-label")||alt}else{this.__se
       </div>
     </div>
   </div>
-`;template$a.setAttribute("strip-whitespace","");/**
+`;template$b.setAttribute("strip-whitespace","");/**
                                                  Material design: [Progress &
                                                  activity](https://www.google.com/design/spec/components/progress-activity.html)
                                                                                                Element providing a multiple color material design circular spinner.
@@ -18331,7 +19469,7 @@ if("loading"===alt){this.alt=this.getAttribute("aria-label")||alt}else{this.__se
                                                  @element paper-spinner
                                                  @hero hero.svg
                                                  @demo demo/index.html
-                                                 */Polymer({_template:template$a,is:"paper-spinner",behaviors:[PaperSpinnerBehavior]});var currentToast=null;/**
+                                                 */Polymer({_template:template$b,is:"paper-spinner",behaviors:[PaperSpinnerBehavior]});var currentToast=null;/**
                          Material design: [Snackbars &
                          toasts](https://www.google.com/design/spec/components/snackbars-toasts.html)
                          
@@ -19453,7 +20591,7 @@ window.Vaadin=window.Vaadin||{};/**
                                     // Intentionally ignored as this is not a problem in the app being developed
                                     }
                                     }());
-                                     vaadin-dev-mode:end **/}const usageStatistics=function(){if("function"===typeof runIfDevelopmentMode){return runIfDevelopmentMode(maybeGatherAndSendStats)}};window.Vaadin=window.Vaadin||{};window.Vaadin.registrations=window.Vaadin.registrations||[];window.Vaadin.registrations.push({is:"@vaadin/router",version:"1.2.0"});usageStatistics();Router.NavigationTrigger={POPSTATE,CLICK};var vaadinRouter={Router:Router,Resolver:Resolver};_exports.$vaadinRouter=vaadinRouter;let initializedApp=firebase.initializeApp({apiKey:"AIzaSyCcsFAxipbxNQ14un3vB6JvMZkZi2gSj3I",authDomain:"hiring-app-enriquelc.firebaseapp.com",databaseURL:"https://hiring-app-enriquelc.firebaseio.com",projectId:"hiring-app-enriquelc",storageBucket:"hiring-app-enriquelc.appspot.com",messagingSenderId:"770555104907",appId:"1:770555104907:web:8793cbd1f08c5f15"}),firebaseMixin=superClass=>class extends superClass{constructor(){super();this._initFirebase()}_initFirebase(){this.set("initializeApp",initializedApp);this.set("firebase",firebase$1)}initializeApp(){return this.initializeApp}};const FirebaseMixin=dedupingMixin(firebaseMixin);_exports.FirebaseMixin=FirebaseMixin;var mixinFirebase={FirebaseMixin:FirebaseMixin};_exports.$mixinFirebase=mixinFirebase;let firestoreMixin=superClass=>class extends FirebaseMixin(superClass){static get properties(){return{results:{type:Array,value:()=>{return[]}}}}constructor(){super()}_getStore(){return this.firebase.default.firestore()}addDocument(collection,data){this.loadingRequest=!0;return new Promise((resolve,reject)=>{this._getStore().collection(collection).add(data).then(results=>resolve(results)).catch(error=>reject(error)).finally(()=>{this.loadingRequest=!1})})}deleteDoc(collection,id){return this._getStore().collection(collection).doc(id).delete()}readCollection(collection){let results=[];return new Promise((resolve,reject)=>{this._getStore().collection(collection).get().then(querySnapshot=>{querySnapshot.forEach(doc=>results.push({id:doc.id,data:doc.data()}));resolve(results)}).catch(error=>reject(error))})}};const FireStoreMixin=dedupingMixin(firestoreMixin);_exports.FireStoreMixin=FireStoreMixin;var mixinFirestore={FireStoreMixin:FireStoreMixin};_exports.$mixinFirestore=mixinFirestore;let toastElement,utilitiesMixin=superClass=>class extends superClass{static get properties(){return{toast:{type:Object},toastMessage:String}}connectedCallback(){super.connectedCallback();this._initToast()}_initToast(){if(this.$.hiringAppToast){toastElement=this.$.hiringAppToast}}openToast(message){toastElement.show(message)}};const UtilitiesMixin=dedupingMixin(utilitiesMixin);_exports.UtilitiesMixin=UtilitiesMixin;var mixinUtilities={UtilitiesMixin:UtilitiesMixin};_exports.$mixinUtilities=mixinUtilities;class ExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)){static get template(){return html`
+                                     vaadin-dev-mode:end **/}const usageStatistics=function(){if("function"===typeof runIfDevelopmentMode){return runIfDevelopmentMode(maybeGatherAndSendStats)}};window.Vaadin=window.Vaadin||{};window.Vaadin.registrations=window.Vaadin.registrations||[];window.Vaadin.registrations.push({is:"@vaadin/router",version:"1.2.0"});usageStatistics();Router.NavigationTrigger={POPSTATE,CLICK};var vaadinRouter={Router:Router,Resolver:Resolver};_exports.$vaadinRouter=vaadinRouter;let initializedApp=firebase.initializeApp({apiKey:"AIzaSyCcsFAxipbxNQ14un3vB6JvMZkZi2gSj3I",authDomain:"hiring-app-enriquelc.firebaseapp.com",databaseURL:"https://hiring-app-enriquelc.firebaseio.com",projectId:"hiring-app-enriquelc",storageBucket:"hiring-app-enriquelc.appspot.com",messagingSenderId:"770555104907",appId:"1:770555104907:web:8793cbd1f08c5f15"}),firebaseMixin=superClass=>class extends superClass{constructor(){super();this._initFirebase()}_initFirebase(){this.set("initializeApp",initializedApp);this.set("firebase",firebase$1)}initializeApp(){return this.initializeApp}};const FirebaseMixin=dedupingMixin(firebaseMixin);_exports.FirebaseMixin=FirebaseMixin;var mixinFirebase={FirebaseMixin:FirebaseMixin};_exports.$mixinFirebase=mixinFirebase;let firestoreMixin=superClass=>class extends FirebaseMixin(superClass){static get properties(){return{results:{type:Array,value:()=>{return[]}}}}constructor(){super()}_getStore(){return this.firebase.default.firestore()}addDocument(collection,data){this.loadingRequest=!0;return new Promise((resolve,reject)=>{this._getStore().collection(collection).add(data).then(results=>resolve(results)).catch(error=>reject(error)).finally(()=>{this.loadingRequest=!1})})}deleteDoc(collection,id){return this._getStore().collection(collection).doc(id).delete()}getReference(collection,reference){return this._getStore().collection(collection).doc(reference)}simpleQueryWithReference(collection,whereOne,whereTwo,reference){let collectionReference=this._getStore().collection(collection),results=[];return new Promise((resolve,reject)=>{collectionReference.where(whereOne,whereTwo,reference).get().then(querySnapshot=>{querySnapshot.forEach(doc=>results.push({id:doc.id,data:doc.data()}));resolve(results)}).catch(error=>reject(error))})}readCollection(collection){let results=[];return new Promise((resolve,reject)=>{this._getStore().collection(collection).get().then(querySnapshot=>{querySnapshot.forEach(doc=>results.push({id:doc.id,data:doc.data()}));resolve(results)}).catch(error=>reject(error))})}};const FireStoreMixin=dedupingMixin(firestoreMixin);_exports.FireStoreMixin=FireStoreMixin;var mixinFirestore={FireStoreMixin:FireStoreMixin};_exports.$mixinFirestore=mixinFirestore;let toastElement,utilitiesMixin=superClass=>class extends superClass{static get properties(){return{toast:{type:Object},toastMessage:String}}connectedCallback(){super.connectedCallback();this._initToast()}_initToast(){if(this.$.hiringAppToast){toastElement=this.$.hiringAppToast}}openToast(message){toastElement.show(message)}};const UtilitiesMixin=dedupingMixin(utilitiesMixin);_exports.UtilitiesMixin=UtilitiesMixin;var mixinUtilities={UtilitiesMixin:UtilitiesMixin};_exports.$mixinUtilities=mixinUtilities;class CandidatePage extends UtilitiesMixin(FireStoreMixin(PolymerElement)){static get template(){return html`
       <style include="base-style iron-flex iron-flex-alignment">
         :host {
           width: 100%;
@@ -19462,6 +20600,100 @@ window.Vaadin=window.Vaadin||{};/**
           display: flex;
           flex-direction: column;
         }
+        paper-card {
+          width: 100%;
+        }
+        @media screen and (max-width: 992px) {
+          paper-card {
+            width: auto;
+          }
+        }
+        
+        paper-button.color {
+          background: var(--base-color);
+          color: var(--white);
+        }
+      </style>
+      <paper-dialog id="newExamModal" no-overlap>
+        <template is="dom-if" if="[[loadingRequest]]">
+          <paper-spinner active></paper-spinner>
+        </template>
+        <h2>Nuevo Candidato</h2>
+        <paper-dialog-scrollable>
+          <paper-input label="Nombre del candidato" value="{{name::input}}"></paper-input>
+          <paper-input label="Apellido Paterno" value="{{lastName::input}}"></paper-input>
+          <paper-input label="Apellido Materno" value="{{middleName::input}}"></paper-input>
+          <paper-input label="description" value="{{description::input}}"></paper-input>
+        </paper-dialog-scrollable>
+        <div class="buttons">
+          <paper-button dialog-dismiss>Cancelar</paper-button>
+          <paper-button autofocus on-click="addNewCandidate">Agregar Candidato</paper-button>
+        </div>
+      </paper-dialog>
+      <paper-card heading="Lista de candidatos">
+        <div class="card-actions horizontal flex-end-justified">
+          <paper-button on-click="openNewExam" class="color">Nuevo Candidato</paper-button>
+        </div>
+        <div class="card-actions">
+          <template is="dom-repeat" items="[[candidates]]" as="candidate">
+            <div>[[candidate.data.name]] [[candidate.data.lastName]] [[candidate.data.middleName]] [[candidate.data.description]]- [[candidate.id]] <paper-button on-click="eraseExam">Borrar</paper-button></div>
+          </template>
+          <template is="dom-if" if="[[emptyCandidates]]">
+            VACAIS
+          </template>
+        </div>
+      </paper-card>
+    `}static get properties(){return{candidates:{type:Array,value:()=>{return[]},observer:"_candidatesObserver"},emptyCandidates:{type:Boolean,value:!1},descriptionExam:String,nameExam:String}}_candidatesObserver(newValue){this.set("emptyCandidates",!(0<newValue.length))}connectedCallback(){super.connectedCallback();this._getCandidates()}_getCandidates(){this.readCollection("candidate").then(results=>{this.set("candidates",results)}).catch(error=>{console.log(error)})}addNewCandidate(){this.addDocument("candidate",{name:this.name,lastName:this.lastName,middleName:this.middleName,description:this.description}).then(results=>{this.nameExam="";this.descriptionExam="";this.openToast(`Nuevo candidato agregado con exito`);this._getCandidates()}).catch(error=>{console.log(error)});this.$.newExamModal.close()}eraseExam(e){this.deleteDoc("exam",e.model.candidate.id).then(()=>{this.openToast(`Se borro correctamente el candidato ${e.model.exam.data.name}`);this._getCandidates()}).catch(function(error){console.error("Error removing document: ",error)})}openNewExam(){this.$.newExamModal.open()}}window.customElements.define("candidate-page",CandidatePage);class ConfigPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)){static get template(){return html`
+      <style include="base-style iron-flex iron-flex-alignment">
+        :host {
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        }
+        paper-card {
+          width: 100%;
+        }
+        @media screen and (max-width: 992px) {
+          paper-card {
+            width: auto;
+          }
+        }
+        
+        paper-button.color {
+          background: var(--base-color);
+          color: var(--white);
+        }
+      </style>
+      
+      <paper-card heading="Configuracion">
+        <div class="card-actions horizontal flex-end-justified">
+          <paper-button on-click="openNewExam" class="color">Agregar examen</paper-button>
+        </div>
+        <div class="card-actions">
+          <template is="dom-repeat" items="[[exams]]" as="exam">
+            <div>[[exam.data.name]] [[exam.data.description]]- [[exam.id]] <paper-button on-click="eraseExam">Borrar</paper-button></div>
+          </template>
+          <template is="dom-if" if="[[emptyExams]]">
+            VACAIS
+          </template>
+        </div>
+      </paper-card>
+    `}static get properties(){return{exams:{type:Array,value:()=>{return[]},observer:"_examsObserver"},emptyExams:{type:Boolean,value:!1},descriptionExam:String,nameExam:String}}_examsObserver(newValue){this.set("emptyExams",!(0<newValue.length))}connectedCallback(){super.connectedCallback();this._getExams()}_getExams(){this.readCollection("exam").then(results=>{this.set("exams",results)}).catch(error=>{console.log(error)})}addNewExam(){this.addDocument("exam",{name:this.nameExam,description:this.descriptionExam}).then(results=>{this.nameExam="";this.descriptionExam="";this.openToast(`Nuevo examen agregado con exito`);this._getExams()}).catch(error=>{console.log(error)});this.$.newExamModal.close()}eraseExam(e){console.log("Voy a borrar el examen",e.model.exam);this.deleteDoc("exam",e.model.exam.id).then(()=>{this.openToast(`Se borro correctamente el examen ${e.model.exam.data.name}`);this._getExams()}).catch(function(error){console.error("Error removing document: ",error)})}openNewExam(){this.$.newExamModal.open()}}window.customElements.define("config-page",ConfigPage);class CreateTestPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)){static get template(){return html`
+      <style include="base-style iron-flex iron-flex-alignment">
+        :host {
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        }
+        
+        [slot="markdown-html"] p {
+          color: red;
+        }
+        
         paper-card {
           width: 100%;
         }
@@ -19490,36 +20722,145 @@ window.Vaadin=window.Vaadin||{};/**
           <paper-button autofocus on-click="addNewExam">Crear Examen</paper-button>
         </div>
       </paper-dialog>
+      <paper-card heading="Paso 1 - crea tu examen">
+        <div class="card-actions">
+          <paper-input label="Nombre del examen" value="{{nameExam::input}}"></paper-input>
+          <paper-input label="Descripcion del examen" value="{{descriptionExam::input}}"></paper-input>
+          <paper-button on-click="addNewExam">Siguiente</paper-button>
+        </div>
+      </paper-card>
+      <paper-card heading="Paso 2 - Elige un examen">
+        <div class="card-actions layout vertical">
+          <paper-dropdown-menu label="Examen" horizontal-align="left">
+            <paper-listbox slot="dropdown-content" class="dropdown-content" selected="{{referenceExam}}" attr-for-selected="data-exam">
+              <template is="dom-repeat" items="[[exams]]" as="exam">
+                <paper-item data-exam="[[exam.id]]">[[exam.data.name]]</paper-item>
+              </template>
+            </paper-listbox>
+          </paper-dropdown-menu>
+          <div class="layout horizontal">
+            <paper-button>Siguiente</paper-button>
+          </div>
+        </div>
+      </paper-card>
+      <paper-card heading="Paso 3 - Crea tus preguntas">
+        <div class="card-actions layout vertical">
+          <div class="layout horizontal">
+            <paper-button on-click="addQuestionToExam">Agregar Pregunta</paper-button>
+          </div>
+          <template is="dom-repeat" items="[[questions]]" as="question">
+            <paper-radio-group selected="{{question.referenceType}}">
+              <template is="dom-repeat" items="[[questionTypes]]" as="questionType">
+                <paper-radio-button name="[[questionType.id]]">[[questionType.data.questionType]]</paper-radio-button>
+              </template>
+            </paper-radio-group>
+            <paper-textarea label="Pregunta" value="{{question.question::input}}"></paper-textarea>
+            <div class="layout horizontal">
+              <marked-element markdown="{{question.question}}">
+                <div slot="markdown-html"></div>
+              </marked-element>
+            </div>
+          </template>
+          <div class="layout horizontal">
+            <paper-button on-click="sendQuestions">Finalizar preguntas del examen</paper-button>
+          </div>
+        </div>
+      </paper-card>
+    `}static get properties(){return{exams:{type:Array,value:()=>{return[]},observer:"_examsObserver"},questionTypes:{type:Array,value:()=>{return[]},observer:"_questionTypesObserver"},questions:{type:Array,value:()=>{return[]}},emptyExams:{type:Boolean,value:!1},descriptionExam:String,nameExam:String}}_examsObserver(newValue){this.set("emptyExams",!(0<newValue.length))}_questionTypesObserver(newValue){this.set("emptyTypes",!(0<newValue.length))}static get observers(){return["_observedQuestions(questions.*)"]}connectedCallback(){super.connectedCallback();this._getExams();this._getQuestionType()}_observedQuestions(questions){console.log(questions)}_getExams(){this.readCollection("exam").then(results=>{this.set("exams",results)}).catch(error=>{console.log(error)})}_getQuestionType(){this.readCollection("questionType").then(results=>{this.set("questionTypes",results)}).catch(error=>{console.log(error)})}addNewExam(){this.addDocument("exam",{name:this.nameExam,description:this.descriptionExam}).then(results=>{this.nameExam="";this.descriptionExam="";this.openToast(`Nuevo examen agregado con exito`);this._getExams()}).catch(error=>{console.log(error)})}sendQuestions(){this.questions.map(question=>{question.referenceType=this.getReference("questionType",question.referenceType);this.addDocument("questionExam",question).then(results=>{this.openToast(`Pregunta agregada con exito`);this.set("questions",[])}).catch(error=>{console.log(error)})})}addQuestionToExam(){this.push("questions",{referenceExam:this.getReference("exam",this.referenceExam),referenceType:this.referenceType,question:this.question})}}window.customElements.define("create-test-page",CreateTestPage);class ExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)){static get template(){return html`
+      <style include="base-style iron-flex iron-flex-alignment">
+        :host {
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        }
+        paper-card {
+          width: 100%;
+        }
+        @media screen and (max-width: 992px) {
+          paper-card {
+            width: auto;
+          }
+        }
+        
+        paper-button.color {
+          background: var(--base-color);
+          color: var(--white);
+        }
+      </style>
+      <paper-dialog id="newExamModal" no-overlap>
+        <template is="dom-if" if="[[loadingRequest]]">
+          <paper-spinner active></paper-spinner>
+        </template>
+        <h2>Nuevo Examen</h2>
+        
+        <div class="buttons">
+          <paper-button dialog-dismiss>Cancelar</paper-button>
+          <paper-button autofocus on-click="addNewExam">Crear Examen</paper-button>
+        </div>
+      </paper-dialog>
       <paper-card heading="Lista de examenes">
         <div class="card-actions horizontal flex-end-justified">
-          <paper-button on-click="openNewExam" class="color">Agregar examen</paper-button>
+        <a href="/make-exam" class="paper-item" tabindex="-1">
+          <paper-button class="color">Nuevo examen</paper-button>
+        </a>
         </div>
         <div class="card-actions">
           <template is="dom-repeat" items="[[exams]]" as="exam">
-            <div>[[exam.data.name]] [[exam.data.description]]- [[exam.id]] <paper-button on-click="eraseExam">Borrar</paper-button></div>
+            <div>
+              [[exam.data.name]] [[exam.data.description]]- [[exam.id]]
+              <a href="/preview-exam/[[exam.id]]" class="paper-item" tabindex="-1">
+                <paper-button on-click="seeExam">Ver Examen</paper-button>
+              </a>
+              <paper-button on-click="eraseExam">Borrar</paper-button>
+            </div>
           </template>
           <template is="dom-if" if="[[emptyExams]]">
             VACAIS
           </template>
         </div>
       </paper-card>
-    `}static get properties(){return{exams:{type:Array,value:()=>{return[]},observer:"_examsObserver"},emptyExams:{type:Boolean,value:!1},descriptionExam:String,nameExam:String}}_examsObserver(newValue){this.set("emptyExams",!(0<newValue.length))}connectedCallback(){super.connectedCallback();this._getExams()}_getExams(){this.readCollection("exam").then(results=>{this.set("exams",results)}).catch(error=>{console.log(error)})}addNewExam(){this.addDocument("exam",{name:this.nameExam,description:this.descriptionExam}).then(results=>{this.nameExam="";this.descriptionExam="";this.openToast(`Nuevo examen agregado con exito`);this._getExams()}).catch(error=>{console.log(error)});this.$.newExamModal.close()}eraseExam(e){console.log("Voy a borrar el examen",e.model.exam);this.deleteDoc("exam",e.model.exam.id).then(()=>{this.openToast(`Se borro correctamente el examen ${e.model.exam.data.name}`);this._getExams()}).catch(function(error){console.error("Error removing document: ",error)})}openNewExam(){this.$.newExamModal.open()}}window.customElements.define("exam-page",ExamPage);class LoginPage extends PolymerElement{static get template(){return html`
-      <style>
+    `}static get properties(){return{exams:{type:Array,value:()=>{return[]},observer:"_examsObserver"},emptyExams:{type:Boolean,value:!1},descriptionExam:String,nameExam:String}}_examsObserver(newValue){this.set("emptyExams",!(0<newValue.length))}connectedCallback(){super.connectedCallback();this._getExams()}_getExams(){this.readCollection("exam").then(results=>{this.set("exams",results)}).catch(error=>{console.log(error)})}eraseExam(e){console.log("Voy a borrar el examen",e.model.exam);this.deleteDoc("exam",e.model.exam.id).then(()=>{this.openToast(`Se borro correctamente el examen ${e.model.exam.data.name}`);this._getExams()}).catch(function(error){console.error("Error removing document: ",error)})}}window.customElements.define("exam-page",ExamPage);class PreviewExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)){static get template(){return html`
+      <style include="base-style iron-flex iron-flex-alignment">
         :host {
-          display: block;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+        }
+        paper-card {
+          width: 100%;
+        }
+        @media screen and (max-width: 992px) {
+          paper-card {
+            width: auto;
+          }
+        }
+        
+        paper-button.color {
+          background: var(--base-color);
+          color: var(--white);
         }
       </style>
-      <paper-card>
-        <div class="card-content">
-          <paper-input label="Usuario" type="text" value="{{username::value}}"></paper-input>
-          <paper-input label="Constrasena" type="password" value="{{password::value}}"></paper-input>
-        </div>
+      
+      <paper-card heading="[[location.params.idExam]]">
         <div class="card-actions">
-        <paper-button>Iniciar sesion</paper-button>
-        <paper-button>Restaurar contrasena</paper-button>
+          <template is="dom-repeat" items="[[questionsExam]]" as="questionExam">
+            <div>Pregunta [[sumIndex(index)]] - [[questionExam.id]] <paper-button on-click="eraseQuestionData">Borrar</paper-button></div>
+            <div class="layout horizontal">
+              <marked-element markdown="[[questionExam.data.question]]">
+                <div slot="markdown-html"></div>
+              </marked-element>
+            </div>
+          </template>
+          <template is="dom-if" if="[[emptyQuestionExams]]">
+            No hay preguntas para este examen
+          </template>
         </div>
       </paper-card>
-    `}static get properties(){return{username:String,password:String}}}window.customElements.define("login-page",LoginPage);const baseStyle=document.createElement("dom-module");baseStyle.innerHTML=`
+    `}static get properties(){return{questionsExam:{type:Array,value:()=>{return[]},observer:"_questionsExamObserver"},emptyQuestionExams:{type:Boolean,value:!1},descriptionExam:String,nameExam:String}}sumIndex(index){return index+1}_questionsExamObserver(newValue){this.set("emptyQuestionExams",!(0<newValue.length))}connectedCallback(){super.connectedCallback();this._getQuestionsForExam()}_getQuestionsForExam(){let reference=this.getReference("exam",this.location.params.idExam);this.simpleQueryWithReference("questionExam","referenceExam","==",reference).then(results=>{this.set("questionsExam",results)})}addNewExam(){this.addDocument("exam",{name:this.nameExam,description:this.descriptionExam}).then(results=>{this.nameExam="";this.descriptionExam="";this.openToast(`Nuevo examen agregado con exito`);this._getExams()}).catch(error=>{console.log(error)});this.$.newExamModal.close()}eraseExam(e){console.log("Voy a borrar el examen",e.model.exam);this.deleteDoc("exam",e.model.exam.id).then(()=>{this.openToast(`Se borro correctamente el examen ${e.model.exam.data.name}`);this._getExams()}).catch(function(error){console.error("Error removing document: ",error)})}}window.customElements.define("preview-exam-page",PreviewExamPage);const baseStyle=document.createElement("dom-module");baseStyle.innerHTML=`
   <template>
     <style>
       :root {
@@ -19604,9 +20945,11 @@ window.Vaadin=window.Vaadin||{};/**
                   <app-toolbar>Menu</app-toolbar>
                   <paper-listbox selected="{{selectedItem}}" attr-for-selected="data-name">
                     <template is="dom-repeat" items="[[urls]]" as="url">
-                      <a href="[[url.path]]" data-name="[[url.name]]" class="paper-item" tabindex="-1">
-                        <paper-item>[[url.name]]</paper-item>
-                      </a>
+                      <template is="dom-if" if="[[validName(url.name)]]">
+                        <a href="[[url.path]]" data-name="[[url.name]]" class="paper-item" tabindex="-1">
+                          <paper-item>[[url.name]]</paper-item>
+                        </a>
+                      </template>
                     </template>
                   </paper-listbox>
                 </template>
@@ -19628,7 +20971,7 @@ window.Vaadin=window.Vaadin||{};/**
           </template>
         </div>
       </template>
-    `}static get properties(){return{login:{type:Boolean,value:!0},loading:{type:Boolean,value:!0,observer:"_loadingChange"},selectedItem:{type:String}}}_loadingChange(newlValue,oldValue){if(!newlValue){// TODO solve animations
+    `}static get properties(){return{login:{type:Boolean,value:!0},loading:{type:Boolean,value:!0,observer:"_loadingChange"},selectedItem:{type:String}}}validName(name){return name!==void 0}_loadingChange(newlValue,oldValue){if(!newlValue){// TODO solve animations
 /*setTimeout(() => {
         const animation = this.shadowRoot.querySelector('#animate-container').
             animate([
@@ -19640,4 +20983,4 @@ window.Vaadin=window.Vaadin||{};/**
                   duration: 200,
                 });
         this.shadowRoot.querySelector('#animate-container').style.opacity = '1';
-      }, 0);*/this._getValuesFromSecurity().then(urls=>{this.set("urls",urls);this.set("selectedItem",this.urls[0].name);window.href=this.urls[0].path;const main=this.shadowRoot.querySelector("#main"),router=new Router(main);router.setRoutes(urls)})}}_getValuesFromSecurity(){this.innerLoading=!0;return new Promise((resolve,reject)=>{setTimeout(()=>{this.innerLoading=!1;resolve([{name:"Examenes",path:"/exams",component:"exam-page"},{name:"Candidatos",path:"/candidates",component:"login-page"},{name:"Configuracion",path:"/config",component:"login-page"}])},1e3)})}}window.customElements.define("hiring-app",HiringApp)});
+      }, 0);*/this._getValuesFromSecurity().then(urls=>{this.set("urls",urls);this.set("selectedItem",this.urls[0].name);window.href=this.urls[0].path;const main=this.shadowRoot.querySelector("#main"),router=new Router(main);router.setRoutes(urls)})}}_getValuesFromSecurity(){this.innerLoading=!0;return new Promise((resolve,reject)=>{setTimeout(()=>{this.innerLoading=!1;resolve([{path:"/",redirect:"/exams"},{name:"Examenes",path:"/exams",component:"exam-page"},{name:"Candidatos",path:"/candidates",component:"candidate-page"},{name:"Configuracion",path:"/config",component:"config-page"},{path:"/make-exam",component:"create-test-page"},{path:"/preview-exam/:idExam",component:"preview-exam-page"}])},1e3)})}}window.customElements.define("hiring-app",HiringApp)});

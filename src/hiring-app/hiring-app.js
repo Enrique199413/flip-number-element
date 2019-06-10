@@ -18,8 +18,11 @@ import '@polymer/paper-item/paper-item.js';
 import '@polymer/paper-button/paper-button.js';
 import '@polymer/iron-flex-layout/iron-flex-layout-classes.js';
 
-import '../component-pages/login-page.js';
 import '../component-pages/exam-page.js';
+import '../component-pages/candidate-page.js';
+import '../component-pages/create-test-page.js';
+import '../component-pages/config-page.js';
+import '../component-pages/preview-exam-page.js';
 import '../local-components/app-components/loading-component.js';
 import {UtilitiesMixin} from '../local-components/mixins/mixin-utilities';
 
@@ -90,9 +93,11 @@ class HiringApp extends UtilitiesMixin(PolymerElement) {
                   <app-toolbar>Menu</app-toolbar>
                   <paper-listbox selected="{{selectedItem}}" attr-for-selected="data-name">
                     <template is="dom-repeat" items="[[urls]]" as="url">
-                      <a href="[[url.path]]" data-name="[[url.name]]" class="paper-item" tabindex="-1">
-                        <paper-item>[[url.name]]</paper-item>
-                      </a>
+                      <template is="dom-if" if="[[validName(url.name)]]">
+                        <a href="[[url.path]]" data-name="[[url.name]]" class="paper-item" tabindex="-1">
+                          <paper-item>[[url.name]]</paper-item>
+                        </a>
+                      </template>
                     </template>
                   </paper-listbox>
                 </template>
@@ -134,6 +139,10 @@ class HiringApp extends UtilitiesMixin(PolymerElement) {
     };
   }
 
+  validName(name) {
+    return name !== undefined;
+  }
+
   _loadingChange(newlValue, oldValue) {
     if (!newlValue) {
       // TODO solve animations
@@ -166,9 +175,12 @@ class HiringApp extends UtilitiesMixin(PolymerElement) {
       setTimeout(() => {
         this.innerLoading = false;
         resolve([
+          {path: '/', redirect: '/exams'},
           {name: 'Examenes', path: '/exams', component: 'exam-page'},
-          {name: 'Candidatos', path: '/candidates', component: 'login-page'},
-          {name: 'Configuracion', path: '/config', component: 'login-page'},
+          {name: 'Candidatos', path: '/candidates', component: 'candidate-page'},
+          {name: 'Configuracion', path: '/config', component: 'config-page'},
+          {path: '/make-exam', component: 'create-test-page'},
+          {path: '/preview-exam/:idExam', component: 'preview-exam-page'},
         ]);
       }, 1000);
     });
