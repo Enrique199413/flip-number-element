@@ -21469,6 +21469,12 @@ window.Vaadin=window.Vaadin||{};/**
           margin-top: 10rem;
           width: 50%;
         }
+        @media screen and (max-width: 992px) {
+          paper-card.tos {
+            margin-top: 1rem;
+            width: 100%;
+          }
+        }
         
         app-header {
           background-color: var(--base-color);
@@ -21519,7 +21525,7 @@ window.Vaadin=window.Vaadin||{};/**
                     <paper-textarea label="Respuesta" rows="3" value="{{questionExam.answer::input}}"></paper-textarea>
                     <paper-button on-click="saveAnswer">Guardar Respuesta</paper-button>
                   </template>
-                  <template is="dom-if" if="[[currentExam.readOnly]]">
+                  <template is="dom-if" if="[[checkReviewer()]]">
                     <paper-radio-group selected="{{questionExam.correctAnswer}}">
                       <paper-radio-button name="true">Correcta</paper-radio-button>
                       <paper-radio-button name="false">Incorrecta</paper-radio-button>
@@ -21532,7 +21538,7 @@ window.Vaadin=window.Vaadin||{};/**
             <template is="dom-if" if="[[!currentExam.readOnly]]">
               <paper-button on-click="finishExam">Finalizar Examen</paper-button>
             </template>
-            <template is="dom-if" if="[[currentExam.readOnly]]">
+            <template is="dom-if" if="[[checkReviewer()]]">
               <paper-card heading="Calificacion del examen final">
                 <div class="card-content">
                   <paper-input label="Calificacion" type="number" value="{{currentExam.evaluation::input}}"></paper-input>
