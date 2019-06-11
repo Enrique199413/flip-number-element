@@ -5,9 +5,11 @@
     "@polymer/app-layout": "^3.0.2",
     "@polymer/iron-flex-layout": "^3.0.1",
     "@polymer/iron-icons": "^3.0.1",
+    "@polymer/iron-pages": "^3.0.1",
     "@polymer/marked-element": "^3.0.1",
     "@polymer/paper-button": "^3.0.1",
     "@polymer/paper-card": "^3.0.1",
+    "@polymer/paper-checkbox": "^3.1.0",
     "@polymer/paper-dialog": "^3.0.1",
     "@polymer/paper-dialog-scrollable": "^3.0.1",
     "@polymer/paper-dropdown-menu": "^3.0.1",
@@ -18,10 +20,13 @@
     "@polymer/paper-progress": "^3.0.1",
     "@polymer/paper-radio-group": "^3.0.1",
     "@polymer/paper-spinner": "^3.0.2",
+    "@polymer/paper-tabs": "^3.1.0",
     "@polymer/paper-toast": "^3.0.1",
+    "@polymer/paper-toolbar": "^3.0.1",
     "@polymer/polymer": "^3.0.0",
     "@vaadin/router": "^1.2.0",
     "firebase": "^6.1.1",
+    "paper-collapse-item": "^4.0.5",
     "web-animations-js": "^2.3.1"
   },
   "devDependencies": {
@@ -33,9 +38,8 @@
     "browser-sync": "^2.18.13"
   },
   "scripts": {
-    "start": "npm run serve | npm run watch",
-    "serve": "polymer serve --port 8081",
-    "test": "polymer test",
-    "watch": "browser-sync start --proxy localhost:8081 --open --files \"**/*.html, **/*.js\""
+    "start": "npm run serve",
+    "serve": "polymer serve",
+    "test": "polymer test"
   }
 }

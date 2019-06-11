@@ -29,10 +29,9 @@ class ExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
             width: auto;
           }
         }
-        
-        paper-button.color {
-          background: var(--base-color);
-          color: var(--white);
+
+        a {
+          text-decoration: none;
         }
       </style>
       <paper-dialog id="newExamModal" no-overlap>
@@ -49,7 +48,7 @@ class ExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
       <paper-card heading="Lista de examenes">
         <div class="card-actions horizontal flex-end-justified">
         <a href="/make-exam" class="paper-item" tabindex="-1">
-          <paper-button class="color">Nuevo examen</paper-button>
+          <paper-button class="blue-button">Nuevo examen</paper-button>
         </a>
         </div>
         <div class="card-actions">
@@ -82,6 +81,11 @@ class ExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
         type: Boolean,
         value: false
       },
+      loadingPage: {
+        type: Boolean,
+        value: true,
+        notify: true
+      },
       descriptionExam: String,
       nameExam: String
     };
@@ -97,20 +101,24 @@ class ExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
   }
 
   _getExams() {
+    this.loadingPage = true;
     this.readCollection('exam').then(results => {
       this.set('exams', results);
     }).catch(error => {
       console.log(error);
+    }).finally(() => {
+      this.loadingPage = false;
     });
   }
 
   eraseExam(e) {
-    console.log('Voy a borrar el examen', e.model.exam);
     this.deleteDoc('exam', e.model.exam.id).then(() => {
       this.openToast(`Se borro correctamente el examen ${e.model.exam.data.name}`);
       this._getExams();
     }).catch(function(error) {
       console.error("Error removing document: ", error);
+    }).finally(() => {
+      this.loadingPage = false;
     });
   }
 

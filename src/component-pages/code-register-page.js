@@ -10,38 +10,50 @@ import {UtilitiesMixin} from '../local-components/mixins/mixin-utilities';
  * @customElement
  * @polymer
  */
-class ConfigPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
+class CodeRegisterPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
   static get template() {
     return html`
       <style include="base-style iron-flex iron-flex-alignment">
         :host {
-          width: 100%;
           justify-content: center;
           align-items: center;
           display: flex;
           flex-direction: column;
+          margin-top: 10rem;
+          width: 50%;
         }
       </style>
       
-      <paper-card heading="Configuracion">
-        
+      <paper-card heading="Prueba GFT">
+        <div class="card-content">
+          <paper-input label="Código de acceso" type="text" value="{{code::input}}"></paper-input>
+        </div>
+        <div class="card-actions">
+          <paper-button on-click="verifyCode">Iniciar evaluación</paper-button>
+        </div>
       </paper-card>
     `;
   }
   static get properties() {
     return {
-      emptyExams: {
-        type: Boolean,
-        value: false
+      code: {
+        type: String
       },
-      descriptionExam: String,
-      nameExam: String
     };
   }
 
   connectedCallback() {
     super.connectedCallback();
   }
+
+  verifyCode() {
+    this.getDocExist('candidateExam', this.code).then(existExam => {
+      console.log(existExam);
+      window.location.href = '/hacer-examen/' + this.code;
+    }).catch(error => {
+      console.log('existExam', error);
+    })
+  }
 }
 
-window.customElements.define('config-page', ConfigPage);
+window.customElements.define('code-register-page', CodeRegisterPage);

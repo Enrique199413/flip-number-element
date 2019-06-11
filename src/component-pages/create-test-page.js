@@ -145,18 +145,10 @@ class CreateTestPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
     this.set('emptyTypes', !(newValue.length > 0));
   }
 
-  static get observers() {
-    return ['_observedQuestions(questions.*)'];
-  }
-
   connectedCallback() {
     super.connectedCallback();
     this._getExams();
     this._getQuestionType();
-  }
-
-  _observedQuestions(questions) {
-    console.log(questions);
   }
 
   _getExams() {
@@ -192,12 +184,12 @@ class CreateTestPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
   sendQuestions() {
     this.questions.map(question => {
       question.referenceType = this.getReference('questionType', question.referenceType);
-          this.addDocument('questionExam', question).then(results => {
-        this.openToast(`Pregunta agregada con exito`);
-        this.set('questions', []);
-      }).catch(error => {
-        console.log(error);
-      });
+        this.addDocument('questionExam', question).then(results => {
+          this.openToast(`Pregunta agregada con exito`);
+          this.set('questions', []);
+        }).catch(error => {
+          console.log(error);
+        });
     });
   }
 
