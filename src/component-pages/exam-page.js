@@ -112,7 +112,6 @@ class ExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
   }
 
   eraseExam(e) {
-    console.log('Voy a borrar el examen', e.model.exam);
     this.deleteDoc('exam', e.model.exam.id).then(() => {
       this.openToast(`Se borro correctamente el examen ${e.model.exam.data.name}`);
       this._getExams();

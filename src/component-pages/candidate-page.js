@@ -22,11 +22,7 @@ class CandidatePage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
           display: flex;
           flex-direction: column;
         }
-        paper-collapse-item {
-          --paper-collapse-item-header: {
-            cursor: pointer;
-          }
-        }
+
         paper-card {
           width: 100%;
         }
@@ -61,9 +57,27 @@ class CandidatePage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
           <paper-button autofocus on-click="assingExamToCandidate">Asignar Examen</paper-button>
         </div>
       </paper-dialog>
+      
+      <paper-dialog id="newCandidate" no-overlap>
+        <template is="dom-if" if="[[loadingRequest]]">
+          <paper-spinner active></paper-spinner>
+        </template>
+        <h2>Nuevo Candidato</h2>
+        <paper-dialog-scrollable>
+            <paper-input value="{{name::input}}" label="Nombre"></paper-input>
+            <paper-input value="{{lastName::input}}" label="Apellido Paterno"></paper-input>
+            <paper-input value="{{middleName::input}}" label="Apellido Materno"></paper-input>
+            <paper-input value="{{description::input}}" label="Descripción"></paper-input>
+        </paper-dialog-scrollable>
+        <div class="buttons">
+          <paper-button dialog-dismiss>Cancelar</paper-button>
+          <paper-button autofocus on-click="addNewCandidate">Guardar Candidato</paper-button>
+        </div>
+      </paper-dialog>
+      
       <paper-card heading="Lista de candidatos">
         <div class="card-actions horizontal flex-end-justified">
-          <paper-button on-click="openNewExam" class="color">Nuevo Candidato</paper-button>
+          <paper-button on-click="createNewCandidate" class="color">Nuevo Candidato</paper-button>
         </div>
         <div class="card-actions">
           <template is="dom-repeat" items="[[candidates]]" as="candidate">
@@ -104,7 +118,11 @@ class CandidatePage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
         value: false
       },
       descriptionExam: String,
-      nameExam: String
+      nameExam: String,
+      loadingPage: {
+        type: Boolean,
+        value: true
+      }
     };
   }
 
@@ -148,7 +166,7 @@ class CandidatePage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
     }).catch(error => {
       console.log(error);
     });
-    this.$.newExamModal.close();
+    this.$.newCandidate.close();
   }
 
   eraseExam(e) {
@@ -171,9 +189,11 @@ class CandidatePage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
       evaluation: 0,
       feedback: '',
       tos: false,
+      readOnly: false,
       referenceExam: this.getReference('exam', this.referenceExam),
       referenceCandidate: this.getReference('candidate', this.currentCandidate.id)
     };
+    // TODO restrict one assignation per exam
     this.addDocument('candidateExam', candidateExam).then(results => {
       this.openToast(`Candidato asignado correctamente al examen seleccionado`);
       this.currentCandidate = undefined;
@@ -182,8 +202,8 @@ class CandidatePage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
     });
   }
 
-  openNewExam() {
-    this.$.newExamModal.open();
+  createNewCandidate() {
+    this.$.newCandidate.open();
   }
 }
 

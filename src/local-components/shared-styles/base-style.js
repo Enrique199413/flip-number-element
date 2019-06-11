@@ -19,6 +19,12 @@ baseStyle.innerHTML = `
         color: var(--white);
       }
       
+      paper-collapse-item {
+        --paper-collapse-item-header: {
+          cursor: pointer;
+        }
+      }
+      
       .loading-container {
         height: 100px;
       }

@@ -91,14 +91,27 @@ class PreviewExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
               </template>
               <template is="dom-if" if="[[!loadingPage]]">
                 <template is="dom-repeat" items="[[candidatesExam]]" as="candidateExam">
-                  <div>
-                    <p>Candidato [[sumIndex(index)]]</p>
-                    <p>[[candidateExam.candidateData.name]]</p>
-                    <p>Id Unico de asignacion: [[candidateExam.id]]</p>
-                    <p>Oportunidades presentadas: [[candidateExam.data.chances]]</p>
-                    <paper-button on-click="showExamResults">Ver Resultado</paper-button>
-                    <paper-button on-click="eraseApply">Borrar</paper-button>
-                  </div>
+                  <paper-collapse-item header="Candidato [[sumIndex(index)]] [[candidateExam.candidateData.name]] [[candidateExam.candidateData.lastName]] [[candidateExam.candidateData.middleName]]">
+                    <div class="horizontal layout justified">
+                      <p>Id Unico de asignacion: [[candidateExam.id]]</p>
+                      <p>Calificacion: [[candidateExam.data.evaluation]]</p>
+                      <div>
+                        <paper-checkbox disabled checked="[[candidateExam.data.tos]]">Acepto terminos y condiciones</paper-checkbox>
+                      </div>
+                      <p>Oportunidades presentadas: [[candidateExam.data.chances]]</p>
+                    </div>
+                    <div class="horizontal layout justified">
+                      <p>Feedback: [[candidateExam.data.feedback]]</p>
+                    </div>
+                    <div class="horizontal layout end-justified">
+                      <template is="dom-if" if="[[candidateExam.data.readOnly]]">
+                        <a href="/ver-examen/[[candidateExam.id]]/true">
+                          <paper-button>Ver Resultado</paper-button>
+                        </a>
+                      </template>
+                      <paper-button on-click="eraseApply">Borrar</paper-button>
+                    </div>
+                  </paper-collapse-item>
                   <div class="layout horizontal">
                     <marked-element markdown="[[candidatesExam.data.question]]">
                       <div slot="markdown-html"></div>
@@ -181,7 +194,7 @@ class PreviewExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
       referenceOnDoc: 'referenceCandidate'
     };
     this.getAllDataFromCollectionWithReference(searchParams).then(results => {
-      this.set('candidatesExam' , results);
+      this.set('candidatesExam', results);
     }).finally(() => {
       this.loadingPage = false;
     });
@@ -198,21 +211,6 @@ class PreviewExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
       });
   }
 
-  addNewExam() {
-    this.addDocument('exam', {
-      name: this.nameExam,
-      description: this.descriptionExam
-    }).then(results => {
-      this.nameExam = '';
-      this.descriptionExam = '';
-      this.openToast(`Nuevo examen agregado con exito`);
-      this._getExams();
-    }).catch(error => {
-      console.log(error);
-    });
-    this.$.newExamModal.close();
-  }
-
   eraseExam(e) {
     this.deleteDoc('exam', e.model.exam.id).then(() => {
       this.openToast(`Se borro correctamente el examen ${e.model.exam.data.name}`);
@@ -226,6 +224,15 @@ class PreviewExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
     this.deleteDoc('questionExam', e.model.questionExam.id).then(() => {
       this.openToast(`Se borro correctamente la pregunta del examen`);
       this._getQuestionsForExam();
+    }).catch(function(error) {
+      console.error("Error removing document: ", error);
+    });
+  }
+
+  eraseApply(e) {
+    this.deleteDoc('candidateExam', e.model.candidateExam.id).then(() => {
+      this.openToast(`Se borro correctamente la asignacion del candidato`);
+      this.loadCandidates();
     }).catch(function(error) {
       console.error("Error removing document: ", error);
     });

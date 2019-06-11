@@ -131,6 +131,10 @@ let firestoreMixin = (superClass) => class extends FirebaseMixin(superClass) {
       }).catch(error => reject(error));
     });
   }
+
+  updateDocument(collection, reference, data) {
+    return this._getStore().collection(collection).doc(reference).set(data);
+  }
 };
 
 export const FireStoreMixin = dedupingMixin(firestoreMixin);

@@ -145,18 +145,10 @@ class CreateTestPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
     this.set('emptyTypes', !(newValue.length > 0));
   }
 
-  static get observers() {
-    return ['_observedQuestions(questions.*)'];
-  }
-
   connectedCallback() {
     super.connectedCallback();
     this._getExams();
     this._getQuestionType();
-  }
-
-  _observedQuestions(questions) {
-    console.log(questions);
   }
 
   _getExams() {

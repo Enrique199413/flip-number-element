@@ -187,14 +187,15 @@ class HiringApp extends UtilitiesMixin(PolymerElement) {
       setTimeout(() => {
         this.innerLoading = false;
         resolve([
-          {path: '/', redirect: '/exams'},
-          {name: 'Examenes', path: '/exams', component: 'exam-page'},
-          {name: 'Candidatos', path: '/candidates', component: 'candidate-page'},
-          {name: 'Configuracion', path: '/config', component: 'config-page'},
-          {path: '/make-exam', component: 'create-test-page'},
-          {path: '/preview-exam/:idExam', component: 'preview-exam-page'},
+          {path: '/', redirect: '/gft-examen'},
+          // {name: 'Examenes', path: '/exams', component: 'exam-page'},
+          // {name: 'Candidatos', path: '/candidates', component: 'candidate-page'},
+          // {name: 'Configuracion', path: '/config', component: 'config-page'},
+          // {path: '/make-exam', component: 'create-test-page'},
+          // {path: '/preview-exam/:idExam', component: 'preview-exam-page'},
           {path: '/gft-examen', component: 'code-register-page'},
           {path: '/hacer-examen/:codeExam', component: 'apply-exam-page'},
+          // {path: '/ver-examen/:codeExam/:reviewer', component: 'apply-exam-page'},
         ]);
       }, 1000);
     });
