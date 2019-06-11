@@ -13,7 +13,7 @@
     "redirects": [
       {
         "source": "/gft-exam",
-        "destination": 'index.html/gft-exam'
+        "destination": "index.html/gft-exam"
       }
     ]
   }
