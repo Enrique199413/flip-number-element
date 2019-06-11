@@ -10,11 +10,11 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "redirects": [
-      {
-        "source": "/gft-exam",
-        "destination": "index.html/gft-exam"
-      }
-    ]
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "rewrites": [{
+      "source": "**",
+      "destination": "/index.html"
+    }]
   }
 }

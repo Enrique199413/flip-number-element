@@ -13456,7 +13456,81 @@ this._hasIronCheckedElementBehavior=!0},/**
    * Fire `iron-changed` when the checked state changes.
    */_checkedChanged:function(){this.active=this.checked;this.fire("iron-change")},/**
    * Reset value to 'on' if it is set to `undefined`.
-   */_valueChanged:function(){if(this.value===void 0||null===this.value){this.value="on"}}};/** @polymerBehavior */_exports.IronCheckedElementBehaviorImpl=IronCheckedElementBehaviorImpl;const IronCheckedElementBehavior=[IronFormElementBehavior,IronValidatableBehavior,IronCheckedElementBehaviorImpl];_exports.IronCheckedElementBehavior=IronCheckedElementBehavior;var ironCheckedElementBehavior={IronCheckedElementBehaviorImpl:IronCheckedElementBehaviorImpl,IronCheckedElementBehavior:IronCheckedElementBehavior};_exports.$ironCheckedElementBehavior=ironCheckedElementBehavior;const IronFitBehavior={properties:{/**
+   */_valueChanged:function(){if(this.value===void 0||null===this.value){this.value="on"}}};/** @polymerBehavior */_exports.IronCheckedElementBehaviorImpl=IronCheckedElementBehaviorImpl;const IronCheckedElementBehavior=[IronFormElementBehavior,IronValidatableBehavior,IronCheckedElementBehaviorImpl];_exports.IronCheckedElementBehavior=IronCheckedElementBehavior;var ironCheckedElementBehavior={IronCheckedElementBehaviorImpl:IronCheckedElementBehaviorImpl,IronCheckedElementBehavior:IronCheckedElementBehavior};_exports.$ironCheckedElementBehavior=ironCheckedElementBehavior;Polymer({_template:html`
+    <style>
+      :host {
+        display: block;
+        transition-duration: var(--iron-collapse-transition-duration, 300ms);
+        /* Safari 10 needs this property prefixed to correctly apply the custom property */
+        -webkit-transition-duration: var(--iron-collapse-transition-duration, 300ms);
+        overflow: visible;
+      }
+
+      :host(.iron-collapse-closed) {
+        display: none;
+      }
+
+      :host(:not(.iron-collapse-opened)) {
+        overflow: hidden;
+      }
+    </style>
+
+    <slot></slot>
+`,is:"iron-collapse",behaviors:[IronResizableBehavior],properties:{/**
+     * If true, the orientation is horizontal; otherwise is vertical.
+     *
+     * @attribute horizontal
+     */horizontal:{type:Boolean,value:!1,observer:"_horizontalChanged"},/**
+     * Set opened to true to show the collapse element and to false to hide it.
+     *
+     * @attribute opened
+     */opened:{type:Boolean,value:!1,notify:!0,observer:"_openedChanged"},/**
+     * When true, the element is transitioning its opened state. When false,
+     * the element has finished opening/closing.
+     *
+     * @attribute transitioning
+     */transitioning:{type:Boolean,notify:!0,readOnly:!0},/**
+     * Set noAnimation to true to disable animations.
+     *
+     * @attribute noAnimation
+     */noAnimation:{type:Boolean},/**
+     * Stores the desired size of the collapse body.
+     * @private
+     */_desiredSize:{type:String,value:""}},get dimension(){return this.horizontal?"width":"height"},/**
+   * `maxWidth` or `maxHeight`.
+   * @private
+   */get _dimensionMax(){return this.horizontal?"maxWidth":"maxHeight"},/**
+   * `max-width` or `max-height`.
+   * @private
+   */get _dimensionMaxCss(){return this.horizontal?"max-width":"max-height"},hostAttributes:{role:"group","aria-hidden":"true"},listeners:{transitionend:"_onTransitionEnd"},/**
+   * Toggle the opened state.
+   *
+   * @method toggle
+   */toggle:function(){this.opened=!this.opened},show:function(){this.opened=!0},hide:function(){this.opened=!1},/**
+   * Updates the size of the element.
+   * @param {string} size The new value for `maxWidth`/`maxHeight` as css property value, usually `auto` or `0px`.
+   * @param {boolean=} animated if `true` updates the size with an animation, otherwise without.
+   */updateSize:function(size,animated){// Consider 'auto' as '', to take full size.
+size="auto"===size?"":size;var willAnimate=animated&&!this.noAnimation&&this.isAttached&&this._desiredSize!==size;this._desiredSize=size;this._updateTransition(!1);// If we can animate, must do some prep work.
+if(willAnimate){// Animation will start at the current size.
+var startSize=this._calcSize();// For `auto` we must calculate what is the final size for the animation.
+// After the transition is done, _transitionEnd will set the size back to
+// `auto`.
+if(""===size){this.style[this._dimensionMax]="";size=this._calcSize()}// Go to startSize without animation.
+this.style[this._dimensionMax]=startSize;// Force layout to ensure transition will go. Set scrollTop to itself
+// so that compilers won't remove it.
+this.scrollTop=this.scrollTop;// Enable animation.
+this._updateTransition(!0);// If final size is the same as startSize it will not animate.
+willAnimate=size!==startSize}// Set the final size.
+this.style[this._dimensionMax]=size;// If it won't animate, call transitionEnd to set correct classes.
+if(!willAnimate){this._transitionEnd()}},/**
+   * enableTransition() is deprecated, but left over so it doesn't break
+   * existing code. Please use `noAnimation` property instead.
+   *
+   * @method enableTransition
+   * @deprecated since version 1.0.4
+   */enableTransition:function(enabled){Base._warn("`enableTransition()` is deprecated, use `noAnimation` instead.");this.noAnimation=!enabled},_updateTransition:function(enabled){this.style.transitionDuration=enabled&&!this.noAnimation?"":"0s"},_horizontalChanged:function(){this.style.transitionProperty=this._dimensionMaxCss;var otherDimension="maxWidth"===this._dimensionMax?"maxHeight":"maxWidth";this.style[otherDimension]="";this.updateSize(this.opened?"auto":"0px",!1)},_openedChanged:function(){this.setAttribute("aria-hidden",!this.opened);this._setTransitioning(!0);this.toggleClass("iron-collapse-closed",!1);this.toggleClass("iron-collapse-opened",!1);this.updateSize(this.opened?"auto":"0px",!0);// Focus the current collapse.
+if(this.opened){this.focus()}},_transitionEnd:function(){this.style[this._dimensionMax]=this._desiredSize;this.toggleClass("iron-collapse-closed",!this.opened);this.toggleClass("iron-collapse-opened",this.opened);this._updateTransition(!1);this.notifyResize();this._setTransitioning(!1)},_onTransitionEnd:function(event){if(dom(event).rootTarget===this){this._transitionEnd()}},_calcSize:function(){return this.getBoundingClientRect()[this.dimension]+"px"}});const IronFitBehavior={properties:{/**
      * The element that will receive a `max-height`/`width`. By default it is
      * the same as `this`, but it can be set to a child element. This is useful,
      * for example, for implementing a scrolling region inside the element.
@@ -15642,7 +15716,23 @@ _activateHandler:function(event){IronSelectableBehavior._activateHandler.call(th
 }else if(!this.hasAttribute("tabindex")){this.setAttribute("tabindex",this._previousTabIndex)}}};_exports.IronMenuBehaviorImpl=IronMenuBehaviorImpl;IronMenuBehaviorImpl._shiftTabPressed=!1;/** @polymerBehavior */const IronMenuBehavior=[IronMultiSelectableBehavior,IronA11yKeysBehavior,IronMenuBehaviorImpl];_exports.IronMenuBehavior=IronMenuBehavior;var ironMenuBehavior={IronMenuBehaviorImpl:IronMenuBehaviorImpl,IronMenuBehavior:IronMenuBehavior};_exports.$ironMenuBehavior=ironMenuBehavior;const IronMenubarBehaviorImpl={hostAttributes:{role:"menubar"},/**
    * @type {!Object}
    */keyBindings:{left:"_onLeftKey",right:"_onRightKey"},_onUpKey:function(event){this.focusedItem.click();event.detail.keyboardEvent.preventDefault()},_onDownKey:function(event){this.focusedItem.click();event.detail.keyboardEvent.preventDefault()},get _isRTL(){return"rtl"===window.getComputedStyle(this).direction},_onLeftKey:function(event){if(this._isRTL){this._focusNext()}else{this._focusPrevious()}event.detail.keyboardEvent.preventDefault()},_onRightKey:function(event){if(this._isRTL){this._focusPrevious()}else{this._focusNext()}event.detail.keyboardEvent.preventDefault()},_onKeydown:function(event){if(this.keyboardEventMatchesKeys(event,"up down left right esc")){return}// all other keys focus the menu item starting with that character
-this._focusWithKeyboardEvent(event)}};/** @polymerBehavior */_exports.IronMenubarBehaviorImpl=IronMenubarBehaviorImpl;const IronMenubarBehavior=[IronMenuBehavior,IronMenubarBehaviorImpl];_exports.IronMenubarBehavior=IronMenubarBehavior;var ironMenubarBehavior={IronMenubarBehaviorImpl:IronMenubarBehaviorImpl,IronMenubarBehavior:IronMenubarBehavior};_exports.$ironMenubarBehavior=ironMenubarBehavior;const IronRangeBehavior={properties:{/**
+this._focusWithKeyboardEvent(event)}};/** @polymerBehavior */_exports.IronMenubarBehaviorImpl=IronMenubarBehaviorImpl;const IronMenubarBehavior=[IronMenuBehavior,IronMenubarBehaviorImpl];_exports.IronMenubarBehavior=IronMenubarBehavior;var ironMenubarBehavior={IronMenubarBehaviorImpl:IronMenubarBehaviorImpl,IronMenubarBehavior:IronMenubarBehavior};_exports.$ironMenubarBehavior=ironMenubarBehavior;Polymer({_template:html`
+    <style>
+      :host {
+        display: block;
+      }
+
+      :host > ::slotted(:not(slot):not(.iron-selected)) {
+        display: none !important;
+      }
+    </style>
+
+    <slot></slot>
+`,is:"iron-pages",behaviors:[IronResizableBehavior,IronSelectableBehavior],properties:{// as the selected page is the only one visible, activateEvent
+// is both non-sensical and problematic; e.g. in cases where a user
+// handler attempts to change the page and the activateEvent
+// handler immediately changes it back
+activateEvent:{type:String,value:null}},observers:["_selectedPageChanged(selected)"],_selectedPageChanged:function(selected,old){this.async(this.notifyResize)}});const IronRangeBehavior={properties:{/**
      * The number that represents the current value.
      */value:{type:Number,value:0,notify:!0,reflectToAttribute:!0},/**
      * The number that indicates the minimum value of the range.
@@ -16995,7 +17085,235 @@ if(this.hasRipple()&&1>this.getRipple().ripples.length){this._ripple.uiDownActio
      */animated:{type:Boolean,reflectToAttribute:!0,readOnly:!0,computed:"_computeAnimated(animatedShadow)"}},/**
    * Format function for aria-hidden. Use the ! operator results in the
    * empty string when given a falsy value.
-   */_isHidden:function(image){return image?"false":"true"},_headingChanged:function(heading){var currentHeading=this.getAttribute("heading"),currentLabel=this.getAttribute("aria-label");if("string"!==typeof currentLabel||currentLabel===currentHeading){this.setAttribute("aria-label",heading)}},_computeHeadingClass:function(image){return image?" over-image":""},_computeAnimated:function(animatedShadow){return animatedShadow}});const PaperDialogBehaviorImpl={hostAttributes:{role:"dialog",tabindex:"-1"},properties:{/**
+   */_isHidden:function(image){return image?"false":"true"},_headingChanged:function(heading){var currentHeading=this.getAttribute("heading"),currentLabel=this.getAttribute("aria-label");if("string"!==typeof currentLabel||currentLabel===currentHeading){this.setAttribute("aria-label",heading)}},_computeHeadingClass:function(image){return image?" over-image":""},_computeAnimated:function(animatedShadow){return animatedShadow}});const template$8=html`<style>
+  :host {
+    display: inline-block;
+    white-space: nowrap;
+    cursor: pointer;
+    --calculated-paper-checkbox-size: var(--paper-checkbox-size, 18px);
+    /* -1px is a sentinel for the default and is replaced in \`attached\`. */
+    --calculated-paper-checkbox-ink-size: var(--paper-checkbox-ink-size, -1px);
+    @apply --paper-font-common-base;
+    line-height: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  :host([hidden]) {
+    display: none !important;
+  }
+
+  :host(:focus) {
+    outline: none;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  #checkboxContainer {
+    display: inline-block;
+    position: relative;
+    width: var(--calculated-paper-checkbox-size);
+    height: var(--calculated-paper-checkbox-size);
+    min-width: var(--calculated-paper-checkbox-size);
+    margin: var(--paper-checkbox-margin, initial);
+    vertical-align: var(--paper-checkbox-vertical-align, middle);
+    background-color: var(--paper-checkbox-unchecked-background-color, transparent);
+  }
+
+  #ink {
+    position: absolute;
+
+    /* Center the ripple in the checkbox by negative offsetting it by
+     * (inkWidth - rippleWidth) / 2 */
+    top: calc(0px - (var(--calculated-paper-checkbox-ink-size) - var(--calculated-paper-checkbox-size)) / 2);
+    left: calc(0px - (var(--calculated-paper-checkbox-ink-size) - var(--calculated-paper-checkbox-size)) / 2);
+    width: var(--calculated-paper-checkbox-ink-size);
+    height: var(--calculated-paper-checkbox-ink-size);
+    color: var(--paper-checkbox-unchecked-ink-color, var(--primary-text-color));
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  #ink:dir(rtl) {
+    right: calc(0px - (var(--calculated-paper-checkbox-ink-size) - var(--calculated-paper-checkbox-size)) / 2);
+    left: auto;
+  }
+
+  #ink[checked] {
+    color: var(--paper-checkbox-checked-ink-color, var(--primary-color));
+  }
+
+  #checkbox {
+    position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    border: solid 2px;
+    border-color: var(--paper-checkbox-unchecked-color, var(--primary-text-color));
+    border-radius: 2px;
+    pointer-events: none;
+    -webkit-transition: background-color 140ms, border-color 140ms;
+    transition: background-color 140ms, border-color 140ms;
+
+    -webkit-transition-duration: var(--paper-checkbox-animation-duration, 140ms);
+    transition-duration: var(--paper-checkbox-animation-duration, 140ms);
+  }
+
+  /* checkbox checked animations */
+  #checkbox.checked #checkmark {
+    -webkit-animation: checkmark-expand 140ms ease-out forwards;
+    animation: checkmark-expand 140ms ease-out forwards;
+
+    -webkit-animation-duration: var(--paper-checkbox-animation-duration, 140ms);
+    animation-duration: var(--paper-checkbox-animation-duration, 140ms);
+  }
+
+  @-webkit-keyframes checkmark-expand {
+    0% {
+      -webkit-transform: scale(0, 0) rotate(45deg);
+    }
+    100% {
+      -webkit-transform: scale(1, 1) rotate(45deg);
+    }
+  }
+
+  @keyframes checkmark-expand {
+    0% {
+      transform: scale(0, 0) rotate(45deg);
+    }
+    100% {
+      transform: scale(1, 1) rotate(45deg);
+    }
+  }
+
+  #checkbox.checked {
+    background-color: var(--paper-checkbox-checked-color, var(--primary-color));
+    border-color: var(--paper-checkbox-checked-color, var(--primary-color));
+  }
+
+  #checkmark {
+    position: absolute;
+    width: 36%;
+    height: 70%;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right-width: calc(2/15 * var(--calculated-paper-checkbox-size));
+    border-bottom-width: calc(2/15 * var(--calculated-paper-checkbox-size));
+    border-color: var(--paper-checkbox-checkmark-color, white);
+    -webkit-transform-origin: 97% 86%;
+    transform-origin: 97% 86%;
+    box-sizing: content-box; /* protect against page-level box-sizing */
+  }
+
+  #checkmark:dir(rtl) {
+    -webkit-transform-origin: 50% 14%;
+    transform-origin: 50% 14%;
+  }
+
+  /* label */
+  #checkboxLabel {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: var(--paper-checkbox-label-spacing, 8px);
+    white-space: normal;
+    line-height: normal;
+    color: var(--paper-checkbox-label-color, var(--primary-text-color));
+    @apply --paper-checkbox-label;
+  }
+
+  :host([checked]) #checkboxLabel {
+    color: var(--paper-checkbox-label-checked-color, var(--paper-checkbox-label-color, var(--primary-text-color)));
+    @apply --paper-checkbox-label-checked;
+  }
+
+  #checkboxLabel:dir(rtl) {
+    padding-right: var(--paper-checkbox-label-spacing, 8px);
+    padding-left: 0;
+  }
+
+  #checkboxLabel[hidden] {
+    display: none;
+  }
+
+  /* disabled state */
+
+  :host([disabled]) #checkbox {
+    opacity: 0.5;
+    border-color: var(--paper-checkbox-unchecked-color, var(--primary-text-color));
+  }
+
+  :host([disabled][checked]) #checkbox {
+    background-color: var(--paper-checkbox-unchecked-color, var(--primary-text-color));
+    opacity: 0.5;
+  }
+
+  :host([disabled]) #checkboxLabel  {
+    opacity: 0.65;
+  }
+
+  /* invalid state */
+  #checkbox.invalid:not(.checked) {
+    border-color: var(--paper-checkbox-error-color, var(--error-color));
+  }
+</style>
+
+<div id="checkboxContainer">
+  <div id="checkbox" class$="[[_computeCheckboxClass(checked, invalid)]]">
+    <div id="checkmark" class$="[[_computeCheckmarkClass(checked)]]"></div>
+  </div>
+</div>
+
+<div id="checkboxLabel"><slot></slot></div>`;template$8.setAttribute("strip-whitespace","");/**
+                                                 Material design:
+                                                 [Checkbox](https://www.google.com/design/spec/components/selection-controls.html#selection-controls-checkbox)
+                                                                                               `paper-checkbox` is a button that can be either checked or unchecked. User can
+                                                 tap the checkbox to check or uncheck it. Usually you use checkboxes to allow
+                                                 user to select multiple options from a set. If you have a single ON/OFF option,
+                                                 avoid using a single checkbox and use `paper-toggle-button` instead.
+                                                                                               Example:
+                                                                                                   <paper-checkbox>label</paper-checkbox>
+                                                                                                   <paper-checkbox checked> label</paper-checkbox>
+                                                                                               ### Styling
+                                                                                               The following custom properties and mixins are available for styling:
+                                                                                               Custom property | Description | Default
+                                                 ----------------|-------------|----------
+                                                 `--paper-checkbox-unchecked-background-color` | Checkbox background color when the input is not checked | `transparent`
+                                                 `--paper-checkbox-unchecked-color` | Checkbox border color when the input is not checked | `--primary-text-color`
+                                                 `--paper-checkbox-unchecked-ink-color` | Selected/focus ripple color when the input is not checked | `--primary-text-color`
+                                                 `--paper-checkbox-checked-color` | Checkbox color when the input is checked | `--primary-color`
+                                                 `--paper-checkbox-checked-ink-color` | Selected/focus ripple color when the input is checked | `--primary-color`
+                                                 `--paper-checkbox-checkmark-color` | Checkmark color | `white`
+                                                 `--paper-checkbox-label-color` | Label color | `--primary-text-color`
+                                                 `--paper-checkbox-label-checked-color` | Label color when the input is checked | `--paper-checkbox-label-color`
+                                                 `--paper-checkbox-label-spacing` | Spacing between the label and the checkbox | `8px`
+                                                 `--paper-checkbox-label` | Mixin applied to the label | `{}`
+                                                 `--paper-checkbox-label-checked` | Mixin applied to the label when the input is checked | `{}`
+                                                 `--paper-checkbox-error-color` | Checkbox color when invalid | `--error-color`
+                                                 `--paper-checkbox-size` | Size of the checkbox | `18px`
+                                                 `--paper-checkbox-ink-size` | Size of the ripple | `48px`
+                                                 `--paper-checkbox-margin` | Margin around the checkbox container | `initial`
+                                                 `--paper-checkbox-vertical-align` | Vertical alignment of the checkbox container | `middle`
+                                                                                               This element applies the mixin `--paper-font-common-base` but does not import
+                                                 `paper-styles/typography.html`. In order to apply the `Roboto` font to this
+                                                 element, make sure you've imported `paper-styles/typography.html`.
+                                                                                               @demo demo/index.html
+                                                 */Polymer({_template:template$8,is:"paper-checkbox",behaviors:[PaperCheckedElementBehavior],/** @private */hostAttributes:{role:"checkbox","aria-checked":!1,tabindex:0},properties:{/**
+     * Fired when the checked state changes due to user interaction.
+     *
+     * @event change
+     */ /**
+         * Fired when the checked state changes.
+         *
+         * @event iron-change
+         */ariaActiveAttribute:{type:String,value:"aria-checked"}},attached:function(){// Wait until styles have resolved to check for the default sentinel.
+// See polymer#4009 for more details.
+afterNextRender(this,function(){var inkSize=this.getComputedStyleValue("--calculated-paper-checkbox-ink-size").trim();// If unset, compute and set the default `--paper-checkbox-ink-size`.
+if("-1px"===inkSize){var checkboxSizeText=this.getComputedStyleValue("--calculated-paper-checkbox-size").trim(),units="px",unitsMatches=checkboxSizeText.match(/[A-Za-z]+$/);if(null!==unitsMatches){units=unitsMatches[0]}var checkboxSize=parseFloat(checkboxSizeText),defaultInkSize=8/3*checkboxSize;if("px"===units){defaultInkSize=Math.floor(defaultInkSize);// The checkbox and ripple need to have the same parity so that their
+// centers align.
+if(defaultInkSize%2!==checkboxSize%2){defaultInkSize++}}this.updateStyles({"--paper-checkbox-ink-size":defaultInkSize+units})}})},_computeCheckboxClass:function(checked,invalid){var className="";if(checked){className+="checked "}if(invalid){className+="invalid"}return className},_computeCheckmarkClass:function(checked){return checked?"":"hidden"},// create ripple inside the checkboxContainer
+_createRipple:function(){this._rippleContainer=this.$.checkboxContainer;return PaperInkyFocusBehaviorImpl._createRipple.call(this)}});const PaperDialogBehaviorImpl={hostAttributes:{role:"dialog",tabindex:"-1"},properties:{/**
      * If `modal` is true, this implies `no-cancel-on-outside-click`,
      * `no-cancel-on-esc-key` and `with-backdrop`.
      */modal:{type:Boolean,value:!1},__readied:{type:Boolean,value:!1}},observers:["_modalChanged(modal, __readied)"],listeners:{tap:"_onDialogClick"},/**
@@ -17010,7 +17328,7 @@ this.noCancelOnOutsideClick=this.noCancelOnOutsideClick&&this.__prevNoCancelOnOu
    * or dialog-confirm attribute.
    */_onDialogClick:function(event){// Search for the element with dialog-confirm or dialog-dismiss,
 // from the root target until this (excluded).
-for(var path=dom(event).path,i=0,l=path.indexOf(this),target;i<l;i++){target=path[i];if(target.hasAttribute&&(target.hasAttribute("dialog-dismiss")||target.hasAttribute("dialog-confirm"))){this._updateClosingReasonConfirmed(target.hasAttribute("dialog-confirm"));this.close();event.stopPropagation();break}}}};/** @polymerBehavior */_exports.PaperDialogBehaviorImpl=PaperDialogBehaviorImpl;const PaperDialogBehavior=[IronOverlayBehavior,PaperDialogBehaviorImpl];_exports.PaperDialogBehavior=PaperDialogBehavior;var paperDialogBehavior={PaperDialogBehaviorImpl:PaperDialogBehaviorImpl,PaperDialogBehavior:PaperDialogBehavior};_exports.$paperDialogBehavior=paperDialogBehavior;const template$8=html`<custom-style>
+for(var path=dom(event).path,i=0,l=path.indexOf(this),target;i<l;i++){target=path[i];if(target.hasAttribute&&(target.hasAttribute("dialog-dismiss")||target.hasAttribute("dialog-confirm"))){this._updateClosingReasonConfirmed(target.hasAttribute("dialog-confirm"));this.close();event.stopPropagation();break}}}};/** @polymerBehavior */_exports.PaperDialogBehaviorImpl=PaperDialogBehaviorImpl;const PaperDialogBehavior=[IronOverlayBehavior,PaperDialogBehaviorImpl];_exports.PaperDialogBehavior=PaperDialogBehavior;var paperDialogBehavior={PaperDialogBehaviorImpl:PaperDialogBehaviorImpl,PaperDialogBehavior:PaperDialogBehavior};_exports.$paperDialogBehavior=paperDialogBehavior;const template$9=html`<custom-style>
   <style is="custom-style">
     html {
 
@@ -17166,7 +17484,7 @@ for(var path=dom(event).path,i=0,l=path.indexOf(this),target;i<l;i++){target=pat
     }
 
   </style>
-</custom-style>`;template$8.setAttribute("style","display: none;");document.head.appendChild(template$8.content);const $_documentContainer$1=document.createElement("template");$_documentContainer$1.setAttribute("style","display: none;");$_documentContainer$1.innerHTML=`<dom-module id="paper-dialog-shared-styles">
+</custom-style>`;template$9.setAttribute("style","display: none;");document.head.appendChild(template$9.content);const $_documentContainer$1=document.createElement("template");$_documentContainer$1.setAttribute("style","display: none;");$_documentContainer$1.innerHTML=`<dom-module id="paper-dialog-shared-styles">
   <template>
     <style>
       :host {
@@ -17400,7 +17718,7 @@ if(this.dialogElement&&this.dialogElement.behaviors&&0<=this.dialogElement.behav
    *     inputElement: The input element.
    *     value: The input value.
    *     invalid: True if the input value is invalid.
-   */update:function(state){if(!state.inputElement){return}state.value=state.value||"";var counter=state.value.toString().length.toString();if(state.inputElement.hasAttribute("maxlength")){counter+="/"+state.inputElement.getAttribute("maxlength")}this._charCounterStr=counter}});const template$9=html`
+   */update:function(state){if(!state.inputElement){return}state.value=state.value||"";var counter=state.value.toString().length.toString();if(state.inputElement.hasAttribute("maxlength")){counter+="/"+state.inputElement.getAttribute("maxlength")}this._charCounterStr=counter}});const template$a=html`
 <custom-style>
   <style is="custom-style">
     html {
@@ -17424,7 +17742,7 @@ if(this.dialogElement&&this.dialogElement.behaviors&&0<=this.dialogElement.behav
     }
   </style>
 </custom-style>
-`;template$9.setAttribute("style","display: none;");document.head.appendChild(template$9.content);/*
+`;template$a.setAttribute("style","display: none;");document.head.appendChild(template$a.content);/*
                                                `<paper-input-container>` is a container for a `<label>`, an `<iron-input>` or
                                                `<textarea>` and optional add-on elements such as an error message or character
                                                counter, used to implement Material Design text fields.
@@ -18601,7 +18919,40 @@ type:String},/**
    * @return {number}
    */get selectionStart(){return this.$.input.textarea.selectionStart},set selectionStart(start){this.$.input.textarea.selectionStart=start},/**
    * @return {number}
-   */get selectionEnd(){return this.$.input.textarea.selectionEnd},set selectionEnd(end){this.$.input.textarea.selectionEnd=end},_ariaLabelledByChanged:function(ariaLabelledBy){this._focusableElement.setAttribute("aria-labelledby",ariaLabelledBy)},_ariaDescribedByChanged:function(ariaDescribedBy){this._focusableElement.setAttribute("aria-describedby",ariaDescribedBy)},get _focusableElement(){return this.inputElement.textarea}});const PaperItemBehaviorImpl={hostAttributes:{role:"option",tabindex:"0"}};/** @polymerBehavior */_exports.PaperItemBehaviorImpl=PaperItemBehaviorImpl;const PaperItemBehavior=[IronButtonState,IronControlState,PaperItemBehaviorImpl];_exports.PaperItemBehavior=PaperItemBehavior;var paperItemBehavior={PaperItemBehaviorImpl:PaperItemBehaviorImpl,PaperItemBehavior:PaperItemBehavior};_exports.$paperItemBehavior=paperItemBehavior;const $_documentContainer$4=document.createElement("template");$_documentContainer$4.setAttribute("style","display: none;");$_documentContainer$4.innerHTML=`<dom-module id="paper-item-shared-styles">
+   */get selectionEnd(){return this.$.input.textarea.selectionEnd},set selectionEnd(end){this.$.input.textarea.selectionEnd=end},_ariaLabelledByChanged:function(ariaLabelledBy){this._focusableElement.setAttribute("aria-labelledby",ariaLabelledBy)},_ariaDescribedByChanged:function(ariaDescribedBy){this._focusableElement.setAttribute("aria-describedby",ariaDescribedBy)},get _focusableElement(){return this.inputElement.textarea}});const PaperItemBehaviorImpl={hostAttributes:{role:"option",tabindex:"0"}};/** @polymerBehavior */_exports.PaperItemBehaviorImpl=PaperItemBehaviorImpl;const PaperItemBehavior=[IronButtonState,IronControlState,PaperItemBehaviorImpl];_exports.PaperItemBehavior=PaperItemBehavior;var paperItemBehavior={PaperItemBehaviorImpl:PaperItemBehaviorImpl,PaperItemBehavior:PaperItemBehavior};_exports.$paperItemBehavior=paperItemBehavior;Polymer({_template:html`
+    <style>
+      :host {
+        overflow: hidden; /* needed for text-overflow: ellipsis to work on ff */
+        @apply --layout-vertical;
+        @apply --layout-center-justified;
+        @apply --layout-flex;
+      }
+
+      :host([two-line]) {
+        min-height: var(--paper-item-body-two-line-min-height, 72px);
+      }
+
+      :host([three-line]) {
+        min-height: var(--paper-item-body-three-line-min-height, 88px);
+      }
+
+      :host > ::slotted(*) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      :host > ::slotted([secondary]) {
+        @apply --paper-font-body1;
+
+        color: var(--paper-item-body-secondary-color, var(--secondary-text-color));
+
+        @apply --paper-item-body-secondary;
+      }
+    </style>
+
+    <slot></slot>
+`,is:"paper-item-body"});const $_documentContainer$4=document.createElement("template");$_documentContainer$4.setAttribute("style","display: none;");$_documentContainer$4.innerHTML=`<dom-module id="paper-item-shared-styles">
   <template>
     <style>
       :host, .paper-item {
@@ -18855,7 +19206,7 @@ type:String},/**
      */disabled:{type:Boolean,value:!1,reflectToAttribute:!0,observer:"_disabledChanged"}},observers:["_progressChanged(secondaryProgress, value, min, max, indeterminate)"],hostAttributes:{role:"progressbar"},_toggleIndeterminate:function(indeterminate){// If we use attribute/class binding, the animation sometimes doesn't
 // translate properly on Safari 7.1. So instead, we toggle the class here in
 // the update method.
-this.toggleClass("indeterminate",indeterminate,this.$.primaryProgress)},_transformProgress:function(progress,ratio){var transform="scaleX("+ratio/100+")";progress.style.transform=progress.style.webkitTransform=transform},_mainRatioChanged:function(ratio){this._transformProgress(this.$.primaryProgress,ratio)},_progressChanged:function(secondaryProgress,value,min,max,indeterminate){secondaryProgress=this._clampValue(secondaryProgress);value=this._clampValue(value);var secondaryRatio=100*this._calcRatio(secondaryProgress),mainRatio=100*this._calcRatio(value);this._setSecondaryRatio(secondaryRatio);this._transformProgress(this.$.secondaryProgress,secondaryRatio);this._transformProgress(this.$.primaryProgress,mainRatio);this.secondaryProgress=secondaryProgress;if(indeterminate){this.removeAttribute("aria-valuenow")}else{this.setAttribute("aria-valuenow",value)}this.setAttribute("aria-valuemin",min);this.setAttribute("aria-valuemax",max)},_disabledChanged:function(disabled){this.setAttribute("aria-disabled",disabled?"true":"false")},_hideSecondaryProgress:function(secondaryRatio){return 0===secondaryRatio}});const template$a=html`
+this.toggleClass("indeterminate",indeterminate,this.$.primaryProgress)},_transformProgress:function(progress,ratio){var transform="scaleX("+ratio/100+")";progress.style.transform=progress.style.webkitTransform=transform},_mainRatioChanged:function(ratio){this._transformProgress(this.$.primaryProgress,ratio)},_progressChanged:function(secondaryProgress,value,min,max,indeterminate){secondaryProgress=this._clampValue(secondaryProgress);value=this._clampValue(value);var secondaryRatio=100*this._calcRatio(secondaryProgress),mainRatio=100*this._calcRatio(value);this._setSecondaryRatio(secondaryRatio);this._transformProgress(this.$.secondaryProgress,secondaryRatio);this._transformProgress(this.$.primaryProgress,mainRatio);this.secondaryProgress=secondaryProgress;if(indeterminate){this.removeAttribute("aria-valuenow")}else{this.setAttribute("aria-valuenow",value)}this.setAttribute("aria-valuemin",min);this.setAttribute("aria-valuemax",max)},_disabledChanged:function(disabled){this.setAttribute("aria-disabled",disabled?"true":"false")},_hideSecondaryProgress:function(secondaryRatio){return 0===secondaryRatio}});const template$b=html`
 <style>
   :host {
     display: inline-block;
@@ -18983,7 +19334,7 @@ this.toggleClass("indeterminate",indeterminate,this.$.primaryProgress)},_transfo
   <div id="onRadio"></div>
 </div>
 
-<div id="radioLabel"><slot></slot></div>`;template$a.setAttribute("strip-whitespace","");/**
+<div id="radioLabel"><slot></slot></div>`;template$b.setAttribute("strip-whitespace","");/**
                                                  Material design: [Radio button](https://www.google.com/design/spec/components/selection-controls.html#selection-controls-radio-button)
                                                                                                `paper-radio-button` is a button that can be either checked or unchecked. The
                                                  user can tap the radio button to check or uncheck it.
@@ -19015,7 +19366,7 @@ this.toggleClass("indeterminate",indeterminate,this.$.primaryProgress)},_transfo
                                                                                                @group Paper Elements
                                                  @element paper-radio-button
                                                  @demo demo/index.html
-                                                 */Polymer({_template:template$a,is:"paper-radio-button",behaviors:[PaperCheckedElementBehavior],hostAttributes:{role:"radio","aria-checked":!1,tabindex:0},properties:{/**
+                                                 */Polymer({_template:template$b,is:"paper-radio-button",behaviors:[PaperCheckedElementBehavior],hostAttributes:{role:"radio","aria-checked":!1,tabindex:0},properties:{/**
      * Fired when the checked state changes due to user interaction.
      *
      * @event change
@@ -19402,7 +19753,7 @@ if("loading"===alt){this.alt=this.getAttribute("aria-label")||alt}else{this.__se
       }
     </style>
   </template>
-</dom-module>`;document.head.appendChild($_documentContainer$5.content);const template$b=html`
+</dom-module>`;document.head.appendChild($_documentContainer$5.content);const template$c=html`
   <style include="paper-spinner-styles"></style>
 
   <div id="spinnerContainer" class-name="[[__computeContainerClasses(active, __coolingDown)]]" on-animationend="__reset" on-webkit-animation-end="__reset">
@@ -19442,7 +19793,7 @@ if("loading"===alt){this.alt=this.getAttribute("aria-label")||alt}else{this.__se
       </div>
     </div>
   </div>
-`;template$b.setAttribute("strip-whitespace","");/**
+`;template$c.setAttribute("strip-whitespace","");/**
                                                  Material design: [Progress &
                                                  activity](https://www.google.com/design/spec/components/progress-activity.html)
                                                                                                Element providing a multiple color material design circular spinner.
@@ -19469,7 +19820,259 @@ if("loading"===alt){this.alt=this.getAttribute("aria-label")||alt}else{this.__se
                                                  @element paper-spinner
                                                  @hero hero.svg
                                                  @demo demo/index.html
-                                                 */Polymer({_template:template$b,is:"paper-spinner",behaviors:[PaperSpinnerBehavior]});var currentToast=null;/**
+                                                 */Polymer({_template:template$c,is:"paper-spinner",behaviors:[PaperSpinnerBehavior]});Polymer({_template:html`
+    <style>
+      :host {
+        @apply --layout-inline;
+        @apply --layout-center;
+        @apply --layout-center-justified;
+        @apply --layout-flex-auto;
+
+        position: relative;
+        padding: 0 12px;
+        overflow: hidden;
+        cursor: pointer;
+        vertical-align: middle;
+
+        @apply --paper-font-common-base;
+        @apply --paper-tab;
+      }
+
+      :host(:focus) {
+        outline: none;
+      }
+
+      :host([link]) {
+        padding: 0;
+      }
+
+      .tab-content {
+        height: 100%;
+        transform: translateZ(0);
+          -webkit-transform: translateZ(0);
+        transition: opacity 0.1s cubic-bezier(0.4, 0.0, 1, 1);
+        @apply --layout-horizontal;
+        @apply --layout-center-center;
+        @apply --layout-flex-auto;
+        @apply --paper-tab-content;
+      }
+
+      :host(:not(.iron-selected)) > .tab-content {
+        opacity: 0.8;
+
+        @apply --paper-tab-content-unselected;
+      }
+
+      :host(:focus) .tab-content {
+        opacity: 1;
+        font-weight: 700;
+
+        @apply --paper-tab-content-focused;
+      }
+
+      paper-ripple {
+        color: var(--paper-tab-ink, var(--paper-yellow-a100));
+      }
+
+      .tab-content > ::slotted(a) {
+        @apply --layout-flex-auto;
+
+        height: 100%;
+      }
+    </style>
+
+    <div class="tab-content">
+      <slot></slot>
+    </div>
+`,is:"paper-tab",behaviors:[IronControlState,IronButtonState,PaperRippleBehavior],properties:{/**
+     * If true, the tab will forward keyboard clicks (enter/space) to
+     * the first anchor element found in its descendants
+     */link:{type:Boolean,value:!1,reflectToAttribute:!0}},/** @private */hostAttributes:{role:"tab"},listeners:{down:"_updateNoink",tap:"_onTap"},attached:function(){this._updateNoink()},get _parentNoink(){var parent=dom(this).parentNode;return!!parent&&!!parent.noink},_updateNoink:function(){this.noink=!!this.noink||!!this._parentNoink},_onTap:function(event){if(this.link){var anchor=this.queryEffectiveChildren("a");if(!anchor){return}// Don't get stuck in a loop delegating
+// the listener from the child anchor
+if(event.target===anchor){return}anchor.click()}}});const template$d=html`<iron-iconset-svg name="paper-tabs" size="24">
+<svg><defs>
+<g id="chevron-left"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path></g>
+<g id="chevron-right"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path></g>
+</defs></svg>
+</iron-iconset-svg>`;document.head.appendChild(template$d.content);Polymer({_template:html`
+    <style>
+      :host {
+        @apply --layout;
+        @apply --layout-center;
+
+        height: 48px;
+        font-size: 14px;
+        font-weight: 500;
+        overflow: hidden;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+
+        /* NOTE: Both values are needed, since some phones require the value to be \`transparent\`. */
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: transparent;
+
+        @apply --paper-tabs;
+      }
+
+      :host(:dir(rtl)) {
+        @apply --layout-horizontal-reverse;
+      }
+
+      #tabsContainer {
+        position: relative;
+        height: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        @apply --layout-flex-auto;
+        @apply --paper-tabs-container;
+      }
+
+      #tabsContent {
+        height: 100%;
+        -moz-flex-basis: auto;
+        -ms-flex-basis: auto;
+        flex-basis: auto;
+        @apply --paper-tabs-content;
+      }
+
+      #tabsContent.scrollable {
+        position: absolute;
+        white-space: nowrap;
+      }
+
+      #tabsContent:not(.scrollable),
+      #tabsContent.scrollable.fit-container {
+        @apply --layout-horizontal;
+      }
+
+      #tabsContent.scrollable.fit-container {
+        min-width: 100%;
+      }
+
+      #tabsContent.scrollable.fit-container > ::slotted(*) {
+        /* IE - prevent tabs from compressing when they should scroll. */
+        -ms-flex: 1 0 auto;
+        -webkit-flex: 1 0 auto;
+        flex: 1 0 auto;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      .not-visible {
+        opacity: 0;
+        cursor: default;
+      }
+
+      paper-icon-button {
+        width: 48px;
+        height: 48px;
+        padding: 12px;
+        margin: 0 4px;
+      }
+
+      #selectionBar {
+        position: absolute;
+        height: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-bottom: 2px solid var(--paper-tabs-selection-bar-color, var(--paper-yellow-a100));
+          -webkit-transform: scale(0);
+        transform: scale(0);
+          -webkit-transform-origin: left center;
+        transform-origin: left center;
+          transition: -webkit-transform;
+        transition: transform;
+
+        @apply --paper-tabs-selection-bar;
+      }
+
+      #selectionBar.align-bottom {
+        top: 0;
+        bottom: auto;
+      }
+
+      #selectionBar.expand {
+        transition-duration: 0.15s;
+        transition-timing-function: cubic-bezier(0.4, 0.0, 1, 1);
+      }
+
+      #selectionBar.contract {
+        transition-duration: 0.18s;
+        transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+      }
+
+      #tabsContent > ::slotted(:not(#selectionBar)) {
+        height: 100%;
+      }
+    </style>
+
+    <paper-icon-button icon="paper-tabs:chevron-left" class$="[[_computeScrollButtonClass(_leftHidden, scrollable, hideScrollButtons)]]" on-up="_onScrollButtonUp" on-down="_onLeftScrollButtonDown" tabindex="-1"></paper-icon-button>
+
+    <div id="tabsContainer" on-track="_scroll" on-down="_down">
+      <div id="tabsContent" class$="[[_computeTabsContentClass(scrollable, fitContainer)]]">
+        <div id="selectionBar" class$="[[_computeSelectionBarClass(noBar, alignBottom)]]" on-transitionend="_onBarTransitionEnd"></div>
+        <slot></slot>
+      </div>
+    </div>
+
+    <paper-icon-button icon="paper-tabs:chevron-right" class$="[[_computeScrollButtonClass(_rightHidden, scrollable, hideScrollButtons)]]" on-up="_onScrollButtonUp" on-down="_onRightScrollButtonDown" tabindex="-1"></paper-icon-button>
+`,is:"paper-tabs",behaviors:[IronResizableBehavior,IronMenubarBehavior],properties:{/**
+     * If true, ink ripple effect is disabled. When this property is changed,
+     * all descendant `<paper-tab>` elements have their `noink` property
+     * changed to the new value as well.
+     */noink:{type:Boolean,value:!1,observer:"_noinkChanged"},/**
+     * If true, the bottom bar to indicate the selected tab will not be shown.
+     */noBar:{type:Boolean,value:!1},/**
+     * If true, the slide effect for the bottom bar is disabled.
+     */noSlide:{type:Boolean,value:!1},/**
+     * If true, tabs are scrollable and the tab width is based on the label
+     * width.
+     */scrollable:{type:Boolean,value:!1},/**
+     * If true, tabs expand to fit their container. This currently only applies
+     * when scrollable is true.
+     */fitContainer:{type:Boolean,value:!1},/**
+     * If true, dragging on the tabs to scroll is disabled.
+     */disableDrag:{type:Boolean,value:!1},/**
+     * If true, scroll buttons (left/right arrow) will be hidden for scrollable
+     * tabs.
+     */hideScrollButtons:{type:Boolean,value:!1},/**
+     * If true, the tabs are aligned to bottom (the selection bar appears at the
+     * top).
+     */alignBottom:{type:Boolean,value:!1},selectable:{type:String,value:"paper-tab"},/**
+     * If true, tabs are automatically selected when focused using the
+     * keyboard.
+     */autoselect:{type:Boolean,value:!1},/**
+     * The delay (in milliseconds) between when the user stops interacting
+     * with the tabs through the keyboard and when the focused item is
+     * automatically selected (if `autoselect` is true).
+     */autoselectDelay:{type:Number,value:0},_step:{type:Number,value:10},_holdDelay:{type:Number,value:1},_leftHidden:{type:Boolean,value:!1},_rightHidden:{type:Boolean,value:!1},_previousTab:{type:Object}},/** @private */hostAttributes:{role:"tablist"},listeners:{"iron-resize":"_onTabSizingChanged","iron-items-changed":"_onTabSizingChanged","iron-select":"_onIronSelect","iron-deselect":"_onIronDeselect"},/**
+   * @type {!Object}
+   */keyBindings:{"left:keyup right:keyup":"_onArrowKeyup"},created:function(){this._holdJob=null;this._pendingActivationItem=void 0;this._pendingActivationTimeout=void 0;this._bindDelayedActivationHandler=this._delayedActivationHandler.bind(this);this.addEventListener("blur",this._onBlurCapture.bind(this),!0)},ready:function(){this.setScrollDirection("y",this.$.tabsContainer)},detached:function(){this._cancelPendingActivation()},_noinkChanged:function(noink){var childTabs=dom(this).querySelectorAll("paper-tab");childTabs.forEach(noink?this._setNoinkAttribute:this._removeNoinkAttribute)},_setNoinkAttribute:function(element){element.setAttribute("noink","")},_removeNoinkAttribute:function(element){element.removeAttribute("noink")},_computeScrollButtonClass:function(hideThisButton,scrollable,hideScrollButtons){if(!scrollable||hideScrollButtons){return"hidden"}if(hideThisButton){return"not-visible"}return""},_computeTabsContentClass:function(scrollable,fitContainer){return scrollable?"scrollable"+(fitContainer?" fit-container":""):" fit-container"},_computeSelectionBarClass:function(noBar,alignBottom){if(noBar){return"hidden"}else if(alignBottom){return"align-bottom"}return""},// TODO(cdata): Add `track` response back in when gesture lands.
+_onTabSizingChanged:function(){this.debounce("_onTabSizingChanged",function(){this._scroll();this._tabChanged(this.selectedItem)},10)},_onIronSelect:function(event){this._tabChanged(event.detail.item,this._previousTab);this._previousTab=event.detail.item;this.cancelDebouncer("tab-changed")},_onIronDeselect:function(event){this.debounce("tab-changed",function(){this._tabChanged(null,this._previousTab);this._previousTab=null;// See polymer/polymer#1305
+},1)},_activateHandler:function(){// Cancel item activations scheduled by keyboard events when any other
+// action causes an item to be activated (e.g. clicks).
+this._cancelPendingActivation();IronMenuBehaviorImpl._activateHandler.apply(this,arguments)},/**
+   * Activates an item after a delay (in milliseconds).
+   */_scheduleActivation:function(item,delay){this._pendingActivationItem=item;this._pendingActivationTimeout=this.async(this._bindDelayedActivationHandler,delay)},/**
+   * Activates the last item given to `_scheduleActivation`.
+   */_delayedActivationHandler:function(){var item=this._pendingActivationItem;this._pendingActivationItem=void 0;this._pendingActivationTimeout=void 0;item.fire(this.activateEvent,null,{bubbles:!0,cancelable:!0})},/**
+   * Cancels a previously scheduled item activation made with
+   * `_scheduleActivation`.
+   */_cancelPendingActivation:function(){if(this._pendingActivationTimeout!==void 0){this.cancelAsync(this._pendingActivationTimeout);this._pendingActivationItem=void 0;this._pendingActivationTimeout=void 0}},_onArrowKeyup:function(event){if(this.autoselect){this._scheduleActivation(this.focusedItem,this.autoselectDelay)}},_onBlurCapture:function(event){// Cancel a scheduled item activation (if any) when that item is
+// blurred.
+if(event.target===this._pendingActivationItem){this._cancelPendingActivation()}},get _tabContainerScrollSize(){return Math.max(0,this.$.tabsContainer.scrollWidth-this.$.tabsContainer.offsetWidth)},_scroll:function(e,detail){if(!this.scrollable){return}var ddx=detail&&-detail.ddx||0;this._affectScroll(ddx)},_down:function(e){// go one beat async to defeat IronMenuBehavior
+// autorefocus-on-no-selection timeout
+this.async(function(){if(this._defaultFocusAsync){this.cancelAsync(this._defaultFocusAsync);this._defaultFocusAsync=null}},1)},_affectScroll:function(dx){this.$.tabsContainer.scrollLeft+=dx;var scrollLeft=this.$.tabsContainer.scrollLeft;this._leftHidden=0===scrollLeft;this._rightHidden=scrollLeft===this._tabContainerScrollSize},_onLeftScrollButtonDown:function(){this._scrollToLeft();this._holdJob=setInterval(this._scrollToLeft.bind(this),this._holdDelay)},_onRightScrollButtonDown:function(){this._scrollToRight();this._holdJob=setInterval(this._scrollToRight.bind(this),this._holdDelay)},_onScrollButtonUp:function(){clearInterval(this._holdJob);this._holdJob=null},_scrollToLeft:function(){this._affectScroll(-this._step)},_scrollToRight:function(){this._affectScroll(this._step)},_tabChanged:function(tab,old){if(!tab){// Remove the bar without animation.
+this.$.selectionBar.classList.remove("expand");this.$.selectionBar.classList.remove("contract");this._positionBar(0,0);return}var r=this.$.tabsContent.getBoundingClientRect(),w=r.width,tabRect=tab.getBoundingClientRect(),tabOffsetLeft=tabRect.left-r.left;this._pos={width:this._calcPercent(tabRect.width,w),left:this._calcPercent(tabOffsetLeft,w)};if(this.noSlide||null==old){// Position the bar without animation.
+this.$.selectionBar.classList.remove("expand");this.$.selectionBar.classList.remove("contract");this._positionBar(this._pos.width,this._pos.left);return}var oldRect=old.getBoundingClientRect(),oldIndex=this.items.indexOf(old),index=this.items.indexOf(tab),m=5;// bar animation: expand
+this.$.selectionBar.classList.add("expand");var moveRight=oldIndex<index,isRTL=this._isRTL;if(isRTL){moveRight=!moveRight}if(moveRight){this._positionBar(this._calcPercent(tabRect.left+tabRect.width-oldRect.left,w)-m,this._left)}else{this._positionBar(this._calcPercent(oldRect.left+oldRect.width-tabRect.left,w)-m,this._calcPercent(tabOffsetLeft,w)+m)}if(this.scrollable){this._scrollToSelectedIfNeeded(tabRect.width,tabOffsetLeft)}},_scrollToSelectedIfNeeded:function(tabWidth,tabOffsetLeft){var l=tabOffsetLeft-this.$.tabsContainer.scrollLeft;if(0>l){this.$.tabsContainer.scrollLeft+=l}else{l+=tabWidth-this.$.tabsContainer.offsetWidth;if(0<l){this.$.tabsContainer.scrollLeft+=l}}},_calcPercent:function(w,w0){return 100*w/w0},_positionBar:function(width,left){width=width||0;left=left||0;this._width=width;this._left=left;this.transform("translateX("+left+"%) scaleX("+width/100+")",this.$.selectionBar)},_onBarTransitionEnd:function(e){var cl=this.$.selectionBar.classList;// bar animation: expand -> contract
+if(cl.contains("expand")){cl.remove("expand");cl.add("contract");this._positionBar(this._pos.width,this._pos.left);// bar animation done
+}else if(cl.contains("contract")){cl.remove("contract")}}});var currentToast=null;/**
                          Material design: [Snackbars &
                          toasts](https://www.google.com/design/spec/components/snackbars-toasts.html)
                          
@@ -19624,7 +20227,193 @@ if(e&&e.target===this&&"opacity"===e.propertyName){if(this.opened){this._finishR
      *
      * @event 'iron-announce'
      * @param {{text: string}} detail Contains text that will be announced.
-     */});function toArray(objectOrArray){objectOrArray=objectOrArray||[];return Array.isArray(objectOrArray)?objectOrArray:[objectOrArray]}function log(msg){return`[Vaadin.Router] ${msg}`}function logValue(value){if("object"!==typeof value){return value+""}const stringType=Object.prototype.toString.call(value).match(/ (.*)\]$/)[1];if("Object"===stringType||"Array"===stringType){return`${stringType} ${JSON.stringify(value)}`}else{return stringType}}const MODULE="module",NOMODULE="nomodule",bundleKeys=[MODULE,NOMODULE];function ensureBundle(src){if(!src.match(/.+\.[m]?js$/)){throw new Error(log(`Unsupported type for bundle "${src}": .js or .mjs expected.`))}}function ensureRoute(route){if(!route||!isString(route.path)){throw new Error(log(`Expected route config to be an object with a "path" string property, or an array of such objects`))}const bundle=route.bundle,stringKeys=["component","redirect","bundle"];if(!isFunction(route.action)&&!Array.isArray(route.children)&&!isFunction(route.children)&&!isObject(bundle)&&!stringKeys.some(key=>isString(route[key]))){throw new Error(log(`Expected route config "${route.path}" to include either "${stringKeys.join("\", \"")}" `+`or "action" function but none found.`))}if(bundle){if(isString(bundle)){ensureBundle(bundle)}else if(!bundleKeys.some(key=>key in bundle)){throw new Error(log("Expected route bundle to include either \""+NOMODULE+"\" or \""+MODULE+"\" keys, or both"))}else{bundleKeys.forEach(key=>key in bundle&&ensureBundle(bundle[key]))}}if(route.redirect){["bundle","component"].forEach(overriddenProp=>{if(overriddenProp in route){console.warn(log(`Route config "${route.path}" has both "redirect" and "${overriddenProp}" properties, `+`and "redirect" will always override the latter. Did you mean to only use "${overriddenProp}"?`))}})}}function ensureRoutes(routes){toArray(routes).forEach(route=>ensureRoute(route))}function loadScript(src,key){let script=document.head.querySelector("script[src=\""+src+"\"][async]");if(!script){script=document.createElement("script");script.setAttribute("src",src);if(key===MODULE){script.setAttribute("type",MODULE)}else if(key===NOMODULE){script.setAttribute(NOMODULE,"")}script.async=!0}return new Promise((resolve,reject)=>{script.onreadystatechange=script.onload=e=>{script.__dynamicImportLoaded=!0;resolve(e)};script.onerror=e=>{if(script.parentNode){script.parentNode.removeChild(script)}reject(e)};if(null===script.parentNode){document.head.appendChild(script)}else if(script.__dynamicImportLoaded){resolve()}})}function loadBundle(bundle){if(isString(bundle)){return loadScript(bundle)}else{return Promise.race(bundleKeys.filter(key=>key in bundle).map(key=>loadScript(bundle[key],key)))}}function fireRouterEvent(type,detail){return!window.dispatchEvent(new CustomEvent(`vaadin-router-${type}`,{cancelable:"go"===type,detail}))}function isObject(o){// guard against null passing the typeof check
+     */});Polymer({_template:html`
+    <style>
+      :host {
+        --calculated-paper-toolbar-height: var(--paper-toolbar-height, 64px);
+        --calculated-paper-toolbar-sm-height: var(--paper-toolbar-sm-height, 56px);
+        display: block;
+        position: relative;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: var(--calculated-paper-toolbar-height);
+        background: var(--paper-toolbar-background, var(--primary-color));
+        color: var(--paper-toolbar-color, var(--dark-theme-text-color));
+        @apply --paper-toolbar;
+      }
+
+      :host(.animate) {
+        transition: var(--paper-toolbar-transition, height 0.18s ease-in);
+      }
+
+      :host(.medium-tall) {
+        height: calc(var(--calculated-paper-toolbar-height) * 2);
+        @apply --paper-toolbar-medium;
+      }
+
+      :host(.tall) {
+        height: calc(var(--calculated-paper-toolbar-height) * 3);
+        @apply --paper-toolbar-tall;
+      }
+
+      .toolbar-tools {
+        position: relative;
+        height: var(--calculated-paper-toolbar-height);
+        padding: 0 16px;
+        pointer-events: none;
+        @apply --layout-horizontal;
+        @apply --layout-center;
+        @apply --paper-toolbar-content;
+      }
+
+      /*
+       * TODO: Where should media query breakpoints live so they can be shared between elements?
+       */
+
+      @media (max-width: 600px) {
+        :host {
+          height: var(--calculated-paper-toolbar-sm-height);
+        }
+
+        :host(.medium-tall) {
+          height: calc(var(--calculated-paper-toolbar-sm-height) * 2);
+        }
+
+        :host(.tall) {
+          height: calc(var(--calculated-paper-toolbar-sm-height) * 3);
+        }
+
+        .toolbar-tools {
+          height: var(--calculated-paper-toolbar-sm-height);
+        }
+      }
+
+      #topBar {
+        position: relative;
+      }
+
+      /* middle bar */
+      #middleBar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+      }
+
+      :host(.tall) #middleBar,
+      :host(.medium-tall) #middleBar {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+      }
+
+      /* bottom bar */
+      #bottomBar {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+
+      /*
+       * make elements (e.g. buttons) respond to mouse/touch events
+       *
+       * \`.toolbar-tools\` disables touch events so multiple toolbars can stack and not
+       * absorb events. All children must have pointer events re-enabled to work as
+       * expected.
+       */
+      .toolbar-tools > ::slotted(*:not([disabled])) {
+        pointer-events: auto;
+      }
+
+      .toolbar-tools > ::slotted(.title) {
+        @apply --paper-font-common-base;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1;
+        pointer-events: none;
+        @apply --layout-flex;
+      }
+
+      .toolbar-tools > ::slotted(.title) {
+        margin-left: 56px;
+      }
+
+      .toolbar-tools > ::slotted(paper-icon-button + .title) {
+        margin-left: 0;
+      }
+
+      /**
+       * The --paper-toolbar-title mixin is applied here instead of above to
+       * fix the issue with margin-left being ignored due to css ordering.
+       */
+      .toolbar-tools > ::slotted(.title) {
+        @apply --paper-toolbar-title;
+      }
+
+      .toolbar-tools > ::slotted(paper-icon-button[icon=menu]) {
+        margin-right: 24px;
+      }
+
+      .toolbar-tools > ::slotted(.fit) {
+        position: absolute;
+        top: auto;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: auto;
+        margin: 0;
+      }
+
+      /* TODO(noms): Until we have a better solution for classes that don't use
+       * /deep/ create our own.
+       */
+      .start-justified {
+        @apply --layout-start-justified;
+      }
+
+      .center-justified {
+        @apply --layout-center-justified;
+      }
+
+      .end-justified {
+        @apply --layout-end-justified;
+      }
+
+      .around-justified {
+        @apply --layout-around-justified;
+      }
+
+      .justified {
+        @apply --layout-justified;
+      }
+    </style>
+
+    <div id="topBar" class\$="toolbar-tools [[_computeBarExtraClasses(justify)]]">
+      <slot name="top"></slot>
+    </div>
+
+    <div id="middleBar" class\$="toolbar-tools [[_computeBarExtraClasses(middleJustify)]]">
+      <slot name="middle"></slot>
+    </div>
+
+    <div id="bottomBar" class\$="toolbar-tools [[_computeBarExtraClasses(bottomJustify)]]">
+      <slot name="bottom"></slot>
+    </div>
+`,is:"paper-toolbar",hostAttributes:{role:"toolbar"},properties:{/**
+     * Controls how the items are aligned horizontally when they are placed
+     * at the bottom.
+     * Options are `start`, `center`, `end`, `justified` and `around`.
+     */bottomJustify:{type:String,value:""},/**
+     * Controls how the items are aligned horizontally.
+     * Options are `start`, `center`, `end`, `justified` and `around`.
+     */justify:{type:String,value:""},/**
+     * Controls how the items are aligned horizontally when they are placed
+     * in the middle.
+     * Options are `start`, `center`, `end`, `justified` and `around`.
+     */middleJustify:{type:String,value:""}},ready:function(){console.warn(this.is,"is deprecated. Please use app-layout instead!")},attached:function(){this._observer=this._observe(this);this._updateAriaLabelledBy()},detached:function(){if(this._observer){this._observer.disconnect()}},_observe:function(node){var observer=new MutationObserver(function(){this._updateAriaLabelledBy()}.bind(this));observer.observe(node,{childList:!0,subtree:!0});return observer},_updateAriaLabelledBy:function(){flush$1();for(var labelledBy=[],contents=Array.prototype.slice.call(dom(this.root).querySelectorAll("slot")).concat(Array.prototype.slice.call(dom(this.root).querySelectorAll("content"))),content,index=0,nodes;content=contents[index];index++){nodes=dom(content).getDistributedNodes();for(var node,jndex=0;node=nodes[jndex];jndex++){if(node.classList&&node.classList.contains("title")){if(node.id){labelledBy.push(node.id)}else{var id="paper-toolbar-label-"+Math.floor(1e4*Math.random());node.id=id;labelledBy.push(id)}}}}if(0<labelledBy.length){this.setAttribute("aria-labelledby",labelledBy.join(" "))}},_computeBarExtraClasses:function(barJustify){if(!barJustify)return"";return barJustify+("justified"===barJustify?"":"-justified")}});function toArray(objectOrArray){objectOrArray=objectOrArray||[];return Array.isArray(objectOrArray)?objectOrArray:[objectOrArray]}function log(msg){return`[Vaadin.Router] ${msg}`}function logValue(value){if("object"!==typeof value){return value+""}const stringType=Object.prototype.toString.call(value).match(/ (.*)\]$/)[1];if("Object"===stringType||"Array"===stringType){return`${stringType} ${JSON.stringify(value)}`}else{return stringType}}const MODULE="module",NOMODULE="nomodule",bundleKeys=[MODULE,NOMODULE];function ensureBundle(src){if(!src.match(/.+\.[m]?js$/)){throw new Error(log(`Unsupported type for bundle "${src}": .js or .mjs expected.`))}}function ensureRoute(route){if(!route||!isString(route.path)){throw new Error(log(`Expected route config to be an object with a "path" string property, or an array of such objects`))}const bundle=route.bundle,stringKeys=["component","redirect","bundle"];if(!isFunction(route.action)&&!Array.isArray(route.children)&&!isFunction(route.children)&&!isObject(bundle)&&!stringKeys.some(key=>isString(route[key]))){throw new Error(log(`Expected route config "${route.path}" to include either "${stringKeys.join("\", \"")}" `+`or "action" function but none found.`))}if(bundle){if(isString(bundle)){ensureBundle(bundle)}else if(!bundleKeys.some(key=>key in bundle)){throw new Error(log("Expected route bundle to include either \""+NOMODULE+"\" or \""+MODULE+"\" keys, or both"))}else{bundleKeys.forEach(key=>key in bundle&&ensureBundle(bundle[key]))}}if(route.redirect){["bundle","component"].forEach(overriddenProp=>{if(overriddenProp in route){console.warn(log(`Route config "${route.path}" has both "redirect" and "${overriddenProp}" properties, `+`and "redirect" will always override the latter. Did you mean to only use "${overriddenProp}"?`))}})}}function ensureRoutes(routes){toArray(routes).forEach(route=>ensureRoute(route))}function loadScript(src,key){let script=document.head.querySelector("script[src=\""+src+"\"][async]");if(!script){script=document.createElement("script");script.setAttribute("src",src);if(key===MODULE){script.setAttribute("type",MODULE)}else if(key===NOMODULE){script.setAttribute(NOMODULE,"")}script.async=!0}return new Promise((resolve,reject)=>{script.onreadystatechange=script.onload=e=>{script.__dynamicImportLoaded=!0;resolve(e)};script.onerror=e=>{if(script.parentNode){script.parentNode.removeChild(script)}reject(e)};if(null===script.parentNode){document.head.appendChild(script)}else if(script.__dynamicImportLoaded){resolve()}})}function loadBundle(bundle){if(isString(bundle)){return loadScript(bundle)}else{return Promise.race(bundleKeys.filter(key=>key in bundle).map(key=>loadScript(bundle[key],key)))}}function fireRouterEvent(type,detail){return!window.dispatchEvent(new CustomEvent(`vaadin-router-${type}`,{cancelable:"go"===type,detail}))}function isObject(o){// guard against null passing the typeof check
 return"object"===typeof o&&!!o}function isFunction(f){return"function"===typeof f}function isString(s){return"string"===typeof s}function getNotFoundError(context){const error=new Error(log(`Page not found (${context.pathname})`));error.context=context;error.code=404;return error}const notFoundResult=new class NotFoundResult{};/* istanbul ignore next: coverage is calculated in Chrome, this code is for IE */function getAnchorOrigin(anchor){// IE11: on HTTP and HTTPS the default port is not included into
 // window.location.origin, so won't include it here either.
 const port=anchor.port,protocol=anchor.protocol,defaultHttp="http:"===protocol&&"80"===port,defaultHttps="https:"===protocol&&"443"===port,host=defaultHttp||defaultHttps?anchor.hostname// does not include the port number (e.g. www.example.org)
@@ -20591,7 +21380,194 @@ window.Vaadin=window.Vaadin||{};/**
                                     // Intentionally ignored as this is not a problem in the app being developed
                                     }
                                     }());
-                                     vaadin-dev-mode:end **/}const usageStatistics=function(){if("function"===typeof runIfDevelopmentMode){return runIfDevelopmentMode(maybeGatherAndSendStats)}};window.Vaadin=window.Vaadin||{};window.Vaadin.registrations=window.Vaadin.registrations||[];window.Vaadin.registrations.push({is:"@vaadin/router",version:"1.2.0"});usageStatistics();Router.NavigationTrigger={POPSTATE,CLICK};var vaadinRouter={Router:Router,Resolver:Resolver};_exports.$vaadinRouter=vaadinRouter;let initializedApp=firebase.initializeApp({apiKey:"AIzaSyCcsFAxipbxNQ14un3vB6JvMZkZi2gSj3I",authDomain:"hiring-app-enriquelc.firebaseapp.com",databaseURL:"https://hiring-app-enriquelc.firebaseio.com",projectId:"hiring-app-enriquelc",storageBucket:"hiring-app-enriquelc.appspot.com",messagingSenderId:"770555104907",appId:"1:770555104907:web:8793cbd1f08c5f15"}),firebaseMixin=superClass=>class extends superClass{constructor(){super();this._initFirebase()}_initFirebase(){this.set("initializeApp",initializedApp);this.set("firebase",firebase$1)}initializeApp(){return this.initializeApp}};const FirebaseMixin=dedupingMixin(firebaseMixin);_exports.FirebaseMixin=FirebaseMixin;var mixinFirebase={FirebaseMixin:FirebaseMixin};_exports.$mixinFirebase=mixinFirebase;let firestoreMixin=superClass=>class extends FirebaseMixin(superClass){static get properties(){return{results:{type:Array,value:()=>{return[]}}}}constructor(){super()}_getStore(){return this.firebase.default.firestore()}addDocument(collection,data){this.loadingRequest=!0;return new Promise((resolve,reject)=>{this._getStore().collection(collection).add(data).then(results=>resolve(results)).catch(error=>reject(error)).finally(()=>{this.loadingRequest=!1})})}deleteDoc(collection,id){return this._getStore().collection(collection).doc(id).delete()}getReference(collection,reference){return this._getStore().collection(collection).doc(reference)}simpleQueryWithReference(collection,whereOne,whereTwo,reference){let collectionReference=this._getStore().collection(collection),results=[];return new Promise((resolve,reject)=>{collectionReference.where(whereOne,whereTwo,reference).get().then(querySnapshot=>{querySnapshot.forEach(doc=>results.push({id:doc.id,data:doc.data()}));resolve(results)}).catch(error=>reject(error))})}readCollection(collection){let results=[];return new Promise((resolve,reject)=>{this._getStore().collection(collection).get().then(querySnapshot=>{querySnapshot.forEach(doc=>results.push({id:doc.id,data:doc.data()}));resolve(results)}).catch(error=>reject(error))})}};const FireStoreMixin=dedupingMixin(firestoreMixin);_exports.FireStoreMixin=FireStoreMixin;var mixinFirestore={FireStoreMixin:FireStoreMixin};_exports.$mixinFirestore=mixinFirestore;let toastElement,utilitiesMixin=superClass=>class extends superClass{static get properties(){return{toast:{type:Object},toastMessage:String}}connectedCallback(){super.connectedCallback();this._initToast()}_initToast(){if(this.$.hiringAppToast){toastElement=this.$.hiringAppToast}}openToast(message){toastElement.show(message)}};const UtilitiesMixin=dedupingMixin(utilitiesMixin);_exports.UtilitiesMixin=UtilitiesMixin;var mixinUtilities={UtilitiesMixin:UtilitiesMixin};_exports.$mixinUtilities=mixinUtilities;class CandidatePage extends UtilitiesMixin(FireStoreMixin(PolymerElement)){static get template(){return html`
+                                     vaadin-dev-mode:end **/}const usageStatistics=function(){if("function"===typeof runIfDevelopmentMode){return runIfDevelopmentMode(maybeGatherAndSendStats)}};window.Vaadin=window.Vaadin||{};window.Vaadin.registrations=window.Vaadin.registrations||[];window.Vaadin.registrations.push({is:"@vaadin/router",version:"1.2.0"});usageStatistics();Router.NavigationTrigger={POPSTATE,CLICK};var vaadinRouter={Router:Router,Resolver:Resolver};_exports.$vaadinRouter=vaadinRouter;Polymer({_template:html`
+    <style include="paper-item-shared-styles">
+      :host {
+        @apply --layout-horizontal;
+        @apply --layout-center;
+        @apply --paper-font-subhead;
+        @apply --paper-item;
+      }
+    </style>
+    <slot></slot>
+    `,is:"simple-paper-item",behavior:[Polymer.IronControlState,Polymer.PaperItemBehaviorImpl]});class PaperCollapseItem extends PolymerElement{static get template(){return html`
+			<style>
+				.header {
+					min-height: 48px;
+					color: var(--primary-text-color);
+					@apply --layout-horizontal;
+					@apply --layout-center;
+					@apply --paper-font-subhead;
+					@apply --paper-collapse-item-header;
+				}
+				.icon {
+					margin-right: 24px;
+					--iron-icon-height: 32px;
+					--iron-icon-width: 32px;
+					@apply --paper-collapse-item-icon;
+				}
+				.icon, .toogle {
+					color: var(--disabled-text-color);
+				}
+				.html {
+					@apply --layout-flex;
+				}
+				.content {
+					color: var(--primary-text-color);
+					@apply --paper-font-body1;
+					@apply --paper-collapse-item-content;
+				}
+
+				simple-paper-item {
+					@apply --paper-collapse-simple-paper-item-styles;
+				}
+			</style>
+
+			<simple-paper-item>
+				<paper-item-body>
+					<div class="header" on-tap="_toggleOpened">
+						<template is="dom-if" if="[[_or(icon, src)]]">
+							<iron-icon class="icon" src="[[src]]" icon="[[icon]]"></iron-icon>
+						</template>
+						<template is="dom-if" if="[[header]]">
+							<div class="html" inner-h-t-m-l="[[header]]"></div>
+						</template>
+						<slot class="html" name="header"></slot>
+						<paper-icon-button class="toggle" icon="[[_toggleIcon]]"></paper-icon-button>
+					</div>
+					<iron-collapse class="content" opened="{{opened}}">
+						<slot></slot>
+					</iron-collapse>
+				</paper-item-body>
+			</simple-paper-item>
+			`}static get properties(){return{/**
+       * Text in the header row
+       */header:String,/**
+       * The name of the icon to use. The name should be of the
+       * form: iconset_name:icon_name.
+       */icon:String,/**
+       * If using paper-collapse-item without an iconset, you can set the
+       * src to be the URL of an individual icon image file. Note that
+       * this will take precedence over a given icon attribute.
+       */src:String,/**
+       * True if the content section is opened
+       */opened:{type:Boolean,reflectToAttribute:!0,notify:!0},_toggleIcon:{type:String,computed:"_computeToggleIcon(opened)"}}}/**
+     * Fired whenever the status is changed (opened/closed)
+     *
+     * @event toggle
+     */_toggleOpened(e){this.opened=!this.opened;const toggleEvent=new CustomEvent("toggle",{detail:this,bubbles:!0,composed:!0});this.dispatchEvent(toggleEvent)}_computeToggleIcon(opened){return opened?"icons:expand-less":"icons:expand-more"}_or(value1,value2){return value1||value2}}window.customElements.define("paper-collapse-item",PaperCollapseItem);let initializedApp=firebase.initializeApp({apiKey:"AIzaSyCcsFAxipbxNQ14un3vB6JvMZkZi2gSj3I",authDomain:"hiring-app-enriquelc.firebaseapp.com",databaseURL:"https://hiring-app-enriquelc.firebaseio.com",projectId:"hiring-app-enriquelc",storageBucket:"hiring-app-enriquelc.appspot.com",messagingSenderId:"770555104907",appId:"1:770555104907:web:8793cbd1f08c5f15"}),firebaseMixin=superClass=>class extends superClass{constructor(){super();this._initFirebase()}_initFirebase(){this.set("initializeApp",initializedApp);this.set("firebase",firebase$1)}initializeApp(){return this.initializeApp}};const FirebaseMixin=dedupingMixin(firebaseMixin);_exports.FirebaseMixin=FirebaseMixin;var mixinFirebase={FirebaseMixin:FirebaseMixin};_exports.$mixinFirebase=mixinFirebase;let firestoreMixin=superClass=>class extends FirebaseMixin(superClass){static get properties(){return{results:{type:Array,value:()=>{return[]}}}}constructor(){super()}_getStore(){return this.firebase.default.firestore()}addDocument(collection,data){this.loadingRequest=!0;return new Promise((resolve,reject)=>{this._getStore().collection(collection).add(data).then(results=>resolve(results)).catch(error=>reject(error)).finally(()=>{this.loadingRequest=!1})})}getBasicReferenceData(collectionResult,collectionReference,idReference,newProperty){return collectionResult.map(doc=>{return new Promise((resolve,reject)=>{this.getDoc(collectionReference,doc.data[idReference].id).then(results=>{doc[newProperty]=results;resolve(doc)}).catch(error=>{reject(error)})})})}getAllDataFromCollectionWithReference(searchParams){return new Promise((resolve,reject)=>{this.simpleQueryWithReference(searchParams.collection,searchParams.queryParamOne,searchParams.queryParamConditional,searchParams.queryReference).then(collectionResults=>{resolve(this._deferedMultiplePromiseCollection(collectionResults,searchParams.collectionReference,searchParams.referenceOnDoc))}).catch(error=>{reject(error)})})}_deferedMultiplePromiseCollection(collectionResult,collectionReference,idReference,newProperty=`${collectionReference}Data`){return new Promise((resolve,reject)=>{Promise.all(this.getBasicReferenceData(collectionResult,collectionReference,idReference,newProperty)).then(results=>{resolve(results)}).catch(error=>{reject(error)})})}deleteDoc(collection,id){return this._getStore().collection(collection).doc(id).delete()}getReference(collection,reference){return this._getStore().collection(collection).doc(reference)}getDoc(collection,idDoc){let referenceDoc=this._getStore().collection(collection).doc(idDoc);return new Promise((resolve,reject)=>{referenceDoc.get().then(doc=>{if(doc.exists){resolve(doc.data())}else{reject("no existe el documento")}}).catch(error=>reject(error))})}getDocExist(collection,idDoc){let referenceDoc=this._getStore().collection(collection).doc(idDoc);return new Promise((resolve,reject)=>{referenceDoc.get().then(doc=>{if(doc.exists){resolve(doc.exists)}else{reject("Verifica el c\xF3digo de referencia")}}).catch(error=>reject(error))})}simpleQueryWithReference(collection,whereOne,whereTwo,reference){let collectionReference=this._getStore().collection(collection),results=[];return new Promise((resolve,reject)=>{collectionReference.where(whereOne,whereTwo,reference).get().then(querySnapshot=>{querySnapshot.forEach(doc=>results.push({id:doc.id,data:doc.data()}));resolve(results)}).catch(error=>reject(error))})}readCollection(collection){let results=[];return new Promise((resolve,reject)=>{this._getStore().collection(collection).get().then(querySnapshot=>{querySnapshot.forEach(doc=>results.push({id:doc.id,data:doc.data()}));resolve(results)}).catch(error=>reject(error))})}updateDocument(collection,reference,data){return this._getStore().collection(collection).doc(reference).set(data)}};const FireStoreMixin=dedupingMixin(firestoreMixin);_exports.FireStoreMixin=FireStoreMixin;var mixinFirestore={FireStoreMixin:FireStoreMixin};_exports.$mixinFirestore=mixinFirestore;let toastElement,utilitiesMixin=superClass=>class extends superClass{static get properties(){return{toast:{type:Object},toastMessage:String}}connectedCallback(){super.connectedCallback();this._initToast()}_initToast(){if(this.$.hiringAppToast){toastElement=this.$.hiringAppToast}}openToast(message){toastElement.show(message)}};const UtilitiesMixin=dedupingMixin(utilitiesMixin);_exports.UtilitiesMixin=UtilitiesMixin;var mixinUtilities={UtilitiesMixin:UtilitiesMixin};_exports.$mixinUtilities=mixinUtilities;class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)){static get template(){return html`
+      <style include="base-style iron-flex iron-flex-alignment">
+        :host {
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+        
+        paper-card.tos {
+          margin-top: 10rem;
+          width: 50%;
+        }
+        
+        app-header {
+          background-color: var(--base-color);
+          color: #fff;
+          width: 100%;
+        }
+        
+        paper-card {
+          margin-left: 1rem;
+          margin-right: 1rem;
+          margin-top: 1rem;
+          width: 90%;
+        }
+      </style>
+      <template is="dom-if" if="[[startExam]]">
+        <app-header-layout fullbleed>
+          <app-header slot="header" fixed effects="waterfall">
+            <app-toolbar>
+              <div main-title>Examen de {{candidateData.name}} {{candidateData.lastName}} {{candidateData.middleName}}</div>
+            </app-toolbar>
+          </app-header>
+          <div class="layout vertical center-center">
+            <template is="dom-if" if="[[location.params.reviewer]]">
+              <div class="layout horizontal start-justified">
+                <p>Examen de {{candidateData.name}} {{candidateData.lastName}} {{candidateData.middleName}}</p>
+              </div>
+            </template>
+            <template is="dom-repeat" items="[[questionsExam]]" as="questionExam">
+              <paper-card>
+                <div class="card-content">
+                  <div>Pregunta [[sumIndex(index)]]</div>
+                  <div class="layout horizontal">
+                    <marked-element markdown="[[questionExam.data.question]]">
+                      <div slot="markdown-html"></div>
+                    </marked-element>
+                  </div>
+                  <template is="dom-if" if="[[currentExam.readOnly]]">
+                    <div class="layout vertical">
+                      <div>
+                        Respuesta:
+                      </div>
+                      <marked-element markdown="[[questionExam.answer]]">
+                        <div slot="markdown-html"></div>
+                      </marked-element>
+                    </div>
+                  </template>
+                  <template is="dom-if" if="[[!currentExam.readOnly]]">
+                    <paper-textarea label="Respuesta" rows="3" value="{{questionExam.answer::input}}"></paper-textarea>
+                    <paper-button on-click="saveAnswer">Guardar Respuesta</paper-button>
+                  </template>
+                  <template is="dom-if" if="[[currentExam.readOnly]]">
+                    <paper-radio-group selected="{{questionExam.correctAnswer}}">
+                      <paper-radio-button name="true">Correcta</paper-radio-button>
+                      <paper-radio-button name="false">Incorrecta</paper-radio-button>
+                    </paper-radio-group>
+                    <paper-button on-click="saveAnswer">Guardar Respuesta</paper-button>
+                  </template>
+                </div>
+              </paper-card>
+            </template>
+            <template is="dom-if" if="[[!currentExam.readOnly]]">
+              <paper-button on-click="finishExam">Finalizar Examen</paper-button>
+            </template>
+            <template is="dom-if" if="[[currentExam.readOnly]]">
+              <paper-card heading="Calificacion del examen final">
+                <div class="card-content">
+                  <paper-input label="Calificacion" type="number" value="{{currentExam.evaluation::input}}"></paper-input>
+                  <paper-textarea label="Feedback" rows="3" value="{{currentExam.feedback::input}}"></paper-textarea>
+                </div>
+                <div class="card-actions">
+                  <paper-button on-click="finishExam">Calificar Examen</paper-button>
+                </div>
+              </paper-card>
+            </template>
+          </div>
+        </app-header-layout>
+      </template>
+      <template is="dom-if" if="[[!startExam]]">
+        <paper-card heading="Términos y condiciones" class="tos">
+          <template is="dom-if" if="[[loadingPage]]">
+            <div class="layout vertical center-center loading-container">
+              <paper-spinner active></paper-spinner>
+            </div>
+          </template>
+          <template is="dom-if" if="[[!loadingPage]]">
+            <div class="card-content">
+              {{location.params.codeExam}}
+              <p>Hola {{candidateData.name}} {{candidateData.lastName}} {{candidateData.middleName}},</p>
+              </p>En GFT es muy importante la protección de tus Datos Personales, así como el respeto a los Derechos de Autor de terceros, por lo que en caso de que decidas continuar con el proceso de selección y reclutamiento de la vacante Desarrollador Frontend, entenderemos tu aceptación y pleno consentimiento respecto del Aviso de Privacidad y el Release, adjuntos al presente.</p>
+              <p>Quedo a la espera de tus noticias.</p>
+              <paper-checkbox checked="{{tosAccepted}}">Acepto Términos y condiciones.</paper-checkbox>
+            </div>
+            <div class="card-actions">
+              <paper-button disabled$="[[!tosAccepted]]" on-click="_getQuestionsAndAnswers">Iniciar evaluación</paper-button>
+            </div>
+          </template>
+        </paper-card>
+      </template>
+    `}static get properties(){return{code:{type:String},tosAccepted:{type:Boolean,value:!1},startExam:{type:Boolean,value:!1},questionsExam:{type:Array,value:()=>[]},loadingPage:{type:Boolean,value:!1},seeResult:{type:Boolean,value:!1}}}connectedCallback(){super.connectedCallback();this._getInfoCandidate(this.checkReviewer())}checkReviewer(){if(this.location.params.reviewer){this.tosAccepted=!0;return!0}}sumIndex(index){return index+1}finishExam(){let data={readOnly:!0,tos:this.tosAccepted,chances:this.checkReviewer()?this.currentExam.chances:this.currentExam.chances+1,evaluation:parseInt(this.currentExam.evaluation,10),feedback:this.currentExam.feedback,referenceCandidate:this.getReference("candidate",this.currentExam.referenceCandidate.id),referenceExam:this.getReference("exam",this.currentExam.referenceExam.id)};this.updateDocument("candidateExam",this.location.params.codeExam,data)}saveAnswer(e){let data={answer:e.model.questionExam.answer,correctAnswer:"true"===e.model.questionExam.correctAnswer?!0:!1,questionExamReference:this.getReference("questionExam",e.model.questionExam.id),candidateReference:this.getReference("candidate",e.model.questionExam.id)};this.updateDocument("answerExamCandidate",e.model.questionExam.id,data)}_getInfoCandidate(getAnswers=!1){this.loadingPage=!0;this.getDoc("candidateExam",this.location.params.codeExam).then(exam=>{this.set("currentExam",exam);if(getAnswers){this._getQuestionsAndAnswers()}return this.getDoc("candidate",exam.referenceCandidate.id)}).then(candidate=>{this.set("candidateData",candidate)}).catch(error=>{console.log(error)}).finally(()=>{this.loadingPage=!1})}_getQuestionsAndAnswers(){this.loadingPage=!0;let reference=this.getReference("exam",this.currentExam.referenceExam.id);this.simpleQueryWithReference("questionExam","referenceExam","==",reference).then(questionsExam=>{this.startExam=!0;Promise.all(this._getInfoAboutAnswer(questionsExam)).then(finalQuestionsWithAnswers=>{this.set("questionsExam",questionsExam)})}).finally(()=>{this.loadingPage=!1})}_getInfoAboutAnswer(questions){return questions.map(questionExam=>{return new Promise((resolve,reject)=>{this.simpleQueryWithReference("answerExamCandidate","questionExamReference","==",this.getReference("questionExam",questionExam.id)).then(answersExamCandidate=>{questionExam.answer=answersExamCandidate[0].data.answer;questionExam.correctAnswer=answersExamCandidate[0].data.correctAnswer;questionExam.answerId=answersExamCandidate[0].id;resolve(questionExam)}).catch(error=>{reject(error)})})})}}window.customElements.define("apply-exam-page",ApplyExamPage);class CandidatePage extends UtilitiesMixin(FireStoreMixin(PolymerElement)){static get template(){return html`
       <style include="base-style iron-flex iron-flex-alignment">
         :host {
           width: 100%;
@@ -20600,6 +21576,7 @@ window.Vaadin=window.Vaadin||{};/**
           display: flex;
           flex-direction: column;
         }
+
         paper-card {
           width: 100%;
         }
@@ -20614,36 +21591,93 @@ window.Vaadin=window.Vaadin||{};/**
           color: var(--white);
         }
       </style>
-      <paper-dialog id="newExamModal" no-overlap>
+      <paper-dialog id="newAssingExamModal" no-overlap>
+        <template is="dom-if" if="[[loadingRequest]]">
+          <paper-spinner active></paper-spinner>
+        </template>
+        <h2>Asignar Examen a [[currentCandidate.data.name]]</h2>
+        <paper-dialog-scrollable>
+          <paper-dropdown-menu label="Selecciona Examen" horizontal-align="left">
+            <paper-listbox slot="dropdown-content" class="dropdown-content" selected="{{referenceExam}}" attr-for-selected="data-exam">
+              <template is="dom-repeat" items="[[exams]]" as="exam">
+                <paper-item data-exam="[[exam.id]]">[[exam.data.name]]</paper-item>
+              </template>
+            </paper-listbox>
+          </paper-dropdown-menu>
+          {{referenceExam}}
+        </paper-dialog-scrollable>
+        <div class="buttons">
+          <paper-button dialog-dismiss>Cancelar</paper-button>
+          <paper-button autofocus on-click="assingExamToCandidate">Asignar Examen</paper-button>
+        </div>
+      </paper-dialog>
+      
+      <paper-dialog id="newCandidate" no-overlap>
         <template is="dom-if" if="[[loadingRequest]]">
           <paper-spinner active></paper-spinner>
         </template>
         <h2>Nuevo Candidato</h2>
         <paper-dialog-scrollable>
-          <paper-input label="Nombre del candidato" value="{{name::input}}"></paper-input>
-          <paper-input label="Apellido Paterno" value="{{lastName::input}}"></paper-input>
-          <paper-input label="Apellido Materno" value="{{middleName::input}}"></paper-input>
-          <paper-input label="description" value="{{description::input}}"></paper-input>
+            <paper-input value="{{name::input}}" label="Nombre"></paper-input>
+            <paper-input value="{{lastName::input}}" label="Apellido Paterno"></paper-input>
+            <paper-input value="{{middleName::input}}" label="Apellido Materno"></paper-input>
+            <paper-input value="{{description::input}}" label="Descripción"></paper-input>
         </paper-dialog-scrollable>
         <div class="buttons">
           <paper-button dialog-dismiss>Cancelar</paper-button>
-          <paper-button autofocus on-click="addNewCandidate">Agregar Candidato</paper-button>
+          <paper-button autofocus on-click="addNewCandidate">Guardar Candidato</paper-button>
         </div>
       </paper-dialog>
+      
       <paper-card heading="Lista de candidatos">
         <div class="card-actions horizontal flex-end-justified">
-          <paper-button on-click="openNewExam" class="color">Nuevo Candidato</paper-button>
+          <paper-button on-click="createNewCandidate" class="color">Nuevo Candidato</paper-button>
         </div>
         <div class="card-actions">
           <template is="dom-repeat" items="[[candidates]]" as="candidate">
-            <div>[[candidate.data.name]] [[candidate.data.lastName]] [[candidate.data.middleName]] [[candidate.data.description]]- [[candidate.id]] <paper-button on-click="eraseExam">Borrar</paper-button></div>
+            <paper-collapse-item header="[[candidate.data.name]] [[candidate.data.lastName]] [[candidate.data.middleName]]">
+              <div>
+                <paper-input disabled value="[[candidate.id]]"></paper-input>
+                <paper-input value="{{candidate.data.name::input}}" label="Nombre"></paper-input>
+                <paper-input value="{{candidate.data.lastName::input}}" label="Apellido Paterno"></paper-input>
+                <paper-input value="{{candidate.data.middleName::input}}" label="Apellido Materno"></paper-input>
+                <paper-input value="{{candidate.data.description::input}}" label="Descripción"></paper-input>
+                
+              </div>
+              <div class="layout horizontal end-justified">
+                <paper-button on-click="assingExam">Asignar Examen</paper-button>
+                <paper-button on-click="updateProfile">Actualizar</paper-button>
+                <paper-button on-click="eraseCandidate">Borrar</paper-button>
+              </div>
+            </paper-collapse-item>
           </template>
           <template is="dom-if" if="[[emptyCandidates]]">
             VACAIS
           </template>
         </div>
       </paper-card>
-    `}static get properties(){return{candidates:{type:Array,value:()=>{return[]},observer:"_candidatesObserver"},emptyCandidates:{type:Boolean,value:!1},descriptionExam:String,nameExam:String}}_candidatesObserver(newValue){this.set("emptyCandidates",!(0<newValue.length))}connectedCallback(){super.connectedCallback();this._getCandidates()}_getCandidates(){this.readCollection("candidate").then(results=>{this.set("candidates",results)}).catch(error=>{console.log(error)})}addNewCandidate(){this.addDocument("candidate",{name:this.name,lastName:this.lastName,middleName:this.middleName,description:this.description}).then(results=>{this.nameExam="";this.descriptionExam="";this.openToast(`Nuevo candidato agregado con exito`);this._getCandidates()}).catch(error=>{console.log(error)});this.$.newExamModal.close()}eraseExam(e){this.deleteDoc("exam",e.model.candidate.id).then(()=>{this.openToast(`Se borro correctamente el candidato ${e.model.exam.data.name}`);this._getCandidates()}).catch(function(error){console.error("Error removing document: ",error)})}openNewExam(){this.$.newExamModal.open()}}window.customElements.define("candidate-page",CandidatePage);class ConfigPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)){static get template(){return html`
+    `}static get properties(){return{candidates:{type:Array,value:()=>{return[]},observer:"_candidatesObserver"},emptyCandidates:{type:Boolean,value:!1},descriptionExam:String,nameExam:String,loadingPage:{type:Boolean,value:!0}}}_candidatesObserver(newValue){this.set("emptyCandidates",!(0<newValue.length))}connectedCallback(){super.connectedCallback();this._getCandidates();this._getExams()}_getExams(){this.readCollection("exam").then(results=>{this.set("exams",results)}).catch(error=>{console.log(error)})}_getCandidates(){this.readCollection("candidate").then(results=>{this.set("candidates",results)}).catch(error=>{console.log(error)})}addNewCandidate(){this.addDocument("candidate",{name:this.name,lastName:this.lastName,middleName:this.middleName,description:this.description}).then(results=>{this.nameExam="";this.descriptionExam="";this.openToast(`Nuevo candidato agregado con exito`);this._getCandidates()}).catch(error=>{console.log(error)});this.$.newCandidate.close()}eraseExam(e){this.deleteDoc("exam",e.model.candidate.id).then(()=>{this.openToast(`Se borro correctamente el candidato ${e.model.exam.data.name}`);this._getCandidates()}).catch(function(error){console.error("Error removing document: ",error)})}assingExam(e){this.currentCandidate=e.model.candidate;this.$.newAssingExamModal.open()}assingExamToCandidate(){let candidateExam={chances:0,evaluation:0,feedback:"",tos:!1,readOnly:!1,referenceExam:this.getReference("exam",this.referenceExam),referenceCandidate:this.getReference("candidate",this.currentCandidate.id)};// TODO restrict one assignation per exam
+this.addDocument("candidateExam",candidateExam).then(results=>{this.openToast(`Candidato asignado correctamente al examen seleccionado`);this.currentCandidate=void 0}).catch(error=>{console.log(error)})}createNewCandidate(){this.$.newCandidate.open()}}window.customElements.define("candidate-page",CandidatePage);class CodeRegisterPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)){static get template(){return html`
+      <style include="base-style iron-flex iron-flex-alignment">
+        :host {
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          margin-top: 10rem;
+          width: 50%;
+        }
+      </style>
+      
+      <paper-card heading="Prueba GFT">
+        <div class="card-content">
+          <paper-input label="Código de acceso" type="text" value="{{code::input}}"></paper-input>
+        </div>
+        <div class="card-actions">
+          <paper-button on-click="verifyCode">Iniciar evaluación</paper-button>
+        </div>
+      </paper-card>
+    `}static get properties(){return{code:{type:String}}}connectedCallback(){super.connectedCallback()}verifyCode(){this.getDocExist("candidateExam",this.code).then(existExam=>{console.log(existExam);window.location.href="/hacer-examen/"+this.code}).catch(error=>{console.log("existExam",error)})}}window.customElements.define("code-register-page",CodeRegisterPage);class ConfigPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)){static get template(){return html`
       <style include="base-style iron-flex iron-flex-alignment">
         :host {
           width: 100%;
@@ -20652,35 +21686,12 @@ window.Vaadin=window.Vaadin||{};/**
           display: flex;
           flex-direction: column;
         }
-        paper-card {
-          width: 100%;
-        }
-        @media screen and (max-width: 992px) {
-          paper-card {
-            width: auto;
-          }
-        }
-        
-        paper-button.color {
-          background: var(--base-color);
-          color: var(--white);
-        }
       </style>
       
       <paper-card heading="Configuracion">
-        <div class="card-actions horizontal flex-end-justified">
-          <paper-button on-click="openNewExam" class="color">Agregar examen</paper-button>
-        </div>
-        <div class="card-actions">
-          <template is="dom-repeat" items="[[exams]]" as="exam">
-            <div>[[exam.data.name]] [[exam.data.description]]- [[exam.id]] <paper-button on-click="eraseExam">Borrar</paper-button></div>
-          </template>
-          <template is="dom-if" if="[[emptyExams]]">
-            VACAIS
-          </template>
-        </div>
+        
       </paper-card>
-    `}static get properties(){return{exams:{type:Array,value:()=>{return[]},observer:"_examsObserver"},emptyExams:{type:Boolean,value:!1},descriptionExam:String,nameExam:String}}_examsObserver(newValue){this.set("emptyExams",!(0<newValue.length))}connectedCallback(){super.connectedCallback();this._getExams()}_getExams(){this.readCollection("exam").then(results=>{this.set("exams",results)}).catch(error=>{console.log(error)})}addNewExam(){this.addDocument("exam",{name:this.nameExam,description:this.descriptionExam}).then(results=>{this.nameExam="";this.descriptionExam="";this.openToast(`Nuevo examen agregado con exito`);this._getExams()}).catch(error=>{console.log(error)});this.$.newExamModal.close()}eraseExam(e){console.log("Voy a borrar el examen",e.model.exam);this.deleteDoc("exam",e.model.exam.id).then(()=>{this.openToast(`Se borro correctamente el examen ${e.model.exam.data.name}`);this._getExams()}).catch(function(error){console.error("Error removing document: ",error)})}openNewExam(){this.$.newExamModal.open()}}window.customElements.define("config-page",ConfigPage);class CreateTestPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)){static get template(){return html`
+    `}static get properties(){return{emptyExams:{type:Boolean,value:!1},descriptionExam:String,nameExam:String}}connectedCallback(){super.connectedCallback()}}window.customElements.define("config-page",ConfigPage);class CreateTestPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)){static get template(){return html`
       <style include="base-style iron-flex iron-flex-alignment">
         :host {
           width: 100%;
@@ -20766,7 +21777,7 @@ window.Vaadin=window.Vaadin||{};/**
           </div>
         </div>
       </paper-card>
-    `}static get properties(){return{exams:{type:Array,value:()=>{return[]},observer:"_examsObserver"},questionTypes:{type:Array,value:()=>{return[]},observer:"_questionTypesObserver"},questions:{type:Array,value:()=>{return[]}},emptyExams:{type:Boolean,value:!1},descriptionExam:String,nameExam:String}}_examsObserver(newValue){this.set("emptyExams",!(0<newValue.length))}_questionTypesObserver(newValue){this.set("emptyTypes",!(0<newValue.length))}static get observers(){return["_observedQuestions(questions.*)"]}connectedCallback(){super.connectedCallback();this._getExams();this._getQuestionType()}_observedQuestions(questions){console.log(questions)}_getExams(){this.readCollection("exam").then(results=>{this.set("exams",results)}).catch(error=>{console.log(error)})}_getQuestionType(){this.readCollection("questionType").then(results=>{this.set("questionTypes",results)}).catch(error=>{console.log(error)})}addNewExam(){this.addDocument("exam",{name:this.nameExam,description:this.descriptionExam}).then(results=>{this.nameExam="";this.descriptionExam="";this.openToast(`Nuevo examen agregado con exito`);this._getExams()}).catch(error=>{console.log(error)})}sendQuestions(){this.questions.map(question=>{question.referenceType=this.getReference("questionType",question.referenceType);this.addDocument("questionExam",question).then(results=>{this.openToast(`Pregunta agregada con exito`);this.set("questions",[])}).catch(error=>{console.log(error)})})}addQuestionToExam(){this.push("questions",{referenceExam:this.getReference("exam",this.referenceExam),referenceType:this.referenceType,question:this.question})}}window.customElements.define("create-test-page",CreateTestPage);class ExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)){static get template(){return html`
+    `}static get properties(){return{exams:{type:Array,value:()=>{return[]},observer:"_examsObserver"},questionTypes:{type:Array,value:()=>{return[]},observer:"_questionTypesObserver"},questions:{type:Array,value:()=>{return[]}},emptyExams:{type:Boolean,value:!1},descriptionExam:String,nameExam:String}}_examsObserver(newValue){this.set("emptyExams",!(0<newValue.length))}_questionTypesObserver(newValue){this.set("emptyTypes",!(0<newValue.length))}connectedCallback(){super.connectedCallback();this._getExams();this._getQuestionType()}_getExams(){this.readCollection("exam").then(results=>{this.set("exams",results)}).catch(error=>{console.log(error)})}_getQuestionType(){this.readCollection("questionType").then(results=>{this.set("questionTypes",results)}).catch(error=>{console.log(error)})}addNewExam(){this.addDocument("exam",{name:this.nameExam,description:this.descriptionExam}).then(results=>{this.nameExam="";this.descriptionExam="";this.openToast(`Nuevo examen agregado con exito`);this._getExams()}).catch(error=>{console.log(error)})}sendQuestions(){this.questions.map(question=>{question.referenceType=this.getReference("questionType",question.referenceType);this.addDocument("questionExam",question).then(results=>{this.openToast(`Pregunta agregada con exito`);this.set("questions",[])}).catch(error=>{console.log(error)})})}addQuestionToExam(){this.push("questions",{referenceExam:this.getReference("exam",this.referenceExam),referenceType:this.referenceType,question:this.question})}}window.customElements.define("create-test-page",CreateTestPage);class ExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)){static get template(){return html`
       <style include="base-style iron-flex iron-flex-alignment">
         :host {
           width: 100%;
@@ -20783,10 +21794,9 @@ window.Vaadin=window.Vaadin||{};/**
             width: auto;
           }
         }
-        
-        paper-button.color {
-          background: var(--base-color);
-          color: var(--white);
+
+        a {
+          text-decoration: none;
         }
       </style>
       <paper-dialog id="newExamModal" no-overlap>
@@ -20803,7 +21813,7 @@ window.Vaadin=window.Vaadin||{};/**
       <paper-card heading="Lista de examenes">
         <div class="card-actions horizontal flex-end-justified">
         <a href="/make-exam" class="paper-item" tabindex="-1">
-          <paper-button class="color">Nuevo examen</paper-button>
+          <paper-button class="blue-button">Nuevo examen</paper-button>
         </a>
         </div>
         <div class="card-actions">
@@ -20821,7 +21831,7 @@ window.Vaadin=window.Vaadin||{};/**
           </template>
         </div>
       </paper-card>
-    `}static get properties(){return{exams:{type:Array,value:()=>{return[]},observer:"_examsObserver"},emptyExams:{type:Boolean,value:!1},descriptionExam:String,nameExam:String}}_examsObserver(newValue){this.set("emptyExams",!(0<newValue.length))}connectedCallback(){super.connectedCallback();this._getExams()}_getExams(){this.readCollection("exam").then(results=>{this.set("exams",results)}).catch(error=>{console.log(error)})}eraseExam(e){console.log("Voy a borrar el examen",e.model.exam);this.deleteDoc("exam",e.model.exam.id).then(()=>{this.openToast(`Se borro correctamente el examen ${e.model.exam.data.name}`);this._getExams()}).catch(function(error){console.error("Error removing document: ",error)})}}window.customElements.define("exam-page",ExamPage);class PreviewExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)){static get template(){return html`
+    `}static get properties(){return{exams:{type:Array,value:()=>{return[]},observer:"_examsObserver"},emptyExams:{type:Boolean,value:!1},loadingPage:{type:Boolean,value:!0,notify:!0},descriptionExam:String,nameExam:String}}_examsObserver(newValue){this.set("emptyExams",!(0<newValue.length))}connectedCallback(){super.connectedCallback();this._getExams()}_getExams(){this.loadingPage=!0;this.readCollection("exam").then(results=>{this.set("exams",results)}).catch(error=>{console.log(error)}).finally(()=>{this.loadingPage=!1})}eraseExam(e){this.deleteDoc("exam",e.model.exam.id).then(()=>{this.openToast(`Se borro correctamente el examen ${e.model.exam.data.name}`);this._getExams()}).catch(function(error){console.error("Error removing document: ",error)}).finally(()=>{this.loadingPage=!1})}}window.customElements.define("exam-page",ExamPage);class PreviewExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)){static get template(){return html`
       <style include="base-style iron-flex iron-flex-alignment">
         :host {
           width: 100%;
@@ -20843,30 +21853,141 @@ window.Vaadin=window.Vaadin||{};/**
           background: var(--base-color);
           color: var(--white);
         }
+
+        .paper-tabs-style {
+          width: 100%;
+        }
+
+        iron-pages {
+          width: 100%;
+        }
       </style>
-      
-      <paper-card heading="[[location.params.idExam]]">
-        <div class="card-actions">
-          <template is="dom-repeat" items="[[questionsExam]]" as="questionExam">
-            <div>Pregunta [[sumIndex(index)]] - [[questionExam.id]] <paper-button on-click="eraseQuestionData">Borrar</paper-button></div>
-            <div class="layout horizontal">
-              <marked-element markdown="[[questionExam.data.question]]">
-                <div slot="markdown-html"></div>
-              </marked-element>
+      <div class="layout horizontal start-justified paper-tabs-style">
+        <paper-tabs selected="{{selectedPage}}">
+          <paper-tab>Examen</paper-tab>
+          <paper-tab on-click="loadCandidates">Candidatos</paper-tab>
+        </paper-tabs>
+      </div>
+      <iron-pages selected="{{selectedPage}}">
+        <div>
+          <paper-card heading="[[location.params.idExam]]">
+            <div class="card-actions">
+              <template is="dom-if" if="[[loadingPage]]">
+                <div class="layout vertical center-center loading-container">
+                  <paper-spinner active></paper-spinner>
+                </div>
+              </template>
+              <template is="dom-if" if="[[!loadingPage]]">
+                <template is="dom-repeat" items="[[questionsExam]]" as="questionExam">
+                  <div>Pregunta [[sumIndex(index)]] - [[questionExam.id]] <paper-button on-click="eraseQuestionData">Borrar</paper-button></div>
+                  <div class="layout horizontal">
+                    <marked-element markdown="[[questionExam.data.question]]">
+                      <div slot="markdown-html"></div>
+                    </marked-element>
+                  </div>
+                </template>
+                <template is="dom-if" if="[[emptyQuestionExams]]">
+                  <div class="layout vertical center-center info-message">
+                    No hay preguntas para este examen
+                    <paper-button class="blue-button">Asigna una pregunta</paper-button>
+                  </div>
+                </template>
+              </template>
             </div>
-          </template>
-          <template is="dom-if" if="[[emptyQuestionExams]]">
-            No hay preguntas para este examen
-          </template>
+          </paper-card>
         </div>
-      </paper-card>
-    `}static get properties(){return{questionsExam:{type:Array,value:()=>{return[]},observer:"_questionsExamObserver"},emptyQuestionExams:{type:Boolean,value:!1},descriptionExam:String,nameExam:String}}sumIndex(index){return index+1}_questionsExamObserver(newValue){this.set("emptyQuestionExams",!(0<newValue.length))}connectedCallback(){super.connectedCallback();this._getQuestionsForExam()}_getQuestionsForExam(){let reference=this.getReference("exam",this.location.params.idExam);this.simpleQueryWithReference("questionExam","referenceExam","==",reference).then(results=>{this.set("questionsExam",results)})}addNewExam(){this.addDocument("exam",{name:this.nameExam,description:this.descriptionExam}).then(results=>{this.nameExam="";this.descriptionExam="";this.openToast(`Nuevo examen agregado con exito`);this._getExams()}).catch(error=>{console.log(error)});this.$.newExamModal.close()}eraseExam(e){console.log("Voy a borrar el examen",e.model.exam);this.deleteDoc("exam",e.model.exam.id).then(()=>{this.openToast(`Se borro correctamente el examen ${e.model.exam.data.name}`);this._getExams()}).catch(function(error){console.error("Error removing document: ",error)})}}window.customElements.define("preview-exam-page",PreviewExamPage);const baseStyle=document.createElement("dom-module");baseStyle.innerHTML=`
+        <div>
+          <paper-card heading="Candidatos del examen [[location.params.idExam]]">
+            <div class="card-actions">
+              <template is="dom-if" if="[[loadingPage]]">
+                <div class="layout vertical center-center loading-container">
+                  <paper-spinner active></paper-spinner>
+                </div>
+              </template>
+              <template is="dom-if" if="[[!loadingPage]]">
+                <template is="dom-repeat" items="[[candidatesExam]]" as="candidateExam">
+                  <paper-collapse-item header="Candidato [[sumIndex(index)]] [[candidateExam.candidateData.name]] [[candidateExam.candidateData.lastName]] [[candidateExam.candidateData.middleName]]">
+                    <div class="horizontal layout justified">
+                      <p>Id Unico de asignacion: [[candidateExam.id]]</p>
+                      <p>Calificacion: [[candidateExam.data.evaluation]]</p>
+                      <div>
+                        <paper-checkbox disabled checked="[[candidateExam.data.tos]]">Acepto terminos y condiciones</paper-checkbox>
+                      </div>
+                      <p>Oportunidades presentadas: [[candidateExam.data.chances]]</p>
+                    </div>
+                    <div class="horizontal layout justified">
+                      <p>Feedback: [[candidateExam.data.feedback]]</p>
+                    </div>
+                    <div class="horizontal layout end-justified">
+                      <template is="dom-if" if="[[candidateExam.data.readOnly]]">
+                        <a href="/ver-examen/[[candidateExam.id]]/true">
+                          <paper-button>Ver Resultado</paper-button>
+                        </a>
+                      </template>
+                      <paper-button on-click="eraseApply">Borrar</paper-button>
+                    </div>
+                  </paper-collapse-item>
+                  <div class="layout horizontal">
+                    <marked-element markdown="[[candidatesExam.data.question]]">
+                      <div slot="markdown-html"></div>
+                    </marked-element>
+                  </div>
+                </template>
+                <template is="dom-if" if="[[emptycandidatesExams]]">
+                  <div class="layout vertical center-center info-message">
+                    No hay candidatos para este examen
+                    <paper-button class="blue-button">Asigna una candidato</paper-button>
+                  </div>
+                </template>
+              </template>
+            </div>
+          </paper-card>
+        </div>
+      </iron-pages>
+    `}static get properties(){return{questionsExam:{type:Array,value:()=>{return[]},observer:"_questionsExamObserver"},candidatesExam:{type:Array,value:()=>{return[]},observer:"_candidatesExamObserver"},emptyQuestionExams:{type:Boolean,value:!1},descriptionExam:String,nameExam:String,selectedPage:{type:Number,value:0},loadingPage:{type:Boolean,value:!0,notify:!0}}}sumIndex(index){return index+1}_questionsExamObserver(newValue){this.set("emptyQuestionExams",!(0<newValue.length))}_candidatesExamObserver(newValue){this.set("emptycandidatesExams",!(0<newValue.length))}connectedCallback(){super.connectedCallback();this._getQuestionsForExam()}loadCandidates(){this.loadingPage=!0;let reference=this.getReference("exam",this.location.params.idExam),searchParams={collection:"candidateExam",queryParamOne:"referenceExam",queryParamConditional:"==",queryReference:reference,collectionReference:"candidate",referenceOnDoc:"referenceCandidate"};this.getAllDataFromCollectionWithReference(searchParams).then(results=>{this.set("candidatesExam",results)}).finally(()=>{this.loadingPage=!1})}_getQuestionsForExam(){this.loadingPage=!0;let reference=this.getReference("exam",this.location.params.idExam);this.simpleQueryWithReference("questionExam","referenceExam","==",reference).then(results=>{this.set("questionsExam",results)}).finally(()=>{this.loadingPage=!1})}eraseExam(e){this.deleteDoc("exam",e.model.exam.id).then(()=>{this.openToast(`Se borro correctamente el examen ${e.model.exam.data.name}`);this._getExams()}).catch(function(error){console.error("Error removing document: ",error)})}eraseQuestionData(e){this.deleteDoc("questionExam",e.model.questionExam.id).then(()=>{this.openToast(`Se borro correctamente la pregunta del examen`);this._getQuestionsForExam()}).catch(function(error){console.error("Error removing document: ",error)})}eraseApply(e){this.deleteDoc("candidateExam",e.model.candidateExam.id).then(()=>{this.openToast(`Se borro correctamente la asignacion del candidato`);this.loadCandidates()}).catch(function(error){console.error("Error removing document: ",error)})}}window.customElements.define("preview-exam-page",PreviewExamPage);const baseStyle=document.createElement("dom-module");baseStyle.innerHTML=`
   <template>
     <style>
       :root {
         --base-color: #449dd1;
         --white: #FFFFFF;
         --base-color-light: rgba(133,226,255,0.25);
+      }
+      .info-message {
+        height: 150px;
+      }
+      .info-message > paper-button {
+        margin-top: 20px;
+      }
+      
+      paper-button.blue-button {
+        background: var(--base-color);
+        color: var(--white);
+      }
+      
+      paper-collapse-item {
+        --paper-collapse-item-header: {
+          cursor: pointer;
+        }
+      }
+      
+      .loading-container {
+        height: 100px;
+      }
+      
+      paper-spinner {
+        --paper-spinner-layer-1-color: var(--base-color);
+        --paper-spinner-layer-2-color: var(--base-color-light);
+        --paper-spinner-layer-3-color: var(--base-color);
+        --paper-spinner-layer-4-color: var(--base-color-light);
+      }
+      
+      paper-card {
+        width: 100%;
+      }
+      @media screen and (max-width: 992px) {
+        paper-card {
+          width: auto;
+        }
       }
     </style>
   </template>
@@ -20930,48 +22051,54 @@ window.Vaadin=window.Vaadin||{};/**
       </template>
       <template is="dom-if" if="[[!loading]]">
         <div id="animate-container">
-          <template is="dom-if" if="[[!login]]">
-            <login-page class="layout horizontal center-center"></login-page>
+          <template is="dom-if" if="[[code]]">
+            <div id="code" class="layout horizontal center-center">
+            </div>
           </template>
-          <template is="dom-if" if="[[login]]" restamp>
-            <app-drawer-layout>
-              <app-drawer slot="drawer" swipe-open>
-                <template is="dom-if" if="[[innerLoading]]">
-                  <div class="layout horizontal center-center main-center">
-                    <paper-spinner active></paper-spinner>
-                  </div>
-                </template>
-                <template is="dom-if" if="[[!innerLoading]]">
-                  <app-toolbar>Menu</app-toolbar>
-                  <paper-listbox selected="{{selectedItem}}" attr-for-selected="data-name">
-                    <template is="dom-repeat" items="[[urls]]" as="url">
-                      <template is="dom-if" if="[[validName(url.name)]]">
-                        <a href="[[url.path]]" data-name="[[url.name]]" class="paper-item" tabindex="-1">
-                          <paper-item>[[url.name]]</paper-item>
-                        </a>
+          <template is="dom-if" if="[[!code]]">
+            <template is="dom-if" if="[[!login]]">
+              <login-page class="layout horizontal center-center"></login-page>
+            </template>
+            <template is="dom-if" if="[[login]]" restamp>
+              <app-drawer-layout>
+                <app-drawer slot="drawer" swipe-open>
+                  <template is="dom-if" if="[[innerLoading]]">
+                    <div class="layout horizontal center-center main-center">
+                      <paper-spinner active></paper-spinner>
+                    </div>
+                  </template>
+                  <template is="dom-if" if="[[!innerLoading]]">
+                    <app-toolbar>Menu</app-toolbar>
+                    <paper-listbox selected="{{selectedItem}}" attr-for-selected="data-name">
+                      <template is="dom-repeat" items="[[urls]]" as="url">
+                        <template is="dom-if" if="[[validName(url.name)]]">
+                          <a href="[[url.path]]" data-name="[[url.name]]" class="paper-item" tabindex="-1">
+                            <paper-item>[[url.name]]</paper-item>
+                          </a>
+                        </template>
                       </template>
-                    </template>
-                  </paper-listbox>
-                </template>
-              </app-drawer>
-              <app-header-layout>
-                <app-header slot="header" reveals effects="waterfall">
-                  <app-toolbar>
-                    <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
-                    <div main-title>{{selectedItem}}</div>
-                    <template is="dom-if" if="[[innerLoading]]">
-                      <paper-progress indeterminate$="[[innerLoading]]" bottom-item></paper-progress>         
-                    </template>
-                  </app-toolbar>
-                </app-header>
-                <div id="main" class="layout horizontal center-center">
-                </div>
-              </app-header-layout>
-            </app-drawer-layout>
+                    </paper-listbox>
+                  </template>
+                </app-drawer>
+                <app-header-layout>
+                  <app-header slot="header" reveals effects="waterfall">
+                    <app-toolbar>
+                      <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
+                      <div main-title>{{selectedItem}}</div>
+                      <template is="dom-if" if="[[innerLoading]]">
+                        <paper-progress indeterminate$="[[innerLoading]]" bottom-item></paper-progress>         
+                      </template>
+                    </app-toolbar>
+                  </app-header>
+                  <div id="main" class="layout horizontal center-center">
+                  </div>
+                </app-header-layout>
+              </app-drawer-layout>
+            </template>
           </template>
         </div>
       </template>
-    `}static get properties(){return{login:{type:Boolean,value:!0},loading:{type:Boolean,value:!0,observer:"_loadingChange"},selectedItem:{type:String}}}validName(name){return name!==void 0}_loadingChange(newlValue,oldValue){if(!newlValue){// TODO solve animations
+    `}static get properties(){return{login:{type:Boolean,value:!0},code:{type:Boolean,value:!0},loading:{type:Boolean,value:!0,observer:"_loadingChange"},selectedItem:{type:String}}}validName(name){return name!==void 0}_loadingChange(newlValue,oldValue){if(!newlValue){// TODO solve animations
 /*setTimeout(() => {
         const animation = this.shadowRoot.querySelector('#animate-container').
             animate([
@@ -20983,4 +22110,10 @@ window.Vaadin=window.Vaadin||{};/**
                   duration: 200,
                 });
         this.shadowRoot.querySelector('#animate-container').style.opacity = '1';
-      }, 0);*/this._getValuesFromSecurity().then(urls=>{this.set("urls",urls);this.set("selectedItem",this.urls[0].name);window.href=this.urls[0].path;const main=this.shadowRoot.querySelector("#main"),router=new Router(main);router.setRoutes(urls)})}}_getValuesFromSecurity(){this.innerLoading=!0;return new Promise((resolve,reject)=>{setTimeout(()=>{this.innerLoading=!1;resolve([{path:"/",redirect:"/exams"},{name:"Examenes",path:"/exams",component:"exam-page"},{name:"Candidatos",path:"/candidates",component:"candidate-page"},{name:"Configuracion",path:"/config",component:"config-page"},{path:"/make-exam",component:"create-test-page"},{path:"/preview-exam/:idExam",component:"preview-exam-page"}])},1e3)})}}window.customElements.define("hiring-app",HiringApp)});
+      }, 0);*/this._getValuesFromSecurity().then(urls=>{this.set("urls",urls);this.set("selectedItem",this.urls[0].name);window.href=this.urls[0].path;const main=this.shadowRoot.querySelector("#code"),router=new Router(main);router.setRoutes(urls)})}}_getValuesFromSecurity(){this.innerLoading=!0;return new Promise((resolve,reject)=>{setTimeout(()=>{this.innerLoading=!1;resolve([{path:"/",redirect:"/gft-examen"},// {name: 'Examenes', path: '/exams', component: 'exam-page'},
+// {name: 'Candidatos', path: '/candidates', component: 'candidate-page'},
+// {name: 'Configuracion', path: '/config', component: 'config-page'},
+// {path: '/make-exam', component: 'create-test-page'},
+// {path: '/preview-exam/:idExam', component: 'preview-exam-page'},
+{path:"/gft-examen",component:"code-register-page"},{path:"/hacer-examen/:codeExam",component:"apply-exam-page"}]// {path: '/ver-examen/:codeExam/:reviewer', component: 'apply-exam-page'},
+)},1e3)})}}window.customElements.define("hiring-app",HiringApp)});
