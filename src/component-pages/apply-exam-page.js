@@ -232,7 +232,7 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
     return questions.map(questionExam => {
       return new Promise((resolve, reject) => {
         this.simpleQueryWithReference('answerExamCandidate', 'questionExamReference', '==', this.getReference('questionExam', questionExam.id)).then(answersExamCandidate => {
-          if (answersExamCandidate.left > 0) {
+          if (answersExamCandidate.length > 0) {
             questionExam.answer = answersExamCandidate[0].data.answer;
             questionExam.correctAnswer = answersExamCandidate[0].data.correctAnswer;
             questionExam.answerId = answersExamCandidate[0].id;
