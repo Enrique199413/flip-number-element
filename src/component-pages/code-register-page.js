@@ -3,6 +3,7 @@ import '@polymer/paper-input/paper-input.js';
 import '@polymer/paper-card/paper-card.js';
 import '@polymer/paper-dialog/paper-dialog.js';
 import '@polymer/paper-dialog-scrollable/paper-dialog-scrollable.js';
+import 'code-mirror-wrapper/codemirror-wrapper.js';
 
 import {FireStoreMixin} from '../local-components/mixins/mixin-firestore.js';
 import {UtilitiesMixin} from '../local-components/mixins/mixin-utilities';
@@ -26,6 +27,7 @@ class CodeRegisterPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
       
       <paper-card heading="Prueba GFT">
         <div class="card-content">
+          <codemirror-wrapper></codemirror-wrapper>
           <paper-input label="Código de acceso" type="text" value="{{code::input}}"></paper-input>
         </div>
         <div class="card-actions">
