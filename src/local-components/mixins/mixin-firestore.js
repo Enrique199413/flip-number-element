@@ -24,8 +24,16 @@ let firestoreMixin = (superClass) => class extends FirebaseMixin(superClass) {
     return this.firebase.default.firestore();
   }
 
+  _getOnlyFirestoreInstance() {
+    return this.firebase.default.firestore;
+  }
+
   addDocument(collection, data) {
     this.loadingRequest = true;
+    if (!data.hasOwnProperty('createAt')) {
+      data.createAt = new Date();
+    }
+    data.lastModified = this._getOnlyFirestoreInstance().FieldValue.serverTimestamp();
     return new Promise((resolve, reject) => {
       this._getStore().collection(collection).add(data)
         .then(results => resolve(results))
@@ -133,6 +141,14 @@ let firestoreMixin = (superClass) => class extends FirebaseMixin(superClass) {
   }
 
   updateDocument(collection, reference, data) {
+    // console.log(data, data.answer, data.createdAt, data.hasOwnProperty('createdAt'), data.hasOwnProperty('answer'));
+    console.log(data.hasOwnProperty('createdAt'))
+    if (!data.hasOwnProperty('createdAt')) {
+      console.log('dasdasdsa', data)
+      data.createdAt = this._getOnlyFirestoreInstance().FieldValue.serverTimestamp();
+    }
+    data.lastModified = this._getOnlyFirestoreInstance().FieldValue.serverTimestamp();
+    console.log('voy a dsa', data);
     return this._getStore().collection(collection).doc(reference).set(data);
   }
 };

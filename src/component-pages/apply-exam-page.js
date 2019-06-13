@@ -73,13 +73,13 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
                       <div>
                         Respuesta:
                       </div>
-                      <marked-element markdown="[[questionExam.answer]]">
+                      <marked-element markdown="[[questionExam.answer.answer]]">
                         <div slot="markdown-html"></div>
                       </marked-element>
                     </div>
                   </template>
                   <template is="dom-if" if="[[!currentExam.readOnly]]">
-                    <paper-textarea label="Respuesta" rows="3" value="{{questionExam.answer::input}}"></paper-textarea>
+                    <paper-textarea label="Respuesta" rows="3" value="{{questionExam.answer.answer::input}}"></paper-textarea>
                     <paper-button on-click="saveAnswer">Guardar Respuesta</paper-button>
                   </template>
                   <template is="dom-if" if="[[checkReviewer()]]">
@@ -191,7 +191,8 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
 
   saveAnswer(e) {
     let data = {
-      answer: e.model.questionExam.answer,
+      answer: e.model.questionExam.answer.answer,
+      createdAt: e.model.questionExam.answer.createdAt,
       correctAnswer: e.model.questionExam.correctAnswer === 'true' ? true : false,
       questionExamReference: this.getReference('questionExam', e.model.questionExam.id),
       candidateReference: this.getReference('candidate', e.model.questionExam.id)
@@ -227,6 +228,7 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
     this.simpleQueryWithReference('questionExam', 'referenceExam', '==', reference).then(questionsExam => {
       this.startExam = true;
       Promise.all(this._getInfoAboutAnswer(questionsExam)).then(finalQuestionsWithAnswers => {
+        console.log('dasdasd', questionsExam);
         this.set('questionsExam', questionsExam);
       })
     }).finally(() => {
@@ -239,7 +241,8 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
       return new Promise((resolve, reject) => {
         this.simpleQueryWithReference('answerExamCandidate', 'questionExamReference', '==', this.getReference('questionExam', questionExam.id)).then(answersExamCandidate => {
           if (answersExamCandidate.length > 0) {
-            questionExam.answer = answersExamCandidate[0].data.answer;
+            questionExam.answer = answersExamCandidate[0].data;
+            console.log(questionExam.answer);
             questionExam.correctAnswer = answersExamCandidate[0].data.correctAnswer;
             questionExam.answerId = answersExamCandidate[0].id;
           }
