@@ -138,7 +138,7 @@ class HiringApp extends UtilitiesMixin(PolymerElement) {
       },
       code: {
         type: Boolean,
-        value: true
+        value: false
       },
       loading: {
         type: Boolean,
@@ -174,7 +174,7 @@ class HiringApp extends UtilitiesMixin(PolymerElement) {
         this.set('urls', urls);
         this.set('selectedItem', this.urls[0].name);
         window.href = this.urls[0].path;
-        const main = this.shadowRoot.querySelector('#code');
+        const main = this.shadowRoot.querySelector('#main');
         const router = new Router(main);
         router.setRoutes(urls);
       });
@@ -188,14 +188,14 @@ class HiringApp extends UtilitiesMixin(PolymerElement) {
         this.innerLoading = false;
         resolve([
           {path: '/', redirect: '/gft-examen'},
-          // {name: 'Examenes', path: '/exams', component: 'exam-page'},
-          // {name: 'Candidatos', path: '/candidates', component: 'candidate-page'},
-          // {name: 'Configuracion', path: '/config', component: 'config-page'},
-          // {path: '/make-exam', component: 'create-test-page'},
-          // {path: '/preview-exam/:idExam', component: 'preview-exam-page'},
+          {name: 'Examenes', path: '/exams', component: 'exam-page'},
+          {name: 'Candidatos', path: '/candidates', component: 'candidate-page'},
+          {name: 'Configuracion', path: '/config', component: 'config-page'},
+          {path: '/make-exam', component: 'create-test-page'},
+          {path: '/preview-exam/:idExam', component: 'preview-exam-page'},
           {path: '/gft-examen', component: 'code-register-page'},
           {path: '/hacer-examen/:codeExam', component: 'apply-exam-page'},
-          // {path: '/ver-examen/:codeExam/:reviewer', component: 'apply-exam-page'},
+          {path: '/ver-examen/:codeExam/:reviewer', component: 'apply-exam-page'},
         ]);
       }, 1000);
     });
