@@ -48,10 +48,10 @@ class CodeRegisterPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
 
   verifyCode() {
     this.getDocExist('candidateExam', this.code).then(existExam => {
-      console.log(existExam);
       window.location.href = '/hacer-examen/' + this.code;
     }).catch(error => {
-      console.log('existExam', error);
+      // TODO try to send a message or toast
+      console.log(error);
     })
   }
 }

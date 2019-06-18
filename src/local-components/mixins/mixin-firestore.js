@@ -141,14 +141,10 @@ let firestoreMixin = (superClass) => class extends FirebaseMixin(superClass) {
   }
 
   updateDocument(collection, reference, data) {
-    // console.log(data, data.answer, data.createdAt, data.hasOwnProperty('createdAt'), data.hasOwnProperty('answer'));
-    console.log(data.hasOwnProperty('createdAt'))
-    if (!data.hasOwnProperty('createdAt')) {
-      console.log('dasdasdsa', data)
+    if (!data.hasOwnProperty('createdAt') || !data.createdAt) {
       data.createdAt = this._getOnlyFirestoreInstance().FieldValue.serverTimestamp();
     }
     data.lastModified = this._getOnlyFirestoreInstance().FieldValue.serverTimestamp();
-    console.log('voy a dsa', data);
     return this._getStore().collection(collection).doc(reference).set(data);
   }
 };
