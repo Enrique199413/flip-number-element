@@ -13,7 +13,7 @@ import {UtilitiesMixin} from '../local-components/mixins/mixin-utilities';
 class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
   static get template() {
     return html`
-      <style include="base-style iron-flex iron-flex-alignment">
+      <style include="base-style iron-flex iron-flex-alignment colored-card-secondary">
         :host {
           justify-content: center;
           align-items: center;
@@ -22,10 +22,6 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
           width: 100%;
         }
         
-        paper-card.tos {
-          margin-top: 10rem;
-          width: 50%;
-        }
         @media screen and (max-width: 992px) {
           paper-card.tos {
             margin-top: 1rem;
@@ -44,6 +40,10 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
           margin-right: 1rem;
           margin-top: 1rem;
           width: 90%;
+        }
+        
+        .paper-font-title {
+          @apply --paper-font-title;
         }
       </style>
       <template is="dom-if" if="[[startExam]]">
@@ -110,7 +110,7 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
         </app-header-layout>
       </template>
       <template is="dom-if" if="[[!startExam]]">
-        <paper-card heading="Términos y condiciones" class="tos">
+        <paper-card heading="Términos y condiciones" class="color-gray">
           <template is="dom-if" if="[[loadingPage]]">
             <div class="layout vertical center-center loading-container">
               <paper-spinner active></paper-spinner>
@@ -118,13 +118,13 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
           </template>
           <template is="dom-if" if="[[!loadingPage]]">
             <div class="card-content">
-              {{location.params.codeExam}}
-              <p>Hola {{candidateData.name}} {{candidateData.lastName}} {{candidateData.middleName}},</p>
+              <span class="paper-font-title">Bienvenido {{candidateData.name}} {{candidateData.lastName}} {{candidateData.middleName}}</span>
               </p>En GFT es muy importante la protección de tus Datos Personales, así como el respeto a los Derechos de Autor de terceros, por lo que en caso de que decidas continuar con el proceso de selección y reclutamiento de la vacante Desarrollador Frontend, entenderemos tu aceptación y pleno consentimiento respecto del Aviso de Privacidad y el Release, adjuntos al presente.</p>
               <p>Quedo a la espera de tus noticias.</p>
               <paper-checkbox checked="{{tosAccepted}}">Acepto Términos y condiciones.</paper-checkbox>
             </div>
-            <div class="card-actions">
+            <div class="card-actions layout horizontal flex-end-justified">
+              <paper-button on-click="_cancelTOS" class="dissmis-button">Cancelar</paper-button>
               <paper-button disabled$="[[!tosAccepted]]" on-click="_getQuestionsAndAnswers">Iniciar evaluación</paper-button>
             </div>
           </template>

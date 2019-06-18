@@ -1,9 +1,12 @@
 import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
 import '../local-components/shared-styles/base-style.js';
+import '../local-components/shared-styles/colored-card-active.js';
+import '../local-components/shared-styles/colored-card-secondary.js';
 
 import {Router} from '@vaadin/router';
 import '@polymer/iron-icons/iron-icons.js';
 import '@polymer/paper-progress/paper-progress.js';
+import '@polymer/paper-styles/classes/typography.js';
 import '@polymer/app-layout/app-layout.js';
 import '@polymer/app-layout/app-drawer-layout/app-drawer-layout.js';
 import '@polymer/app-layout/app-drawer/app-drawer.js';
@@ -138,7 +141,7 @@ class HiringApp extends UtilitiesMixin(PolymerElement) {
       },
       code: {
         type: Boolean,
-        value: false
+        value: true
       },
       loading: {
         type: Boolean,
@@ -174,7 +177,7 @@ class HiringApp extends UtilitiesMixin(PolymerElement) {
         this.set('urls', urls);
         this.set('selectedItem', this.urls[0].name);
         window.href = this.urls[0].path;
-        const main = this.shadowRoot.querySelector('#main');
+        const main = this.shadowRoot.querySelector('#code');
         const router = new Router(main);
         router.setRoutes(urls);
       });
