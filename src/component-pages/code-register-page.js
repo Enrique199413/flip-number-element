@@ -50,8 +50,7 @@ class CodeRegisterPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
     this.getDocExist('candidateExam', this.code).then(existExam => {
       window.location.href = '/hacer-examen/' + this.code;
     }).catch(error => {
-      // TODO try to send a message or toast
-      console.log(error);
+      this.openToast('El codigo de acceso no existe y no puedes iniciar la evaluacion');
     })
   }
 }

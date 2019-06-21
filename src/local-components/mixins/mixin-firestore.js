@@ -101,16 +101,22 @@ let firestoreMixin = (superClass) => class extends FirebaseMixin(superClass) {
   }
 
   getDocExist(collection, idDoc) {
-    let referenceDoc = this._getStore().collection(collection).doc(idDoc);
-    return new Promise((resolve, reject) => {
-      referenceDoc.get().then(doc => {
-        if (doc.exists) {
-          resolve(doc.exists);
-        } else {
-          reject('Verifica el código de referencia');
-        }
-      }).catch(error => reject(error));
-    });
+    if(collection && idDoc) {
+      let referenceDoc = this._getStore().collection(collection).doc(idDoc);
+      return new Promise((resolve, reject) => {
+        referenceDoc.get().then(doc => {
+          if (doc.exists) {
+            resolve(doc.exists);
+          } else {
+            reject('Verifica el código de referencia');
+          }
+          return;
+        }).catch(error => reject(error));
+      });
+    } else {
+      console.error(`Expect collection:${collection} idDoc:${idDoc} as defined`);
+      return Promise.reject(`Expect collection:${collection} idDoc:${idDoc} as defined`);
+    }
   }
 
   simpleQueryWithReference(collection, whereOne, whereTwo, reference) {

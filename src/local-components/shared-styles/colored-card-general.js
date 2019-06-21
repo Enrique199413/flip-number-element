@@ -2,8 +2,8 @@ const baseStyle = document.createElement('dom-module');
 baseStyle.innerHTML = `
   <template>
     <style>
-      .card-secondary-container > .color-gray {
-        --paper-card-background-color: var(--base-secondary-color);
+      .card-general-container > .color-general {
+        --paper-card-background-color: var(--white);
         --paper-card-header-text: {
           color: var(--accent-color-dark);
           text-transform: uppercase;
@@ -12,7 +12,7 @@ baseStyle.innerHTML = `
         };
       
         --paper-card-actions: {
-          border-top: none;
+          border-top: 1px solid #e8e8e8;
           display: flex;
           flex-direction: row;
           justify-content: flex-end;
@@ -20,32 +20,35 @@ baseStyle.innerHTML = `
         --paper-card-content: {
           padding-top: 0;
         }
-        margin-top: 10rem;
-        width: 50%;
       }
       
-      .card-secondary-container > .color-gray > .card-actions > .center-button {
+      .card-general-container > .color-general > .card-actions > .center-button {
         width: 9rem;
       }
       
-      .card-secondary-container > .color-gray > .card-actions > paper-button {
+      .card-general-container > .color-general > .card-actions > paper-button {
         --paper-button: {
           color: var(--base-color);
           text-transform: uppercase;
         }
       }
       
-      .card-secondary-container > .color-gray > .card-actions > paper-button.dissmis-button {
+      .card-general-container > .color-general > .card-actions > paper-button.dissmis-button {
         --paper-button: {
           color: var(--base-cancel-color);
           text-transform: uppercase;
         }
       }
       
-      .card-secondary-container > .color-gray > .card-content > paper-checkbox {
+      .card-general-container > .color-general > .card-content > paper-checkbox {
         --paper-checkbox-checked-color: var(--base-color);
       }
+      
+      .color-general > .card-content > paper-textarea {
+        --paper-input-container-focus-color: var(--base-color);
+        --paper-input-container-color: var(--base-color);
+      } 
     </style>
   </template>
 `;
-baseStyle.register('colored-card-secondary');
+baseStyle.register('colored-card-general');

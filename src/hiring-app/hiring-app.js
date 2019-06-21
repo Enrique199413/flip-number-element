@@ -2,6 +2,7 @@ import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
 import '../local-components/shared-styles/base-style.js';
 import '../local-components/shared-styles/colored-card-active.js';
 import '../local-components/shared-styles/colored-card-secondary.js';
+import '../local-components/shared-styles/colored-card-general.js';
 
 import {Router} from '@vaadin/router';
 import '@polymer/iron-icons/iron-icons.js';
