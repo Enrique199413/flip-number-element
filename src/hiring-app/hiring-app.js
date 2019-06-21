@@ -1,9 +1,13 @@
 import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
 import '../local-components/shared-styles/base-style.js';
+import '../local-components/shared-styles/colored-card-active.js';
+import '../local-components/shared-styles/colored-card-secondary.js';
+import '../local-components/shared-styles/colored-card-general.js';
 
 import {Router} from '@vaadin/router';
 import '@polymer/iron-icons/iron-icons.js';
 import '@polymer/paper-progress/paper-progress.js';
+import '@polymer/paper-styles/classes/typography.js';
 import '@polymer/app-layout/app-layout.js';
 import '@polymer/app-layout/app-drawer-layout/app-drawer-layout.js';
 import '@polymer/app-layout/app-drawer/app-drawer.js';
@@ -188,14 +192,14 @@ class HiringApp extends UtilitiesMixin(PolymerElement) {
         this.innerLoading = false;
         resolve([
           {path: '/', redirect: '/gft-examen'},
-          // {name: 'Examenes', path: '/exams', component: 'exam-page'},
-          // {name: 'Candidatos', path: '/candidates', component: 'candidate-page'},
-          // {name: 'Configuracion', path: '/config', component: 'config-page'},
-          // {path: '/make-exam', component: 'create-test-page'},
-          // {path: '/preview-exam/:idExam', component: 'preview-exam-page'},
+          {name: 'Examenes', path: '/exams', component: 'exam-page'},
+          {name: 'Candidatos', path: '/candidates', component: 'candidate-page'},
+          {name: 'Configuracion', path: '/config', component: 'config-page'},
+          {path: '/make-exam', component: 'create-test-page'},
+          {path: '/preview-exam/:idExam', component: 'preview-exam-page'},
           {path: '/gft-examen', component: 'code-register-page'},
           {path: '/hacer-examen/:codeExam', component: 'apply-exam-page'},
-          // {path: '/ver-examen/:codeExam/:reviewer', component: 'apply-exam-page'},
+          {path: '/ver-examen/:codeExam/:reviewer', component: 'apply-exam-page'},
         ]);
       }, 1000);
     });

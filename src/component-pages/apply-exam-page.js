@@ -13,7 +13,7 @@ import {UtilitiesMixin} from '../local-components/mixins/mixin-utilities';
 class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
   static get template() {
     return html`
-      <style include="base-style iron-flex iron-flex-alignment">
+      <style include="base-style iron-flex iron-flex-alignment colored-card-general colored-card-secondary">
         :host {
           justify-content: center;
           align-items: center;
@@ -22,10 +22,6 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
           width: 100%;
         }
         
-        paper-card.tos {
-          margin-top: 10rem;
-          width: 50%;
-        }
         @media screen and (max-width: 992px) {
           paper-card.tos {
             margin-top: 1rem;
@@ -45,41 +41,51 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
           margin-top: 1rem;
           width: 90%;
         }
+        
+        .paper-font-title {
+          @apply --paper-font-title;
+        }
       </style>
       <template is="dom-if" if="[[startExam]]">
         <app-header-layout fullbleed>
           <app-header slot="header" fixed effects="waterfall">
             <app-toolbar>
-              <div main-title>Examen de {{candidateData.name}} {{candidateData.lastName}} {{candidateData.middleName}}</div>
+              <div main-title class="layout horizontal justified">
+                <div>Examen de {{candidateData.name}} {{candidateData.lastName}} {{candidateData.middleName}}</div>
+                <div>Preguntas restantes: 1</div>
+              </div>
             </app-toolbar>
           </app-header>
-          <div class="layout vertical center-center">
+          <div class="layout vertical center-center card-general-container">
             <template is="dom-if" if="[[location.params.reviewer]]">
               <div class="layout horizontal start-justified">
                 <p>Examen de {{candidateData.name}} {{candidateData.lastName}} {{candidateData.middleName}}</p>
               </div>
             </template>
             <template is="dom-repeat" items="[[questionsExam]]" as="questionExam">
-              <paper-card>
+              <paper-card heading="Pregunta [[sumIndex(index)]]" class="color-general">
                 <div class="card-content">
-                  <div>Pregunta [[sumIndex(index)]]</div>
                   <div class="layout horizontal">
                     <marked-element markdown="[[questionExam.data.question]]">
                       <div slot="markdown-html"></div>
                     </marked-element>
                   </div>
+                  <template is="dom-if" if="[[!currentExam.readOnly]]">
+                    <paper-textarea label="Respuesta" rows="3" value="{{questionExam.answerData.answer::input}}"></paper-textarea>
+                  </template>
                   <template is="dom-if" if="[[currentExam.readOnly]]">
                     <div class="layout vertical">
                       <div>
                         Respuesta:
                       </div>
-                      <marked-element markdown="[[questionExam.answer]]">
+                      <marked-element markdown="[[questionExam.answerData.answer]]">
                         <div slot="markdown-html"></div>
                       </marked-element>
                     </div>
                   </template>
+                </div>
+                <div class="card-actions">
                   <template is="dom-if" if="[[!currentExam.readOnly]]">
-                    <paper-textarea label="Respuesta" rows="3" value="{{questionExam.answer::input}}"></paper-textarea>
                     <paper-button on-click="saveAnswer">Guardar Respuesta</paper-button>
                   </template>
                   <template is="dom-if" if="[[checkReviewer()]]">
@@ -110,25 +116,27 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
         </app-header-layout>
       </template>
       <template is="dom-if" if="[[!startExam]]">
-        <paper-card heading="Términos y condiciones" class="tos">
-          <template is="dom-if" if="[[loadingPage]]">
-            <div class="layout vertical center-center loading-container">
-              <paper-spinner active></paper-spinner>
-            </div>
-          </template>
-          <template is="dom-if" if="[[!loadingPage]]">
-            <div class="card-content">
-              {{location.params.codeExam}}
-              <p>Hola {{candidateData.name}} {{candidateData.lastName}} {{candidateData.middleName}},</p>
-              </p>En GFT es muy importante la protección de tus Datos Personales, así como el respeto a los Derechos de Autor de terceros, por lo que en caso de que decidas continuar con el proceso de selección y reclutamiento de la vacante Desarrollador Frontend, entenderemos tu aceptación y pleno consentimiento respecto del Aviso de Privacidad y el Release, adjuntos al presente.</p>
-              <p>Quedo a la espera de tus noticias.</p>
-              <paper-checkbox checked="{{tosAccepted}}">Acepto Términos y condiciones.</paper-checkbox>
-            </div>
-            <div class="card-actions">
-              <paper-button disabled$="[[!tosAccepted]]" on-click="_getQuestionsAndAnswers">Iniciar evaluación</paper-button>
-            </div>
-          </template>
-        </paper-card>
+        <div class="card-secondary-container layout horizontal center-center">
+          <paper-card heading="Términos y condiciones" class="color-gray">
+            <template is="dom-if" if="[[loadingPage]]">
+              <div class="layout vertical center-center loading-container">
+                <paper-spinner active></paper-spinner>
+              </div>
+            </template>
+            <template is="dom-if" if="[[!loadingPage]]">
+              <div class="card-content">
+                <span class="paper-font-title">Bienvenido {{candidateData.name}} {{candidateData.lastName}} {{candidateData.middleName}}</span>
+                </p>En GFT es muy importante la protección de tus Datos Personales, así como el respeto a los Derechos de Autor de terceros, por lo que en caso de que decidas continuar con el proceso de selección y reclutamiento de la vacante Desarrollador Frontend, entenderemos tu aceptación y pleno consentimiento respecto del Aviso de Privacidad y el Release, adjuntos al presente.</p>
+                <p>Quedo a la espera de tus noticias.</p>
+                <paper-checkbox checked="{{tosAccepted}}">Acepto Términos y condiciones.</paper-checkbox>
+              </div>
+              <div class="card-actions layout horizontal flex-end-justified">
+                <paper-button on-click="_cancelTOS" class="dissmis-button">Cancelar</paper-button>
+                <paper-button disabled$="[[!tosAccepted]]" on-click="_getQuestionsAndAnswers">Iniciar evaluación</paper-button>
+              </div>
+            </template>
+          </paper-card>
+        </div>
       </template>
     `;
   }
@@ -191,12 +199,17 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
 
   saveAnswer(e) {
     let data = {
-      answer: e.model.questionExam.answer,
+      answer: e.model.questionExam.answerData.answer,
+      createdAt: e.model.questionExam.answerData.createdAt,
       correctAnswer: e.model.questionExam.correctAnswer === 'true' ? true : false,
       questionExamReference: this.getReference('questionExam', e.model.questionExam.id),
       candidateReference: this.getReference('candidate', e.model.questionExam.id)
     };
-    this.updateDocument('answerExamCandidate', e.model.questionExam.id, data);
+    this.updateDocument('answerExamCandidate', e.model.questionExam.id, data).then(success => {
+      this.openToast('Tu respuesta fue guardada con exito.')
+    }).catch(error => {
+      console.error(error);
+    });
   }
 
   _getInfoCandidate(getAnswers = false) {
@@ -239,9 +252,13 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
       return new Promise((resolve, reject) => {
         this.simpleQueryWithReference('answerExamCandidate', 'questionExamReference', '==', this.getReference('questionExam', questionExam.id)).then(answersExamCandidate => {
           if (answersExamCandidate.length > 0) {
-            questionExam.answer = answersExamCandidate[0].data.answer;
+            questionExam.answerData = answersExamCandidate[0].data;
             questionExam.correctAnswer = answersExamCandidate[0].data.correctAnswer;
             questionExam.answerId = answersExamCandidate[0].id;
+          } else {
+            questionExam.answerData = {
+              answer: ''
+            };
           }
           resolve(questionExam);
         }).catch((error) => {

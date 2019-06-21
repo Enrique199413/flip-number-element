@@ -3,8 +3,13 @@ baseStyle.innerHTML = `
   <template>
     <style>
       :root {
-        --base-color: #449dd1;
+        --base-color: #1D4786;
+        --base-secondary-color: #FAFAFA;
+        --base-cancel-color: #858585;
         --white: #FFFFFF;
+        --dark: #000000;
+        --accent-color-white: var(--white);
+        --accent-color-dark: var(--dark);
         --base-color-light: rgba(133,226,255,0.25);
       }
       .info-message {
@@ -12,6 +17,10 @@ baseStyle.innerHTML = `
       }
       .info-message > paper-button {
         margin-top: 20px;
+      }
+      
+      paper-button {
+        font-size: 14px;
       }
       
       paper-button.blue-button {
@@ -38,6 +47,7 @@ baseStyle.innerHTML = `
       
       paper-card {
         width: 100%;
+        
       }
       @media screen and (max-width: 992px) {
         paper-card {

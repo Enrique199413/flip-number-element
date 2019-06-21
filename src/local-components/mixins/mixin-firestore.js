@@ -24,8 +24,16 @@ let firestoreMixin = (superClass) => class extends FirebaseMixin(superClass) {
     return this.firebase.default.firestore();
   }
 
+  _getOnlyFirestoreInstance() {
+    return this.firebase.default.firestore;
+  }
+
   addDocument(collection, data) {
     this.loadingRequest = true;
+    if (!data.hasOwnProperty('createAt')) {
+      data.createAt = new Date();
+    }
+    data.lastModified = this._getOnlyFirestoreInstance().FieldValue.serverTimestamp();
     return new Promise((resolve, reject) => {
       this._getStore().collection(collection).add(data)
         .then(results => resolve(results))
@@ -93,16 +101,22 @@ let firestoreMixin = (superClass) => class extends FirebaseMixin(superClass) {
   }
 
   getDocExist(collection, idDoc) {
-    let referenceDoc = this._getStore().collection(collection).doc(idDoc);
-    return new Promise((resolve, reject) => {
-      referenceDoc.get().then(doc => {
-        if (doc.exists) {
-          resolve(doc.exists);
-        } else {
-          reject('Verifica el código de referencia');
-        }
-      }).catch(error => reject(error));
-    });
+    if(collection && idDoc) {
+      let referenceDoc = this._getStore().collection(collection).doc(idDoc);
+      return new Promise((resolve, reject) => {
+        referenceDoc.get().then(doc => {
+          if (doc.exists) {
+            resolve(doc.exists);
+          } else {
+            reject('Verifica el código de referencia');
+          }
+          return;
+        }).catch(error => reject(error));
+      });
+    } else {
+      console.error(`Expect collection:${collection} idDoc:${idDoc} as defined`);
+      return Promise.reject(`Expect collection:${collection} idDoc:${idDoc} as defined`);
+    }
   }
 
   simpleQueryWithReference(collection, whereOne, whereTwo, reference) {
@@ -133,6 +147,10 @@ let firestoreMixin = (superClass) => class extends FirebaseMixin(superClass) {
   }
 
   updateDocument(collection, reference, data) {
+    if (!data.hasOwnProperty('createdAt') || !data.createdAt) {
+      data.createdAt = this._getOnlyFirestoreInstance().FieldValue.serverTimestamp();
+    }
+    data.lastModified = this._getOnlyFirestoreInstance().FieldValue.serverTimestamp();
     return this._getStore().collection(collection).doc(reference).set(data);
   }
 };
