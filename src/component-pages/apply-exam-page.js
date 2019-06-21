@@ -72,6 +72,7 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
                   </div>
                   <template is="dom-if" if="[[!currentExam.readOnly]]">
                     <paper-textarea label="Respuesta" rows="3" value="{{questionExam.answerData.answer::input}}"></paper-textarea>
+                    <codemirror-wrapper valor-correcto="{{questionExam.answerData.answer}}"></codemirror-wrapper>
                   </template>
                   <template is="dom-if" if="[[currentExam.readOnly]]">
                     <div class="layout vertical">

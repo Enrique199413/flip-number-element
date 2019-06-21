@@ -9,7 +9,11 @@
   "extraDependencies": [
     "manifest.json",
     "node_modules/@webcomponents/webcomponentsjs/bundles/**",
-    "node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"
+    "node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js",
+    "node_modules/codemirror/lib/codemirror.js",
+    "node_modules/codemirror/mode/htmlmixed/htmlmixed.js",
+    "node_modules/codemirror/mode/clike/clike.js",
+    "node_modules/codemirror/mode/javascript/javascript.js"
   ],
   "builds": [{
     "name": "hiring-app",
