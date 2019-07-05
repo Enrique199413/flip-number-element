@@ -17,6 +17,7 @@ class LoginPage extends PolymerElement {
         <div class="card-content">
           <paper-input label="Usuario" type="text" value="{{username::value}}"></paper-input>
           <paper-input label="Constrasena" type="password" value="{{password::value}}"></paper-input>
+          <paper-input label="Constrasena" type="password" value="{{full-name::value}}"></paper-input>
         </div>
         <div class="card-actions">
         <paper-button>Iniciar sesion</paper-button>
@@ -28,7 +29,8 @@ class LoginPage extends PolymerElement {
   static get properties() {
     return {
       username: String,
-      password: String
+      password: String,
+      fullName: String
     };
   }
 }

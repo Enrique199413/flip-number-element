@@ -30,12 +30,13 @@ import '../component-pages/config-page.js';
 import '../component-pages/preview-exam-page.js';
 import '../local-components/app-components/loading-component.js';
 import {UtilitiesMixin} from '../local-components/mixins/mixin-utilities';
+import {FireStoreMixin} from '../local-components/mixins/mixin-firestore.js';
 
 /**
  * @customElement
  * @polymer
  */
-class HiringApp extends UtilitiesMixin(PolymerElement) {
+class HiringApp extends FireStoreMixin(UtilitiesMixin(PolymerElement)) {
   static get template() {
     return html`
       <style include="base-style iron-flex iron-flex-alignment">
@@ -187,7 +188,35 @@ class HiringApp extends UtilitiesMixin(PolymerElement) {
   _getValuesFromSecurity() {
     this.innerLoading = true;
     return new Promise((resolve, reject) => {
-      setTimeout(() => {
+      this.readCollection('routes').then(results => {
+        const finalUrl = results.reduce((routerArray, route) => {
+          let routeTemporal = {};
+          if (route.data.component) {
+            routeTemporal.component = route.data.component;
+          }
+
+          if (route.data.path) {
+            routeTemporal.path = route.data.path;
+          }
+
+          if (route.data.name) {
+            routeTemporal.name = route.data.name;
+          }
+
+          if (route.data.redirect) {
+            routeTemporal.redirect = route.data.redirect;
+          }
+
+          routerArray.push(routeTemporal);
+          return routerArray;
+        }, []);
+        resolve(finalUrl);
+      }).catch(error => {
+        console.log(error);
+      }).finally(() => {
+        this.loadingPage = false;
+      });
+      /*setTimeout(() => {
         this.innerLoading = false;
         resolve([
           {path: '/', redirect: '/gft-examen'},
@@ -200,7 +229,7 @@ class HiringApp extends UtilitiesMixin(PolymerElement) {
           {path: '/hacer-examen/:codeExam', component: 'apply-exam-page'},
           {path: '/ver-examen/:codeExam/:reviewer', component: 'apply-exam-page'},
         ]);
-      }, 1000);
+      }, 1000);*/
     });
   }
 }

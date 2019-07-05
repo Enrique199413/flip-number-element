@@ -12,16 +12,6 @@ baseStyle.innerHTML = `
         --accent-color-dark: var(--dark);
         --base-color-light: rgba(133,226,255,0.25);
       }
-      .info-message {
-        height: 150px;
-      }
-      .info-message > paper-button {
-        margin-top: 20px;
-      }
-      
-      paper-button {
-        font-size: 14px;
-      }
       
       paper-button.blue-button {
         background: var(--base-color);
