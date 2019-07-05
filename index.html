@@ -12,8 +12,15 @@
 
     <script src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
     <script src="/node_modules/web-animations-js/web-animations-next-lite.min.js"></script>
+    <link href="/node_modules/codemirror/lib/codemirror.css" rel="stylesheet">
+    <link href="/node_modules/codemirror/theme/night.css" rel="stylesheet">
+    <script src="/node_modules/codemirror/lib/codemirror.js"></script>
+    <script src="/node_modules/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="/node_modules/codemirror/mode/clike/clike.js"></script>
+    <script src="/node_modules/codemirror/mode/javascript/javascript.js"></script>
 
     <script type="module" src="/src/hiring-app/hiring-app.js" crossorigin></script>
+    <script type="module" src="/node_modules/code-mirror-wrapper/codemirror-wrapper.js"></script>
   </head>
   <body>
     <style>
@@ -24,3 +31,4 @@
     <hiring-app></hiring-app>
   </body>
 </html>
+
