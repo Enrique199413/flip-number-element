@@ -71,8 +71,16 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
                     </marked-element>
                   </div>
                   <template is="dom-if" if="[[!currentExam.readOnly]]">
-                    <paper-textarea label="Respuesta" rows="3" value="{{questionExam.answerData.answer::input}}"></paper-textarea>
-                    <codemirror-wrapper valor-correcto="{{questionExam.answerData.answer}}"></codemirror-wrapper>
+                    <template is="dom-if" if="[[isOption(current.data.referenceType)]]">
+                      Option
+                    </template>
+                    <template is="dom-if" if="[[isOpen(current.data.referenceType)]]">
+                      <paper-textarea label="Respuesta" rows="3" value="{{questionExam.answerData.answer::input}}"></paper-textarea>
+                      <codemirror-wrapper valor-correcto="{{questionExam.answerData.answer}}"></codemirror-wrapper>
+                    </template>
+                    <template is="dom-if" if="[[isCode(current.data.referenceType)]]">
+                      Codigo codemirror
+                    </template>
                   </template>
                   <template is="dom-if" if="[[currentExam.readOnly]]">
                     <div class="layout vertical">
@@ -181,6 +189,21 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
     }
   }
 
+  isOption(question) {
+    console.log(question);
+    return question === 'xyOMGjDEWAu5vXqYAZaq';
+  }
+
+  isCode(question) {
+    console.log(question);
+    return question === 'TbFnoTq2g1il9A7yu2eA';
+  }
+
+  isOpen(question) {
+    console.log(question);
+    return question === 'd5RpNHmf27OEpmZ50kxx';
+  }
+
   sumIndex(index) {
     return index + 1;
   }
@@ -242,6 +265,7 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
       this.startExam = true;
       Promise.all(this._getInfoAboutAnswer(questionsExam)).then(finalQuestionsWithAnswers => {
         this.set('questionsExam', questionsExam);
+        console.log(questionsExam);
       })
     }).finally(() => {
       this.loadingPage = false;

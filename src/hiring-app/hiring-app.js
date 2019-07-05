@@ -216,6 +216,7 @@ class HiringApp extends FireStoreMixin(UtilitiesMixin(PolymerElement)) {
         console.log(error);
       }).finally(() => {
         this.loadingPage = false;
+        this.innerLoading = false;
       });
       /*setTimeout(() => {
         this.innerLoading = false;
