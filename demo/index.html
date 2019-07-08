@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
-    <title>flip-number demo</title>
+    <title>flip-number-element demo</title>
 
     <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
 
@@ -13,11 +13,11 @@
       import '@polymer/iron-demo-helpers/demo-snippet';
     </script>
 
-    <script type="module" src="../flip-number.js"></script>
+    <script type="module" src="../flip-number-element.js"></script>
 
     <custom-style>
       <style is="custom-style" include="demo-pages-shared-styles">
-        flip-number.changeColor {
+        flip-number-element.changeColor {
           --primary-text-color: red;
         }
       </style>
@@ -28,11 +28,11 @@
       <h3>Basic flip-number demo</h3>
       <demo-snippet>
         <template>
-          <flip-number></flip-number>
-          <flip-number to="100000"></flip-number>
-          <flip-number to="100" from="99999"></flip-number>
-          <flip-number to="40" from="9999" duration="5"></flip-number>
-          <flip-number class="changeColor"></flip-number>
+          <flip-number-element></flip-number-element>
+          <flip-number-element to="100000"></flip-number-element>
+          <flip-number-element to="100" from="99999"></flip-number-element>
+          <flip-number-element to="40" from="9999" duration="5"></flip-number-element>
+          <flip-number-element class="changeColor"></flip-number-element>
         </template>
       </demo-snippet>
     </div>

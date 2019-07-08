@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/flip-number.iml" filepath="$PROJECT_DIR$/.idea/flip-number.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../flip-number-element/.idea/flip-number-element.iml" filepath="$PROJECT_DIR$/../flip-number-element/.idea/flip-number-element.iml" />
     </modules>
   </component>
 </project>

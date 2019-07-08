@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
-    <title>flip-number test</title>
+    <title>flip-number-element test</title>
 
     <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
     <script src="../node_modules/@polymer/test-fixture/test-fixture.js"></script>
@@ -12,30 +12,30 @@
     <script src="../node_modules/chai/chai.js"></script>
     <script src="../node_modules/wct-mocha/wct-mocha.js"></script>
 
-    <script type="module" src="../flip-number.js"></script>
+    <script type="module" src=".."></script>
   </head>
   <body>
 
     <test-fixture id="BasicTestFixture">
       <template>
-        <flip-number></flip-number>
+        <flip-number-element></flip-number-element>
       </template>
     </test-fixture>
 
     <test-fixture id="ChangedPropertyTestFixture">
       <template>
-        <flip-number from="1000" to="3"></flip-number>
+        <flip-number-element from="1000" to="3"></flip-number-element>
       </template>
     </test-fixture>
 
     <test-fixture id="ChangedPropertyTestFixtureAndChangeTimeout">
       <template>
-        <flip-number from="1000" to="3"></flip-number>
+        <flip-number-element from="1000" to="3"></flip-number-element>
       </template>
     </test-fixture>
 
     <script type="module">
-      suite('flip-number', () => {
+      suite('flip-number-element', () => {
         test('instantiating the element with default properties works', () => {
           const element = fixture('BasicTestFixture');
           assert.equal(element.to, '2');

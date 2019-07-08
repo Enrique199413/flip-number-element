@@ -2,14 +2,14 @@ import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
 import 'number-flip';
 
 /**
- * `flip-number`
+ * `flip-number-element`
  * Polymer 3 element implement number-flip
  *
  * @customElement
  * @polymer
  * @demo demo/index.html
  */
-class FlipNumber extends PolymerElement {
+class FlipNumberElement extends PolymerElement {
   static get template() {
     return html`
       <style>
@@ -66,4 +66,4 @@ class FlipNumber extends PolymerElement {
   }
 }
 
-window.customElements.define('flip-number', FlipNumber);
+window.customElements.define('flip-number-element', FlipNumberElement);

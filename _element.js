@@ -1,7 +1,7 @@
 import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
 
 /**
- * `flip-number`
+ * `flip-number-element`
  * Polymer 3 element implement number-flip
  *
  * @customElement
@@ -23,10 +23,10 @@ class FlipNumber extends PolymerElement {
     return {
       prop1: {
         type: String,
-        value: 'flip-number',
+        value: 'flip-number-element',
       },
     };
   }
 }
 
-window.customElements.define('flip-number', FlipNumber);
+window.customElements.define('flip-number-element', FlipNumber);
