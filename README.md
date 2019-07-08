@@ -8,22 +8,6 @@ Polymer 3 element implement number-flip
 
 See: [Demo](https://www.webcomponents.org/element/flip-number-element/flip-number-element/demo/index.html).
 
-<!--
-```
-<custom-element-demo>
-  <template>
-    <link rel="import" href="my-element.html">
-    <link rel="import" href="../other-element/other-element.html">
-    <next-code-block></next-code-block>
-  </template>
-</custom-element-demo>
-```
--->
-```html
-<other-element></other-element>
-<my-element></my-element>
-```
-
 ### In a Polymer 3 element
 ```js
 import {PolymerElement, html} from '@polymer/polymer';
