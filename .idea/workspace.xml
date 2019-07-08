@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0280c357-5e8f-47c6-aa12-2486dec9ed2a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../flip-number-element/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../flip-number-element/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flip-number-element/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../flip-number-element/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flip-number-element/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../flip-number-element/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flip-number-element/flip-number-element.js" beforeDir="false" afterPath="$PROJECT_DIR$/../flip-number-element/flip-number-element.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../flip-number-element/flip-number-element.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="65" column="16" lean-forward="true" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+            <state relative-caret-position="390">
+              <caret line="26" column="82" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
               <folding>
                 <element signature="e#0#73#0" expanded="true" />
               </folding>
@@ -27,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../flip-number-element/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+            <state relative-caret-position="600">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
@@ -88,8 +90,8 @@
         <entry file="file://$PROJECT_DIR$/../flip-number-element/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="390">
-                <caret line="26" selection-start-line="26" selection-end-line="32" selection-end-column="65" />
+              <first_editor relative-caret-position="120">
+                <caret line="8" column="90" selection-start-line="8" selection-start-column="90" selection-end-line="8" selection-end-column="90" />
                 <folding>
                   <element signature="e#0#54#0" expanded="true" />
                 </folding>
@@ -140,10 +142,10 @@
         <option value="$PROJECT_DIR$/../flip-number-element/_element.js" />
         <option value="$PROJECT_DIR$/../flip-number-element/index.html" />
         <option value="$PROJECT_DIR$/../flip-number-element/demo/index.html" />
-        <option value="$PROJECT_DIR$/../flip-number-element/flip-number-element.js" />
-        <option value="$PROJECT_DIR$/../flip-number-element/README.md" />
         <option value="$PROJECT_DIR$/../flip-number-element/.gitignore" />
         <option value="$PROJECT_DIR$/../flip-number-element/package.json" />
+        <option value="$PROJECT_DIR$/../flip-number-element/README.md" />
+        <option value="$PROJECT_DIR$/../flip-number-element/flip-number-element.js" />
       </list>
     </option>
   </component>
@@ -229,7 +231,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562603141993</updated>
-      <workItem from="1562603143238" duration="8785000" />
+      <workItem from="1562603143238" duration="8934000" />
     </task>
     <task id="LOCAL-00001" summary="update all code">
       <created>1562610716740</created>
@@ -273,11 +275,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562621875275</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update version">
+      <created>1562621963691</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1562621963691</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8785000" />
+    <option name="totallyTimeSpent" value="8934000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -314,7 +323,8 @@
     <MESSAGE value="update .idea and update README" />
     <MESSAGE value="update all documentation for element" />
     <MESSAGE value="add analysis.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="add analysis.json" />
+    <MESSAGE value="update version" />
+    <option name="LAST_COMMIT_MESSAGE" value="update version" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../flip-number-element/node_modules/number-flip/dist/number-flip.min.js">
@@ -412,11 +422,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../flip-number-element/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../flip-number-element/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="390">
-            <caret line="26" selection-start-line="26" selection-end-line="32" selection-end-column="65" />
+          <first_editor relative-caret-position="120">
+            <caret line="8" column="90" selection-start-line="8" selection-start-column="90" selection-end-line="8" selection-end-column="90" />
             <folding>
               <element signature="e#0#54#0" expanded="true" />
             </folding>
@@ -427,18 +444,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../flip-number-element/flip-number-element.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="65" column="16" lean-forward="true" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+        <state relative-caret-position="390">
+          <caret line="26" column="82" selection-start-line="26" selection-start-column="82" selection-end-line="26" selection-end-column="82" />
           <folding>
             <element signature="e#0#73#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../flip-number-element/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
         </state>
       </provider>
     </entry>

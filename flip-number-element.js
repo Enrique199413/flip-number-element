@@ -24,7 +24,7 @@ import 'number-flip';
  *
  * @customElement
  * @polymer
- * @demo https://www.webcomponents.org/element/flip-number-element/flip-number-element/demo/index.html
+ * @demo https://www.webcomponents.org/element/flip-number-element/demo/demo/index.html
  */
 class FlipNumberElement extends PolymerElement {
   static get template() {
