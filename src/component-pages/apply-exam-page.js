@@ -3,6 +3,8 @@ import '@polymer/paper-input/paper-input.js';
 import '@polymer/paper-card/paper-card.js';
 import '@polymer/paper-checkbox/paper-checkbox.js';
 import '@polymer/paper-toolbar/paper-toolbar.js';
+import '@polymer/paper-radio-group/paper-radio-group.js';
+import 'flip-number-element/flip-number-element.js';
 
 import {FireStoreMixin} from '../local-components/mixins/mixin-firestore.js';
 import {UtilitiesMixin} from '../local-components/mixins/mixin-utilities';
@@ -45,6 +47,13 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
         .paper-font-title {
           @apply --paper-font-title;
         }
+        
+        flip-number-element {
+          --flip-number-element-color: white;
+        }
+        .counters {
+          display: flex;
+        }
       </style>
       <template is="dom-if" if="[[startExam]]">
         <app-header-layout fullbleed>
@@ -52,7 +61,12 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
             <app-toolbar>
               <div main-title class="layout horizontal justified">
                 <div>Examen de {{candidateData.name}} {{candidateData.lastName}} {{candidateData.middleName}}</div>
-                <div>Preguntas restantes: 1</div>
+                <div class="counters">
+                  <div>Preguntas totales &nbsp;</div>
+                  <flip-number-element from="10" to="[[questionsExam.length]]" duration="2"></flip-number-element>
+                  <div>&nbsp; preguntas faltantes&nbsp;</div>
+                  <flip-number-element from="[[questionsExam.length]]" to="[[missingAnswers]]" duration="2"></flip-number-element>
+                </div>
               </div>
             </app-toolbar>
           </app-header>
@@ -62,7 +76,7 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
                 <p>Examen de {{candidateData.name}} {{candidateData.lastName}} {{candidateData.middleName}}</p>
               </div>
             </template>
-            <template is="dom-repeat" items="[[questionsExam]]" as="questionExam">
+            <template is="dom-repeat" items="{{questionsExam}}" as="questionExam">
               <paper-card heading="Pregunta [[sumIndex(index)]]" class="color-general">
                 <div class="card-content">
                   <div class="layout horizontal">
@@ -71,15 +85,18 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
                     </marked-element>
                   </div>
                   <template is="dom-if" if="[[!currentExam.readOnly]]">
-                    <template is="dom-if" if="[[isOption(current.data.referenceType)]]">
-                      Option
+                    <template is="dom-if" if="[[isOption(questionExam.data.referenceType)]]">
+                       <paper-radio-group selected="{{questionExam.answerData.answer}}">
+                          <paper-radio-button name="true">Verdadero</paper-radio-button>
+                          <paper-radio-button name="false">Falso</paper-radio-button>
+                        </paper-radio-group>
                     </template>
-                    <template is="dom-if" if="[[isOpen(current.data.referenceType)]]">
+                    <template is="dom-if" if="[[isOpen(questionExam.data.referenceType)]]">
                       <paper-textarea label="Respuesta" rows="3" value="{{questionExam.answerData.answer::input}}"></paper-textarea>
-                      <codemirror-wrapper valor-correcto="{{questionExam.answerData.answer}}"></codemirror-wrapper>
                     </template>
-                    <template is="dom-if" if="[[isCode(current.data.referenceType)]]">
+                    <template is="dom-if" if="[[isCode(questionExam.data.referenceType)]]">
                       Codigo codemirror
+                      <codemirror-wrapper valor-correcto="{{questionExam.answerData.answer}}"></codemirror-wrapper>
                     </template>
                   </template>
                   <template is="dom-if" if="[[currentExam.readOnly]]">
@@ -95,7 +112,7 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
                 </div>
                 <div class="card-actions">
                   <template is="dom-if" if="[[!currentExam.readOnly]]">
-                    <paper-button on-click="saveAnswer">Guardar Respuesta</paper-button>
+                    <paper-button on-click="saveAnswer" disabled="{{!_validAnswer(questionExam.answerData.answer)}}">Guardar Respuesta</paper-button>
                   </template>
                   <template is="dom-if" if="[[checkReviewer()]]">
                     <paper-radio-group selected="{{questionExam.correctAnswer}}">
@@ -173,6 +190,13 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
       seeResult: {
         type: Boolean,
         value: false
+      },
+      currentExam: {
+        type: Object,
+        value: () => {}
+      },
+      missingAnswers: {
+        type: Number
       }
     };
   }
@@ -182,6 +206,10 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
     this._getInfoCandidate(this.checkReviewer());
   }
 
+  static get observers() {
+    return ['_seeChangesOnQuestions(questionsExam.*)']
+  }
+
   checkReviewer() {
     if(this.location.params.reviewer) {
       this.tosAccepted = true;
@@ -189,19 +217,32 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
     }
   }
 
+  _seeChangesOnQuestions(answers) {
+    console.log(answers.base);
+    let missingAnswers = answers.base.reduce((answers, answer) => {
+      console.log(answer, answer.answerData.answer);
+      if (answer.answerData.answer.length === 0) {
+        return answers + 1;
+      }
+      return answers;
+    }, 0);
+    this.set('missingAnswers', missingAnswers);
+  }
+
+  _validAnswer(answer) {
+    return answer && answer.length >  0;
+  }
+
   isOption(question) {
-    console.log(question);
-    return question === 'xyOMGjDEWAu5vXqYAZaq';
+    return question && question.id === 'xyOMGjDEWAu5vXqYAZaq';
   }
 
   isCode(question) {
-    console.log(question);
-    return question === 'TbFnoTq2g1il9A7yu2eA';
+    return question && question.id === 'TbFnoTq2g1il9A7yu2eA';
   }
 
   isOpen(question) {
-    console.log(question);
-    return question === 'd5RpNHmf27OEpmZ50kxx';
+    return question && question.id === 'd5RpNHmf27OEpmZ50kxx';
   }
 
   sumIndex(index) {
@@ -229,7 +270,7 @@ class ApplyExamPage extends UtilitiesMixin(FireStoreMixin(PolymerElement)) {
       questionExamReference: this.getReference('questionExam', e.model.questionExam.id),
       candidateReference: this.getReference('candidate', e.model.questionExam.id)
     };
-    this.updateDocument('answerExamCandidate', e.model.questionExam.id, data).then(success => {
+    this.updateDocument('answerExamCandidate', e.model.questionExam.id, data).then(() => {
       this.openToast('Tu respuesta fue guardada con exito.')
     }).catch(error => {
       console.error(error);

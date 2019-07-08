@@ -3,7 +3,7 @@ baseStyle.innerHTML = `
   <template>
     <style>
       :root {
-        --base-color: #1D4786;
+        --base-color: #b5006e;
         --base-secondary-color: #FAFAFA;
         --base-cancel-color: #858585;
         --white: #FFFFFF;
@@ -11,6 +11,7 @@ baseStyle.innerHTML = `
         --accent-color-white: var(--white);
         --accent-color-dark: var(--dark);
         --base-color-light: rgba(133,226,255,0.25);
+        --primary-color: var(--base-color);
       }
       
       paper-button.blue-button {

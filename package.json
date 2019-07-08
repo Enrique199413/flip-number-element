@@ -25,11 +25,12 @@
     "@polymer/paper-toolbar": "^3.0.1",
     "@polymer/polymer": "^3.0.0",
     "@vaadin/router": "^1.2.0",
-    "firebase": "^6.1.1",
-    "paper-collapse-item": "^4.0.5",
-    "web-animations-js": "^2.3.1",
+    "code-mirror-wrapper": "https://github.com/Enrique199413/codemirror-wrapper.git#c32f52466d8fcea276f188d699649a2379217039",
     "codemirror": "^5.47.0",
-    "code-mirror-wrapper": "https://github.com/Enrique199413/codemirror-wrapper.git#c32f52466d8fcea276f188d699649a2379217039"
+    "firebase": "^6.1.1",
+    "flip-number-element": "^1.0.3",
+    "paper-collapse-item": "^4.0.5",
+    "web-animations-js": "^2.3.1"
   },
   "devDependencies": {
     "@polymer/test-fixture": "^4.0.2",
