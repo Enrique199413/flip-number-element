@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0280c357-5e8f-47c6-aa12-2486dec9ed2a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../flip-number-element/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../flip-number-element/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flip-number-element/demo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../flip-number-element/demo/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../flip-number-element/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../flip-number-element/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -41,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../flip-number-element/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+            <state relative-caret-position="165">
+              <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -221,7 +220,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562603141993</updated>
-      <workItem from="1562603143238" duration="6045000" />
+      <workItem from="1562603143238" duration="6170000" />
     </task>
     <task id="LOCAL-00001" summary="update all code">
       <created>1562610716740</created>
@@ -234,7 +233,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6045000" />
+    <option name="totallyTimeSpent" value="6170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -376,8 +375,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../flip-number-element/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        <state relative-caret-position="165">
+          <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
         </state>
       </provider>
     </entry>

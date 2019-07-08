@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Enrique199413/flip-number.git"
+    "url": "git+https://github.com/Enrique199413/flip-number-element.git"
   },
   "keywords": [
     "polymer3",
@@ -33,7 +33,7 @@
   "author": "EnriqueLC",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Enrique199413/flip-number/issues"
+    "url": "https://github.com/Enrique199413/flip-number-element/issues"
   },
-  "homepage": "https://github.com/Enrique199413/flip-number#readme"
+  "homepage": "https://github.com/Enrique199413/flip-number-element#readme"
 }
