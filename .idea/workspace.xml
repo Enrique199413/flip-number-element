@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0280c357-5e8f-47c6-aa12-2486dec9ed2a" name="Default Changelist" comment="update a">
-      <change beforePath="$PROJECT_DIR$/../flip-number-element/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../flip-number-element/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flip-number-element/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../flip-number-element/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flip-number-element/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../flip-number-element/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flip-number-element/demo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../flip-number-element/demo/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flip-number-element/flip-number-element.js" beforeDir="false" afterPath="$PROJECT_DIR$/../flip-number-element/flip-number-element.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flip-number-element/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../flip-number-element/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flip-number-element/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../flip-number-element/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flip-number-element/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../flip-number-element/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="0280c357-5e8f-47c6-aa12-2486dec9ed2a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -38,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/../flip-number-element/analysis.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60360">
-              <caret line="4036" lean-forward="true" selection-start-line="4036" selection-end-line="4036" />
+              <caret line="4036" selection-start-line="4036" selection-end-line="4036" />
             </state>
           </provider>
         </entry>
@@ -47,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/../flip-number-element/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -91,12 +82,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../flip-number-element/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="570">
-                <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+              <first_editor relative-caret-position="390">
+                <caret line="26" selection-start-line="26" selection-end-line="32" selection-end-column="65" />
                 <folding>
                   <element signature="e#0#54#0" expanded="true" />
                 </folding>
@@ -106,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../flip-number-element/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="7" />
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -236,7 +227,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562603141993</updated>
-      <workItem from="1562603143238" duration="8388000" />
+      <workItem from="1562603143238" duration="8603000" />
     </task>
     <task id="LOCAL-00001" summary="update all code">
       <created>1562610716740</created>
@@ -266,11 +257,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562618394214</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update all documentation for element">
+      <created>1562621502155</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1562621502155</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8388000" />
+    <option name="totallyTimeSpent" value="8603000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -305,7 +303,8 @@
     <MESSAGE value="update all code" />
     <MESSAGE value="update package.json" />
     <MESSAGE value="update .idea and update README" />
-    <option name="LAST_COMMIT_MESSAGE" value="update .idea and update README" />
+    <MESSAGE value="update all documentation for element" />
+    <option name="LAST_COMMIT_MESSAGE" value="update all documentation for element" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../flip-number-element/node_modules/number-flip/dist/number-flip.min.js">
@@ -382,14 +381,14 @@
     <entry file="file://$PROJECT_DIR$/../flip-number-element/analysis.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60360">
-          <caret line="4036" lean-forward="true" selection-start-line="4036" selection-end-line="4036" />
+          <caret line="4036" selection-start-line="4036" selection-end-line="4036" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../flip-number-element/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -413,23 +412,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../flip-number-element/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../flip-number-element/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="570">
-            <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
+          <first_editor relative-caret-position="390">
+            <caret line="26" selection-start-line="26" selection-end-line="32" selection-end-column="65" />
             <folding>
               <element signature="e#0#54#0" expanded="true" />
             </folding>
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../flip-number-element/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="7" />
         </state>
       </provider>
     </entry>
