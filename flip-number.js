@@ -1,4 +1,5 @@
 import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
+import 'number-flip';
 
 /**
  * `flip-number`
@@ -15,17 +16,53 @@ class FlipNumber extends PolymerElement {
         :host {
           display: block;
         }
+        .flip {
+          color: var(--primary-text-color, #000);
+        }
       </style>
-      <h2>Hello [[prop1]]!</h2>
+      <div class="flip"></div>
     `;
   }
   static get properties() {
     return {
-      prop1: {
-        type: String,
-        value: 'flip-number',
+      from: {
+        type: Number,
+        value: 100
       },
+      to: {
+        type: Number,
+        value: 2
+      },
+      duration: {
+        type: Number,
+        value: 1
+      },
+      currentFlip: Object
     };
+  }
+
+  connectedCallback() {
+    super.connectedCallback();
+    this.currentFlip = new Flip({
+      node: this.shadowRoot.querySelector('.flip'),
+      from: this.from,
+      to: this.to,
+      duration: this.duration
+    })
+  }
+
+  static get observers() {
+    return ['__seeChanges(from, to, duration)'];
+  }
+
+  __seeChanges(from, to, duration) {
+    if (this.currentFlip) {
+      this.currentFlip.flipTo({
+        from: from || this.from,
+        to: to || this.to,
+        duration: duration || this.duration
+      });
+    }
   }
 }
 

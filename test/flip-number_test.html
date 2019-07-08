@@ -24,28 +24,36 @@
 
     <test-fixture id="ChangedPropertyTestFixture">
       <template>
-        <flip-number prop1="new-prop1"></flip-number>
+        <flip-number from="1000" to="3"></flip-number>
+      </template>
+    </test-fixture>
+
+    <test-fixture id="ChangedPropertyTestFixtureAndChangeTimeout">
+      <template>
+        <flip-number from="1000" to="3"></flip-number>
       </template>
     </test-fixture>
 
     <script type="module">
       suite('flip-number', () => {
-
         test('instantiating the element with default properties works', () => {
           const element = fixture('BasicTestFixture');
-          assert.equal(element.prop1, 'flip-number');
+          assert.equal(element.to, '2');
+          assert.equal(element.duration, '1');
+          assert.equal(element.from, '100');
           const elementShadowRoot = element.shadowRoot;
-          const elementHeader = elementShadowRoot.querySelector('h2');
-          assert.equal(elementHeader.innerHTML, 'Hello flip-number!');
+          const elementFlip = elementShadowRoot.querySelector('.flip');
+          console.log(elementFlip.children);
+          assert.equal(elementFlip.className, 'flip number-flip');
         });
 
-        test('setting a property on the element works', () => {
-          // Create a test fixture
+        test('change default values', () => {
           const element = fixture('ChangedPropertyTestFixture');
-          assert.equal(element.prop1, 'new-prop1');
+          assert.equal(element.to, '3');
+          assert.equal(element.from, '1000');
           const elementShadowRoot = element.shadowRoot;
-          const elementHeader = elementShadowRoot.querySelector('h2');
-          assert.equal(elementHeader.innerHTML, 'Hello new-prop1!');
+          const elementFlip = elementShadowRoot.querySelector('.flip');
+          assert.equal(elementFlip.children.length, 4);
         });
 
       });

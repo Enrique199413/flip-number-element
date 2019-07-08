@@ -17,6 +17,9 @@
 
     <custom-style>
       <style is="custom-style" include="demo-pages-shared-styles">
+        flip-number.changeColor {
+          --primary-text-color: red;
+        }
       </style>
     </custom-style>
   </head>
@@ -26,6 +29,10 @@
       <demo-snippet>
         <template>
           <flip-number></flip-number>
+          <flip-number to="100000"></flip-number>
+          <flip-number to="100" from="99999"></flip-number>
+          <flip-number to="40" from="9999" duration="5"></flip-number>
+          <flip-number class="changeColor"></flip-number>
         </template>
       </demo-snippet>
     </div>

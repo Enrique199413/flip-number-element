@@ -3,7 +3,8 @@
   "description": "Polymer 3 element implement number-flip",
   "main": "flip-number.js",
   "dependencies": {
-    "@polymer/polymer": "^3.0.0"
+    "@polymer/polymer": "^3.0.0",
+    "number-flip": "^1.0.30"
   },
   "devDependencies": {
     "@polymer/iron-demo-helpers": "^3.0.0-pre.19",

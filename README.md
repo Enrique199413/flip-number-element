@@ -1,6 +1,26 @@
 # \<flip-number\>
 
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/owner/my-element)
+
 Polymer 3 element implement number-flip
+
+## Demo
+
+<!--
+```
+<custom-element-demo>
+  <template>
+    <link rel="import" href="my-element.html">
+    <link rel="import" href="../other-element/other-element.html">
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+```html
+<other-element></other-element>
+<my-element></my-element>
+```
 
 ## Install the Polymer-CLI
 
