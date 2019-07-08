@@ -4,5 +4,8 @@
     "rules": [
       "polymer-3"
     ]
-  }
+  },
+  "extraDependencies": [
+    "node_modules/number-flip/number-flip.js"
+  ]
 }

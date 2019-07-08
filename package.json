@@ -1,16 +1,40 @@
 {
-  "name": "flip-number",
+  "name": "flip-number-element",
   "description": "Polymer 3 element implement number-flip",
-  "main": "flip-number.js",
+  "main": "",
   "dependencies": {
-    "@polymer/polymer": "^3.0.0"
+    "@polymer/polymer": "^3.0.0",
+    "number-flip": "^1.0.30"
   },
   "devDependencies": {
+    "@polymer/iron-component-page": "^3.0.0-pre.20",
     "@polymer/iron-demo-helpers": "^3.0.0-pre.19",
     "@polymer/test-fixture": "^4.0.2",
     "@webcomponents/webcomponentsjs": "^2.0.0",
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
     "wct-mocha": "^1.0.0"
-  }
+  },
+  "version": "1.0.1",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "polymer test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enrique199413/flip-number-element.git"
+  },
+  "keywords": [
+    "polymer3",
+    "flip-number",
+    "number-flip"
+  ],
+  "author": "EnriqueLC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Enrique199413/flip-number-element/issues"
+  },
+  "homepage": "https://github.com/Enrique199413/flip-number-element#readme"
 }
