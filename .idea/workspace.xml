@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0280c357-5e8f-47c6-aa12-2486dec9ed2a" name="Default Changelist" comment="" />
+    <list default="true" id="0280c357-5e8f-47c6-aa12-2486dec9ed2a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../flip-number-element/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../flip-number-element/package.json" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -16,11 +18,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../flip-number-element/flip-number-element.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="27" selection-end-column="3" />
+            <state relative-caret-position="621">
+              <caret line="65" column="16" lean-forward="true" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
               <folding>
                 <element signature="e#0#73#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../flip-number-element/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -74,15 +85,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../flip-number-element/_element.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../flip-number-element/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -136,12 +138,12 @@
         <option value="$PROJECT_DIR$/../flip-number-element/test/flip-number_test.html" />
         <option value="$PROJECT_DIR$/../flip-number-element/test/index.html" />
         <option value="$PROJECT_DIR$/../flip-number-element/_element.js" />
-        <option value="$PROJECT_DIR$/../flip-number-element/package.json" />
         <option value="$PROJECT_DIR$/../flip-number-element/index.html" />
         <option value="$PROJECT_DIR$/../flip-number-element/demo/index.html" />
         <option value="$PROJECT_DIR$/../flip-number-element/flip-number-element.js" />
         <option value="$PROJECT_DIR$/../flip-number-element/README.md" />
         <option value="$PROJECT_DIR$/../flip-number-element/.gitignore" />
+        <option value="$PROJECT_DIR$/../flip-number-element/package.json" />
       </list>
     </option>
   </component>
@@ -227,7 +229,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562603141993</updated>
-      <workItem from="1562603143238" duration="8603000" />
+      <workItem from="1562603143238" duration="8785000" />
     </task>
     <task id="LOCAL-00001" summary="update all code">
       <created>1562610716740</created>
@@ -264,11 +266,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562621502155</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add analysis.json">
+      <created>1562621875275</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1562621875275</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8603000" />
+    <option name="totallyTimeSpent" value="8785000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -304,7 +313,8 @@
     <MESSAGE value="update package.json" />
     <MESSAGE value="update .idea and update README" />
     <MESSAGE value="update all documentation for element" />
-    <option name="LAST_COMMIT_MESSAGE" value="update all documentation for element" />
+    <MESSAGE value="add analysis.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="add analysis.json" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../flip-number-element/node_modules/number-flip/dist/number-flip.min.js">
@@ -371,13 +381,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../flip-number-element/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../flip-number-element/analysis.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60360">
@@ -402,16 +405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../flip-number-element/flip-number-element.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="27" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../flip-number-element/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -429,6 +422,23 @@
             </folding>
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../flip-number-element/flip-number-element.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="65" column="16" lean-forward="true" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../flip-number-element/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
         </state>
       </provider>
     </entry>
