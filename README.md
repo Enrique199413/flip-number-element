@@ -6,7 +6,7 @@ Polymer 3 element implement [number-flip](https://github.com/gaoryrt/number-flip
 
 ## Demo
 
-See: [Demo](https://www.webcomponents.org/element/flip-number-element/flip-number-element/demo/index.html).
+See: [Demo](https://www.webcomponents.org/element/flip-number-element/demo/demo/index.html).
 
 ### In a Polymer 3 element
 ```js
